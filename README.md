@@ -1,0 +1,74 @@
+# alphamoba.com
+
+The public site for **Wychwood**, the lane-and-jungle forest MOBA by Thornwake
+Games (working name: *alphamoba*). It is a static site: plain HTML, one
+stylesheet, one script, no build step, served by GitHub Pages at
+[alphamoba.com](https://alphamoba.com).
+
+## Layout
+
+- `index.html` — the front page: what the game is, the modes, a dozen
+  champions, and where development stands.
+- `champions/` — the roster (`index.html`, filtered in the browser) and one
+  static page per champion (`azra.html` … `yip.html`), generated.
+- `items/` — the shop, filtered in the browser by tier and category.
+- `maps/` — the Hushwood drawn as an SVG from the game's own map graph, plus
+  the Wide Wood and the Toll Road.
+- `data/` — `champions.json`, `items.json`, `map.json`, generated.
+- `assets/` — `css/site.css`, `js/site.js`, and the images the site owns.
+- `tools/` — `build_data.py` and `champion.template.html`, the generator.
+
+## Resyncing with the game
+
+Champion kits, item text and the map come straight out of the
+[alphamoba-unity](https://github.com/Kiddeke/alphamoba-unity) repository's
+`GameData/` sheets. When the game's data changes, regenerate from a sibling
+checkout:
+
+```
+python3 tools/build_data.py ../alphamoba-unity
+```
+
+That rewrites `data/*.json` and every `champions/<id>.html`. Only the Python
+standard library is needed. Each champion's accent colour is lifted from its
+own texture atlas the same way the game's portrait wash is (the heaviest hue
+among the saturated, mid-value texels), so a champion that changes colour in
+the game changes colour here on the next run. Two are special-cased in the
+script: Wick reads the master's sheet of the Wick-and-Tatters pair, and
+Rime's frost is named by hand because that model ships with its texture
+embedded.
+
+`assets/img/oryssa.png` is the game's own painted portrait. Nothing licensed
+from third parties (the CraftPix icon pack, the AlkaKrab score) is copied to
+this site; both are licensed for use inside the game, not for redistribution.
+
+## Deploying
+
+`.github/workflows/pages.yml` publishes the repository root to GitHub Pages on
+every push to `master` or `main`. One-time setup in the repository settings:
+
+1. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
+2. **Settings → Pages → Custom domain:** `alphamoba.com` (the `CNAME` file in
+   this repo keeps it set). Tick **Enforce HTTPS** once the certificate has
+   been issued.
+3. At the DNS provider for `alphamoba.com`:
+   - `A` records for the apex (`@`) pointing at GitHub Pages:
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+     (and, optionally, the matching `AAAA` records
+     `2606:50c0:8000::153` … `2606:50c0:8003::153`).
+   - a `CNAME` record for `www` pointing at `kiddeke.github.io`.
+
+GitHub's own reference for these values is
+<https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site>.
+
+## Previewing locally
+
+Any static server from the repository root works; the pages use root-relative
+paths (`/assets/…`, `/data/…`), so open it through a server rather than as a
+file:
+
+```
+python3 -m http.server 8000
+```
+
+then visit <http://localhost:8000/>.

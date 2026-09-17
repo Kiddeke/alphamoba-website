@@ -1,0 +1,1596 @@
+[
+ {
+  "id": "emberdraught",
+  "name": "Emberdraught",
+  "tier": 0,
+  "category": "Consumable",
+  "cost": 50,
+  "description": "A swallow of banked firelight. It does not warm you so much as remind you what you were going to cast.",
+  "active": "drink",
+  "active_cooldown": 0.0,
+  "charges": 2,
+  "components": [],
+  "stats": {
+   "Restores mana": 100.0
+  }
+ },
+ {
+  "id": "sapwine_flask",
+  "name": "Sapwine Flask",
+  "tier": 0,
+  "category": "Consumable",
+  "cost": 50,
+  "description": "Pressed from the wood's own sap and left to turn. It tastes of bark and it works, which is all anyone asks of it.",
+  "active": "drink",
+  "active_cooldown": 0.0,
+  "charges": 2,
+  "components": [],
+  "stats": {
+   "Restores health": 120.0
+  }
+ },
+ {
+  "id": "wychroot_tonic",
+  "name": "Wychroot Tonic",
+  "tier": 0,
+  "category": "Consumable",
+  "cost": 150,
+  "description": "Dug from under the oldest tree on the ridge and boiled down twice. The vendor will not say what the second boiling is for.",
+  "active": "drink",
+  "active_cooldown": 0.0,
+  "charges": 2,
+  "components": [],
+  "stats": {
+   "Restores health": 200.0,
+   "Restores mana": 140.0
+  }
+ },
+ {
+  "id": "watchers_lantern",
+  "name": "Watcher's Lantern",
+  "tier": 0,
+  "category": "Trinket",
+  "cost": 250,
+  "description": "It sheds no light you can read by. What it does is leave one behind wherever you have been standing long enough.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {}
+ },
+ {
+  "id": "trailblazers_sandals",
+  "name": "Trailblazer's Sandals",
+  "tier": 0,
+  "category": "Boots",
+  "cost": 450,
+  "description": "Cut for the first mile rather than the last. You will replace them, and you will miss them.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 80.0,
+   "Move speed": 0.4
+  }
+ },
+ {
+  "id": "almsgivers_coin",
+  "name": "Almsgiver's Coin",
+  "tier": 0,
+  "category": "Support",
+  "cost": 500,
+  "description": "Given, never spent, and warm out of all proportion to its size. It looks after whoever looks after others.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Move speed": 0.2,
+   "Health regen": 2.0,
+   "Mana regen": 2.0
+  }
+ },
+ {
+  "id": "novices_codex",
+  "name": "Novice's Codex",
+  "tier": 0,
+  "category": "Magic",
+  "cost": 500,
+  "description": "First-year exercises, annotated by someone who survived them. The margins are the useful part.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 50.0,
+   "Ability power": 18.0,
+   "Mana regen": 2.0
+  }
+ },
+ {
+  "id": "reavers_whetstone",
+  "name": "Reaver's Whetstone",
+  "tier": 0,
+  "category": "Attack",
+  "cost": 500,
+  "description": "A field stone worn concave by twenty years of the same arm. Every carry starts by learning to use one.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Attack damage": 8.0,
+   "Health regen": 2.0
+  }
+ },
+ {
+  "id": "sentrys_bulwark",
+  "name": "Sentry's Bulwark",
+  "tier": 0,
+  "category": "Defense",
+  "cost": 500,
+  "description": "Standard issue, dented flat across the boss. Whoever carried it last walked home.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 120.0,
+   "Armour": 8.0
+  }
+ },
+ {
+  "id": "farsight_brazier",
+  "name": "Farsight Brazier",
+  "tier": 0,
+  "category": "Trinket",
+  "cost": 600,
+  "description": "Coals that were lit at the first watchfire and have never once been out. They are in a hurry to be somewhere new.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {}
+ },
+ {
+  "id": "swift_boots",
+  "name": "Swift Boots",
+  "tier": 1,
+  "category": "Boots",
+  "cost": 300,
+  "description": "Featherlight boots stitched from wind-tanned leather. Win the lane by outrunning it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Move speed": 0.6
+  }
+ },
+ {
+  "id": "apprentice_focus",
+  "name": "Apprentice Focus",
+  "tier": 1,
+  "category": "Magic",
+  "cost": 350,
+  "description": "A cracked lens that still bends a spell true. The first purchase of every caster.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Ability power": 20.0
+  }
+ },
+ {
+  "id": "iron_shard",
+  "name": "Iron Shard",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 350,
+  "description": "A palm of cold pig iron. It has no opinion about swords; it simply disagrees with them.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Armour": 15.0
+  }
+ },
+ {
+  "id": "long_blade",
+  "name": "Long Blade",
+  "tier": 1,
+  "category": "Attack",
+  "cost": 350,
+  "description": "A dependable length of sharpened steel. The first purchase of every carry.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Attack damage": 12.0
+  }
+ },
+ {
+  "id": "null_cloak",
+  "name": "Null Cloak",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 350,
+  "description": "Woven from thread that spells forget mid-sentence.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Magic resist": 15.0
+  }
+ },
+ {
+  "id": "regrowth_charm",
+  "name": "Regrowth Charm",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 350,
+  "description": "A sprig of everbloom sealed in amber. Wounds close while you trade and farm.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health regen": 3.0
+  }
+ },
+ {
+  "id": "duelist_gloves",
+  "name": "Duelist Gloves",
+  "tier": 1,
+  "category": "Attack",
+  "cost": 400,
+  "description": "Supple gloves that never lose their grip. Your basic attacks come 15% faster.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Attack speed": 0.15
+  }
+ },
+ {
+  "id": "giants_ring",
+  "name": "Giant's Ring",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 400,
+  "description": "A band sized for a giant's finger, worn as a bracer. Its old strength thickens your blood.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 180.0
+  }
+ },
+ {
+  "id": "vigil_lantern",
+  "name": "Vigil Lantern",
+  "tier": 1,
+  "category": "Support",
+  "cost": 400,
+  "description": "Lit at dusk and not once since allowed to go out. The people around it sleep better.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 50.0,
+   "Health regen": 2.0,
+   "Mana regen": 2.0
+  }
+ },
+ {
+  "id": "bloodied_kerchief",
+  "name": "Bloodied Kerchief",
+  "tier": 1,
+  "category": "Attack",
+  "cost": 450,
+  "description": "It never washes clean, and the owner stopped trying. What you take, you keep.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Attack damage": 6.0,
+   "Lifesteal": 0.06
+  }
+ },
+ {
+  "id": "kindled_wick",
+  "name": "Kindled Wick",
+  "tier": 1,
+  "category": "Support",
+  "cost": 450,
+  "description": "Burns steady in wind that puts torches out. Small magic, but it never asks for a rest.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Ability power": 15.0,
+   "Health regen": 2.0
+  }
+ },
+ {
+  "id": "scribes_ledger",
+  "name": "Scribe's Ledger",
+  "tier": 1,
+  "category": "Magic",
+  "cost": 450,
+  "description": "Every spell the owner ever paid for, itemised. Reading it back is cheaper than casting them again.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Mana": 250.0,
+   "Mana regen": 2.0
+  }
+ },
+ {
+  "id": "barbed_buckler",
+  "name": "Barbed Buckler",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 500,
+  "description": "Small, ugly, and studded all the way round the rim. Blocking with it is only half of what it does.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Armour": 22.0
+  }
+ },
+ {
+  "id": "chroniclers_cuff",
+  "name": "Chronicler's Cuff",
+  "tier": 1,
+  "category": "Magic",
+  "cost": 500,
+  "description": "The sand in it runs a little to the left of now. Spells come back before you have finished missing them.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Mana": 100.0,
+   "Ability haste": 10.0
+  }
+ },
+ {
+  "id": "ember_lens",
+  "name": "Ember Lens",
+  "tier": 1,
+  "category": "Magic",
+  "cost": 500,
+  "description": "Glass with a coal still burning at its heart. Hold it up and the light comes out hotter than it went in.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Ability power": 30.0
+  }
+ },
+ {
+  "id": "serrated_fang",
+  "name": "Serrated Fang",
+  "tier": 1,
+  "category": "Attack",
+  "cost": 500,
+  "description": "Pulled from something that bit through a shield. It has not stopped wanting to.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Attack damage": 18.0
+  }
+ },
+ {
+  "id": "bulwark_slab",
+  "name": "Bulwark Slab",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 600,
+  "description": "Quarried, not forged, and strapped on with rope. Subtlety was never the point.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 280.0
+  }
+ },
+ {
+  "id": "sprinters_greaves",
+  "name": "Sprinter's Greaves",
+  "tier": 2,
+  "category": "Boots",
+  "cost": 850,
+  "description": "Plated at the shin and nowhere else. Everything that matters is already past you.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "swift_boots",
+    "name": "Swift Boots"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Armour": 18.0,
+   "Move speed": 1.0
+  }
+ },
+ {
+  "id": "warded_striders",
+  "name": "Warded Striders",
+  "tier": 2,
+  "category": "Boots",
+  "cost": 850,
+  "description": "Sigils stitched into the sole, face down, so every step presses them into the ground.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "swift_boots",
+    "name": "Swift Boots"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   }
+  ],
+  "stats": {
+   "Magic resist": 18.0,
+   "Move speed": 1.0
+  }
+ },
+ {
+  "id": "hunters_pace",
+  "name": "Hunter's Pace",
+  "tier": 2,
+  "category": "Boots",
+  "cost": 900,
+  "description": "Light boots cut for open ground. You arrive first, which is usually the whole trick.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "swift_boots",
+    "name": "Swift Boots"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   }
+  ],
+  "stats": {
+   "Attack speed": 0.2,
+   "Move speed": 1.0
+  }
+ },
+ {
+  "id": "sorcerers_treads",
+  "name": "Sorcerer's Treads",
+  "tier": 2,
+  "category": "Boots",
+  "cost": 900,
+  "description": "The buckles are set with the same stone as a good wand. Walking in them costs a spell less.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "swift_boots",
+    "name": "Swift Boots"
+   },
+   {
+    "id": "chroniclers_cuff",
+    "name": "Chronicler's Cuff"
+   }
+  ],
+  "stats": {
+   "Move speed": 0.9,
+   "Ability haste": 15.0
+  }
+ },
+ {
+  "id": "whisperglass",
+  "name": "Whisperglass",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 900,
+  "description": "Ground from a still lake at dusk. Thought carries further through it than sound.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   },
+   {
+    "id": "regrowth_charm",
+    "name": "Regrowth Charm"
+   }
+  ],
+  "stats": {
+   "Mana": 200.0,
+   "Ability power": 50.0,
+   "Mana regen": 2.0,
+   "Ability haste": 10.0
+  }
+ },
+ {
+  "id": "tidewardens_pearl",
+  "name": "Tidewarden's Pearl",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1050,
+  "description": "Cool to the touch, always. Magic pools in it faster than you can spend it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Mana": 250.0,
+   "Ability power": 40.0,
+   "Mana regen": 3.0
+  }
+ },
+ {
+  "id": "skirmishers_talon",
+  "name": "Skirmisher's Talon",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1100,
+  "description": "Light enough to carry all day, long enough to end the argument. Favoured by people who pick their fights.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   }
+  ],
+  "stats": {
+   "Attack damage": 30.0,
+   "Attack speed": 0.2
+  }
+ },
+ {
+  "id": "warcallers_horn",
+  "name": "Warcaller's Horn",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1100,
+  "description": "One note and the line holds. Bulk for the champion who stands where it is worst.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Health": 320.0,
+   "Attack damage": 22.0,
+   "Health regen": 4.0
+  }
+ },
+ {
+  "id": "lifebinders_censer",
+  "name": "Lifebinder's Censer",
+  "tier": 2,
+  "category": "Support",
+  "cost": 1150,
+  "description": "Swung slow, and the smoke goes where it is needed rather than up. Nobody nearby stays hurt for long.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "kindled_wick",
+    "name": "Kindled Wick"
+   },
+   {
+    "id": "vigil_lantern",
+    "name": "Vigil Lantern"
+   }
+  ],
+  "stats": {
+   "Ability power": 40.0,
+   "Health regen": 5.0,
+   "Mana regen": 3.0
+  }
+ },
+ {
+  "id": "warlords_edge",
+  "name": "Warlord's Edge",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1150,
+  "description": "A conqueror's greatsword that refuses to dull. Power and bulk in one heavy swing.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Attack damage": 38.0
+  }
+ },
+ {
+  "id": "cinderglass_torch",
+  "name": "Cinderglass Torch",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1200,
+  "description": "The flame is set into the glass rather than on top of it. It has been going out for four hundred years.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   },
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   }
+  ],
+  "stats": {
+   "Ability power": 65.0,
+   "Ability haste": 8.0
+  }
+ },
+ {
+  "id": "vampires_draught",
+  "name": "Vampire's Draught",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1200,
+  "description": "Half a mouthful left, and the bottle has been full for a century. It fills from whoever you were fighting.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "bloodied_kerchief",
+    "name": "Bloodied Kerchief"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Attack damage": 25.0,
+   "Lifesteal": 0.1
+  }
+ },
+ {
+  "id": "wardstone_mantle",
+  "name": "Wardstone Mantle",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1200,
+  "description": "A slab of altar-stone worn like a promise. Curses read it and reconsider.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Magic resist": 35.0,
+   "Ability haste": 10.0
+  }
+ },
+ {
+  "id": "wayfarers_banner",
+  "name": "Wayfarer's Banner",
+  "tier": 2,
+  "category": "Support",
+  "cost": 1200,
+  "description": "Carried ahead of the column, never behind it. The road is shorter for everyone who can see it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "vigil_lantern",
+    "name": "Vigil Lantern"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Move speed": 0.4,
+   "Health regen": 3.0,
+   "Ability haste": 10.0
+  }
+ },
+ {
+  "id": "grovewarden_girdle",
+  "name": "Grovewarden Girdle",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1250,
+  "description": "Woven green and still growing. Cuts close over quietly while you are busy with the next one.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   },
+   {
+    "id": "regrowth_charm",
+    "name": "Regrowth Charm"
+   }
+  ],
+  "stats": {
+   "Health": 400.0,
+   "Health regen": 6.0
+  }
+ },
+ {
+  "id": "runewardens_tome",
+  "name": "Runewarden's Tome",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1250,
+  "description": "Chained shut, and the chain is the spell. What it holds is filed, indexed and immediately available.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "scribes_ledger",
+    "name": "Scribe's Ledger"
+   },
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   }
+  ],
+  "stats": {
+   "Mana": 300.0,
+   "Ability power": 55.0,
+   "Ability haste": 15.0
+  }
+ },
+ {
+  "id": "spellbreaker_shroud",
+  "name": "Spellbreaker Shroud",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1250,
+  "description": "Woven from a silence. Incantations arrive at it already forgetting what they were for.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   },
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Magic resist": 45.0,
+   "Ability haste": 8.0
+  }
+ },
+ {
+  "id": "windshear_bow",
+  "name": "Windshear Bow",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1250,
+  "description": "Strung with something that hums before you draw it. The arrows leave before the wind notices.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Attack damage": 18.0,
+   "Attack speed": 0.25,
+   "Move speed": 0.3
+  }
+ },
+ {
+  "id": "aegis_of_the_line",
+  "name": "Aegis of the Line",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1300,
+  "description": "Built to lock edge to edge with the one beside it. Alone it is merely very good.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   },
+   {
+    "id": "barbed_buckler",
+    "name": "Barbed Buckler"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Armour": 45.0
+  }
+ },
+ {
+  "id": "frostmarrow_sigil",
+  "name": "Frostmarrow Sigil",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1300,
+  "description": "Cold enough to ache through the glove. Casters who stand in the fight learn to want that.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   },
+   {
+    "id": "barbed_buckler",
+    "name": "Barbed Buckler"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Ability power": 50.0,
+   "Armour": 20.0
+  }
+ },
+ {
+  "id": "rendfang_pick",
+  "name": "Rendfang Pick",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1300,
+  "description": "A tooth on a handle, and the handle was the afterthought. It comes back up faster than it went down.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Attack damage": 45.0,
+   "Ability haste": 8.0
+  }
+ },
+ {
+  "id": "bramblehide_vest",
+  "name": "Bramblehide Vest",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1350,
+  "description": "Thorn and hide cured together until neither lets go. Hitting it is a decision you make once.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Armour": 25.0,
+   "Thorns": 0.1
+  }
+ },
+ {
+  "id": "eclipse_prism",
+  "name": "Eclipse Prism",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1350,
+  "description": "Split light goes in and one dark line comes out. Whatever it takes from the beam, it keeps.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   }
+  ],
+  "stats": {
+   "Ability power": 70.0,
+   "Magic resist": 25.0
+  }
+ },
+ {
+  "id": "ironbrand_cutlass",
+  "name": "Ironbrand Cutlass",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1350,
+  "description": "Forged with the guard oversized on purpose. The kind of blade you buy when you plan to still be there at the end.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   },
+   {
+    "id": "barbed_buckler",
+    "name": "Barbed Buckler"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Attack damage": 30.0,
+   "Armour": 18.0
+  }
+ },
+ {
+  "id": "hollow_point_quiver",
+  "name": "Hollow Point Quiver",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1400,
+  "description": "Every shaft bored out down its length. Lighter to loose, and considerably worse to be hit by.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   }
+  ],
+  "stats": {
+   "Attack damage": 35.0,
+   "Attack speed": 0.15,
+   "Ability haste": 5.0
+  }
+ },
+ {
+  "id": "ironsong_standard",
+  "name": "Ironsong Standard",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1400,
+  "description": "The pole rings a low note when the line moves. Everyone under it stands a little squarer.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 300.0,
+   "Armour": 25.0,
+   "Magic resist": 25.0
+  }
+ },
+ {
+  "id": "mindspring_chalice",
+  "name": "Mindspring Chalice",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1400,
+  "description": "It refills from underneath, and nobody has found the spring. Drink as fast as you like.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "scribes_ledger",
+    "name": "Scribe's Ledger"
+   },
+   {
+    "id": "chroniclers_cuff",
+    "name": "Chronicler's Cuff"
+   }
+  ],
+  "stats": {
+   "Mana": 400.0,
+   "Ability power": 40.0,
+   "Mana regen": 5.0,
+   "Ability haste": 10.0
+  }
+ },
+ {
+  "id": "solace_reliquary",
+  "name": "Solace Reliquary",
+  "tier": 2,
+  "category": "Support",
+  "cost": 1450,
+  "description": "Holds one feather and a great deal of patience. Curses land on it instead of on your friends.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "kindled_wick",
+    "name": "Kindled Wick"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Ability power": 30.0,
+   "Magic resist": 20.0,
+   "Health regen": 4.0
+  }
+ },
+ {
+  "id": "ironhide_plating",
+  "name": "Ironhide Plating",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 1500,
+  "description": "Scale salvaged from something that used to win fights. It still does.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   },
+   {
+    "id": "regrowth_charm",
+    "name": "Regrowth Charm"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Health": 500.0,
+   "Armour": 40.0,
+   "Health regen": 8.0,
+   "Thorns": 0.15
+  }
+ },
+ {
+  "id": "stormcallers_crown",
+  "name": "Stormcaller's Crown",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2000,
+  "description": "Worn by those who ask the sky for favours and are answered. Ability power at its highest.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "whisperglass",
+    "name": "Whisperglass"
+   },
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   }
+  ],
+  "stats": {
+   "Mana": 350.0,
+   "Ability power": 115.0,
+   "Mana regen": 5.0,
+   "Ability haste": 20.0
+  }
+ },
+ {
+  "id": "tallybrand",
+  "name": "Tallybrand",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2000,
+  "description": "Every kill notches the haft, and the flame burns a little hotter for each. It keeps watching after you walk away.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "bloodied_kerchief",
+    "name": "Bloodied Kerchief"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Attack damage": 25.0,
+   "Armour": 25.0,
+   "Lifesteal": 0.15,
+   "On-hit magic": 25.0,
+   "Cull chance": 0.25,
+   "Cull bonus": 200.0
+  }
+ },
+ {
+  "id": "reavers_cleaver",
+  "name": "Reaver's Cleaver",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2050,
+  "description": "Too heavy to parry, too broad to dodge. What a carry graduates to.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Edge"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   }
+  ],
+  "stats": {
+   "Attack damage": 70.0,
+   "Attack speed": 0.2,
+   "Lifesteal": 0.12
+  }
+ },
+ {
+  "id": "colossus_heart",
+  "name": "Colossus Heart",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2400,
+  "description": "Still beating, and it was never in a person. What it is attached to becomes difficult to finish.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "grovewarden_girdle",
+    "name": "Grovewarden Girdle"
+   },
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   }
+  ],
+  "stats": {
+   "Health": 800.0,
+   "Health regen": 10.0
+  }
+ },
+ {
+  "id": "sunderers_greatblade",
+  "name": "Sunderer's Greatblade",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2400,
+  "description": "Too much sword for one person, which is why it is carried by someone who is not being reasonable.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "rendfang_pick",
+    "name": "Rendfang Pick"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Attack damage": 85.0,
+   "Ability haste": 15.0
+  }
+ },
+ {
+  "id": "duskfang_reaver",
+  "name": "Duskfang Reaver",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2450,
+  "description": "Dark all the way down the edge, so you learn where it is from the sound. Usually too late.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   }
+  ],
+  "stats": {
+   "Attack damage": 65.0,
+   "Attack speed": 0.25,
+   "Move speed": 0.5
+  }
+ },
+ {
+  "id": "emberheart_crucible",
+  "name": "Emberheart Crucible",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2450,
+  "description": "A furnace small enough to carry and hot enough to matter. It keeps its wearer standing as readily as it burns.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 400.0,
+   "Ability power": 110.0
+  }
+ },
+ {
+  "id": "oathstone_bastion",
+  "name": "Oathstone Bastion",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2450,
+  "description": "Sworn on, then worn. Magic reads the oath, checks it twice, and goes around.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "spellbreaker_shroud",
+    "name": "Spellbreaker Shroud"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   }
+  ],
+  "stats": {
+   "Health": 450.0,
+   "Magic resist": 65.0,
+   "Ability haste": 20.0
+  }
+ },
+ {
+  "id": "adamant_vanguard",
+  "name": "Adamant Vanguard",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2500,
+  "description": "The front rank in one object. It gives back rather more than it is given.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "aegis_of_the_line",
+    "name": "Aegis of the Line"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Health": 500.0,
+   "Armour": 70.0,
+   "Thorns": 0.12
+  }
+ },
+ {
+  "id": "archivists_grimoire",
+  "name": "Archivist's Grimoire",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2500,
+  "description": "Every page is an index to a page you have not reached. Nothing in it is ever more than a moment away.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "runewardens_tome",
+    "name": "Runewarden's Tome"
+   },
+   {
+    "id": "chroniclers_cuff",
+    "name": "Chronicler's Cuff"
+   }
+  ],
+  "stats": {
+   "Mana": 600.0,
+   "Ability power": 95.0,
+   "Ability haste": 30.0
+  }
+ },
+ {
+  "id": "tempest_repeater",
+  "name": "Tempest Repeater",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "The string never fully stops moving. By the time the first shot lands there are three more behind it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "windshear_bow",
+    "name": "Windshear Bow"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   }
+  ],
+  "stats": {
+   "Attack damage": 45.0,
+   "Attack speed": 0.45,
+   "Move speed": 0.4
+  }
+ },
+ {
+  "id": "rimeglass_aegis",
+  "name": "Rimeglass Aegis",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2550,
+  "description": "Frozen mid-shatter and held there. The cracks are load-bearing.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "frostmarrow_sigil",
+    "name": "Frostmarrow Sigil"
+   },
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   }
+  ],
+  "stats": {
+   "Health": 450.0,
+   "Ability power": 90.0,
+   "Armour": 30.0
+  }
+ },
+ {
+  "id": "wardens_bane",
+  "name": "Warden's Bane",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2550,
+  "description": "Built by someone who got tired of shields. It goes through the argument rather than around it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "ironbrand_cutlass",
+    "name": "Ironbrand Cutlass"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Attack damage": 60.0,
+   "Armour": 35.0
+  }
+ },
+ {
+  "id": "bloodsovereign_maul",
+  "name": "Bloodsovereign Maul",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2600,
+  "description": "It has never needed sharpening and never will. Whatever it takes out of a fight, it gives back to the arm holding it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "vampires_draught",
+    "name": "Vampire's Draught"
+   },
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Edge"
+   }
+  ],
+  "stats": {
+   "Health": 400.0,
+   "Attack damage": 75.0,
+   "Lifesteal": 0.12
+  }
+ },
+ {
+  "id": "voidcallers_diadem",
+  "name": "Voidcaller's Diadem",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "Worn by those who ask the dark for favours and are also answered. It answers faster than the sky does.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "eclipse_prism",
+    "name": "Eclipse Prism"
+   },
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   }
+  ],
+  "stats": {
+   "Ability power": 130.0,
+   "Magic resist": 30.0,
+   "Ability haste": 15.0
+  }
+ },
+ {
+  "id": "everbloom_chalice",
+  "name": "Everbloom Chalice",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2700,
+  "description": "Something is always flowering in it, out of season and out of soil. Whoever holds it stops being the one who runs out.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "charges": 0,
+  "components": [
+   {
+    "id": "lifebinders_censer",
+    "name": "Lifebinder's Censer"
+   },
+   {
+    "id": "vigil_lantern",
+    "name": "Vigil Lantern"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Ability power": 70.0,
+   "Health regen": 7.0,
+   "Mana regen": 6.0,
+   "Ability haste": 20.0
+  }
+ }
+]

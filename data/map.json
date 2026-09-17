@@ -1,0 +1,376 @@
+{
+ "name": "The Hushwood",
+ "size": 100.0,
+ "nodes": [
+  {
+   "id": "blue_fountain",
+   "x": -42.0,
+   "y": -42.0,
+   "team": 0
+  },
+  {
+   "id": "blue_nexus",
+   "x": -38.0,
+   "y": -38.0,
+   "team": 0
+  },
+  {
+   "id": "blue_inhib_top",
+   "x": -38.9,
+   "y": -21.7,
+   "team": 0
+  },
+  {
+   "id": "blue_tower_top",
+   "x": -39.5,
+   "y": -13.0,
+   "team": 0
+  },
+  {
+   "id": "blue_tower_top_outer",
+   "x": -38.6,
+   "y": 6.6,
+   "team": 0
+  },
+  {
+   "id": "blue_tower_top_front",
+   "x": -35.2,
+   "y": 22.3,
+   "team": 0
+  },
+  {
+   "id": "blue_inhib_bot",
+   "x": -21.7,
+   "y": -38.9,
+   "team": 0
+  },
+  {
+   "id": "blue_tower_bot",
+   "x": -13.0,
+   "y": -39.5,
+   "team": 0
+  },
+  {
+   "id": "blue_tower_bot_outer",
+   "x": 6.6,
+   "y": -38.6,
+   "team": 0
+  },
+  {
+   "id": "blue_tower_bot_front",
+   "x": 22.3,
+   "y": -35.2,
+   "team": 0
+  },
+  {
+   "id": "red_fountain",
+   "x": 42.0,
+   "y": 42.0,
+   "team": 1
+  },
+  {
+   "id": "red_nexus",
+   "x": 38.0,
+   "y": 38.0,
+   "team": 1
+  },
+  {
+   "id": "red_inhib_top",
+   "x": 21.7,
+   "y": 38.9,
+   "team": 1
+  },
+  {
+   "id": "red_tower_top",
+   "x": 13.0,
+   "y": 39.5,
+   "team": 1
+  },
+  {
+   "id": "red_tower_top_outer",
+   "x": -6.6,
+   "y": 38.6,
+   "team": 1
+  },
+  {
+   "id": "red_tower_top_front",
+   "x": -22.3,
+   "y": 35.2,
+   "team": 1
+  },
+  {
+   "id": "red_inhib_bot",
+   "x": 38.9,
+   "y": 21.7,
+   "team": 1
+  },
+  {
+   "id": "red_tower_bot",
+   "x": 39.5,
+   "y": 13.0,
+   "team": 1
+  },
+  {
+   "id": "red_tower_bot_outer",
+   "x": 38.6,
+   "y": -6.6,
+   "team": 1
+  },
+  {
+   "id": "red_tower_bot_front",
+   "x": 35.2,
+   "y": -22.3,
+   "team": 1
+  },
+  {
+   "id": "top_center",
+   "x": -33.0,
+   "y": 33.0,
+   "team": -1
+  },
+  {
+   "id": "bot_center",
+   "x": 33.0,
+   "y": -33.0,
+   "team": -1
+  },
+  {
+   "id": "heart",
+   "x": 0.0,
+   "y": -0.0,
+   "team": -1
+  },
+  {
+   "id": "blue_wood",
+   "x": -24.0,
+   "y": -27.0,
+   "team": -1
+  },
+  {
+   "id": "red_wood",
+   "x": 24.0,
+   "y": 27.0,
+   "team": -1
+  },
+  {
+   "id": "camp_blue_grove",
+   "x": -24.0,
+   "y": -10.0,
+   "team": -1
+  },
+  {
+   "id": "camp_blue_horror",
+   "x": -10.0,
+   "y": -22.0,
+   "team": -1
+  },
+  {
+   "id": "camp_center_west",
+   "x": -13.0,
+   "y": -3.0,
+   "team": -1
+  },
+  {
+   "id": "camp_red_grove",
+   "x": 24.0,
+   "y": 10.0,
+   "team": -1
+  },
+  {
+   "id": "camp_red_horror",
+   "x": 10.0,
+   "y": 22.0,
+   "team": -1
+  },
+  {
+   "id": "camp_center_east",
+   "x": 13.0,
+   "y": 3.0,
+   "team": -1
+  },
+  {
+   "id": "altar_north",
+   "x": -12.0,
+   "y": 20.0,
+   "team": -1
+  },
+  {
+   "id": "altar_south",
+   "x": 12.0,
+   "y": -20.0,
+   "team": -1
+  },
+  {
+   "id": "kraken_pit",
+   "x": 5.0,
+   "y": -5.0,
+   "team": -1
+  }
+ ],
+ "edges": [
+  {
+   "from": "blue_fountain",
+   "to": "blue_nexus"
+  },
+  {
+   "from": "blue_nexus",
+   "to": "blue_inhib_top"
+  },
+  {
+   "from": "blue_inhib_top",
+   "to": "blue_tower_top"
+  },
+  {
+   "from": "blue_tower_top",
+   "to": "blue_tower_top_outer"
+  },
+  {
+   "from": "blue_tower_top_outer",
+   "to": "blue_tower_top_front"
+  },
+  {
+   "from": "blue_tower_top_front",
+   "to": "top_center"
+  },
+  {
+   "from": "red_fountain",
+   "to": "red_nexus"
+  },
+  {
+   "from": "red_nexus",
+   "to": "red_inhib_top"
+  },
+  {
+   "from": "red_inhib_top",
+   "to": "red_tower_top"
+  },
+  {
+   "from": "red_tower_top",
+   "to": "red_tower_top_outer"
+  },
+  {
+   "from": "red_tower_top_outer",
+   "to": "red_tower_top_front"
+  },
+  {
+   "from": "red_tower_top_front",
+   "to": "top_center"
+  },
+  {
+   "from": "blue_nexus",
+   "to": "blue_inhib_bot"
+  },
+  {
+   "from": "blue_inhib_bot",
+   "to": "blue_tower_bot"
+  },
+  {
+   "from": "blue_tower_bot",
+   "to": "blue_tower_bot_outer"
+  },
+  {
+   "from": "blue_tower_bot_outer",
+   "to": "blue_tower_bot_front"
+  },
+  {
+   "from": "blue_tower_bot_front",
+   "to": "bot_center"
+  },
+  {
+   "from": "red_nexus",
+   "to": "red_inhib_bot"
+  },
+  {
+   "from": "red_inhib_bot",
+   "to": "red_tower_bot"
+  },
+  {
+   "from": "red_tower_bot",
+   "to": "red_tower_bot_outer"
+  },
+  {
+   "from": "red_tower_bot_outer",
+   "to": "red_tower_bot_front"
+  },
+  {
+   "from": "red_tower_bot_front",
+   "to": "bot_center"
+  },
+  {
+   "from": "blue_tower_top_outer",
+   "to": "camp_blue_grove"
+  },
+  {
+   "from": "red_tower_bot_outer",
+   "to": "camp_red_grove"
+  },
+  {
+   "from": "camp_blue_grove",
+   "to": "blue_wood"
+  },
+  {
+   "from": "camp_red_grove",
+   "to": "red_wood"
+  },
+  {
+   "from": "blue_tower_bot_outer",
+   "to": "camp_blue_horror"
+  },
+  {
+   "from": "red_tower_top_outer",
+   "to": "camp_red_horror"
+  },
+  {
+   "from": "camp_blue_horror",
+   "to": "blue_wood"
+  },
+  {
+   "from": "camp_red_horror",
+   "to": "red_wood"
+  },
+  {
+   "from": "blue_wood",
+   "to": "camp_center_west"
+  },
+  {
+   "from": "red_wood",
+   "to": "camp_center_east"
+  },
+  {
+   "from": "camp_center_west",
+   "to": "heart"
+  },
+  {
+   "from": "camp_center_east",
+   "to": "heart"
+  },
+  {
+   "from": "camp_blue_horror",
+   "to": "altar_south"
+  },
+  {
+   "from": "camp_red_horror",
+   "to": "altar_north"
+  },
+  {
+   "from": "altar_south",
+   "to": "bot_center"
+  },
+  {
+   "from": "altar_north",
+   "to": "top_center"
+  },
+  {
+   "from": "altar_south",
+   "to": "heart"
+  },
+  {
+   "from": "altar_north",
+   "to": "heart"
+  },
+  {
+   "from": "heart",
+   "to": "kraken_pit"
+  }
+ ]
+}

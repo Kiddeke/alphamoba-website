@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{name}}, {{title}} · Wychwood</title>
+<meta name="description" content="{{name}}, {{title}}. {{class}} · {{passive_name}}: {{passive_blurb}}">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="page-champion" style="--accent:{{colour}}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="wordmark" href="/">Wychwood</a>
+  <nav class="nav" aria-label="Main">
+    <a href="/champions/" aria-current="page">Champions</a>
+    <a href="/items/">Items</a>
+    <a href="/maps/">Maps</a>
+    <a href="/#status">Status</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="champ-hero">
+    <div class="champ-hero-wash" aria-hidden="true"></div>
+    <div class="wrap champ-hero-inner">
+      <div class="champ-sigil" aria-hidden="true">{{initial}}</div>
+      <div>
+        <p class="eyebrow"><a href="/champions/">The roster</a> · {{class}}</p>
+        <h1 class="champ-name">{{name}}</h1>
+        <p class="champ-title">{{title}}</p>
+        <p class="champ-tags"><span class="tag">{{class}}</span><span class="tag">{{resource}}</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap champ-body">
+    <div class="champ-kit">
+      <h2>The kit</h2>
+      <ul class="abilities">{{kit}}</ul>
+    </div>
+    <aside class="champ-stats">
+      <h2>Base stats</h2>
+      <dl class="stats">{{stats}}</dl>
+      <p class="fine">Level-one numbers from the champion's sheet in the game data, with per-level growth where the sheet has it. Balance is measured in headless soaks and moves between builds.</p>
+      <h2>Other {{class}}s</h2>
+      <p class="chips">{{related}}</p>
+    </aside>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p><strong>Wychwood</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development. <em>alphamoba</em> is its working name.</p>
+    <p class="fine">Champion text and numbers come straight from the game's data sheets. Everything here changes as the game does.</p>
+  </div>
+</footer>
+</body>
+</html>
