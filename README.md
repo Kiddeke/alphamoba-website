@@ -63,12 +63,13 @@ GitHub's own reference for these values is
 
 ## Previewing locally
 
-Any static server from the repository root works; the pages use root-relative
-paths (`/assets/…`, `/data/…`), so open it through a server rather than as a
-file:
+Any static server from the repository root works. The roster, shop and map
+fetch their JSON, so open it through a server rather than as a file:
 
 ```
 python3 -m http.server 8000
 ```
 
-then visit <http://localhost:8000/>.
+then visit <http://localhost:8000/>. Every link and asset path is relative, so the
+site also works served under a sub-path, such as the repository's
+`kiddeke.github.io/alphamoba-website/` address before the domain is pointed.

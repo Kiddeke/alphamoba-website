@@ -2,6 +2,14 @@
 (function () {
   "use strict";
 
+  // The site's root, derived from where this script was loaded from, so the
+  // pages work at a domain root (alphamoba.com/) and under a project path
+  // (kiddeke.github.io/alphamoba-website/) alike.
+  var ROOT = (function () {
+    var me = document.currentScript && document.currentScript.src;
+    return me ? me.replace(/assets\/js\/site\.js.*$/, "") : "./";
+  })();
+
   function esc(s) {
     return String(s).replace(/[&<>"]/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
@@ -14,7 +22,7 @@
   if (roster) {
     var filters = document.querySelectorAll("[data-class-filter]");
     var search = document.querySelector("[data-roster-search]");
-    var portraits = { oryssa: "/assets/img/oryssa.png" };
+    var portraits = { oryssa: ROOT + "assets/img/oryssa.png" };
     var all = [];
     var activeClass = "All";
     var homeLimit = +roster.getAttribute("data-limit") || 0;
@@ -33,7 +41,7 @@
         var face = portraits[c.id]
           ? '<img src="' + portraits[c.id] + '" alt="" loading="lazy">'
           : esc(c.name.charAt(0));
-        return '<li><a class="roster-tile" href="/champions/' + c.id + '.html" style="--accent:' + esc(c.colour) + '">' +
+        return '<li><a class="roster-tile" href="' + ROOT + 'champions/' + c.id + '.html" style="--accent:' + esc(c.colour) + '">' +
           '<div class="face" aria-hidden="true">' + face + '<span class="cls">' + esc(c.class) + '</span></div>' +
           '<div class="who"><strong>' + esc(c.name) + '</strong><span>' + esc(c.title) + '</span></div></a></li>';
       }).join("") || '<li class="roster-empty">No champion answers to that.</li>';
@@ -41,7 +49,7 @@
       if (count) count.textContent = shown.length === all.length ? all.length + " champions" : shown.length + " of " + all.length;
     }
 
-    fetch("/data/champions.json").then(function (r) { return r.json(); }).then(function (data) {
+    fetch(ROOT + "data/champions.json").then(function (r) { return r.json(); }).then(function (data) {
       all = data;
       render();
     }).catch(function () {
@@ -99,7 +107,7 @@
       if (count) count.textContent = shown.length === allItems.length ? allItems.length + " items" : shown.length + " of " + allItems.length;
     }
 
-    fetch("/data/items.json").then(function (r) { return r.json(); }).then(function (data) {
+    fetch(ROOT + "data/items.json").then(function (r) { return r.json(); }).then(function (data) {
       allItems = data;
       renderItems();
     }).catch(function () {
@@ -125,7 +133,7 @@
   // ------------------------------------------------------------ the Hushwood map
   var map = document.querySelector("[data-hushwood]");
   if (map) {
-    fetch("/data/map.json").then(function (r) { return r.json(); }).then(function (m) {
+    fetch(ROOT + "data/map.json").then(function (r) { return r.json(); }).then(function (m) {
       var half = m.size / 2;
       var pad = 6;
       var S = m.size + pad * 2;
