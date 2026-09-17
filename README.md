@@ -39,8 +39,12 @@ Rime's frost is named by hand because that model ships with its texture
 embedded.
 
 `assets/img/oryssa.png` is the game's own painted portrait. `assets/img/items/`
-holds the seventy-two item portraits, copied by the generator from the
-game's staged CraftPix icon set (`Assets/Resources/Icons/art/items/`). Those
+holds the seventy-two item medallions: the game's staged CraftPix icon art
+(`Assets/Resources/Icons/art/items/`) painted onto the same plate the
+in-game shop draws behind it. `tools/medallion.py` is a port of the game's
+`ItemMedallion` painter (category-tinted ground, neutral frame, a glow in
+the art's dominant colour throttled by tier, sparkle on finished items), so
+the site and the shop screen show the same picture. Those
 come from a Unity Asset Store pack whose licence covers use inside the game;
 serving them from a public site is a judgement the licence holder has made,
 and the CC BY glyph set under `Assets/Resources/Icons/items/` in the game

@@ -200,13 +200,13 @@ small { color: var(--faded); }
 .item .cost { color: var(--gold); font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; align-self: flex-start; }
 .item .cost::before { content: "◆ "; font-size: 0.7em; }
 .item .item-cat { color: var(--moss); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; margin: 2px 0 0; }
-.item-icon {
-  flex: 0 0 auto; width: 64px; height: 64px; border-radius: 8px; padding: 5px; object-fit: contain;
-  background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--accent) 28%, #0a0f0c), #050806 75%);
-  border: 1px solid color-mix(in srgb, var(--accent) 65%, transparent);
-  box-shadow: inset 0 0 12px rgba(0,0,0,0.6), 0 4px 14px rgba(0,0,0,0.5);
+/* The medallion is painted whole by tools/medallion.py (frame, ground and
+   glow included), so the page adds nothing but a soft drop shadow. */
+.item-icon { flex: 0 0 auto; width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.55)); }
+.item-icon-blank {
+  display: grid; place-items: center; border-radius: 8px; border: 1px solid #85898d;
+  background: #0a0e0c; font-family: var(--serif); font-weight: 700; font-size: 1.8rem; color: color-mix(in srgb, var(--accent) 75%, #fff);
 }
-.item-icon-blank { display: grid; place-items: center; font-family: var(--serif); font-weight: 700; font-size: 1.8rem; color: color-mix(in srgb, var(--accent) 75%, #fff); }
 .item .item-stats { display: flex; flex-wrap: wrap; gap: 6px 12px; margin: 0 0 8px; padding: 0; list-style: none; font-size: 0.9rem; color: var(--stat); }
 .item .item-desc { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: #cfc8b4; margin: 0 0 6px; }
 .item .item-build { font-size: 0.85rem; color: var(--faded); margin: 0; }

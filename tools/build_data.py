@@ -8,7 +8,8 @@ atlases, and writes:
     data/items.json       every shop item
     data/map.json         the Hushwood's node graph, for the drawn map
     champions/<id>.html   one static page per champion (from the template)
-    assets/img/items/     one 128px portrait per item, copied from the game
+    assets/img/items/     one 128px medallion per item: the game's own art on the
+                          plate the in-game shop paints behind it (medallion.py)
 
 Usage:
     python3 tools/build_data.py [path-to-alphamoba-unity]
@@ -29,6 +30,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SITE = HERE.parent
+sys.path.insert(0, str(HERE))
+from medallion import Picture, compose, encode_png  # noqa: E402
 UNITY = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else SITE.parent / "alphamoba-unity"
 GAMEDATA = UNITY / "GameData"
 ATLASES = UNITY / "Assets" / "Resources" / "Champions"
@@ -336,7 +339,9 @@ def main():
         source = ITEM_ART / f"{i['id']}.png"
         i["art"] = source.exists()
         if i["art"]:
-            (art_dir / f"{i['id']}.png").write_bytes(source.read_bytes())
+            width, height, rgba = decode_png(source)
+            plate = compose(Picture(width, height, rgba), i["category"], i["tier"], i["id"])
+            (art_dir / f"{i['id']}.png").write_bytes(encode_png(*plate))
 
     (SITE / "data").mkdir(exist_ok=True)
     (SITE / "data" / "champions.json").write_text(json.dumps(roster, indent=1), encoding="utf-8")
