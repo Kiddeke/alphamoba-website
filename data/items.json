@@ -12,7 +12,8 @@
   "components": [],
   "stats": {
    "Restores mana": 100.0
-  }
+  },
+  "art": true
  },
  {
   "id": "sapwine_flask",
@@ -27,7 +28,8 @@
   "components": [],
   "stats": {
    "Restores health": 120.0
-  }
+  },
+  "art": true
  },
  {
   "id": "wychroot_tonic",
@@ -43,7 +45,8 @@
   "stats": {
    "Restores health": 200.0,
    "Restores mana": 140.0
-  }
+  },
+  "art": true
  },
  {
   "id": "watchers_lantern",
@@ -56,7 +59,8 @@
   "active_cooldown": 0.0,
   "charges": 0,
   "components": [],
-  "stats": {}
+  "stats": {},
+  "art": true
  },
  {
   "id": "trailblazers_sandals",
@@ -72,7 +76,8 @@
   "stats": {
    "Health": 80.0,
    "Move speed": 0.4
-  }
+  },
+  "art": true
  },
  {
   "id": "almsgivers_coin",
@@ -89,7 +94,8 @@
    "Move speed": 0.2,
    "Health regen": 2.0,
    "Mana regen": 2.0
-  }
+  },
+  "art": true
  },
  {
   "id": "novices_codex",
@@ -106,7 +112,8 @@
    "Health": 50.0,
    "Ability power": 18.0,
    "Mana regen": 2.0
-  }
+  },
+  "art": true
  },
  {
   "id": "reavers_whetstone",
@@ -122,7 +129,8 @@
   "stats": {
    "Attack damage": 8.0,
    "Health regen": 2.0
-  }
+  },
+  "art": true
  },
  {
   "id": "sentrys_bulwark",
@@ -138,7 +146,8 @@
   "stats": {
    "Health": 120.0,
    "Armour": 8.0
-  }
+  },
+  "art": true
  },
  {
   "id": "farsight_brazier",
@@ -151,7 +160,8 @@
   "active_cooldown": 0.0,
   "charges": 0,
   "components": [],
-  "stats": {}
+  "stats": {},
+  "art": true
  },
  {
   "id": "swift_boots",
@@ -166,7 +176,8 @@
   "components": [],
   "stats": {
    "Move speed": 0.6
-  }
+  },
+  "art": true
  },
  {
   "id": "apprentice_focus",
@@ -181,7 +192,8 @@
   "components": [],
   "stats": {
    "Ability power": 20.0
-  }
+  },
+  "art": true
  },
  {
   "id": "iron_shard",
@@ -196,7 +208,8 @@
   "components": [],
   "stats": {
    "Armour": 15.0
-  }
+  },
+  "art": true
  },
  {
   "id": "long_blade",
@@ -211,7 +224,8 @@
   "components": [],
   "stats": {
    "Attack damage": 12.0
-  }
+  },
+  "art": true
  },
  {
   "id": "null_cloak",
@@ -226,7 +240,8 @@
   "components": [],
   "stats": {
    "Magic resist": 15.0
-  }
+  },
+  "art": true
  },
  {
   "id": "regrowth_charm",
@@ -241,7 +256,8 @@
   "components": [],
   "stats": {
    "Health regen": 3.0
-  }
+  },
+  "art": true
  },
  {
   "id": "duelist_gloves",
@@ -256,7 +272,8 @@
   "components": [],
   "stats": {
    "Attack speed": 0.15
-  }
+  },
+  "art": true
  },
  {
   "id": "giants_ring",
@@ -271,7 +288,8 @@
   "components": [],
   "stats": {
    "Health": 180.0
-  }
+  },
+  "art": true
  },
  {
   "id": "vigil_lantern",
@@ -288,7 +306,8 @@
    "Health": 50.0,
    "Health regen": 2.0,
    "Mana regen": 2.0
-  }
+  },
+  "art": true
  },
  {
   "id": "bloodied_kerchief",
@@ -304,7 +323,8 @@
   "stats": {
    "Attack damage": 6.0,
    "Lifesteal": 0.06
-  }
+  },
+  "art": true
  },
  {
   "id": "kindled_wick",
@@ -320,7 +340,8 @@
   "stats": {
    "Ability power": 15.0,
    "Health regen": 2.0
-  }
+  },
+  "art": true
  },
  {
   "id": "scribes_ledger",
@@ -336,7 +357,8 @@
   "stats": {
    "Mana": 250.0,
    "Mana regen": 2.0
-  }
+  },
+  "art": true
  },
  {
   "id": "barbed_buckler",
@@ -351,7 +373,8 @@
   "components": [],
   "stats": {
    "Armour": 22.0
-  }
+  },
+  "art": true
  },
  {
   "id": "chroniclers_cuff",
@@ -367,7 +390,8 @@
   "stats": {
    "Mana": 100.0,
    "Ability haste": 10.0
-  }
+  },
+  "art": true
  },
  {
   "id": "ember_lens",
@@ -382,7 +406,8 @@
   "components": [],
   "stats": {
    "Ability power": 30.0
-  }
+  },
+  "art": true
  },
  {
   "id": "serrated_fang",
@@ -397,7 +422,8 @@
   "components": [],
   "stats": {
    "Attack damage": 18.0
-  }
+  },
+  "art": true
  },
  {
   "id": "bulwark_slab",
@@ -412,7 +438,8 @@
   "components": [],
   "stats": {
    "Health": 280.0
-  }
+  },
+  "art": true
  },
  {
   "id": "sprinters_greaves",
@@ -437,7 +464,8 @@
   "stats": {
    "Armour": 18.0,
    "Move speed": 1.0
-  }
+  },
+  "art": true
  },
  {
   "id": "warded_striders",
@@ -462,7 +490,8 @@
   "stats": {
    "Magic resist": 18.0,
    "Move speed": 1.0
-  }
+  },
+  "art": true
  },
  {
   "id": "hunters_pace",
@@ -487,7 +516,8 @@
   "stats": {
    "Attack speed": 0.2,
    "Move speed": 1.0
-  }
+  },
+  "art": true
  },
  {
   "id": "sorcerers_treads",
@@ -512,7 +542,8 @@
   "stats": {
    "Move speed": 0.9,
    "Ability haste": 15.0
-  }
+  },
+  "art": true
  },
  {
   "id": "whisperglass",
@@ -539,7 +570,8 @@
    "Ability power": 50.0,
    "Mana regen": 2.0,
    "Ability haste": 10.0
-  }
+  },
+  "art": true
  },
  {
   "id": "tidewardens_pearl",
@@ -566,7 +598,8 @@
    "Mana": 250.0,
    "Ability power": 40.0,
    "Mana regen": 3.0
-  }
+  },
+  "art": true
  },
  {
   "id": "skirmishers_talon",
@@ -591,7 +624,8 @@
   "stats": {
    "Attack damage": 30.0,
    "Attack speed": 0.2
-  }
+  },
+  "art": true
  },
  {
   "id": "warcallers_horn",
@@ -617,7 +651,8 @@
    "Health": 320.0,
    "Attack damage": 22.0,
    "Health regen": 4.0
-  }
+  },
+  "art": true
  },
  {
   "id": "lifebinders_censer",
@@ -643,7 +678,8 @@
    "Ability power": 40.0,
    "Health regen": 5.0,
    "Mana regen": 3.0
-  }
+  },
+  "art": true
  },
  {
   "id": "warlords_edge",
@@ -668,7 +704,8 @@
   "stats": {
    "Health": 200.0,
    "Attack damage": 38.0
-  }
+  },
+  "art": true
  },
  {
   "id": "cinderglass_torch",
@@ -693,7 +730,8 @@
   "stats": {
    "Ability power": 65.0,
    "Ability haste": 8.0
-  }
+  },
+  "art": true
  },
  {
   "id": "vampires_draught",
@@ -718,7 +756,8 @@
   "stats": {
    "Attack damage": 25.0,
    "Lifesteal": 0.1
-  }
+  },
+  "art": true
  },
  {
   "id": "wardstone_mantle",
@@ -744,7 +783,8 @@
    "Health": 250.0,
    "Magic resist": 35.0,
    "Ability haste": 10.0
-  }
+  },
+  "art": true
  },
  {
   "id": "wayfarers_banner",
@@ -771,7 +811,8 @@
    "Move speed": 0.4,
    "Health regen": 3.0,
    "Ability haste": 10.0
-  }
+  },
+  "art": true
  },
  {
   "id": "grovewarden_girdle",
@@ -796,7 +837,8 @@
   "stats": {
    "Health": 400.0,
    "Health regen": 6.0
-  }
+  },
+  "art": true
  },
  {
   "id": "runewardens_tome",
@@ -822,7 +864,8 @@
    "Mana": 300.0,
    "Ability power": 55.0,
    "Ability haste": 15.0
-  }
+  },
+  "art": true
  },
  {
   "id": "spellbreaker_shroud",
@@ -848,7 +891,8 @@
    "Health": 200.0,
    "Magic resist": 45.0,
    "Ability haste": 8.0
-  }
+  },
+  "art": true
  },
  {
   "id": "windshear_bow",
@@ -874,7 +918,8 @@
    "Attack damage": 18.0,
    "Attack speed": 0.25,
    "Move speed": 0.3
-  }
+  },
+  "art": true
  },
  {
   "id": "aegis_of_the_line",
@@ -899,7 +944,8 @@
   "stats": {
    "Health": 250.0,
    "Armour": 45.0
-  }
+  },
+  "art": true
  },
  {
   "id": "frostmarrow_sigil",
@@ -925,7 +971,8 @@
    "Health": 250.0,
    "Ability power": 50.0,
    "Armour": 20.0
-  }
+  },
+  "art": true
  },
  {
   "id": "rendfang_pick",
@@ -950,7 +997,8 @@
   "stats": {
    "Attack damage": 45.0,
    "Ability haste": 8.0
-  }
+  },
+  "art": true
  },
  {
   "id": "bramblehide_vest",
@@ -976,7 +1024,8 @@
    "Health": 350.0,
    "Armour": 25.0,
    "Thorns": 0.1
-  }
+  },
+  "art": true
  },
  {
   "id": "eclipse_prism",
@@ -1001,7 +1050,8 @@
   "stats": {
    "Ability power": 70.0,
    "Magic resist": 25.0
-  }
+  },
+  "art": true
  },
  {
   "id": "ironbrand_cutlass",
@@ -1027,7 +1077,8 @@
    "Health": 250.0,
    "Attack damage": 30.0,
    "Armour": 18.0
-  }
+  },
+  "art": true
  },
  {
   "id": "hollow_point_quiver",
@@ -1053,7 +1104,8 @@
    "Attack damage": 35.0,
    "Attack speed": 0.15,
    "Ability haste": 5.0
-  }
+  },
+  "art": true
  },
  {
   "id": "ironsong_standard",
@@ -1083,7 +1135,8 @@
    "Health": 300.0,
    "Armour": 25.0,
    "Magic resist": 25.0
-  }
+  },
+  "art": true
  },
  {
   "id": "mindspring_chalice",
@@ -1110,7 +1163,8 @@
    "Ability power": 40.0,
    "Mana regen": 5.0,
    "Ability haste": 10.0
-  }
+  },
+  "art": true
  },
  {
   "id": "solace_reliquary",
@@ -1137,7 +1191,8 @@
    "Ability power": 30.0,
    "Magic resist": 20.0,
    "Health regen": 4.0
-  }
+  },
+  "art": true
  },
  {
   "id": "ironhide_plating",
@@ -1168,7 +1223,8 @@
    "Armour": 40.0,
    "Health regen": 8.0,
    "Thorns": 0.15
-  }
+  },
+  "art": true
  },
  {
   "id": "stormcallers_crown",
@@ -1195,7 +1251,8 @@
    "Ability power": 115.0,
    "Mana regen": 5.0,
    "Ability haste": 20.0
-  }
+  },
+  "art": true
  },
  {
   "id": "tallybrand",
@@ -1228,7 +1285,8 @@
    "On-hit magic": 25.0,
    "Cull chance": 0.25,
    "Cull bonus": 200.0
-  }
+  },
+  "art": true
  },
  {
   "id": "reavers_cleaver",
@@ -1254,7 +1312,8 @@
    "Attack damage": 70.0,
    "Attack speed": 0.2,
    "Lifesteal": 0.12
-  }
+  },
+  "art": true
  },
  {
   "id": "colossus_heart",
@@ -1279,7 +1338,8 @@
   "stats": {
    "Health": 800.0,
    "Health regen": 10.0
-  }
+  },
+  "art": true
  },
  {
   "id": "sunderers_greatblade",
@@ -1304,7 +1364,8 @@
   "stats": {
    "Attack damage": 85.0,
    "Ability haste": 15.0
-  }
+  },
+  "art": true
  },
  {
   "id": "duskfang_reaver",
@@ -1330,7 +1391,8 @@
    "Attack damage": 65.0,
    "Attack speed": 0.25,
    "Move speed": 0.5
-  }
+  },
+  "art": true
  },
  {
   "id": "emberheart_crucible",
@@ -1355,7 +1417,8 @@
   "stats": {
    "Health": 400.0,
    "Ability power": 110.0
-  }
+  },
+  "art": true
  },
  {
   "id": "oathstone_bastion",
@@ -1381,7 +1444,8 @@
    "Health": 450.0,
    "Magic resist": 65.0,
    "Ability haste": 20.0
-  }
+  },
+  "art": true
  },
  {
   "id": "adamant_vanguard",
@@ -1407,7 +1471,8 @@
    "Health": 500.0,
    "Armour": 70.0,
    "Thorns": 0.12
-  }
+  },
+  "art": true
  },
  {
   "id": "archivists_grimoire",
@@ -1433,7 +1498,8 @@
    "Mana": 600.0,
    "Ability power": 95.0,
    "Ability haste": 30.0
-  }
+  },
+  "art": true
  },
  {
   "id": "tempest_repeater",
@@ -1459,7 +1525,8 @@
    "Attack damage": 45.0,
    "Attack speed": 0.45,
    "Move speed": 0.4
-  }
+  },
+  "art": true
  },
  {
   "id": "rimeglass_aegis",
@@ -1485,7 +1552,8 @@
    "Health": 450.0,
    "Ability power": 90.0,
    "Armour": 30.0
-  }
+  },
+  "art": true
  },
  {
   "id": "wardens_bane",
@@ -1511,7 +1579,8 @@
    "Health": 350.0,
    "Attack damage": 60.0,
    "Armour": 35.0
-  }
+  },
+  "art": true
  },
  {
   "id": "bloodsovereign_maul",
@@ -1537,7 +1606,8 @@
    "Health": 400.0,
    "Attack damage": 75.0,
    "Lifesteal": 0.12
-  }
+  },
+  "art": true
  },
  {
   "id": "voidcallers_diadem",
@@ -1563,7 +1633,8 @@
    "Ability power": 130.0,
    "Magic resist": 30.0,
    "Ability haste": 15.0
-  }
+  },
+  "art": true
  },
  {
   "id": "everbloom_chalice",
@@ -1591,6 +1662,7 @@
    "Health regen": 7.0,
    "Mana regen": 6.0,
    "Ability haste": 20.0
-  }
+  },
+  "art": true
  }
 ]

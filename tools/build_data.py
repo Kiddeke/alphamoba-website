@@ -8,6 +8,7 @@ atlases, and writes:
     data/items.json       every shop item
     data/map.json         the Hushwood's node graph, for the drawn map
     champions/<id>.html   one static page per champion (from the template)
+    assets/img/items/     one 128px portrait per item, copied from the game
 
 Usage:
     python3 tools/build_data.py [path-to-alphamoba-unity]
@@ -31,6 +32,7 @@ SITE = HERE.parent
 UNITY = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else SITE.parent / "alphamoba-unity"
 GAMEDATA = UNITY / "GameData"
 ATLASES = UNITY / "Assets" / "Resources" / "Champions"
+ITEM_ART = UNITY / "Assets" / "Resources" / "Icons" / "art" / "items"
 
 NOT_CHAMPIONS = {"party_dummy", "training_enemy"}
 # Champions whose atlas is not <id>_atlas.png: Wick shares a sheet with
@@ -327,8 +329,14 @@ def main():
         key=lambda i: (i["tier"], i["cost"], i["name"]),
     )
     names = {i["id"]: i["name"] for i in items}
+    art_dir = SITE / "assets" / "img" / "items"
+    art_dir.mkdir(parents=True, exist_ok=True)
     for i in items:
         i["components"] = [{"id": cid, "name": names.get(cid, cid)} for cid in i["components"]]
+        source = ITEM_ART / f"{i['id']}.png"
+        i["art"] = source.exists()
+        if i["art"]:
+            (art_dir / f"{i['id']}.png").write_bytes(source.read_bytes())
 
     (SITE / "data").mkdir(exist_ok=True)
     (SITE / "data" / "champions.json").write_text(json.dumps(roster, indent=1), encoding="utf-8")

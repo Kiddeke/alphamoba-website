@@ -96,9 +96,13 @@
           ? '<p class="item-build">Built from ' + i.components.map(function (c) { return esc(c.name); }).join(" + ") + "</p>"
           : "";
         var active = i.active ? '<p class="item-active">Active — ' + esc(i.active) + (i.active_cooldown ? " (" + fmt(i.active_cooldown) + "s)" : "") + "</p>" : "";
+        var art = i.art
+          ? '<img class="item-icon" src="' + ROOT + 'assets/img/items/' + esc(i.id) + '.png" alt="" width="128" height="128" loading="lazy">'
+          : '<span class="item-icon item-icon-blank" aria-hidden="true">' + esc(i.name.charAt(0)) + "</span>";
         return '<li class="item tier-' + i.tier + ' cat-' + esc(i.category) + '">' +
-          '<div class="item-head"><h3>' + esc(i.name) + '</h3><span class="cost">' + i.cost + "</span></div>" +
-          '<p class="item-cat">' + esc(tierNames[i.tier] || "Tier " + i.tier) + " · " + esc(i.category) + "</p>" +
+          '<div class="item-head">' + art + '<div class="item-title"><h3>' + esc(i.name) + '</h3>' +
+          '<p class="item-cat">' + esc(tierNames[i.tier] || "Tier " + i.tier) + " · " + esc(i.category) + "</p></div>" +
+          '<span class="cost">' + i.cost + "</span></div>" +
           (stats ? '<ul class="item-stats">' + stats + "</ul>" : "") +
           active +
           '<p class="item-desc">' + esc(i.description) + "</p>" + build + "</li>";
@@ -128,6 +132,21 @@
       });
     });
     if (itemSearch) itemSearch.addEventListener("input", renderItems);
+  }
+
+  // ------------------------------------------------------------ screenshots
+  var gallery = document.querySelector("[data-shots]");
+  if (gallery) {
+    fetch(ROOT + "data/shots.json").then(function (r) { return r.json(); }).then(function (shots) {
+      if (!shots || !shots.length) return;
+      gallery.innerHTML = shots.map(function (s) {
+        return '<li class="shot"><a href="' + ROOT + 'assets/img/shots/' + esc(s.file) + '">' +
+          '<img src="' + ROOT + 'assets/img/shots/' + esc(s.file) + '" alt="' + esc(s.alt || s.caption || "") + '" loading="lazy"></a>' +
+          (s.caption ? '<p class="shot-caption">' + esc(s.caption) + "</p>" : "") + "</li>";
+      }).join("");
+      var section = gallery.closest("section");
+      if (section) section.hidden = false;
+    }).catch(function () {});
   }
 
   // ------------------------------------------------------------ the Hushwood map
