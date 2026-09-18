@@ -22,7 +22,6 @@
   if (roster) {
     var filters = document.querySelectorAll("[data-class-filter]");
     var search = document.querySelector("[data-roster-search]");
-    var portraits = { oryssa: ROOT + "assets/img/oryssa.png" };
     var all = [];
     var activeClass = "All";
     var homeLimit = +roster.getAttribute("data-limit") || 0;
@@ -38,8 +37,8 @@
       if (pick.length) shown = pick.map(function (id) { return shown.filter(function (c) { return c.id === id; })[0]; }).filter(Boolean);
       if (homeLimit) shown = shown.slice(0, homeLimit);
       roster.innerHTML = shown.map(function (c) {
-        var face = portraits[c.id]
-          ? '<img src="' + portraits[c.id] + '" alt="" loading="lazy">'
+        var face = c.portrait
+          ? '<img src="' + ROOT + 'assets/img/portraits/' + esc(c.id) + '.png" alt="" loading="lazy">'
           : esc(c.name.charAt(0));
         return '<li><a class="roster-tile" href="' + ROOT + 'champions/' + c.id + '.html" style="--accent:' + esc(c.colour) + '">' +
           '<div class="face" aria-hidden="true">' + face + '<span class="cls">' + esc(c.class) + '</span></div>' +

@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{name}}, {{title}} · Wychwood</title>
 <meta name="description" content="{{name}}, {{title}}. {{class}} · {{passive_name}}: {{passive_blurb}}">
+<meta property="og:title" content="{{name}}, {{title}}">
+<meta property="og:image" content="{{og_image}}">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,7 @@
   <section class="champ-hero">
     <div class="champ-hero-wash" aria-hidden="true"></div>
     <div class="wrap champ-hero-inner">
-      <div class="champ-sigil" aria-hidden="true">{{initial}}</div>
+      <div class="champ-sigil">{{sigil}}</div>
       <div>
         <p class="eyebrow"><a href="../champions/">The roster</a> · {{class}}</p>
         <h1 class="champ-name">{{name}}</h1>

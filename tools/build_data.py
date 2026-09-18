@@ -10,6 +10,8 @@ atlases, and writes:
     champions/<id>.html   one static page per champion (from the template)
     assets/img/items/     one 128px medallion per item: the game's own art on the
                           plate the in-game shop paints behind it (medallion.py)
+    assets/img/abilities/ the ability art the HUD shows, one per slot per champion
+    assets/img/portraits/ every painted champion portrait the game has so far
 
 Usage:
     python3 tools/build_data.py [path-to-alphamoba-unity]
@@ -36,6 +38,8 @@ UNITY = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else SITE.parent / "alp
 GAMEDATA = UNITY / "GameData"
 ATLASES = UNITY / "Assets" / "Resources" / "Champions"
 ITEM_ART = UNITY / "Assets" / "Resources" / "Icons" / "art" / "items"
+ABILITY_ART = UNITY / "Assets" / "Resources" / "Icons" / "art" / "abilities"
+PORTRAITS = UNITY / "Assets" / "Resources" / "Portraits"
 
 NOT_CHAMPIONS = {"party_dummy", "training_enemy"}
 # Champions whose atlas is not <id>_atlas.png: Wick shares a sheet with
@@ -175,6 +179,12 @@ def champion(path):
             "name": f.get(f"{slot}_name", ""),
             "description": f.get(f"{slot}_description", ""),
         }
+        icon = f.get(f"{slot}_icon", "")
+        if icon and (ABILITY_ART / f"{icon}.png").exists():
+            entry["icon"] = icon
+            (SITE / "assets" / "img" / "abilities").mkdir(parents=True, exist_ok=True)
+            (SITE / "assets" / "img" / "abilities" / f"{icon}.png").write_bytes(
+                (ABILITY_ART / f"{icon}.png").read_bytes())
         if slot != "passive":
             cooldown = num(f, f"{slot}_cooldown")
             cost = num(f, f"{slot}_mana_cost")
@@ -187,6 +197,11 @@ def champion(path):
                 entry["range"] = rng
         kit.append(entry)
     resource = f.get("resource_kind", "Mana")
+    portrait = (PORTRAITS / f"{cid}.png").exists()
+    if portrait:
+        (SITE / "assets" / "img" / "portraits").mkdir(parents=True, exist_ok=True)
+        (SITE / "assets" / "img" / "portraits" / f"{cid}.png").write_bytes(
+            (PORTRAITS / f"{cid}.png").read_bytes())
     return {
         "id": cid,
         "name": f.get("display_name", cid.title()),
@@ -194,6 +209,7 @@ def champion(path):
         "class": f.get("champion_class", ""),
         "resource": resource,
         "ranged": bool(f.get("ranged_attack", False)),
+        "portrait": portrait,
         "colour": COLOUR_OVERRIDE.get(cid)
             or main_colour(ATLASES / ATLAS_FILE.get(cid, f"{cid}_atlas.png")),
         "stats": {
@@ -281,9 +297,15 @@ def champion_page(c, roster, template):
             meta.append(f"{fmt(a['cooldown'])}s cooldown")
         if a.get("range"):
             meta.append(f"range {fmt(a['range'])}")
+        if a.get("icon"):
+            key = (f'<span class="ability-cell"><span class="ability-icon">'
+                   f'<img src="../assets/img/abilities/{a["icon"]}.png" alt="" width="128" height="128"></span>'
+                   f'<b class="ability-key-badge">{a["slot"]}</b></span>')
+        else:
+            key = f'<span class="ability-key">{a["slot"]}</span>'
         kit_html.append(
             f'<li class="ability">'
-            f'<span class="ability-key">{a["slot"]}</span>'
+            f'{key}'
             f'<div><h3>{esc(a["name"])}</h3>'
             + (f'<p class="ability-meta">{" · ".join(meta)}</p>' if meta else "")
             + f'<p>{esc(a["description"])}</p></div></li>'
@@ -311,7 +333,10 @@ def champion_page(c, roster, template):
             .replace("{{class}}", esc(c["class"]))
             .replace("{{resource}}", esc(c["resource"] if c["resource"] not in ("None", "") else "No resource"))
             .replace("{{colour}}", c["colour"])
-            .replace("{{initial}}", esc(c["name"][:1]))
+            .replace("{{sigil}}", (f'<img src="../assets/img/portraits/{c["id"]}.png" alt="Painted portrait of {esc(c["name"])}" width="512" height="512">'
+                                   if c["portrait"] else esc(c["name"][:1])))
+            .replace("{{og_image}}", (f'https://alphamoba.com/assets/img/portraits/{c["id"]}.png'
+                                      if c["portrait"] else "https://alphamoba.com/assets/img/portraits/oryssa.png"))
             .replace("{{kit}}", "".join(kit_html))
             .replace("{{stats}}", stats_html)
             .replace("{{related}}", related)

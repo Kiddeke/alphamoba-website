@@ -38,7 +38,7 @@ script: Wick reads the master's sheet of the Wick-and-Tatters pair, and
 Rime's frost is named by hand because that model ships with its texture
 embedded.
 
-`assets/img/oryssa.png` is the game's own painted portrait. `assets/img/items/`
+`assets/img/portraits/` holds every painted champion portrait the game has so far, copied by the generator. `assets/img/items/`
 holds the seventy-two item medallions: the game's staged CraftPix icon art
 (`Assets/Resources/Icons/art/items/`) painted onto the same plate the
 in-game shop draws behind it. `tools/medallion.py` is a port of the game's
