@@ -2262,7 +2262,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b25e4a",
   "stats": {
