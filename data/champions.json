@@ -1539,7 +1539,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29159",
   "stats": {
