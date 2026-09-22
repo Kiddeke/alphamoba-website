@@ -941,7 +941,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b28759",
   "stats": {
