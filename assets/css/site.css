@@ -160,6 +160,8 @@ small { color: var(--faded); }
 .roster-tile .who { padding: 12px 14px 14px; border-top: 3px solid var(--accent); }
 .roster-tile .who strong { display: block; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; line-height: 1.1; }
 .roster-tile .who span { color: var(--faded); font-size: 0.86rem; }
+.roster-tile .who .pending { display: block; margin-top: 4px; font-style: normal; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+.ability.ability-pending { grid-template-columns: 1fr; border-style: dashed; }
 .roster-empty { color: var(--faded); padding: 40px 0; text-align: center; }
 
 /* champion page */

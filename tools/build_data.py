@@ -105,12 +105,17 @@ def decode_png(path):
     return width, height, bytes(out)
 
 
-def main_colour(atlas_path, step=8):
+def main_colour(atlas_path, step=8, fallback=None):
     """The champion's own colour, as the game's portrait wash picks it: the
     heaviest hue bin (with its neighbours) of the saturated, mid-value
-    texels; a steel grey when nothing saturated stands out."""
+    texels; a steel grey when nothing saturated stands out. A champion whose
+    model ships as a .glb has no atlas file, so their painted portrait is
+    read instead when one exists."""
     if not atlas_path.exists():
-        return "#4d5259"
+        if fallback is not None and fallback.exists():
+            atlas_path = fallback
+        else:
+            return "#4d5259"
     width, height, px = decode_png(atlas_path)
     bins = 24
     weight = [0.0] * bins
@@ -210,8 +215,12 @@ def champion(path):
         "resource": resource,
         "ranged": bool(f.get("ranged_attack", False)),
         "portrait": portrait,
+        # A champion whose every slot is still "Unbriefed" has a body and a
+        # portrait but no kit yet; the pages say so instead of listing it.
+        "pending": all(a["name"] == "Unbriefed" for a in kit),
         "colour": COLOUR_OVERRIDE.get(cid)
-            or main_colour(ATLASES / ATLAS_FILE.get(cid, f"{cid}_atlas.png")),
+            or main_colour(ATLASES / ATLAS_FILE.get(cid, f"{cid}_atlas.png"),
+                           fallback=PORTRAITS / f"{cid}.png"),
         "stats": {
             "health": num(f, "max_health"),
             "health_growth": num(f, "health_growth"),
@@ -321,6 +330,14 @@ def champion_page(c, roster, template):
         ("Magic resist", fmt(s["magic_resist"])),
         ("Move speed", fmt(s["move_speed"])),
     ]
+    if c["pending"]:
+        kit_html = [
+            '<li class="ability ability-pending"><div>'
+            f'<h3>{esc(c["name"])} has no kit yet</h3>'
+            '<p>The model, the portrait and the animations are in the game. The design '
+            'is not. Every slot on the sheet still reads "Unbriefed", and the page will '
+            'fill in when the brief lands.</p></div></li>'
+        ]
     stats_html = "".join(f"<div class='stat'><dt>{esc(k)}</dt><dd>{v}</dd></div>" for k, v in stat_rows)
     related = "".join(
         f'<a class="chip" href="{o["id"]}.html" style="--accent:{o["colour"]}">{esc(o["name"])}</a>'

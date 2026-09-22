@@ -42,7 +42,8 @@
           : esc(c.name.charAt(0));
         return '<li><a class="roster-tile" href="' + ROOT + 'champions/' + c.id + '.html" style="--accent:' + esc(c.colour) + '">' +
           '<div class="face" aria-hidden="true">' + face + '<span class="cls">' + esc(c.class) + '</span></div>' +
-          '<div class="who"><strong>' + esc(c.name) + '</strong><span>' + esc(c.title) + '</span></div></a></li>';
+          '<div class="who"><strong>' + esc(c.name) + '</strong><span>' + esc(c.title) + '</span>' +
+          (c.pending ? '<em class="pending">Kit in design</em>' : '') + '</div></a></li>';
       }).join("") || '<li class="roster-empty">No champion answers to that.</li>';
       var count = document.querySelector("[data-roster-count]");
       if (count) count.textContent = shown.length === all.length ? all.length + " champions" : shown.length + " of " + all.length;

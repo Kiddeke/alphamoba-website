@@ -7,6 +7,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#9859b2",
   "stats": {
    "health": 590.0,
@@ -73,6 +74,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#5976b2",
   "stats": {
    "health": 680.0,
@@ -138,6 +140,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b29959",
   "stats": {
    "health": 645.0,
@@ -204,6 +207,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b29359",
   "stats": {
    "health": 655.0,
@@ -270,6 +274,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b29659",
   "stats": {
    "health": 570.0,
@@ -335,6 +340,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#5991b2",
   "stats": {
    "health": 645.0,
@@ -401,6 +407,7 @@
   "resource": "None",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b29a59",
   "stats": {
    "health": 610.0,
@@ -462,6 +469,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b29659",
   "stats": {
    "health": 665.0,
@@ -527,6 +535,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b27c59",
   "stats": {
    "health": 560.0,
@@ -593,6 +602,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#596bb2",
   "stats": {
    "health": 630.0,
@@ -658,6 +668,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b29259",
   "stats": {
    "health": 560.0,
@@ -715,6 +726,68 @@
   ]
  },
  {
+  "id": "ketta",
+  "name": "Ketta",
+  "title": "The One Spear",
+  "class": "Fighter",
+  "resource": "None",
+  "ranged": false,
+  "portrait": true,
+  "pending": false,
+  "colour": "#b26842",
+  "stats": {
+   "health": 620,
+   "health_growth": 100,
+   "resource_max": 0,
+   "attack": 65,
+   "attack_growth": 3.6,
+   "attack_range": 2,
+   "attack_cooldown": 1.47,
+   "armor": 31,
+   "magic_resist": 32,
+   "move_speed": 6.3
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "One Spear",
+    "description": "Ketta has one trident. Planted, it is a visible object anyone can stand on; while it is planted her attacks are fists at 125 range for 50% damage and she cannot cast Q. Walking onto it picks it up. Spear hits on champions add a Notch (max 5) that the throw spends: +8% damage and +0.1s pin each.",
+    "icon": "ketta_p"
+   },
+   {
+    "slot": "Q",
+    "name": "Thrown Spear",
+    "description": "Throw the trident 800 units, stopping on the first enemy champion: physical damage and a pin (0.75s +0.15s per rank) where they stand. The spear plants at their feet, or at the end of the line if it hits nothing.",
+    "icon": "ketta_q",
+    "cooldown": 12,
+    "range": 8
+   },
+   {
+    "slot": "W",
+    "name": "Run Down",
+    "description": "Gain 30% move speed for 2.5s. If the spear is planted the speed is doubled toward it, and reaching it during the buff refunds half of W's cooldown.",
+    "icon": "ketta_w",
+    "cooldown": 16
+   },
+   {
+    "slot": "E",
+    "name": "Call It Back",
+    "description": "The planted trident tears free and flies back to her hand from up to 900 units, hitting everyone on the line for physical damage and knocking them aside; a champion still pinned by it takes 40% more.",
+    "icon": "ketta_e",
+    "cooldown": 18,
+    "range": 9
+   },
+   {
+    "slot": "R",
+    "name": "The Long Throw",
+    "description": "After a 0.75s wind-up, hurl the trident in an arc up to 1400 units. It plants where it lands and pins every enemy champion within 250 for 1.5s with physical damage, doubled on the champion it lands on. For 8s the planted spear is a marker both teams see through fog, and W toward it is tripled.",
+    "icon": "ketta_r",
+    "cooldown": 110,
+    "range": 14
+   }
+  ]
+ },
+ {
   "id": "liss",
   "name": "Liss",
   "title": "The Battlefield Seamstress",
@@ -722,6 +795,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b26e59",
   "stats": {
    "health": 550.0,
@@ -787,6 +861,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#59b299",
   "stats": {
    "health": 660.0,
@@ -852,6 +927,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b28759",
   "stats": {
    "health": 630.0,
@@ -915,6 +991,7 @@
   "resource": "Candle",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b29459",
   "stats": {
    "health": 670.0,
@@ -981,6 +1058,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b28a59",
   "stats": {
    "health": 650.0,
@@ -1047,6 +1125,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#8eb259",
   "stats": {
    "health": 620.0,
@@ -1113,6 +1192,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b28659",
   "stats": {
    "health": 640.0,
@@ -1175,6 +1255,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b29259",
   "stats": {
    "health": 600.0,
@@ -1240,6 +1321,7 @@
   "resource": "Rage",
   "ranged": false,
   "portrait": true,
+  "pending": false,
   "colour": "#b27f59",
   "stats": {
    "health": 640.0,
@@ -1300,6 +1382,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b27959",
   "stats": {
    "health": 590.0,
@@ -1366,6 +1449,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b2a559",
   "stats": {
    "health": 545.0,
@@ -1432,6 +1516,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b29159",
   "stats": {
    "health": 610.0,
@@ -1492,6 +1577,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#8ccfe3",
   "stats": {
    "health": 610.0,
@@ -1558,6 +1644,7 @@
   "resource": "Energy",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b28159",
   "stats": {
    "health": 585.0,
@@ -1621,6 +1708,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b29459",
   "stats": {
    "health": 480.0,
@@ -1683,6 +1771,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
+  "pending": false,
   "colour": "#cdb167",
   "stats": {
    "health": 640.0,
@@ -1748,6 +1837,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#5971b2",
   "stats": {
    "health": 640.0,
@@ -1814,6 +1904,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#5973b2",
   "stats": {
    "health": 670.0,
@@ -1880,6 +1971,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#5971b2",
   "stats": {
    "health": 570.0,
@@ -1945,6 +2037,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#b2596b",
   "stats": {
    "health": 585.0,
@@ -2003,6 +2096,66 @@
   ]
  },
  {
+  "id": "vrass",
+  "name": "Vrass",
+  "title": "The Ant King",
+  "class": "Tank",
+  "resource": "None",
+  "ranged": false,
+  "portrait": true,
+  "pending": true,
+  "colour": "#5978b2",
+  "stats": {
+   "health": 640,
+   "health_growth": 104,
+   "resource_max": 0,
+   "attack": 62,
+   "attack_growth": 3.2,
+   "attack_range": 2,
+   "attack_cooldown": 1.6,
+   "armor": 36,
+   "magic_resist": 32,
+   "move_speed": 5.8
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "Unbriefed",
+    "description": "Vrass has no kit yet: a body, an idle and a walk. His abilities land with his brief.",
+    "icon": "vrass_p"
+   },
+   {
+    "slot": "Q",
+    "name": "Unbriefed",
+    "description": "Not designed yet.",
+    "icon": "vrass_q",
+    "cooldown": 10,
+    "range": 2
+   },
+   {
+    "slot": "W",
+    "name": "Unbriefed",
+    "description": "Not designed yet.",
+    "icon": "vrass_w",
+    "cooldown": 10
+   },
+   {
+    "slot": "E",
+    "name": "Unbriefed",
+    "description": "Not designed yet.",
+    "icon": "vrass_e",
+    "cooldown": 10
+   },
+   {
+    "slot": "R",
+    "name": "Unbriefed",
+    "description": "Not designed yet.",
+    "icon": "vrass_r",
+    "cooldown": 100
+   }
+  ]
+ },
+ {
   "id": "wick",
   "name": "Wick & Tatters",
   "title": "The Last Hunt",
@@ -2010,6 +2163,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b29059",
   "stats": {
    "health": 560.0,
@@ -2074,6 +2228,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": false,
+  "pending": false,
   "colour": "#b25e4a",
   "stats": {
    "health": 585.0,
@@ -2140,6 +2295,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "pending": false,
   "colour": "#59b28a",
   "stats": {
    "health": 545.0,
@@ -2194,6 +2350,68 @@
     "cooldown": 120.0,
     "cost": 100.0,
     "range": 7.2
+   }
+  ]
+ },
+ {
+  "id": "zax",
+  "name": "Zax",
+  "title": "The Unblinking",
+  "class": "Assassin",
+  "resource": "None",
+  "ranged": false,
+  "portrait": true,
+  "pending": false,
+  "colour": "#5993b2",
+  "stats": {
+   "health": 590,
+   "health_growth": 96,
+   "resource_max": 0,
+   "attack": 63,
+   "attack_growth": 3.4,
+   "attack_range": 1.75,
+   "attack_cooldown": 1.43,
+   "armor": 28,
+   "magic_resist": 32,
+   "move_speed": 6.6
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "Four Eyes",
+    "description": "Every basic attack and ability that hits an enemy champion marks them for 8s. Marked champions are revealed to Zax alone, through fog, brush and invisibility. One eye of the mask lights per marked champion.",
+    "icon": "zax_p"
+   },
+   {
+    "slot": "Q",
+    "name": "Drawn Edge",
+    "description": "A short slash on one enemy within 250 units: physical damage. Against a champion, Zax steals 20% of their move speed for 2s and heals for 30% of the damage dealt.",
+    "icon": "zax_q",
+    "cooldown": 7,
+    "range": 2.5
+   },
+   {
+    "slot": "W",
+    "name": "Sword Vault",
+    "description": "Plant the katana and vault onto it, hopping up to 350 units, then slam down: magic damage in a 250-unit ring, 60% more within the inner 100 units. Untargetable for the 0.4s of the hop.",
+    "icon": "zax_w",
+    "cooldown": 14,
+    "range": 3.5
+   },
+   {
+    "slot": "E",
+    "name": "Long Edge",
+    "description": "After a 0.35s wind-up the blade extends to twice its length and sweeps a 150-degree arc out to 450 units: physical damage, and enemies hit are rooted for 1s (+0.15s per rank).",
+    "icon": "zax_e",
+    "cooldown": 15,
+    "range": 4.5
+   },
+   {
+    "slot": "R",
+    "name": "Undertow",
+    "description": "Sink into a pool of shadow for up to 5s: untargetable, invisible, unable to act, moving at 70% speed. Recast to surface early. On surfacing: +50% move speed for 4s, and for those 4s every basic attack takes 1s off all of your ability cooldowns.",
+    "icon": "zax_r",
+    "cooldown": 100
    }
   ]
  }
