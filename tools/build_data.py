@@ -11,7 +11,9 @@ atlases, and writes:
     assets/img/items/     one 128px medallion per item: the game's own art on the
                           plate the in-game shop paints behind it (medallion.py)
     assets/img/abilities/ the ability art the HUD shows, one per slot per champion
-    assets/img/portraits/ every painted champion portrait the game has so far
+    assets/img/portraits/ every champion's portrait: the painting where one
+                          exists, otherwise a bake from their model by
+                          bake_portraits.mjs (needs node on the PATH)
 
 Usage:
     python3 tools/build_data.py [path-to-alphamoba-unity]
@@ -25,7 +27,9 @@ import colorsys
 import json
 import os
 import re
+import shutil
 import struct
+import subprocess
 import sys
 import zlib
 from pathlib import Path
@@ -215,6 +219,7 @@ def champion(path):
         "resource": resource,
         "ranged": bool(f.get("ranged_attack", False)),
         "portrait": portrait,
+        "portrait_kind": "painted" if portrait else None,
         # A champion whose every slot is still "Unbriefed" has a body and a
         # portrait but no kit yet; the pages say so instead of listing it.
         "pending": all(a["name"] == "Unbriefed" for a in kit),
@@ -350,7 +355,11 @@ def champion_page(c, roster, template):
             .replace("{{class}}", esc(c["class"]))
             .replace("{{resource}}", esc(c["resource"] if c["resource"] not in ("None", "") else "No resource"))
             .replace("{{colour}}", c["colour"])
-            .replace("{{sigil}}", (f'<img src="../assets/img/portraits/{c["id"]}.png" alt="Painted portrait of {esc(c["name"])}" width="512" height="512">'
+            .replace("{{sigil}}", (f'<img src="../assets/img/portraits/{c["id"]}.png" alt="'
+                                   + ("Painted portrait of " if c["portrait_kind"] == "painted"
+                                      else "Portrait of ") + esc(c["name"])
+                                   + ('' if c["portrait_kind"] == "painted" else ', rendered from the in-game model')
+                                   + '" width="512" height="512">'
                                    if c["portrait"] else esc(c["name"][:1])))
             .replace("{{og_image}}", (f'https://alphamoba.com/assets/img/portraits/{c["id"]}.png'
                                       if c["portrait"] else "https://alphamoba.com/assets/img/portraits/oryssa.png"))
@@ -361,6 +370,38 @@ def champion_page(c, roster, template):
             .replace("{{passive_blurb}}", esc(c["kit"][0]["description"][:160])))
 
 
+# The game frames its bakes at Margin 0.72, the face nine tenths of a 192px
+# tile. The site shows portraits at 512 beside painted head-and-shoulders
+# busts, so the bakes are framed a little wider to sit with them.
+BAKE_MARGIN = "1.15"
+
+
+def bake_portraits(roster):
+    """Renders a portrait from the model for every champion nobody has
+    painted, the way ChampionPortrait does in the game. A bake that cannot be
+    made (a model whose texture the codecs cannot read) leaves the champion on
+    the lettered tile, and says so."""
+    wanted = [c for c in roster if not c["portrait"]]
+    if not wanted:
+        return
+    node = shutil.which("node")
+    out = SITE / "assets" / "img" / "portraits"
+    if node is None:
+        print(f"node not found: {len(wanted)} champions keep their lettered tiles")
+    else:
+        result = subprocess.run(
+            [node, str(HERE / "bake_portraits.mjs"), "--unity", str(UNITY), "--out", str(out),
+             "--margin", BAKE_MARGIN, *[c["id"] for c in wanted]],
+            capture_output=True, text=True)
+        for line in (result.stdout + result.stderr).splitlines():
+            if "skipped" in line or "no model" in line or "baked" not in line:
+                print("  " + line)
+    for c in wanted:
+        if (out / f"{c['id']}.png").exists():
+            c["portrait"] = True
+            c["portrait_kind"] = "bake"
+
+
 def main():
     if not GAMEDATA.is_dir():
         sys.exit(f"no GameData at {GAMEDATA}; pass the alphamoba-unity path")
@@ -369,6 +410,7 @@ def main():
          if p.stem not in NOT_CHAMPIONS),
         key=lambda c: c["name"],
     )
+    bake_portraits(roster)
     items = sorted(
         (item(p) for p in sorted((GAMEDATA / "items").glob("*.json"))),
         key=lambda i: (i["tier"], i["cost"], i["name"]),

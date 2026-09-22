@@ -38,7 +38,17 @@ script: Wick reads the master's sheet of the Wick-and-Tatters pair, and
 Rime's frost is named by hand because that model ships with its texture
 embedded.
 
-`assets/img/portraits/` holds every painted champion portrait the game has so far, copied by the generator. `assets/img/items/`
+`assets/img/portraits/` holds a portrait for every champion: the painting
+where one exists under the game's `Resources/Portraits`, otherwise a bake
+from the champion's own model. `tools/bake_portraits.mjs` is the game's
+`ChampionPortrait` outside Unity: it finds the head through the rig's skin
+weights, frames it face-on, lights it with the same key and fill, sets it on
+the champion-colour wash and inks the outline. It needs `node` on the PATH
+when the generator runs; the finished PNGs are committed, so the deployed
+site needs nothing. The bakes are framed slightly wider than the game's own
+(margin 1.15 against 0.72) so they sit beside the painted busts. A champion
+whose model texture is a JPEG (Rime's GLB) cannot be baked by the PNG-only
+codecs and keeps a lettered tile until painted. `assets/img/items/`
 holds the seventy-two item medallions: the game's staged CraftPix icon art
 (`Assets/Resources/Icons/art/items/`) painted onto the same plate the
 in-game shop draws behind it. `tools/medallion.py` is a port of the game's

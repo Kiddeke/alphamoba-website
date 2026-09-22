@@ -6,7 +6,8 @@
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#9859b2",
   "stats": {
@@ -73,7 +74,8 @@
   "class": "Tank",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#5976b2",
   "stats": {
@@ -139,7 +141,8 @@
   "class": "Fighter",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29959",
   "stats": {
@@ -206,7 +209,8 @@
   "class": "Support",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29359",
   "stats": {
@@ -273,7 +277,8 @@
   "class": "Marksman",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29659",
   "stats": {
@@ -339,7 +344,8 @@
   "class": "Tank",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#5991b2",
   "stats": {
@@ -406,7 +412,8 @@
   "class": "Mage",
   "resource": "None",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29a59",
   "stats": {
@@ -468,7 +475,8 @@
   "class": "Tank",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29659",
   "stats": {
@@ -534,7 +542,8 @@
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b27c59",
   "stats": {
@@ -601,7 +610,8 @@
   "class": "Fighter",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#596bb2",
   "stats": {
@@ -667,7 +677,8 @@
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29259",
   "stats": {
@@ -733,6 +744,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": true,
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b26842",
   "stats": {
@@ -794,7 +806,8 @@
   "class": "Support",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b26e59",
   "stats": {
@@ -860,7 +873,8 @@
   "class": "Support",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#59b299",
   "stats": {
@@ -926,7 +940,8 @@
   "class": "Fighter",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b28759",
   "stats": {
@@ -990,7 +1005,8 @@
   "class": "Fighter",
   "resource": "Candle",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29459",
   "stats": {
@@ -1057,7 +1073,8 @@
   "class": "Fighter",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b28a59",
   "stats": {
@@ -1124,7 +1141,8 @@
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#8eb259",
   "stats": {
@@ -1191,7 +1209,8 @@
   "class": "Assassin",
   "resource": "None",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b28659",
   "stats": {
@@ -1254,7 +1273,8 @@
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29259",
   "stats": {
@@ -1321,6 +1341,7 @@
   "resource": "Rage",
   "ranged": false,
   "portrait": true,
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b27f59",
   "stats": {
@@ -1381,7 +1402,8 @@
   "class": "Tank",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b27959",
   "stats": {
@@ -1448,7 +1470,8 @@
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b2a559",
   "stats": {
@@ -1515,7 +1538,8 @@
   "class": "Fighter",
   "resource": "None",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29159",
   "stats": {
@@ -1577,6 +1601,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": false,
+  "portrait_kind": null,
   "pending": false,
   "colour": "#8ccfe3",
   "stats": {
@@ -1643,7 +1668,8 @@
   "class": "Assassin",
   "resource": "Energy",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b28159",
   "stats": {
@@ -1707,7 +1733,8 @@
   "class": "Fighter",
   "resource": "None",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29459",
   "stats": {
@@ -1771,6 +1798,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#cdb167",
   "stats": {
@@ -1836,7 +1864,8 @@
   "class": "Tank",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#5971b2",
   "stats": {
@@ -1903,7 +1932,8 @@
   "class": "Tank",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#5973b2",
   "stats": {
@@ -1970,7 +2000,8 @@
   "class": "Marksman",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#5971b2",
   "stats": {
@@ -2036,7 +2067,8 @@
   "class": "Assassin",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b2596b",
   "stats": {
@@ -2103,6 +2135,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": true,
+  "portrait_kind": "painted",
   "pending": true,
   "colour": "#5978b2",
   "stats": {
@@ -2162,7 +2195,8 @@
   "class": "Marksman",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b29059",
   "stats": {
@@ -2227,7 +2261,8 @@
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#b25e4a",
   "stats": {
@@ -2294,7 +2329,8 @@
   "class": "Support",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
+  "portrait": true,
+  "portrait_kind": "bake",
   "pending": false,
   "colour": "#59b28a",
   "stats": {
@@ -2361,6 +2397,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": true,
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#5993b2",
   "stats": {
