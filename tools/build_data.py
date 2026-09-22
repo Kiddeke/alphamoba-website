@@ -56,7 +56,7 @@ SLOTS = ("passive", "q", "w", "e", "r")
 
 # ---------------------------------------------------------------- PNG decode
 def decode_png(path):
-    """Return (width, height, rgba bytes) for an 8-bit RGBA, non-interlaced PNG."""
+    """Return (width, height, rgba bytes) for an 8-bit RGB or RGBA, non-interlaced PNG."""
     data = path.read_bytes()
     assert data[:8] == b"\x89PNG\r\n\x1a\n", f"{path}: not a PNG"
     pos = 8
@@ -69,14 +69,16 @@ def decode_png(path):
         pos += 12 + length
         if kind == b"IHDR":
             width, height, depth, colour, _, _, interlace = struct.unpack(">IIBBBBB", body)
-            if depth != 8 or colour != 6 or interlace != 0:
-                raise ValueError(f"{path}: only 8-bit RGBA non-interlaced PNGs are read")
+            if depth != 8 or colour not in (2, 6) or interlace != 0:
+                raise ValueError(f"{path}: only 8-bit RGB/RGBA non-interlaced PNGs are read")
+            channels = 3 if colour == 2 else 4
         elif kind == b"IDAT":
             idat.append(body)
         elif kind == b"IEND":
             break
     raw = zlib.decompress(b"".join(idat))
-    stride = width * 4
+    bpp = channels
+    stride = width * bpp
     out = bytearray(width * height * 4)
     prev = bytearray(stride)
     src = 0
@@ -86,27 +88,60 @@ def decode_png(path):
         line = bytearray(raw[src:src + stride])
         src += stride
         if filt == 1:
-            for i in range(4, stride):
-                line[i] = (line[i] + line[i - 4]) & 255
+            for i in range(bpp, stride):
+                line[i] = (line[i] + line[i - bpp]) & 255
         elif filt == 2:
             for i in range(stride):
                 line[i] = (line[i] + prev[i]) & 255
         elif filt == 3:
             for i in range(stride):
-                left = line[i - 4] if i >= 4 else 0
+                left = line[i - bpp] if i >= bpp else 0
                 line[i] = (line[i] + ((left + prev[i]) >> 1)) & 255
         elif filt == 4:
             for i in range(stride):
-                a = line[i - 4] if i >= 4 else 0
+                a = line[i - bpp] if i >= bpp else 0
                 b = prev[i]
-                c = prev[i - 4] if i >= 4 else 0
+                c = prev[i - bpp] if i >= bpp else 0
                 p = a + b - c
                 pa, pb, pc = abs(p - a), abs(p - b), abs(p - c)
                 pred = a if (pa <= pb and pa <= pc) else (b if pb <= pc else c)
                 line[i] = (line[i] + pred) & 255
-        out[row * stride:(row + 1) * stride] = line
+        if channels == 4:
+            out[row * width * 4:(row + 1) * width * 4] = line
+        else:
+            o = row * width * 4
+            for x in range(width):
+                out[o + x * 4:o + x * 4 + 3] = line[x * 3:x * 3 + 3]
+                out[o + x * 4 + 3] = 255
         prev = line
     return width, height, bytes(out)
+
+
+PORTRAIT_SIZE = 512
+
+
+def portrait_for_site(path):
+    """A painting at the size the site serves. Paintings arrive at whatever
+    size they were made (Azra's is 1024 square); anything above 512 is
+    box-filtered down so a roster of them stays light to load."""
+    width, height, px = decode_png(path)
+    if max(width, height) <= PORTRAIT_SIZE:
+        return path.read_bytes()
+    factor = max(width, height) // PORTRAIT_SIZE
+    ow, oh = width // factor, height // factor
+    out = bytearray(ow * oh * 4)
+    n = factor * factor
+    for y in range(oh):
+        for x in range(ow):
+            acc = [0, 0, 0, 0]
+            for dy in range(factor):
+                row = ((y * factor + dy) * width + x * factor) * 4
+                for dx in range(factor):
+                    i = row + dx * 4
+                    acc[0] += px[i]; acc[1] += px[i + 1]; acc[2] += px[i + 2]; acc[3] += px[i + 3]
+            o = (y * ow + x) * 4
+            out[o] = acc[0] // n; out[o + 1] = acc[1] // n; out[o + 2] = acc[2] // n; out[o + 3] = acc[3] // n
+    return encode_png(ow, oh, bytes(out))
 
 
 def main_colour(atlas_path, step=8, fallback=None):
@@ -210,7 +245,7 @@ def champion(path):
     if portrait:
         (SITE / "assets" / "img" / "portraits").mkdir(parents=True, exist_ok=True)
         (SITE / "assets" / "img" / "portraits" / f"{cid}.png").write_bytes(
-            (PORTRAITS / f"{cid}.png").read_bytes())
+            portrait_for_site(PORTRAITS / f"{cid}.png"))
     return {
         "id": cid,
         "name": f.get("display_name", cid.title()),
