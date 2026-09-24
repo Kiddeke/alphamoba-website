@@ -746,7 +746,7 @@
   "portrait": true,
   "portrait_kind": "painted",
   "pending": false,
-  "colour": "#b26842",
+  "colour": "#b25c32",
   "stats": {
    "health": 620,
    "health_growth": 100,
