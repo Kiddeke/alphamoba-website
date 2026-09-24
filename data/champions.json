@@ -746,7 +746,7 @@
   "portrait": true,
   "portrait_kind": "painted",
   "pending": false,
-  "colour": "#b25c32",
+  "colour": "#b25d33",
   "stats": {
    "health": 620,
    "health_growth": 100,
@@ -2137,7 +2137,7 @@
   "portrait": true,
   "portrait_kind": "painted",
   "pending": true,
-  "colour": "#5978b2",
+  "colour": "#425eb2",
   "stats": {
    "health": 640,
    "health_growth": 104,
@@ -2399,7 +2399,7 @@
   "portrait": true,
   "portrait_kind": "painted",
   "pending": false,
-  "colour": "#5993b2",
+  "colour": "#5544b2",
   "stats": {
    "health": 590,
    "health_growth": 96,
