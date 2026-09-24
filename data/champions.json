@@ -75,7 +75,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#5976b2",
   "stats": {
@@ -345,7 +345,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#5991b2",
   "stats": {
@@ -413,7 +413,7 @@
   "resource": "None",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29a59",
   "stats": {
@@ -476,7 +476,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29659",
   "stats": {
@@ -543,7 +543,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b27c59",
   "stats": {
@@ -611,7 +611,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#596bb2",
   "stats": {
@@ -678,7 +678,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29259",
   "stats": {
@@ -807,7 +807,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b26e59",
   "stats": {
@@ -874,7 +874,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#59b299",
   "stats": {
@@ -1006,7 +1006,7 @@
   "resource": "Candle",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29459",
   "stats": {
@@ -1074,7 +1074,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b28a59",
   "stats": {
@@ -1142,7 +1142,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#8eb259",
   "stats": {
@@ -1210,7 +1210,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b28659",
   "stats": {
@@ -1274,7 +1274,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29259",
   "stats": {
@@ -1471,7 +1471,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b2a559",
   "stats": {
@@ -1600,8 +1600,8 @@
   "class": "Fighter",
   "resource": "Mana",
   "ranged": false,
-  "portrait": false,
-  "portrait_kind": null,
+  "portrait": true,
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#8ccfe3",
   "stats": {
@@ -1669,7 +1669,7 @@
   "resource": "Energy",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b28159",
   "stats": {
@@ -1734,7 +1734,7 @@
   "resource": "None",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29459",
   "stats": {
@@ -1865,7 +1865,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#5971b2",
   "stats": {
@@ -1933,7 +1933,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#5973b2",
   "stats": {
@@ -2001,7 +2001,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#5971b2",
   "stats": {
@@ -2196,7 +2196,7 @@
   "resource": "Mana",
   "ranged": true,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#b29059",
   "stats": {
@@ -2330,7 +2330,7 @@
   "resource": "Mana",
   "ranged": false,
   "portrait": true,
-  "portrait_kind": "bake",
+  "portrait_kind": "painted",
   "pending": false,
   "colour": "#59b28a",
   "stats": {
