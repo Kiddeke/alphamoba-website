@@ -52,6 +52,13 @@ for sheet, mark in PITCH_SHEETS:
         img = f"../assets/img/pitch/{cid}.jpg" if stage(cid) else None
         people[cid] = (name, title, mark, None, img, desc, "#b08d3c")
 
+SPLASH = os.path.join(ROOT, "assets", "img", "splash")
+
+def splash(cid):
+    """The pitch's splash art (assets/img/splash/<id>.jpg, the classic
+    1215 x 717 frame), when it has one."""
+    return f"../assets/img/splash/{cid}.jpg" if os.path.exists(os.path.join(SPLASH, cid + ".jpg")) else None
+
 def tile(cid):
     name, title, kind, href, img, blurb, colour = people[cid]
     face = f'<img src="{img}" width="384" height="384" alt="" loading="lazy">' if img else ""
@@ -61,7 +68,21 @@ def tile(cid):
             + ("" if href else f'<em class="pending">{html.escape(kind)}</em>') + '</div>')
     if href:
         return f'<li><a class="roster-tile" href="{href}" style="--accent:{colour}">{body}</a></li>'
+    art = splash(cid)
+    if art:
+        return f'<li><a class="roster-tile" href="{art}" style="--accent:{colour}" title="{html.escape(blurb)} — opens the splash art">{body}</a></li>'
     return f'<li><div class="roster-tile pitch-tile" style="--accent:{colour}" title="{html.escape(blurb)}">{body}</div></li>'
+
+def gallery(members):
+    """The region's splash arts, under its roster."""
+    shots = [(cid, splash(cid)) for cid in members if splash(cid)]
+    if not shots:
+        return ""
+    items = "".join(
+        f'<li class="shot"><a href="{art}"><img src="{art}" width="1215" height="717" alt="Splash art of {html.escape(people[cid][0])}, {html.escape(people[cid][1])}" loading="lazy"></a>'
+        f'<p class="shot-caption">{html.escape(people[cid][0])}, {html.escape(people[cid][1])}</p></li>'
+        for cid, art in shots)
+    return f'\n      <h3 class="splash-head">Splash art</h3>\n      <ul class="shots" aria-label="Splash art">{items}</ul>'
 
 unplaced = [cid for cid in people if cid not in regions["champions"]]
 sections = []
@@ -80,7 +101,7 @@ for region in regions["regions"]:
       </div>
       <ul class="roster" aria-label="{html.escape(region['name'])}">
 {chr(10).join(tile(cid) for cid in members)}
-      </ul>
+      </ul>{gallery(members)}
     </div>
   </section>''')
 if unplaced:
@@ -106,7 +127,7 @@ page = f'''<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/site.css">
-<style>.pitch-tile {{ cursor: default; }} .roster-tile .face {{ aspect-ratio: 1; }} .regions {{ color: var(--faded); font-size: 0.95rem; line-height: 2; }}</style>
+<style>.pitch-tile {{ cursor: default; }} .roster-tile .face {{ aspect-ratio: 1; }} .regions {{ color: var(--faded); font-size: 0.95rem; line-height: 2; }} .splash-head {{ margin: 32px 0 12px; }} .shots .shot img {{ aspect-ratio: 1215 / 717; }}</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
