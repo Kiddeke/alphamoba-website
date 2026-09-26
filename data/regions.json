@@ -13,7 +13,7 @@
   {
    "id": "hushwood",
    "name": "The Hushwood",
-   "blurb": "The old deep wood and what grew up in it \u2014 fae, dryads, wyrmblood and worse."
+   "blurb": "The old deep wood and what grew up in it — fae, dryads, wyrmblood and worse."
   },
   {
    "id": "mistway",
@@ -43,7 +43,12 @@
   {
    "id": "farshores",
    "name": "The Far Shores",
-   "blurb": "From beyond the wood entirely \u2014 other worlds, other stories, washed up here."
+   "blurb": "From beyond the wood entirely — other worlds, other stories, washed up here."
+  },
+  {
+   "id": "fallensky",
+   "name": "The Fallen Sky",
+   "blurb": "Things that were never of this wood: fallen from the sky, risen from the deep, grown in the dark. Of no kingdom, and welcome in none."
   }
  ],
  "champions": {
@@ -143,6 +148,19 @@
   "hana": "farshores",
   "gen": "farshores",
   "mochi": "farshores",
-  "haru": "farshores"
+  "haru": "farshores",
+  "vexhal": "fallensky",
+  "murrow": "fallensky",
+  "thessaly": "fallensky",
+  "gorrim": "fallensky",
+  "ixil": "fallensky",
+  "oryx": "fallensky",
+  "plume": "fallensky",
+  "halvane": "fallensky",
+  "nix": "fallensky",
+  "brann": "fallensky",
+  "lysse": "fallensky",
+  "kroth": "fallensky",
+  "zefira": "fallensky"
  }
 }

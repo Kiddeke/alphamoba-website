@@ -8,7 +8,7 @@ size under assets/img/pitch/.
 
 The roster comes from data/champions.json (its tiles link to the champion
 pages); the pitches come from the game's sheets (Tooling/Art/
-portrait_prompts_new.tsv, _anime.tsv) and are marked as in development.
+portrait_prompts_new.tsv, _anime.tsv, _otherworld.tsv) and are marked as in development.
 Only the standard library and Pillow.
 """
 import html, json, os, sys
@@ -22,7 +22,7 @@ os.makedirs(OUT_IMG, exist_ok=True)
 
 regions = json.load(open(os.path.join(ROOT, "data", "regions.json"), encoding="utf-8"))
 roster = json.load(open(os.path.join(ROOT, "data", "champions.json"), encoding="utf-8"))
-PITCH_SHEETS = [("portrait_prompts_new.tsv", "In development"), ("portrait_prompts_anime.tsv", "Anime pitch")]
+PITCH_SHEETS = [("portrait_prompts_new.tsv", "In development"), ("portrait_prompts_anime.tsv", "Anime pitch"), ("portrait_prompts_otherworld.tsv", "Otherworld pitch")]
 
 def rows(sheet):
     out = []
