@@ -217,4 +217,92 @@
       });
     });
   }
+
+  // ------------------------------------------------------------ the Witchwood plan
+  var ww = document.querySelector("[data-witchwood]");
+  if (ww) {
+    fetch(ROOT + "data/witchwood.json").then(function (r) { return r.json(); }).then(function (m) {
+      var half = m.size / 2, pad = 5, S = m.size + pad * 2;
+      var byId = {};
+      m.nodes.forEach(function (n) { byId[n.id] = n; });
+      function X(x) { return x + half + pad; }
+      function Y(y) { return half - y + pad; }
+      var ns = "http://www.w3.org/2000/svg";
+      function el(tag, attrs, text) {
+        var e = document.createElementNS(ns, tag);
+        Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+        if (text) e.textContent = text;
+        return e;
+      }
+      function pts(list) { return list.map(function (p) { return X(p[0]) + "," + Y(p[1]); }).join(" "); }
+      ww.setAttribute("viewBox", "0 0 " + S + " " + S);
+      ww.innerHTML = "";
+      // The two halves: the Lodge's loam below the diagonal, the Coven's black soil above it.
+      ww.appendChild(el("rect", { x: 0, y: 0, width: S, height: S, fill: "#0a1210" }));
+      ww.appendChild(el("polygon", { points: pts([[-half, -half], [half, -half], [-half, half]]), fill: "#1f2c19" }));
+      ww.appendChild(el("polygon", { points: pts([[half, half], [half, -half], [-half, half]]), fill: "#1c1522" }));
+      // The base courts: one paved plate about each nexus, out past its towers.
+      ["blue_nexus", "red_nexus"].forEach(function (id) {
+        var n = byId[id]; if (!n) return;
+        ww.appendChild(el("circle", { cx: X(n.x), cy: Y(n.y), r: 22.5, fill: n.team === 0 ? "#2b3626" : "#261d2c", opacity: 0.9 }));
+      });
+      // The lanes as roads, then the river channel as the Mistway.
+      Object.keys(m.lanes).forEach(function (k) {
+        ww.appendChild(el("polyline", { points: pts(m.lanes[k]), fill: "none", stroke: "#8d7a52", "stroke-width": m.half_lane * 2, "stroke-linejoin": "round", "stroke-linecap": "round", opacity: 0.45 }));
+      });
+      ww.appendChild(el("polyline", { points: pts(m.river), fill: "none", stroke: "#8fa9a4", "stroke-width": 9, "stroke-linejoin": "round", "stroke-linecap": "round", opacity: 0.5 }));
+      ww.appendChild(el("polyline", { points: pts(m.river), fill: "none", stroke: "#c9d8d4", "stroke-width": 3, "stroke-linejoin": "round", "stroke-linecap": "round", opacity: 0.45 }));
+      // Every wall box: the hitboxes themselves, mossy on the Lodge's half and violet-black on the Coven's.
+      m.islands.forEach(function (b) {
+        var lodge = b[0] + b[1] < 0;
+        ww.appendChild(el("rect", { x: X(b[0] - b[2] / 2), y: Y(b[1] + b[3] / 2), width: b[2], height: b[3], rx: 0.5, fill: lodge ? "#3a5230" : "#33263c" }));
+      });
+      m.brush.forEach(function (b) {
+        ww.appendChild(el("rect", { x: X(b[0] - b[2] / 2), y: Y(b[1] + b[3] / 2), width: b[2], height: b[3], rx: 0.4, fill: "#4c9a3c", opacity: 0.95 }));
+      });
+      var CAMPS = {
+        wisp: "The Wisp Landing", lantern_sentinel: "The Lantern Shrine", strider: "The Strider Stilts",
+        moth: "The Silk Loft", cricket: "The Bell Eaves", wraith: "The Ash Hollow", bone_sentinel: "The Marrow Shrine",
+        crawler: "The Rib Cage", hound: "The Hound Ossuary", beetle: "The Beetle Crown"
+      };
+      var team = function (n, pale) { return n.team === 0 ? (pale ? "#a9c6ff" : "#73a6ff") : (pale ? "#ffb0a6" : "#f27366"); };
+      m.nodes.forEach(function (n) {
+        var r = 0, fill = "none", stroke = "#06090a", width = 0.6, title = n.id.replace(/_/g, " ");
+        if (n.type === 1) { r = 3.4; fill = team(n); title = (n.team === 0 ? "The Lodge's" : "The Coven's") + " fountain"; }
+        else if (n.type === 2) { r = 2.8; fill = team(n, true); title = (n.team === 0 ? "The Lodge's great oak (nexus)" : "The Coven's cauldron (nexus)"); }
+        else if (n.type === 3) { r = 2.0; fill = team(n); }
+        else if (n.type === 4) { r = /_nexus/.test(n.id) ? 1.3 : 1.6; fill = team(n); }
+        else if (n.type === 6) { r = 2.2; fill = "#74b8c6"; }
+        else if (n.type === 7) { r = 4.4; fill = "#3a2150"; stroke = "#b57ff0"; width = 1.2; title = /warden/.test(n.id) ? "The Bridge Warden's Reach" : "The Marrow Kraken's Reach"; }
+        else if (n.type === 5) {
+          r = 2.0; fill = "#e08a2e";
+          var key = n.id.replace(/^camp_(blue|red)_(top|bot)_/, ""); title = CAMPS[key] || title;
+          if (n.mouth != null) {
+            var h = n.mouth * Math.PI / 180;
+            ww.appendChild(el("line", { x1: X(n.x), y1: Y(n.y), x2: X(n.x + Math.sin(h) * 4.2), y2: Y(n.y + Math.cos(h) * 4.2), stroke: "#e08a2e", "stroke-width": 1.1, "stroke-linecap": "round" }));
+          }
+        }
+        if (!r) return;
+        var c = el("circle", { cx: X(n.x), cy: Y(n.y), r: r, fill: fill, stroke: stroke, "stroke-width": width });
+        c.appendChild(el("title", {}, title));
+        ww.appendChild(c);
+      });
+      var labels = [
+        ["blue_fountain", "THE LODGE", 16, -7, "#a9c6ff", 4.2], ["red_fountain", "THE COVEN", -16, 10, "#ffb0a6", 4.2],
+        ["lantern_warden_pit", "Bridge Warden", 0, 8.5, "#d7b8ff", 3.2], ["bone_kraken_pit", "Marrow Kraken", 0, -6.5, "#d7b8ff", 3.2],
+        ["altar_north", "Altar of Fury", -9, 1, "#9fd2dc", 2.6], ["altar_south", "Altar of Swiftness", 12, 1, "#9fd2dc", 2.6],
+        ["top_center", "TOP", 0, -4, "#cbb98e", 3.4], ["mid_center", "MID", 5, -3, "#cbb98e", 3.4], ["bot_center", "BOT", 0, 7, "#cbb98e", 3.4]
+      ];
+      m.nodes.forEach(function (n) {
+        if (n.type !== 5) return;
+        var key = n.id.replace(/^camp_(blue|red)_(top|bot)_/, "");
+        labels.push([n.id, (CAMPS[key] || key).replace(/^The /, ""), 0, 5.4, "#f0c48a", 2.4]);
+      });
+      labels.forEach(function (l) {
+        var n = byId[l[0]]; if (!n) return;
+        ww.appendChild(el("text", { x: X(n.x) + l[2], y: Y(n.y) + l[3], fill: l[4], "font-size": l[5], "text-anchor": "middle", "font-family": "Source Sans 3, sans-serif", "letter-spacing": 0.3, "paint-order": "stroke", stroke: "#06090a", "stroke-width": 0.6 }, l[1]));
+      });
+      ww.appendChild(el("text", { x: pad + 3, y: S - pad - 3, fill: "#8fa385", "font-size": 3.4, "text-anchor": "start", "font-family": "Source Sans 3, sans-serif" }, "N ↑ is up"));
+    });
+  }
 })();

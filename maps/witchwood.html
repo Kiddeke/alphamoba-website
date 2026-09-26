@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Witchwood · Wychwood</title>
+<meta name="description" content="The Witchwood in full: the Wardens' Lodge against the Coven on a 120 m board, with every wall, lane, camp, pit and structure drawn from the game's own map data, and how the two districts are built.">
+<link rel="canonical" href="https://alphamoba.com/maps/witchwood.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<style>
+.ww-figure { display: grid; grid-template-columns: minmax(300px, 640px) 1fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+.ww-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; margin-top: 0.6em; }
+.ww-table th, .ww-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--edge); vertical-align: top; }
+.ww-table th { font-weight: 600; color: var(--parchment); font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.ww-table td:first-child { font-family: var(--serif); font-size: 1.1rem; color: var(--parchment); white-space: nowrap; }
+.ww-table .lodge { color: #a9c6ff; }
+.ww-table .coven { color: #ffb0a6; }
+.ww-scroll { overflow-x: auto; }
+.ww-districts { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 3vw, 40px); }
+.ww-district { border: 1px solid var(--edge); border-radius: 10px; padding: 18px 20px 22px; background: var(--slab); }
+.ww-district h3 { margin: 0 0 4px; }
+.ww-district .side { font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+.ww-district.lodge { border-color: #35503a; }
+.ww-district.coven { border-color: #4a2f57; }
+.ww-district.lodge .side { color: #a9c6ff; }
+.ww-district.coven .side { color: #ffb0a6; }
+.ww-swatches { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+.ww-swatches i { width: 26px; height: 26px; border-radius: 6px; display: inline-block; border: 1px solid rgba(255,255,255,0.18); }
+.ww-figure-wide img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--edge); }
+.ww-figure-wide figcaption { font-size: 0.9rem; color: var(--moss); margin: 8px 2px 0; }
+.ww-figure-wide { margin: 18px 0 0; }
+.ww-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.ww-sheet { display: grid; grid-template-columns: minmax(240px, 420px) 1fr; gap: clamp(20px, 3vw, 40px); align-items: start; }
+@media (max-width: 860px) { .ww-figure, .ww-districts, .ww-pair, .ww-sheet { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="wordmark" href="../index.html">Wychwood</a>
+  <nav class="nav" aria-label="Main">
+    <a href="../champions/">Champions</a>
+    <a href="../items/">Items</a>
+    <a href="../maps/" aria-current="page">Maps</a>
+    <a href="../in-development/">In development</a>
+    <a href="../#status">Status</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="section" id="plan">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">5v5 · the big map</p>
+        <h1>The Witchwood</h1>
+        <p class="lede">The Wardens' Lodge holds the south-west corner and the Coven the north-east. Three lanes run between the two bases, a full jungle fills the wood on either side of them, and one dry channel of mist runs across the middle from a pit at each end. It is a hundred and twenty metres on a side, and everything on the plan below is drawn from the game's own map file: every wall box is a hitbox as the game has it.</p>
+      </div>
+      <div class="ww-figure">
+        <svg class="map-svg" data-witchwood role="img" aria-label="Plan of the Witchwood: the Lodge's base bottom-left, the Coven's top-right, three lanes between them, the Mistway running from the Bridge Warden's pit in the north-west to the Marrow Kraken's pit in the south-east, and twelve jungle camps in the wood."></svg>
+        <div>
+          <ul class="map-key">
+            <li><i style="background:#3a5230"></i> Wall on the Lodge's half: mossy loam plateau over oaks, ferns and boulders</li>
+            <li><i style="background:#33263c"></i> Wall on the Coven's half: black soil under dead trees, thorns and toadstools</li>
+            <li><i style="background:#73a6ff"></i> <span><span class="blue">The Lodge's</span> fountain, great oak, hearth-shrines and watch-platforms</span></li>
+            <li><i style="background:#f27366"></i> <span><span class="red">The Coven's</span> fountain, cauldron, bottle-trees and cauldron towers</span></li>
+            <li><i style="background:#e08a2e"></i> Jungle camp, with a tick for the way its beast faces</li>
+            <li><i style="background:#3a2150;border-color:#b57ff0"></i> Pit: the Bridge Warden in the north-west, the Marrow Kraken in the south-east</li>
+            <li><i style="background:#8fa9a4"></i> The Mistway, the river's dry channel</li>
+            <li><i style="background:#74b8c6"></i> Altars, one on each bank</li>
+            <li><i style="background:#4c9a3c"></i> Brush, which hides whoever stands in it</li>
+            <li><i style="background:#8d7a52"></i> Lane</li>
+          </ul>
+          <dl class="map-list">
+            <dt>The shape</dt>
+            <dd>Bases in opposite corners, top lane along the west and north edges, bot lane along the south and east, mid straight across the diagonal. The Coven's half is the Lodge's turned through a half circle, so the walk to any objective is the same from either fountain.</dd>
+            <dt>The seam</dt>
+            <dd>The board changes hands on the other diagonal. South-west of it the ground is loam and moss and the walls carry oaks; north-east of it the soil is black under a violet cast and the walls carry dead trees. The Mistway runs along that seam.</dd>
+            <dt>Hover the plan</dt>
+            <dd>Every structure, camp and pit names itself on hover. The plan is the same data the game loads, so what you see here is what the pathing sees.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="districts">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Two districts</h2>
+        <p class="lede">Each side of the board is a place, and each place is built the same way: a ground of its own, walls dressed with its own props, its own minions, and structures in its own architecture.</p>
+      </div>
+      <div class="ww-districts">
+        <div class="ww-district lodge">
+          <p class="side">Blue · south-west</p>
+          <h3>The Wardens' Lodge</h3>
+          <div class="ww-swatches" aria-hidden="true"><i style="background:#4d3320" title="oak bark"></i><i style="background:#66472b" title="plank"></i><i style="background:#2e5726" title="oak leaf"></i><i style="background:#4d7538" title="moss"></i><i style="background:#8c7040" title="thatch"></i><i style="background:#99804f" title="rope"></i><i style="background:#99752e" title="bronze"></i><i style="background:#ffa04d" title="lantern amber"></i></div>
+          <p>Oak, moss, rope, thatch and bronze. Treehouses stand on great oaks past the corner of the board with rope bridges between them. The towers are watch-platforms built round living oaks with a thatch roof, a bronze horn and an amber paper lantern. An inhibitor is a hearth-shrine under four posts. The nexus is the great oak itself with a lodge-hall in its crown.</p>
+          <p>Underfoot: a forest floor of loam and leaf litter gone green with moss, a bark-chip shoulder, a trodden earth road, and pale river stones where the Mistway runs. On the walls: oaks, ferns, mossy slate boulders, log piles, horn posts, rope-railed lookouts and green pennants.</p>
+        </div>
+        <div class="ww-district coven">
+          <p class="side">Red · north-east</p>
+          <h3>The Coven</h3>
+          <div class="ww-swatches" aria-hidden="true"><i style="background:#1a141a" title="black bark"></i><i style="background:#572970" title="violet"></i><i style="background:#241f26" title="iron"></i><i style="background:#dbccaa" title="tallow"></i><i style="background:#94292f" title="toadstool"></i><i style="background:#59b880" title="bottle glass"></i><i style="background:#ffc76b" title="candle gold"></i><i style="background:#73ff8c" title="witch-fire"></i></div>
+          <p>Black bark, violet, iron, tallow and witch-fire. A crooked cottage sits on its rock over a great cauldron past the corner of the board. The towers are three cauldrons stacked with broomsticks leaned against them and a green candle burning on top. An inhibitor is a bottle-tree, a dead branch hung with glowing glass. The nexus is a cauldron of witch-fire under the cottage.</p>
+          <p>Underfoot: black soil under a violet cast with toadstool dust in the hollows, a shoulder of dead leaves and bone chips, a cracked black-earth road, and grey pebbles under the mist. On the walls: dead trees hung with bottles and candles, black boulders, toadstool rings, brambles, cauldrons, candle clusters, thorn stakes and bone piles.</p>
+        </div>
+      </div>
+      <div class="ww-pair" style="margin-top:22px">
+        <figure class="ww-figure-wide"><img src="../assets/img/witchwood/table_lodge.jpg" alt="The Lodge's half of the board at the play camera: loam and moss ground, oak-dressed walls, the Mistway crossing behind" loading="lazy"><figcaption>The Lodge's half from the play camera, with the Mistway and the Coven's half beyond it.</figcaption></figure>
+        <figure class="ww-figure-wide"><img src="../assets/img/witchwood/table_coven.jpg" alt="The Coven's base: cauldron towers, the bottle-tree inhibitor, the cottage on its rock and dead trees along the rim" loading="lazy"><figcaption>The Coven's base, its cottage and cauldron past the corner, and the dead trees along its rim.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="lanes">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Lanes and structures</h2>
+        <p class="lede">Three towers a side per lane, an inhibitor behind each lane, two towers in front of the nexus, and the nexus itself. Twenty-two structures a side, and a strict order to taking them.</p>
+      </div>
+      <dl class="map-list">
+        <dt>The towers</dt>
+        <dd>Each lane has a front tower out near the middle of the board, an outer tower, and an inner tower at the base's edge. They must fall in that order: a tower is shielded while the one in front of it stands. Their fire is the watchfire, and its threat ring is drawn on the ground.</dd>
+        <dt>The inhibitors</dt>
+        <dd>One behind each lane's inner tower, shielded until that tower falls. An inhibitor down sends the other side's foremen down that lane. Inhibitors come back after a time, so a base that has lost one can close the door again.</dd>
+        <dt>The nexus towers</dt>
+        <dd>Two of them stand in front of the nexus. Either can be hit once any one inhibitor is down.</dd>
+        <dt>The nexus</dt>
+        <dd>The Lodge's great oak, the Coven's cauldron. It cannot be hit while all three inhibitors stand, whatever has happened to its towers, and once an inhibitor is down it still waits behind both nexus towers. Break it and the match is over.</dd>
+        <dt>The base court</dt>
+        <dd>One paved plate reaches out from each fountain past the inner towers to the ring wall, so a base reads as one plaza. The fountain heals and sells; the shopkeeper stands in the Lodge's amber light or the Coven's green.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="mistway">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The Mistway and the pits</h2>
+        <p class="lede">No water crosses this board. The river's channel is a sunken road of pale stone under a cold haze, running from one pit to the other and out to the top and bot lanes. The Lodge lines its bank with lantern posts, the Coven with thorn stakes and candles.</p>
+      </div>
+      <div class="ww-scroll">
+      <table class="ww-table">
+        <thead><tr><th>Pit</th><th>Where</th><th>Boss</th><th>Wakes</th><th>Returns</th><th>Worth</th><th>Gives</th></tr></thead>
+        <tbody>
+          <tr><td>The Bridge Warden's Reach</td><td>North-west end of the Mistway, off the top side</td><td>The Bridge Warden</td><td>2:00</td><td>4:00 after it falls</td><td>200 gold, 400 experience</td><td>The Warden's Mantle, for 90 seconds</td></tr>
+          <tr><td>The Marrow Kraken's Reach</td><td>South-east end of the Mistway, off the bot side</td><td>The Marrow Kraken</td><td>7:00</td><td>5:00 after it falls</td><td>500 gold, 800 experience</td><td>The Wrath of the Deep, for 150 seconds</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <dl class="map-list">
+        <dt>The altars</dt>
+        <dd>The Altar of Fury and the Altar of Swiftness stand on opposite banks of the channel, each a dry walk for one side and a crossing for the other. Each holds its blessing for 75 seconds.</dd>
+        <dt>The fords</dt>
+        <dd>The Mistway crosses all three lanes. The crossings are the only stretches of channel with no posts on their banks; everywhere else, the bank is wall.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="jungle">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The jungle</h2>
+        <p class="lede">Twelve camps, six a side, each side's mirror of the other. A camp's large beast leads two smalls, except the shrines, whose sentinel stands alone. Every beast faces its camp's mouth, the way in.</p>
+      </div>
+      <div class="ww-scroll">
+      <table class="ww-table">
+        <thead><tr><th>Camp</th><th>Half</th><th>Beast</th><th>With</th><th>Worth</th><th>Returns</th></tr></thead>
+        <tbody>
+          <tr><td>The Wisp Landing</td><td class="lodge">Lodge, top side</td><td>Lantern Mother</td><td>Two Lantern Wisps</td><td>90 + 25 + 25 gold</td><td>75 s</td></tr>
+          <tr><td>The Lantern Shrine</td><td class="lodge">Lodge, top side</td><td>Paper Guardian</td><td>Stands alone</td><td>150 gold</td><td>90 s</td></tr>
+          <tr><td>The Strider Stilts</td><td class="lodge">Lodge, top side</td><td>Stilt Strider</td><td>Stands alone</td><td>95 gold</td><td>75 s</td></tr>
+          <tr><td>The Silk Loft</td><td class="lodge">Lodge, bot side</td><td>Silk Matron</td><td>Two Silk Moths</td><td>90 + 25 + 25 gold</td><td>75 s</td></tr>
+          <tr><td>The Lantern Shrine</td><td class="lodge">Lodge, bot side</td><td>Paper Guardian</td><td>Stands alone</td><td>150 gold</td><td>90 s</td></tr>
+          <tr><td>The Bell Eaves</td><td class="lodge">Lodge, bot side</td><td>Bell Cricket Lord</td><td>Two Bell Crickets</td><td>85 + 22 + 22 gold</td><td>70 s</td></tr>
+          <tr><td>The Ash Hollow</td><td class="coven">Coven, top side</td><td>Ash Wraith Elder</td><td>Two Ash Wraiths</td><td>95 + 25 + 25 gold</td><td>75 s</td></tr>
+          <tr><td>The Marrow Shrine</td><td class="coven">Coven, top side</td><td>Skull Golem</td><td>Stands alone</td><td>150 gold</td><td>90 s</td></tr>
+          <tr><td>The Rib Cage</td><td class="coven">Coven, top side</td><td>Rib Crawler Brood-Mother</td><td>Two Rib Crawlers</td><td>85 + 22 + 22 gold</td><td>70 s</td></tr>
+          <tr><td>The Hound Ossuary</td><td class="coven">Coven, bot side</td><td>Marrow Alpha</td><td>Two Marrow Hounds</td><td>80 + 25 + 25 gold</td><td>60 s</td></tr>
+          <tr><td>The Marrow Shrine</td><td class="coven">Coven, bot side</td><td>Skull Golem</td><td>Stands alone</td><td>150 gold</td><td>90 s</td></tr>
+          <tr><td>The Beetle Crown</td><td class="coven">Coven, bot side</td><td>Skull Beetle King</td><td>Two Skull Beetles</td><td>85 + 22 + 22 gold</td><td>70 s</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <dl class="map-list">
+        <dt>The brush</dt>
+        <dd>A hundred and seventy-one patches of tall grass. Stand in one and nobody outside it sees you unless they stand in it too; it hides the way brush does in the games this one grew from.</dd>
+        <dt>The walls</dt>
+        <dd>The jungle's walls are a thousand and forty-one boxes the pathing knows exactly. The plateau drawn over them follows their outline with its corners rounded a touch, and what stands on it, the trees, boulders and works, stands only where there is a box underneath.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="minions">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Minions, a wave a side</h2>
+        <p class="lede">Each side marches its own. The Lodge sends carved oak puppets in green hoods; the Coven sends stitched rag poppets in violet. The same four kinds walk each lane: three porters up front, three slingers behind, a hauler every third wave, and foremen once an inhibitor is down.</p>
+      </div>
+      <div class="ww-sheet">
+        <figure class="ww-figure-wide" style="margin:0"><img src="../assets/img/witchwood/minions.jpg" alt="The eight minions in idle, run, attack and from behind: the Lodge's oak scout, archer, hauler and foreman, and the Coven's rag poppet, hooded caster, sack hauler and scarecrow foreman" loading="lazy"><figcaption>Porter, slinger, hauler and foreman for each side, shown idle, running, attacking and from behind.</figcaption></figure>
+        <dl class="map-list" style="margin:0">
+          <dt>Porter</dt><dd>The melee body of the wave. Twelve damage a swing, three to a wave.</dd>
+          <dt>Slinger</dt><dd>The ranged back line. Eighteen a shot, three to a wave.</dd>
+          <dt>Hauler</dt><dd>The siege engine, forty a shot with the reach to hit a tower from outside its ring. One every third wave. It wears the big body, not the caster's, because an engine of war is armour before it is artillery.</dd>
+          <dt>Foreman</dt><dd>Sixty a swing and a head taller than everyone. Arrives down a lane whose inhibitor is down, and stops when it is rebuilt.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="art">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Ground and props</h2>
+        <p class="lede">The Witchwood is painted, not tinted. Eight ground tiles, one a district a layer, and seventeen props, a set a district, were each painted from a written description and built from the painting, then stood on the board where the game's own rules put them.</p>
+      </div>
+      <figure class="ww-figure-wide"><img src="../assets/img/witchwood/tiles.jpg" alt="The eight ground tiles, each repeated two by two: the Lodge's floor, verge, lane and mist stones, and the Coven's" loading="lazy"><figcaption>The ground tiles, each shown repeated. Top row the Lodge: floor, shoulder, road, mist-road. Bottom row the Coven.</figcaption></figure>
+      <figure class="ww-figure-wide"><img src="../assets/img/witchwood/props.jpg" alt="The seventeen built props: bone pile, bottle branch, black boulder, bramble, candles, cauldron, dead tree, thorn, toadstools, mossy boulder, fern, horn post, lantern post, log pile, lookout, oak and pennant" loading="lazy"><figcaption>The seventeen props as built. On the walls, each is scaled to the room its wall gives it, so nothing leans out over the path.</figcaption></figure>
+      <figure class="ww-figure-wide"><img src="../assets/img/witchwood/table.jpg" alt="The whole Witchwood board from above at an angle, the Lodge's green half and the Coven's violet half divided by the pale Mistway" loading="lazy"><figcaption>The whole board on the table. The Lodge's treehouses stand past the south and west edges, the Coven's cottage and cauldron past the north-east corner.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section" id="elsewhere">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The other boards</h2>
+        <p class="lede">The Witchwood started as a copy of the Wide Wood, which stays in the game as an archived flavour of the same board. <a href="index.html#hushwood">The Hushwood</a> is the 3v3, and <a href="index.html#tollroad">the Toll Road</a> is where a new champion gets tried.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p><strong>Wychwood</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development. <em>alphamoba</em> is its working name.</p>
+    <p class="fine">The plan above is drawn from the game's own map definition, and the numbers in the tables are the game's own. Everything here changes as the game does.</p>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

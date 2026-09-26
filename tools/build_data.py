@@ -7,6 +7,7 @@ atlases, and writes:
     data/champions.json   every playable champion, kit text and base stats
     data/items.json       every shop item
     data/map.json         the Hushwood's node graph, for the drawn map
+    data/witchwood.json   the Witchwood in full (walls, lanes, river, brush, camps), for its plan
     champions/<id>.html   one static page per champion (from the template)
     assets/img/items/     one 128px medallion per item: the game's own art on the
                           plate the in-game shop paints behind it (medallion.py)
@@ -325,6 +326,35 @@ def hushwood():
     return {"name": "The Hushwood", "size": size, "nodes": nodes, "edges": edges}
 
 
+def witchwood():
+    """The Witchwood, in full: nodes with their kinds and camp mouths, the
+    lane and river polylines, the brush patches and every wall box, so the
+    site can draw the plan the way the game's own table does."""
+    f = load(GAMEDATA / "maps" / "witchwood_map_def.json")
+    nodes = []
+    for node in f["nodes"]:
+        n = node["fields"]
+        x, _, z = n["position"]
+        nodes.append({"id": n["id"], "x": round(x, 2), "y": round(-z, 2), "team": n.get("team", -1),
+                      "type": n.get("type", 0), "mouth": n.get("mouth_deg")})
+    edges = [{"from": e["fields"]["from_id"], "to": e["fields"]["to_id"]} for e in f["edges"]]
+    size = f.get("world_size", 120)
+    if isinstance(size, list):
+        size = size[1] if len(size) > 1 else size[0]
+    walls = f["walls"]["fields"]
+    return {
+        "name": f.get("map_name", "The Witchwood"), "size": size,
+        "ring": walls.get("base_ring_radius", 26), "half_lane": walls.get("half_lane_width", 6),
+        "nodes": nodes, "edges": edges,
+        "lanes": {k: [[round(p[0], 2), round(-p[2], 2)] for p in v] for k, v in f["lanes"].items()},
+        "river": [[round(p[0], 2), round(-p[2], 2)] for p in f.get("river", [])],
+        "brush": [[round(b["fields"]["center"][0], 2), round(-b["fields"]["center"][2], 2),
+                   round(b["fields"]["size"][0], 2), round(b["fields"]["size"][2], 2)] for b in f.get("brush", [])],
+        "islands": [[round(i["fields"]["center"][0], 2), round(-i["fields"]["center"][2], 2),
+                     round(i["fields"]["size"][0], 2), round(i["fields"]["size"][2], 2)] for i in walls.get("islands", [])],
+    }
+
+
 # ---------------------------------------------------------------- pages
 def esc(text):
     return (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -466,6 +496,7 @@ def main():
     (SITE / "data" / "champions.json").write_text(json.dumps(roster, indent=1), encoding="utf-8")
     (SITE / "data" / "items.json").write_text(json.dumps(items, indent=1), encoding="utf-8")
     (SITE / "data" / "map.json").write_text(json.dumps(hushwood(), indent=1), encoding="utf-8")
+    (SITE / "data" / "witchwood.json").write_text(json.dumps(witchwood(), separators=(",", ":")), encoding="utf-8")
 
     template = (SITE / "tools" / "champion.template.html").read_text(encoding="utf-8")
     out = SITE / "champions"
