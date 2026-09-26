@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Builds in-development/index.html — the champions being screened, portraits
-only, from the game's pitch sheets — and stages their portraits at a web
+"""Builds in-development/index.html — every character in Wychwood, the
+roster and the pitches together, grouped by the region or kingdom each
+belongs to (data/regions.json) — and stages the pitch portraits at a web
 size under assets/img/pitch/.
 
     python3 tools/build_pitch.py ../alphamoba-unity <staged-portraits-dir> [<more-dir>...]
 
-Each pitch sheet (Tooling/Art/portrait_prompts_new.tsv, _anime.tsv) is a
-section; a row whose portrait is not staged is listed without a face.
+The roster comes from data/champions.json (its tiles link to the champion
+pages); the pitches come from the game's sheets (Tooling/Art/
+portrait_prompts_new.tsv, _anime.tsv) and are marked as in development.
 Only the standard library and Pillow.
 """
-import html, os, sys
+import html, json, os, sys
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -18,15 +20,13 @@ staged = [os.path.abspath(d) for d in sys.argv[2:]]
 OUT_IMG = os.path.join(ROOT, "assets", "img", "pitch")
 os.makedirs(OUT_IMG, exist_ok=True)
 
-SHEETS = [
-    ("The second roster", "Thirty-eight new faces, drawn to be screened. Each is a name, a title and a look; the kits come later, for the ones that stay.", "portrait_prompts_new.tsv"),
-    ("Anime pitch", "Ten of the genre's own archetypes, tried on Wychwood's paint.", "portrait_prompts_anime.tsv"),
-]
+regions = json.load(open(os.path.join(ROOT, "data", "regions.json"), encoding="utf-8"))
+roster = json.load(open(os.path.join(ROOT, "data", "champions.json"), encoding="utf-8"))
+PITCH_SHEETS = [("portrait_prompts_new.tsv", "In development"), ("portrait_prompts_anime.tsv", "Anime pitch")]
 
 def rows(sheet):
-    path = os.path.join(unity, "Tooling", "Art", sheet)
     out = []
-    for line in open(path, encoding="utf-8"):
+    for line in open(os.path.join(unity, "Tooling", "Art", sheet), encoding="utf-8"):
         if not line.strip() or line.startswith("#"):
             continue
         cid, heading, desc = line.rstrip("\n").split("\t")[:3]
@@ -38,50 +38,75 @@ def stage(cid):
     for d in staged:
         src = os.path.join(d, cid + ".png")
         if os.path.exists(src):
-            dst = os.path.join(OUT_IMG, cid + ".jpg")
-            Image.open(src).convert("RGB").resize((384, 384), Image.LANCZOS).save(dst, quality=84)
+            Image.open(src).convert("RGB").resize((384, 384), Image.LANCZOS).save(os.path.join(OUT_IMG, cid + ".jpg"), quality=84)
             return True
-    return False
+    return os.path.exists(os.path.join(OUT_IMG, cid + ".jpg"))
 
+# Every character: id -> (name, title, kind, href, image, blurb, colour)
+people = {}
+for c in roster:
+    img = f"../assets/img/portraits/{c['id']}.png" if c.get("portrait") else None
+    people[c["id"]] = (c["name"], c["title"], c.get("class", ""), f"../champions/{c['id']}.html", img, "", c.get("colour", "#7a6a4a"))
+for sheet, mark in PITCH_SHEETS:
+    for cid, name, title, desc in rows(sheet):
+        img = f"../assets/img/pitch/{cid}.jpg" if stage(cid) else None
+        people[cid] = (name, title, mark, None, img, desc, "#b08d3c")
+
+def tile(cid):
+    name, title, kind, href, img, blurb, colour = people[cid]
+    face = f'<img src="{img}" width="384" height="384" alt="" loading="lazy">' if img else ""
+    tag = f'<span class="cls">{html.escape(kind)}</span>' if href else ""
+    body = (f'<div class="face">{face}{tag}</div>'
+            f'<div class="who"><strong>{html.escape(name)}</strong><span>{html.escape(title)}</span>'
+            + ("" if href else f'<em class="pending">{html.escape(kind)}</em>') + '</div>')
+    if href:
+        return f'<li><a class="roster-tile" href="{href}" style="--accent:{colour}">{body}</a></li>'
+    return f'<li><div class="roster-tile pitch-tile" style="--accent:{colour}" title="{html.escape(blurb)}">{body}</div></li>'
+
+unplaced = [cid for cid in people if cid not in regions["champions"]]
 sections = []
-for title, lede, sheet in SHEETS:
-    tiles = []
-    for cid, name, sub, desc in rows(sheet):
-        face = stage(cid)
-        img = f'<img src="../assets/img/pitch/{cid}.jpg" width="384" height="384" alt="" loading="lazy">' if face else '<span class="cls">No portrait yet</span>'
-        tiles.append(
-            f'<li><div class="roster-tile pitch-tile" title="{html.escape(desc)}">'
-            f'<div class="face">{img}</div>'
-            f'<div class="who"><strong>{html.escape(name)}</strong><span>{html.escape(sub)}</span>'
-            f'<em class="pending">In development</em></div></div></li>')
+for region in regions["regions"]:
+    members = [cid for cid, r in regions["champions"].items() if r == region["id"] and cid in people]
+    members.sort(key=lambda cid: (people[cid][3] is None, people[cid][0]))
+    live = sum(1 for cid in members if people[cid][3])
+    count = f"{len(members)} characters, {live} in the game" if live else f"{len(members)} characters, none in the game yet"
     sections.append(f'''
-  <section class="section">
+  <section class="section" id="{region['id']}">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Being screened</p>
-        <h2>{html.escape(title)}</h2>
-        <p class="lede">{html.escape(lede)}</p>
+        <p class="eyebrow">{html.escape(count)}</p>
+        <h2>{html.escape(region['name'])}</h2>
+        <p class="lede">{html.escape(region['blurb'])}</p>
       </div>
-      <ul class="roster" aria-label="{html.escape(title)}">
-{chr(10).join(tiles)}
+      <ul class="roster" aria-label="{html.escape(region['name'])}">
+{chr(10).join(tile(cid) for cid in members)}
       </ul>
     </div>
   </section>''')
+if unplaced:
+    sections.append(f'''
+  <section class="section" id="unplaced">
+    <div class="wrap">
+      <div class="section-head"><h2>Unplaced</h2></div>
+      <ul class="roster">{"".join(tile(cid) for cid in unplaced)}</ul>
+    </div>
+  </section>''')
 
+toc = " · ".join(f'<a href="#{r["id"]}">{html.escape(r["name"])}</a>' for r in regions["regions"])
 page = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>In development · Wychwood</title>
-<meta name="description" content="Champions being screened for Wychwood: portraits of the second roster and an anime pitch, none of them in the game yet.">
+<meta name="description" content="Every character of Wychwood by region and kingdom: the roster that is in the game, and the faces being screened for it.">
 <link rel="canonical" href="https://alphamoba.com/in-development/">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/site.css">
-<style>.pitch-tile {{ cursor: default; }} .pitch-tile .face {{ aspect-ratio: 1; }}</style>
+<style>.pitch-tile {{ cursor: default; }} .roster-tile .face {{ aspect-ratio: 1; }} .regions {{ color: var(--faded); font-size: 0.95rem; line-height: 2; }}</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -100,9 +125,10 @@ page = f'''<!DOCTYPE html>
   <section class="section">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">The drawing board</p>
+        <p class="eyebrow">Regions and kingdoms</p>
         <h1>In development</h1>
-        <p class="lede">Faces that are not in the game. Every champion on this page is a portrait and a sentence, up for screening; the ones that survive get a kit, a body and a page of their own.</p>
+        <p class="lede">Every character in Wychwood, by where they come from. A tile with a class on it is in the game and opens the champion's page; a tile marked in development is a portrait and a sentence, up for screening.</p>
+        <p class="regions">{toc}</p>
       </div>
     </div>
   </section>
@@ -112,7 +138,7 @@ page = f'''<!DOCTYPE html>
 <footer class="footer">
   <div class="wrap footer-inner">
     <p><strong>Wychwood</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development. <em>alphamoba</em> is its working name.</p>
-    <p class="fine">Nothing on this page is final, and some of it will never be built.</p>
+    <p class="fine">The regions are the world's; the pitches are not final, and some will never be built.</p>
   </div>
 </footer>
 <script src="../assets/js/site.js" defer></script>
@@ -121,4 +147,4 @@ page = f'''<!DOCTYPE html>
 '''
 os.makedirs(os.path.join(ROOT, "in-development"), exist_ok=True)
 open(os.path.join(ROOT, "in-development", "index.html"), "w", encoding="utf-8").write(page)
-print("wrote in-development/index.html;", len(os.listdir(OUT_IMG)), "portraits staged")
+print("wrote in-development/index.html:", len(people), "characters,", len(unplaced), "unplaced")
