@@ -426,7 +426,12 @@ def champion_page(c, roster, template):
                                    + ('' if c["portrait_kind"] == "painted" else ', rendered from the in-game model')
                                    + '" width="512" height="512">'
                                    if c["portrait"] else esc(c["name"][:1])))
-            .replace("{{og_image}}", (f'https://alphamoba.com/assets/img/portraits/{c["id"]}.png'
+            .replace("{{splash}}", (f'\n  <figure class="champ-splash wrap"><img src="../assets/img/splash/{c["id"]}.jpg" width="1215" height="717" '
+                                    f'alt="Splash art of {esc(c["name"])}, {esc(c["title"])}"><figcaption>{esc(c["name"])}, {esc(c["title"])}</figcaption></figure>\n'
+                                    if (SITE / "assets" / "img" / "splash" / f"{c['id']}.jpg").exists() else ""))
+            .replace("{{og_image}}", (f'https://alphamoba.com/assets/img/splash/{c["id"]}.jpg'
+                                      if (SITE / "assets" / "img" / "splash" / f"{c['id']}.jpg").exists()
+                                      else f'https://alphamoba.com/assets/img/portraits/{c["id"]}.png'
                                       if c["portrait"] else "https://alphamoba.com/assets/img/portraits/oryssa.png"))
             .replace("{{kit}}", "".join(kit_html))
             .replace("{{stats}}", stats_html)
