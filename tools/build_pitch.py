@@ -49,6 +49,8 @@ for c in roster:
     people[c["id"]] = (c["name"], c["title"], c.get("class", ""), f"../champions/{c['id']}.html", img, "", c.get("colour", "#7a6a4a"))
 for sheet, mark in PITCH_SHEETS:
     for cid, name, title, desc in rows(sheet):
+        if cid in people:
+            continue   # a pitch that made the roster keeps its champion tile (Oboro, 2026-09-27)
         img = f"../assets/img/pitch/{cid}.jpg" if stage(cid) else None
         people[cid] = (name, title, mark, None, img, desc, "#b08d3c")
 

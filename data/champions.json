@@ -1267,6 +1267,64 @@
   ]
  },
  {
+  "id": "oboro",
+  "name": "Oboro",
+  "title": "The Grinning Curse",
+  "class": "Fighter",
+  "resource": "Malice",
+  "ranged": false,
+  "portrait": true,
+  "portrait_kind": "painted",
+  "pending": false,
+  "colour": "#5995b2",
+  "stats": {
+   "health": 610.0,
+   "health_growth": 94.0,
+   "resource_max": 100.0,
+   "attack": 62.0,
+   "attack_growth": 3.4,
+   "attack_range": 1.75,
+   "attack_cooldown": 1.5,
+   "armor": 34.0,
+   "magic_resist": 32.0,
+   "move_speed": 6.9
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "Needle Grin",
+    "description": "Every third basic attack on the same target tears a Stitch: bonus magic damage, and Oboro heals for 45% of the hit. A Stitched target stays Stitched for 4s. Hitting champions builds Malice; it drains out of combat."
+   },
+   {
+    "slot": "Q",
+    "name": "Unravel",
+    "description": "A lash of ink in a line. Minions and monsters it crosses are dragged toward Oboro and hurt; the first champion it reaches is hurt and pinned for 0.5s.",
+    "cooldown": 10.0,
+    "range": 7.0
+   },
+   {
+    "slot": "W",
+    "name": "Come Apart",
+    "description": "Oboro sheds a seam: a shield now, plus 1.2 per Malice spent, and the seam's own worth bleeds back out of him over 4s. The bleed cannot kill him.",
+    "cooldown": 14.0
+   },
+   {
+    "slot": "E",
+    "name": "Skitter",
+    "description": "A short dash. Aimed at a Stitched champion it reaches almost twice as far, lands beside them and bites.",
+    "cooldown": 12.0,
+    "range": 8.0
+   },
+   {
+    "slot": "R",
+    "name": "Eat the Seam",
+    "description": "Oboro grabs a champion, swaps places with them and hurts them. For 4s every basic attack on them tears a Stitch.",
+    "cooldown": 100.0,
+    "range": 5.0
+   }
+  ]
+ },
+ {
   "id": "ordo",
   "name": "Ordo",
   "title": "The Last Bombard",
