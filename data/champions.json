@@ -1025,12 +1025,14 @@
    {
     "slot": "P",
     "name": "Hollow",
-    "description": "The armour is a plate that eats damage before Mochi does (40 + 12% max health). When it breaks Mochi is exposed and gains 25% move speed until it rebuilds, which it does all at once after 6s without taking a hit."
+    "description": "The armour is a plate that eats damage before Mochi does (40 + 12% max health). When it breaks Mochi is exposed and gains 25% move speed until it rebuilds, which it does all at once after 6s without taking a hit.",
+    "icon": "mochi_p"
    },
    {
     "slot": "Q",
     "name": "Clang",
     "description": "A shield bash in a line. The first enemy it reaches is hurt and stunned for 1s.",
+    "icon": "mochi_q",
     "cooldown": 11.0,
     "range": 5.0
    },
@@ -1038,18 +1040,21 @@
     "slot": "W",
     "name": "Tin Kettle",
     "description": "Mochi squeaks. The most wounded ally champion within 5m (Mochi included) is healed and hastened by 20% for 1.5s.",
+    "icon": "mochi_w",
     "cooldown": 12.0
    },
    {
     "slot": "E",
     "name": "Tumble",
     "description": "A short roll. Minions and monsters in the way are shoved aside and hurt; champions are not.",
+    "icon": "mochi_e",
     "cooldown": 9.0
    },
    {
     "slot": "R",
     "name": "Pile On",
     "description": "The armour collapses into a door 3.5m wide where Mochi stood, across the way Mochi hops, for 4s. Mochi hops out untargetable and lands at the aim point. The plate is gone while the door stands and comes back whole when it falls.",
+    "icon": "mochi_r",
     "cooldown": 110.0,
     "range": 6.0
    }
@@ -1350,12 +1355,14 @@
    {
     "slot": "P",
     "name": "Needle Grin",
-    "description": "Every third basic attack on the same target tears a Stitch: bonus magic damage, and Oboro heals for 45% of the hit. A Stitched target stays Stitched for 4s. Hitting champions builds Malice; it drains out of combat."
+    "description": "Every third basic attack on the same target tears a Stitch: bonus magic damage, and Oboro heals for 45% of the hit. A Stitched target stays Stitched for 4s. Hitting champions builds Malice; it drains out of combat.",
+    "icon": "oboro_p"
    },
    {
     "slot": "Q",
     "name": "Unravel",
     "description": "A lash of ink in a line. Minions and monsters it crosses are dragged toward Oboro and hurt; the first champion it reaches is hurt and pinned for 0.5s.",
+    "icon": "oboro_q",
     "cooldown": 10.0,
     "range": 7.0
    },
@@ -1363,12 +1370,14 @@
     "slot": "W",
     "name": "Come Apart",
     "description": "Oboro sheds a seam: a shield now, plus 1.2 per Malice spent, and the seam's own worth bleeds back out of him over 4s. The bleed cannot kill him.",
+    "icon": "oboro_w",
     "cooldown": 14.0
    },
    {
     "slot": "E",
     "name": "Skitter",
     "description": "A short dash. Aimed at a Stitched champion it reaches almost twice as far, lands beside them and bites.",
+    "icon": "oboro_e",
     "cooldown": 12.0,
     "range": 8.0
    },
@@ -1376,6 +1385,7 @@
     "slot": "R",
     "name": "Eat the Seam",
     "description": "Oboro grabs a champion, swaps places with them and hurts them. For 4s every basic attack on them tears a Stitch.",
+    "icon": "oboro_r",
     "cooldown": 100.0,
     "range": 5.0
    }
