@@ -999,6 +999,63 @@
   ]
  },
  {
+  "id": "mochi",
+  "name": "Mochi",
+  "title": "The Mascot",
+  "class": "Tank",
+  "resource": "None",
+  "ranged": false,
+  "portrait": true,
+  "portrait_kind": "painted",
+  "pending": false,
+  "colour": "#3db2a6",
+  "stats": {
+   "health": 640.0,
+   "health_growth": 102.0,
+   "resource_max": 0.0,
+   "attack": 58.0,
+   "attack_growth": 3.2,
+   "attack_range": 1.6,
+   "attack_cooldown": 1.6,
+   "armor": 40.0,
+   "magic_resist": 34.0,
+   "move_speed": 6.6
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "Hollow",
+    "description": "The armour is a plate that eats damage before Mochi does (40 + 12% max health). When it breaks Mochi is exposed and gains 25% move speed until it rebuilds, which it does all at once after 6s without taking a hit."
+   },
+   {
+    "slot": "Q",
+    "name": "Clang",
+    "description": "A shield bash in a line. The first enemy it reaches is hurt and stunned for 1s.",
+    "cooldown": 11.0,
+    "range": 5.0
+   },
+   {
+    "slot": "W",
+    "name": "Tin Kettle",
+    "description": "Mochi squeaks. The most wounded ally champion within 5m (Mochi included) is healed and hastened by 20% for 1.5s.",
+    "cooldown": 12.0
+   },
+   {
+    "slot": "E",
+    "name": "Tumble",
+    "description": "A short roll. Minions and monsters in the way are shoved aside and hurt; champions are not.",
+    "cooldown": 9.0
+   },
+   {
+    "slot": "R",
+    "name": "Pile On",
+    "description": "The armour collapses into a door 3.5m wide where Mochi stood, across the way Mochi hops, for 4s. Mochi hops out untargetable and lands at the aim point. The plate is gone while the door stands and comes back whole when it falls.",
+    "cooldown": 110.0,
+    "range": 6.0
+   }
+  ]
+ },
+ {
   "id": "morvane",
   "name": "Morvane",
   "title": "The Forfeit",
