@@ -2251,12 +2251,12 @@
   "ranged": false,
   "portrait": true,
   "portrait_kind": "painted",
-  "pending": true,
+  "pending": false,
   "colour": "#425eb2",
   "stats": {
    "health": 640,
    "health_growth": 104,
-   "resource_max": 0,
+   "resource_max": 0.0,
    "attack": 62,
    "attack_growth": 3.2,
    "attack_range": 2,
@@ -2268,38 +2268,38 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Unbriefed",
-    "description": "Vrass has no kit yet: a body, an idle and a walk. His abilities land with his brief.",
+    "name": "Colony",
+    "description": "Every allied minion within 6m takes a share of what would have hurt Vrass: 4% less damage per minion, up to 5 (20%).",
     "icon": "vrass_p"
    },
    {
     "slot": "Q",
-    "name": "Unbriefed",
-    "description": "Not designed yet.",
+    "name": "Halberd Sweep",
+    "description": "A halberd arc in front of him. Everything caught is hurt and Scented for 4s; his basic attacks on a Scented enemy deal 15% more.",
     "icon": "vrass_q",
-    "cooldown": 10,
-    "range": 2
+    "cooldown": 9.0,
+    "range": 3.5
    },
    {
     "slot": "W",
-    "name": "Unbriefed",
-    "description": "Not designed yet.",
+    "name": "Royal Decree",
+    "description": "He slams the haft down. Enemies within 3m are slowed 35% for 1.5s and he takes a shield (60 + 6% max health) for 2.5s.",
     "icon": "vrass_w",
-    "cooldown": 10
+    "cooldown": 14.0
    },
    {
     "slot": "E",
-    "name": "Unbriefed",
-    "description": "Not designed yet.",
+    "name": "Swarm Step",
+    "description": "A short dash on all six limbs. Enemies within 2m of the landing are hurt, and he gains 25% move speed for 2s.",
     "icon": "vrass_e",
-    "cooldown": 10
+    "cooldown": 10.0
    },
    {
     "slot": "R",
-    "name": "Unbriefed",
-    "description": "Not designed yet.",
+    "name": "Sovereign's Reach",
+    "description": "He plants himself for 0.9s as a ring closes on him. When it closes, every enemy within 5m is dragged 2.5m toward him, stunned for 0.75s and hurt. Step out of the ring to escape it.",
     "icon": "vrass_r",
-    "cooldown": 100
+    "cooldown": 100.0
    }
   ]
  },
