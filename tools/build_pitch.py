@@ -140,6 +140,7 @@ page = f'''<!DOCTYPE html>
     <a href="../items/">Items</a>
     <a href="../maps/">Maps</a>
     <a href="../in-development/" aria-current="page">In development</a>
+    <a class="nav-play" href="../#play">Play</a>
     <a href="../#status">Status</a>
   </nav>
 </header>
