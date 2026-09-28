@@ -283,3 +283,4 @@ small { color: var(--faded); }
 .steps strong { color: var(--parchment); }
 .steps code { font-size: 0.85em; color: var(--moss); }
 @media (max-width: 800px) { .play-inner { grid-template-columns: 1fr; } }
+.section { scroll-margin-top: 72px; }
