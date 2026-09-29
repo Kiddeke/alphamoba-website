@@ -577,7 +577,7 @@
    {
     "slot": "W",
     "name": "Fire a Clayfolk",
-    "description": "Spend a Clay to fire a clayfolk at a nearby point. It attacks the nearest enemy champion within 6, and walks to you and waits if there is none. It blocks enemy champion movement.",
+    "description": "Spend a Clay to fire a clayfolk at a nearby point. Fired within reach of an enemy, it attacks that enemy for its first 6 seconds; otherwise it attacks whatever you are attacking, or the nearest enemy champion within 6, and with nothing to fight it waits beside you. It blocks enemy champion movement.",
     "icon": "hollis_w",
     "cooldown": 1.0,
     "cost": 30.0,
