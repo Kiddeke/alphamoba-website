@@ -284,3 +284,7 @@ small { color: var(--faded); }
 .steps code { font-size: 0.85em; color: var(--moss); }
 @media (max-width: 800px) { .play-inner { grid-template-columns: 1fr; } }
 .section { scroll-margin-top: 72px; }
+
+/* montage: the game's own footage */
+.montage-frame { margin: 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--edge-lit); box-shadow: 0 30px 80px rgba(0,0,0,0.6); background: #000; }
+.montage-frame video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
