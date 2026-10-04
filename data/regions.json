@@ -43,12 +43,42 @@
   {
    "id": "farshores",
    "name": "The Far Shores",
-   "blurb": "From beyond the wood entirely — other worlds, other stories, washed up here."
+   "blurb": "A country over the sea, past every road the wood keeps. Its people come one at a time and say little of it: a spear, a masked watcher, a tongue nobody here can read."
+  },
+  {
+   "id": "lantern",
+   "name": "The Lantern Isles",
+   "blurb": "Shrine bells and paper lanterns, masterless swords and the curses that follow them, washed in from an older story."
+  },
+  {
+   "id": "rooftops",
+   "name": "The Rooftops",
+   "blurb": "Uniforms, rivals and rooftops at dusk: ordinary kids from a story set after the last bell, handed powers they never asked for."
+  },
+  {
+   "id": "neon",
+   "name": "The Neon Sprawl",
+   "blurb": "Chrome and rain-slick neon. Pilots, androids and a cybered oni, and the tinker who keeps them all running."
+  },
+  {
+   "id": "starlit",
+   "name": "The Starlit Court",
+   "blurb": "Wands, mascots and a demon lord on a throne of skulls. They brought the sparkle with them."
   },
   {
    "id": "fallensky",
    "name": "The Fallen Sky",
-   "blurb": "Things that were never of this wood: fallen from the sky, risen from the deep, grown in the dark. Of no kingdom, and welcome in none."
+   "blurb": "Fallen out of the night sky: star-crowned, feathered, or made of glass and starlight. Of no kingdom, and welcome in none."
+  },
+  {
+   "id": "risendeep",
+   "name": "The Risen Deep",
+   "blurb": "Risen from below, out of the black water and out of the fire under the stone."
+  },
+  {
+   "id": "rootdark",
+   "name": "The Rootdark",
+   "blurb": "Grown in the dark and never meant to be seen: a fungus that talks, a hive and its queen, a walking hill, a marsh with a skull for a head, a moth keeping vigil."
   }
  ],
  "champions": {
@@ -126,41 +156,41 @@
   "ketta": "farshores",
   "zax": "farshores",
   "yara": "farshores",
-  "kazuki": "farshores",
-  "ayame": "farshores",
-  "tetsuo": "farshores",
-  "hoshimi": "farshores",
-  "kitsune_rei": "farshores",
-  "ryo": "farshores",
-  "mika": "farshores",
-  "shiro": "farshores",
-  "valgor": "farshores",
-  "neko": "farshores",
+  "kazuki": "rooftops",
+  "ayame": "rooftops",
+  "tetsuo": "lantern",
+  "hoshimi": "starlit",
+  "kitsune_rei": "lantern",
+  "ryo": "rooftops",
+  "mika": "neon",
+  "shiro": "lantern",
+  "valgor": "starlit",
+  "neko": "rooftops",
   "ysolde": "hushwood",
-  "oboro": "farshores",
-  "suzu": "farshores",
-  "daigo": "farshores",
-  "kaoru": "farshores",
-  "umi": "farshores",
-  "oldren": "farshores",
-  "yoru": "farshores",
-  "tsubame": "farshores",
-  "hana": "farshores",
-  "gen": "farshores",
-  "mochi": "farshores",
-  "haru": "farshores",
+  "oboro": "lantern",
+  "suzu": "rooftops",
+  "daigo": "rooftops",
+  "kaoru": "rooftops",
+  "umi": "neon",
+  "oldren": "lantern",
+  "yoru": "rooftops",
+  "tsubame": "neon",
+  "hana": "rooftops",
+  "gen": "neon",
+  "mochi": "starlit",
+  "haru": "rooftops",
   "vexhal": "fallensky",
-  "murrow": "fallensky",
-  "thessaly": "fallensky",
-  "gorrim": "fallensky",
-  "ixil": "fallensky",
+  "murrow": "risendeep",
+  "thessaly": "rootdark",
+  "gorrim": "rootdark",
+  "ixil": "rootdark",
   "oryx": "fallensky",
   "plume": "fallensky",
   "halvane": "fallensky",
-  "nix": "fallensky",
-  "brann": "fallensky",
-  "lysse": "fallensky",
-  "kroth": "fallensky",
+  "nix": "risendeep",
+  "brann": "risendeep",
+  "lysse": "rootdark",
+  "kroth": "rootdark",
   "zefira": "fallensky"
  }
 }
