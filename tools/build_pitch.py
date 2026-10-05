@@ -12,7 +12,6 @@ portrait_prompts_new.tsv, _anime.tsv, _otherworld.tsv) and are marked as in deve
 Only the standard library and Pillow.
 """
 import html, json, os, sys
-from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 unity = os.path.abspath(sys.argv[1])
@@ -22,7 +21,9 @@ os.makedirs(OUT_IMG, exist_ok=True)
 
 regions = json.load(open(os.path.join(ROOT, "data", "regions.json"), encoding="utf-8"))
 roster = json.load(open(os.path.join(ROOT, "data", "champions.json"), encoding="utf-8"))
-PITCH_SHEETS = [("portrait_prompts_new.tsv", "In development"), ("portrait_prompts_anime.tsv", "Anime pitch"), ("portrait_prompts_otherworld.tsv", "Otherworld pitch")]
+PITCH_SHEETS = ["portrait_prompts_new.tsv", "portrait_prompts_anime.tsv", "portrait_prompts_otherworld.tsv"]
+# The pitches chosen to be built are in development; the rest wait in TBD.
+CHOSEN = set(json.load(open(os.path.join(ROOT, "data", "production.json"), encoding="utf-8"))["in_development"])
 
 def rows(sheet):
     out = []
@@ -38,6 +39,7 @@ def stage(cid):
     for d in staged:
         src = os.path.join(d, cid + ".png")
         if os.path.exists(src):
+            from PIL import Image   # only needed when portraits are staged
             Image.open(src).convert("RGB").resize((384, 384), Image.LANCZOS).save(os.path.join(OUT_IMG, cid + ".jpg"), quality=84)
             return True
     return os.path.exists(os.path.join(OUT_IMG, cid + ".jpg"))
@@ -47,8 +49,9 @@ people = {}
 for c in roster:
     img = f"../assets/img/portraits/{c['id']}.png" if c.get("portrait") else None
     people[c["id"]] = (c["name"], c["title"], c.get("class", ""), f"../champions/{c['id']}.html", img, "", c.get("colour", "#7a6a4a"))
-for sheet, mark in PITCH_SHEETS:
+for sheet in PITCH_SHEETS:
     for cid, name, title, desc in rows(sheet):
+        mark = "In development" if cid in CHOSEN else "TBD"
         if cid in people:
             continue   # a pitch that made the roster keeps its champion tile (Oboro, 2026-09-27)
         img = f"../assets/img/pitch/{cid}.jpg" if stage(cid) else None
@@ -86,13 +89,15 @@ def gallery(members):
         for cid, art in shots)
     return f'\n      <h3 class="splash-head">Splash art</h3>\n      <ul class="shots" aria-label="Splash art">{items}</ul>'
 
-unplaced = [cid for cid in people if cid not in regions["champions"]]
+tbd = sorted((cid for cid in people if people[cid][2] == "TBD"), key=lambda cid: people[cid][0])
+unplaced = [cid for cid in people if cid not in regions["champions"] and cid not in tbd]
 sections = []
 for region in regions["regions"]:
-    members = [cid for cid, r in regions["champions"].items() if r == region["id"] and cid in people]
+    members = [cid for cid, r in regions["champions"].items() if r == region["id"] and cid in people and cid not in tbd]
     members.sort(key=lambda cid: (people[cid][3] is None, people[cid][0]))
     live = sum(1 for cid in members if people[cid][3])
-    count = f"{len(members)} characters, {live} in the game" if live else f"{len(members)} characters, none in the game yet"
+    n = f"{len(members)} character" + ("" if len(members) == 1 else "s")
+    count = f"{n}, {live} in the game" if live else f"{n}, none in the game yet"
     sections.append(f'''
   <section class="section" id="{region['id']}">
     <div class="wrap">
@@ -106,6 +111,20 @@ for region in regions["regions"]:
       </ul>{gallery(members)}
     </div>
   </section>''')
+if tbd:
+    sections.append(f'''
+  <section class="section" id="tbd">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{len(tbd)} characters</p>
+        <h2>TBD</h2>
+        <p class="lede">Faces screened for the roster that aren't being built yet. Some may come back; some never will.</p>
+      </div>
+      <ul class="roster" aria-label="TBD">
+{chr(10).join(tile(cid) for cid in tbd)}
+      </ul>
+    </div>
+  </section>''')
 if unplaced:
     sections.append(f'''
   <section class="section" id="unplaced">
@@ -115,7 +134,7 @@ if unplaced:
     </div>
   </section>''')
 
-toc = " · ".join(f'<a href="#{r["id"]}">{html.escape(r["name"])}</a>' for r in regions["regions"])
+toc = " · ".join([f'<a href="#{r["id"]}">{html.escape(r["name"])}</a>' for r in regions["regions"]] + (['<a href="#tbd">TBD</a>'] if tbd else []))
 page = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,7 +171,7 @@ page = f'''<!DOCTYPE html>
       <div class="section-head">
         <p class="eyebrow">Regions and kingdoms</p>
         <h1>In development</h1>
-        <p class="lede">Every character in Wychwood, by where they come from. A tile with a class on it is in the game and opens the champion's page; a tile marked in development is a portrait and a sentence, up for screening.</p>
+        <p class="lede">Every character in Wychwood, by where they come from. A tile with a class on it is in the game and opens the champion's page; a tile marked in development is being built into a champion now. Faces not yet chosen wait under TBD at the end.</p>
         <p class="regions">{toc}</p>
       </div>
     </div>
@@ -172,4 +191,4 @@ page = f'''<!DOCTYPE html>
 '''
 os.makedirs(os.path.join(ROOT, "in-development"), exist_ok=True)
 open(os.path.join(ROOT, "in-development", "index.html"), "w", encoding="utf-8").write(page)
-print("wrote in-development/index.html:", len(people), "characters,", len(unplaced), "unplaced")
+print("wrote in-development/index.html:", len(people), "characters,", sum(1 for c in people if people[c][2] == "In development"), "in development,", len(tbd), "TBD,", len(unplaced), "unplaced")

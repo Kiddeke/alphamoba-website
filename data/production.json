@@ -1,0 +1,8 @@
+{
+  "_about": "Pitches chosen to be built into champions (2026-10-05). build_pitch.py marks these In development; every other pitch goes in the TBD section.",
+  "in_development": [
+    "kestrel", "wren", "nettle", "pell", "selkie", "vellum", "sallow", "cinder", "ormond",
+    "oldren", "shiro", "kitsune_rei", "ayame", "hana", "haru", "kazuki", "neko", "suzu", "umi", "gen", "mika", "valgor", "hoshimi",
+    "oryx", "zefira", "halvane", "nix", "thessaly"
+  ]
+}
