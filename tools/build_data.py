@@ -417,6 +417,7 @@ def champion_page(c, roster, template):
             .replace("{{id}}", c["id"])
             .replace("{{name}}", esc(c["name"]))
             .replace("{{title}}", esc(c["title"]))
+            .replace("{{class_plural}}", esc("Marksmen" if c["class"] == "Marksman" else c["class"] + "s"))
             .replace("{{class}}", esc(c["class"]))
             .replace("{{resource}}", esc(c["resource"] if c["resource"] not in ("None", "") else "No resource"))
             .replace("{{colour}}", c["colour"])
