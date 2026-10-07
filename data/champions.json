@@ -31,11 +31,11 @@
    },
    {
     "slot": "Q",
-    "name": "Wingbeat",
-    "description": "Sweep the glaive in a 180-degree arc out to 3.25m for 50/85/120/155/190 (+90% bonus AD) physical damage. Enemies on the outer 1m (the blade) take 40% more and are slowed by 25% for 1s. Applies Moths.",
+    "name": "Silk Snap",
+    "description": "Flick a silk line 6m from the glaive tip. It stops at the first enemy, dealing 50/85/120/155/190 (+90% bonus AD) physical damage and pinning a Moth. If the target already carried a Moth, the silk snaps taut instead: it is slowed by 40% for 1.25s and its Moth's timer resets to 6s.",
     "icon": "ayame_q",
     "cooldown": 8.0,
-    "range": 3.25
+    "range": 6.0
    },
    {
     "slot": "W",
@@ -47,10 +47,10 @@
    {
     "slot": "E",
     "name": "Moth to Flame",
-    "description": "Dash to a Mothed enemy within 5.5m and strike them for 60/95/130/165/200 (+70% bonus AD) physical damage, releasing their Moth at once. With no Mothed enemy in reach, dash 3m toward the cursor instead. A takedown within 3s refunds the cooldown.",
+    "description": "Leap on moth wings up to 4m toward the cursor, clearing a wall up to 1.5m thick. On landing, enemies within 1.5m take 60/95/130/165/200 (+70% bonus AD) physical damage, and every Mothed enemy in the ring has its Moth released at once (each release heals you separately). Passive: 15% bonus move speed while moving toward a Mothed enemy champion.",
     "icon": "ayame_e",
-    "cooldown": 14.0,
-    "range": 5.5
+    "cooldown": 15.0,
+    "range": 4.0
    },
    {
     "slot": "R",
@@ -103,12 +103,12 @@
    },
    {
     "slot": "W",
-    "name": "Afflict",
-    "description": "Infect one enemy with a first-generation Canker.",
+    "name": "Shared Cup",
+    "description": "Fire a 7m bolt that stops at the first enemy and deals 30 (+20% AP) magic damage to it - but the first-generation Canker goes to the enemy standing nearest that body within 3m (the body itself if it stands alone).",
     "icon": "azra_w",
     "cooldown": 9.0,
     "cost": 70.0,
-    "range": 6.25
+    "range": 7.0
    },
    {
     "slot": "E",
@@ -127,73 +127,6 @@
     "cooldown": 140.0,
     "cost": 100.0,
     "range": 9.0
-   }
-  ]
- },
- {
-  "id": "bram",
-  "name": "Bram",
-  "title": "The Standing Gate",
-  "class": "Tank",
-  "resource": "Mana",
-  "ranged": false,
-  "portrait": true,
-  "portrait_kind": "painted",
-  "pending": false,
-  "colour": "#5976b2",
-  "stats": {
-   "health": 680.0,
-   "health_growth": 118.0,
-   "resource_max": 380.0,
-   "attack": 60.0,
-   "attack_growth": 3.0,
-   "attack_range": 1.25,
-   "attack_cooldown": 1.6,
-   "armor": 40.0,
-   "magic_resist": 34.0,
-   "move_speed": 5.8
-  },
-  "kit": [
-   {
-    "slot": "P",
-    "name": "Hold the Line",
-    "description": "Damage from your front arc is reduced by 20%, plus 2% per enemy champion facing you, to a maximum of 3. Damage from behind lands in full and reveals the attacker to your team. Frontal mitigation is disabled while the Gate stands.",
-    "icon": "bram_p"
-   },
-   {
-    "slot": "Q",
-    "name": "Gatecrash",
-    "description": "Slam the Gate forward, damaging enemies and knocking them back. Enemies knocked into terrain or into your Gate take bonus damage and are stunned.",
-    "icon": "bram_q",
-    "cooldown": 10.0,
-    "cost": 50.0,
-    "range": 3.0
-   },
-   {
-    "slot": "W",
-    "name": "Raise the Gate",
-    "description": "Plant the Gate as a one-way wall for 4s. Allies pass through it; enemies and enemy dashes are blocked. Your frontal mitigation is disabled while it stands.",
-    "icon": "bram_w",
-    "cooldown": 18.0,
-    "cost": 70.0,
-    "range": 4.0
-   },
-   {
-    "slot": "E",
-    "name": "Shoulder to Shoulder",
-    "description": "Brace for 2.5s. You cannot be displaced and are slowed by 20%. Allies behind you take 25% less damage from sources in front of you.",
-    "icon": "bram_e",
-    "cooldown": 16.0,
-    "cost": 60.0
-   },
-   {
-    "slot": "R",
-    "name": "Bastion",
-    "description": "Leap and slam the Gate down, raising a one-way rampart around the landing point for 6s. Enemies caught in the wall line are knocked inward and stunned.",
-    "icon": "bram_r",
-    "cooldown": 140.0,
-    "cost": 100.0,
-    "range": 3.5
    }
   ]
  },
@@ -229,12 +162,12 @@
    },
    {
     "slot": "Q",
-    "name": "Rod and Chain",
-    "description": "Sweep the rod in an arc. Hitting exactly one enemy deals bonus damage and refunds most of the cooldown.",
+    "name": "Plumb Drop",
+    "description": "Drop the brass plumb bob on a point within 5m. After 0.5s it lands in a 1.25m circle for 70/110/150/190/230 (+80% AD) physical damage and a 25% slow for 1s. If one of your Milestones stands within 8m of where it lands, a sighting line runs from the stone to the bob and every enemy along it takes the same damage.",
     "icon": "cairn_q",
     "cooldown": 9.0,
     "cost": 40.0,
-    "range": 3.5
+    "range": 5.0
    },
    {
     "slot": "W",
@@ -270,7 +203,7 @@
   "name": "Cinder",
   "title": "The Coal Imp",
   "class": "Marksman",
-  "resource": "Heat",
+  "resource": "Pressure",
   "ranged": true,
   "portrait": true,
   "portrait_kind": "painted",
@@ -291,14 +224,14 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Forge Breath",
-    "description": "Heat runs 0 to 100 and refills 4 a second. Your attacks are gouts of flame that spend 8 Heat and splash 40% down a jet behind the target. Above 60 Heat the jet reaches 0.75 further and burns for 15% of your attack damage over 2s. Below 15 Heat it sputters for 30% less.",
+    "name": "Bellows Pressure",
+    "description": "Pressure runs 0 to 100 and refills 4 a second. Your attacks are gouts of flame that spend 8 Pressure and splash down a jet behind the target that scales with the gauge: 0.5m and 25% of the blow when empty, up to 3m and 45% at full. Attacks on a target already burning (from Gout or White Heat) refund 3 Pressure.",
     "icon": "cinder_p"
    },
    {
     "slot": "Q",
     "name": "Gout",
-    "description": "A cone of fire that spends up to 40 Heat: physical damage, 1% more per Heat spent, and a burn.",
+    "description": "A cone of fire that spends up to 40 Pressure: physical damage, 1% more per Pressure spent, and a burn.",
     "icon": "cinder_q",
     "cooldown": 7.0,
     "cost": 15.0,
@@ -307,7 +240,7 @@
    {
     "slot": "W",
     "name": "Pump",
-    "description": "Hold to work the bellows for up to 2s: +45 Heat a second, but you are slowed by 40% and cannot attack. Release (or press again) to stop. A full pump gives your next 3 attacks 30% attack speed.",
+    "description": "Hold to work the bellows for up to 2s: +45 Pressure a second, but you are slowed by 40% and cannot attack. Release (or press again) to stop. A full pump gives your next 3 attacks 30% attack speed.",
     "icon": "cinder_w",
     "cooldown": 4.0
    },
@@ -322,7 +255,7 @@
    {
     "slot": "R",
     "name": "White Heat",
-    "description": "Needs 100 Heat. Swell for 0.75s, then a white-hot blast in a long cone: physical damage, a 3s burn and healing cut by 40% for 4s. Then you Overheat: Heat drops to 0 and cannot refill for 3s.",
+    "description": "Needs 100 Pressure. Swell for 0.75s, then a white-hot blast in a long cone: physical damage, a 3s burn and healing cut by 40% for 4s. Then you Overheat: Pressure drops to 0 and cannot refill for 3s.",
     "icon": "cinder_r",
     "cooldown": 90.0,
     "cost": 100.0,
@@ -399,6 +332,68 @@
   ]
  },
  {
+  "id": "ormond",
+  "name": "Dunstan",
+  "title": "The Ironmonger",
+  "class": "Tank",
+  "resource": "Heat",
+  "ranged": false,
+  "portrait": true,
+  "portrait_kind": "painted",
+  "pending": false,
+  "colour": "#b27059",
+  "stats": {
+   "health": 670,
+   "health_growth": 112,
+   "resource_max": 100,
+   "attack": 60,
+   "attack_growth": 3.2,
+   "attack_range": 1.75,
+   "attack_cooldown": 1.6,
+   "armor": 36,
+   "magic_resist": 32,
+   "move_speed": 5.8
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "Hiss of the Quench",
+    "description": "Each basic attack adds 12 Heat and each ability that hits adds 20 (max 100, seen by both teams). It cools 10 per second after 3s out of combat. Whenever Heat leaves the bar (cooling, a white-hot Strike While Hot or Quench) the steam shields you for 3s: 1.2 per Heat lost over the last 2s, capped at 12% of your max health, refreshed with each loss. At 100 Heat your next Strike While Hot Brands.",
+    "icon": "ormond_p"
+   },
+   {
+    "slot": "Q",
+    "name": "Strike While Hot",
+    "description": "Slam the anvil 3m ahead into a 2.25m circle: 70/110/150/190/230 (+0.6 AD) physical damage and a 35% slow for 1.5s. At 100 Heat it spends it all, stuns for 0.75s and Brands everyone hit for 5s: the next hit from your side on a Branded enemy deals +5% of their max health as magic damage.",
+    "icon": "ormond_q",
+    "cooldown": 9,
+    "range": 3
+   },
+   {
+    "slot": "W",
+    "name": "Work the Iron",
+    "description": "For 3s you hammer in rhythm: +40% attack speed, attacks add double Heat, and you take 15% less damage.",
+    "icon": "ormond_w",
+    "cooldown": 15
+   },
+   {
+    "slot": "E",
+    "name": "Anvil Drop",
+    "description": "Leap to a point within 6m and slam down: enemies within 2.25m are knocked up for 0.75s and take 60/95/130/165/200 (+0.5 AD) physical damage (+20 Heat per champion hit).",
+    "icon": "ormond_e",
+    "cooldown": 16,
+    "range": 6
+   },
+   {
+    "slot": "R",
+    "name": "Quench",
+    "description": "Plunge the hammer into the ground: a scalding steam cloud bursts 5m round you for 4s, spending all Heat. Enemies inside take 30/45/60 magic damage per second (+1% per Heat spent) and are slowed 25%. Enemies outside cannot see in: it hides your team like brush. You gain 30/40/50 armour and magic resist for the duration.",
+    "icon": "ormond_r",
+    "cooldown": 120
+   }
+  ]
+ },
+ {
   "id": "edda",
   "name": "Edda",
   "title": "The Dawnwatch",
@@ -424,8 +419,8 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Keeper's Eye",
-    "description": "Your attack range grows by 0.25 at levels 3, 6, 9, 12 and 15.",
+    "name": "Light to Shoot By",
+    "description": "Your basic attacks against a target in your light (lit by a Flare Round, standing in a Storm Lantern, or revealed by the Dawnwatch) reach 1m further and ignore 10% of its armour. Eighty years of practice: you cannot be blinded.",
     "icon": "edda_p"
    },
    {
@@ -447,12 +442,12 @@
    },
    {
     "slot": "E",
-    "name": "Not Tonight",
-    "description": "Brace for 2s. The first enemy to dash at you is slowed heavily and you step back. If none does, most of the cost is refunded.",
+    "name": "Foghorn",
+    "description": "Sound the lamp-gun's horn: enemies within 3m are pushed 1.5m directly away and slowed by 30% for 1s; enemies in your light are pushed 2.5m instead. You gain 20% move speed for 1.5s.",
     "icon": "edda_e",
     "cooldown": 16.0,
     "cost": 40.0,
-    "range": 5.0
+    "range": 3.0
    },
    {
     "slot": "R",
@@ -506,8 +501,8 @@
    },
    {
     "slot": "W",
-    "name": "Standing Floe",
-    "description": "Raise a pillar of ice: 0.5s to rise, 8s standing, four champion hits to break. Recast on it to shatter it for damage and a shove of shards.",
+    "name": "Calving Shelf",
+    "description": "Aim a point within 7m. After 0.5s a shelf of ice grows out of the nearest wall, or the nearest of your own ice, within 4m of that point, extending 3m toward it in three segments that stand 6s: solid to enemies, open to allies, four champion hits each to break. With nothing to grow from, a two-segment stub rises at the point. Recast on the shelf to shatter all of it for 70/105/140/175/210 (+40% AP) magic damage and a 1m shove each, at half the cooldown and no mana. Two shelves at most.",
     "icon": "firn_w",
     "cooldown": 13.0,
     "cost": 60.0,
@@ -525,11 +520,11 @@
    {
     "slot": "R",
     "name": "The Slow Winter",
-    "description": "Raise a wall of ice across the field. It rises from the middle outward, stands 5s, blocks enemies and every projectile, and allies pass through it. Recast to shatter it along its length.",
+    "description": "Raise a 6m-wide front of ice at your feet that creeps forward along your aim at 1.5m a second for 5s. Enemies it meets are pushed ahead of it (pinned 0.75s if pressed into a wall); it blocks enemy shots and movement, and allies walk through it. Recast, or let its time run out, and the whole front shatters for 200/300/400 (+60% AP) magic damage and a 1.5m shove.",
     "icon": "firn_r",
     "cooldown": 140.0,
     "cost": 100.0,
-    "range": 12.0
+    "range": 7.5
    }
   ]
  },
@@ -574,7 +569,7 @@
    {
     "slot": "W",
     "name": "The Word",
-    "description": "Curse one champion for 7s with damage that grows every second; the last tick deals more than twice the first. The health you paid becomes its Debt: letting it run repays you with interest, and a host who dies repays half and passes the curse to the nearest champion. Only one may exist.",
+    "description": "Costs 9% of current health. Curse one enemy champion within 6.25m for 7s: 14/23/32/41/50 (+14% AP) magic damage per second, 20% more for every second it has run. If it runs its full length the sentence finishes: the host is silenced for 1s and you are repaid 150% of the health it cost over 2s. If the host dies you are repaid all of it and the Word simply ends. Utterance on the host starts it over. Only one Word at a time.",
     "icon": "gall_w",
     "cooldown": 11.0,
     "range": 6.25
@@ -588,8 +583,8 @@
    },
    {
     "slot": "R",
-    "name": "Say It All The Way Through",
-    "description": "Apply a Deep Word for 10s. It stacks with the Word, cannot be cleansed, and passes to a new host each time its host dies.",
+    "name": "The Congregation",
+    "description": "Costs 25% of current health. Set your censers down at a point within 7m: a 5m ring of smoke for 8s that slows enemies by 15%. Every enemy champion inside hears a step of the sermon each second (kept for 2s after leaving) and takes 22/33/44 (+10% AP) magic damage per second, 20% more per step heard. Anyone who hears all 8 steps repays you 25% of what you are Owed. While the smoke burns, your out-of-combat regeneration is shut.",
     "icon": "gall_r",
     "cooldown": 140.0,
     "range": 7.0
@@ -709,8 +704,8 @@
    },
    {
     "slot": "E",
-    "name": "Glass Shoulder",
-    "description": "Charge 4.25m. The first enemy champion is shoved 2m and takes 60/90/120/150/180 (+5% bonus health) physical damage; shoved into terrain they are stunned for 1s. At 50+ Ember the target is stunned for 0.5s even in the open.",
+    "name": "Faceted Charge",
+    "description": "Charge 4.25m, stopping on the first enemy champion: they take 60/90/120/150/180 (+5% bonus health) physical damage and are pinned for 0.5s (1s at 50+ Ember) while three quartz shards rise in a 3m arc behind them, standing 2s as a wall to everyone but your team. No shove.",
     "icon": "halvane_e",
     "cooldown": 14,
     "range": 4.25
@@ -784,10 +779,11 @@
    {
     "slot": "R",
     "name": "S\u00e9ance",
-    "description": "Open a s\u00e9ance around Hana for 8s. Every allied champion in it is shielded for 3s; while it holds, an ally in it who would die rises as a Ghost for 4s at 30% health, draining to nothing, unhealable, fighting at full strength, then dies to the original killer.",
+    "description": "Lay a 5m ring of ghost candles at a point within 7m for 6s. Allied champions inside when it lands are shielded for 100/160/220 (+40% AP) for 3s, and allies inside regenerate 2% of their max health per second. The first time each enemy champion crosses into the ring the little ghost pops up in their face: they are feared straight back out for 0.6s, then slowed by 30% for 1s. The first ally shielded receives the Little Ghost's wisp.",
     "icon": "hana_r",
     "cooldown": 150.0,
-    "cost": 100.0
+    "cost": 100.0,
+    "range": 7.0
    }
   ]
  },
@@ -817,8 +813,8 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Late Bloomer",
-    "description": "Your training sword grows at levels 6, 11 and 16. Wood (1-5): basic attacks deal 8% less damage to champions. Iron (6): +10 attack damage. Oak (11): +20 attack damage and +0.25m attack range. Steel (16): +35 attack damage, +0.5m attack range, and basic attacks cleave 40% of their damage in a small arc. Until level 16 you gain 10% more experience from champion deaths.",
+    "name": "Lessons Learned",
+    "description": "You earn Lessons: 2 for a champion takedown, 1 for dying to a champion, 1 for an epic monster your team takes near you. Your training sword grows on them: Iron at 4 (+10 attack damage), Oak at 9 (+20 attack damage, +0.25m attack range), Steel at 15 (+35 attack damage, +0.5m attack range, basic attacks cleave 40% in a 90-degree 2.5m arc), and never later than levels 7, 12 and 17. Below Iron, basic attacks deal 8% less to champions. Practice Swing's second cut unlocks at Iron and its gold wave at Steel.",
     "icon": "haru_p"
    },
    {
@@ -848,10 +844,10 @@
    },
    {
     "slot": "R",
-    "name": "Second Wind",
-    "description": "Cast it for 100 mana, or let it fire itself for free: while it is off cooldown, a blow that would kill you leaves you on 1 health instead. For 4/5/6s you cannot drop below 1 health, gain 30% attack speed and 20% movement speed, and heal for 25% of the damage you deal. Score a takedown during it and you heal 20% of your maximum health when it ends.",
+    "name": "Borrowed Steel",
+    "description": "For 6s your sword jumps one stage past its current one (at Steel it becomes Gold: +50 attack damage, +0.75m attack range, 60% cleave). Practice Swing throws its gold wave and its cooldown is halved, and each enemy champion hit by Practice Swing or Running Start extends the window by 0.5s (up to 3s). A takedown during it permanently grants +3 attack damage (up to 5 times).",
     "icon": "haru_r",
-    "cooldown": 120.0,
+    "cooldown": 110.0,
     "cost": 100.0
    }
   ]
@@ -1023,8 +1019,8 @@
    },
    {
     "slot": "Q",
-    "name": "Shooting Star",
-    "description": "Flick a star down a line. The first enemy hit takes magic damage, and the star bounces to the nearest allied champion near it, healing them.",
+    "name": "Wishing Star",
+    "description": "Flick a star 9.5m down a line. The first enemy hit takes 60/95/130/165/200 (+40% AP) magic damage. Where it stops (the body it hit, or the end of its range) it leaves a star on the ground for 3s (5s if it hit a champion): an allied champion who catches it heals 40/55/70/85/100 (+30% AP), Hoshimi catching it bottles it in a jar under Star-Catcher's rules, and an enemy can stamp it out.",
     "icon": "hoshimi_q",
     "cooldown": 7.0,
     "cost": 50.0,
@@ -1152,8 +1148,8 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Static Charge",
-    "description": "Every 3rd ability hit marks the enemy with Static. Your next basic attack detonates it for bonus magic damage.",
+    "name": "Lightning Rod",
+    "description": "Each ability hit plants a brass rod on that enemy for 4s. When Thunderhead strikes and a rodded enemy is within 3m of its centre, the bolt jumps to them: it re-centres on their position and deals 30 (+20% AP) more magic damage to them, spending the rod. Arc Bolt hitting a rodded enemy forks 4m to the nearest other enemy for 50% of its damage, spending the rod.",
     "icon": "kaelen_p"
    },
    {
@@ -1183,8 +1179,8 @@
    },
    {
     "slot": "R",
-    "name": "Tempest Crown",
-    "description": "Summon a storm for 4s that damages and slows enemies inside every half second. An enemy who stays 2s or longer is stunned, once per cast.",
+    "name": "Charged Sky",
+    "description": "Summon a thundercloud over a 5m circle within 8m for 4s. Every 0.75s a bolt picks an enemy champion inside (a rodded one first, otherwise any, otherwise a random point) and rings their feet; 0.5s later it strikes a 1.2m circle for 70/105/140 (+25% AP) magic damage. A champion struck twice in one cast is stunned for 1s. Moving dodges; standing still does not.",
     "icon": "kaelen_r",
     "cooldown": 60.0,
     "cost": 100.0,
@@ -1197,7 +1193,7 @@
   "name": "Kazuki",
   "title": "The Blazing Fist",
   "class": "Fighter",
-  "resource": "Heat",
+  "resource": "Blaze",
   "ranged": false,
   "portrait": true,
   "portrait_kind": "painted",
@@ -1219,13 +1215,13 @@
    {
     "slot": "P",
     "name": "Stoke the Rings",
-    "description": "Basic attacks add 8 Heat and abilities that hit add 15. Every 25 Heat grants 5% attack speed. At 100 his next ability is Red-Hot and spends all Heat. Heat cools 10 per second after 4s out of combat.",
+    "description": "Basic attacks add 8 Blaze and abilities that hit add 15. Every 25 Blaze grants 5% attack speed. At 100 his rings ignite for 3s: Blaze drains away and cannot be gained, every ability he casts is Red-Hot, and his basic attacks deal 15 bonus magic damage. Blaze cools 10 per second after 4s out of combat.",
     "icon": "kazuki_p"
    },
    {
     "slot": "Q",
     "name": "Hammer and Anvil",
-    "description": "Two punches down a line, 0.25s apart, physical damage each; the second knocks enemies back. Red-Hot: the second punch stuns champions for 0.75s.",
+    "description": "Two punches down a line, 0.25s apart, physical damage each; the second knocks enemies back. Red-Hot: the second punch stuns champions for 0.5s.",
     "icon": "kazuki_q",
     "cooldown": 7.0,
     "range": 3.0
@@ -1233,24 +1229,24 @@
    {
     "slot": "W",
     "name": "Quench",
-    "description": "Vent the rings in a burst of steam: magic damage around him and a 30% slow for 1.5s, and he heals for 4% of his maximum health. Red-Hot: twice the heal, and the steam lingers 2s, slowing anyone who stays.",
+    "description": "Vent the rings in a burst of steam: magic damage around him and a 30% slow for 1.5s, and he heals for 4% of his maximum health. Red-Hot: 60% more heal, and the steam lingers 2s, slowing anyone who stays.",
     "icon": "kazuki_w",
     "cooldown": 12.0
    },
    {
     "slot": "E",
     "name": "Not For You!",
-    "description": "Dash to a champion. At an enemy: punch on arrival for physical damage. At an ally: land beside them and both gain a shield (+15% bonus health) for 2s. Red-Hot: the shield or the punch is 50% stronger.",
+    "description": "Dash to a champion. At an enemy: punch on arrival for physical damage. At an ally: land between them and the nearest enemy champion and cover them for 2.5s: 40% of the damage enemy champions deal them is dealt to Kazuki instead, and every 2% of his maximum health he takes this way adds 2 Blaze. Red-Hot: the punch is 30% stronger, or he takes 60% and burns off the ally's slows.",
     "icon": "kazuki_e",
     "cooldown": 16.0
    },
    {
     "slot": "R",
     "name": "Forge-Line",
-    "description": "Hold to charge for up to 1.25s, moving 30% slower, then rocket in a straight line, unstoppable, farther the longer the charge. The first enemy champion struck takes physical damage (50% more at full charge) and is knocked back; the ground he crossed burns for 3s. A full charge fills his Heat.",
+    "description": "Crouch for 0.35s with the line glowing ahead, then rocket 9m down it, unstoppable, straight through everyone: each enemy champion passed takes physical damage (minions and monsters half). The line burns for 4s, dealing magic damage each second, slowing enemies on it by 25% and cutting their healing by 40%. Arriving fills his Blaze.",
     "icon": "kazuki_r",
     "cooldown": 100.0,
-    "range": 11.0
+    "range": 9.0
    }
   ]
  },
@@ -1280,25 +1276,25 @@
   "kit": [
    {
     "slot": "P",
-    "name": "The Stoop",
-    "description": "Your basic attacks are lure throws. Every 4th attack on the same champion, the kestrel stoops on them for 40% of your attack damage + 4% of their missing health as bonus physical damage, from overhead, so nothing that blocks shots stops it. Every 2nd attack on your Quarry. No stoops while the bird is away on Cast Off.",
+    "name": "Waiting On",
+    "description": "Your basic attacks are lure throws. While the kestrel is on your fist and you have not attacked for 1.5s, it climbs and gains Height (1 per second, max 3; twice as fast with your Quarry within 8). Your next attack on a champion spends all Height: the kestrel stoops for 15% of your attack damage + 1.5% of their missing health per Height as bonus physical damage, from overhead, so nothing that blocks shots stops it.",
     "icon": "kestrel_p"
    },
    {
     "slot": "Q",
-    "name": "Lure Cast",
-    "description": "Swing the lure down a line. The first enemy hit takes physical damage and becomes Quarry for 6s: revealed to your team, and stooped on every 2nd attack. The kestrel stoops on it at once.",
+    "name": "Lure Swing",
+    "description": "Swing the weighted lure through a 110-degree arc in front of you: physical damage to every enemy hit and a 1 shove outward. The nearest champion struck becomes Quarry for 6s: revealed to your team, and your kestrel climbs twice as fast while it is near.",
     "icon": "kestrel_q",
     "cooldown": 9.0,
     "cost": 50.0,
-    "range": 8.0
+    "range": 4.0
    },
    {
     "slot": "W",
-    "name": "Cast Off",
-    "description": "Send the kestrel to circle a point for 6s, giving sight around it (both teams see the bird). The first enemy champion in its circle is stooped on, slowed by 35% for 1.5s and made Quarry. Recast to call it home. No passive stoops while it is away.",
+    "name": "Creance Flight",
+    "description": "The kestrel flies out along an 11 line on its training cord and back over 1.5s. Enemies along the way are revealed for 3s; the first enemy champion it passes is stooped on (a full-Height stoop), slowed by 35% for 1.5s and made Quarry. Sending it out spends its Height.",
     "icon": "kestrel_w",
-    "cooldown": 18.0,
+    "cooldown": 16.0,
     "cost": 60.0,
     "range": 11.0
    },
@@ -1478,22 +1474,22 @@
    {
     "slot": "P",
     "name": "Undertow",
-    "description": "Attacks and abilities apply a stack of Brine, to a maximum of 3. At 3 stacks the target is slowed 30% for 1.5s and your next hook against them travels faster.",
+    "description": "Attacks and abilities apply a stack of Brine, to a maximum of 3. At 3 stacks the target is slowed 30% for 1.5s and Chain Sweep fouls them twice as long.",
     "icon": "maros_p"
    },
    {
     "slot": "Q",
-    "name": "Anchor Cast",
-    "description": "Hurl the anchor in a line. The first enemy hit is dragged in an arc toward your Mooring, or toward you if none stands.",
+    "name": "Chain Sweep",
+    "description": "Haul the chain taut between you and your Mooring (up to 10m of it). Every enemy on it takes 70/110/150/190/230 (+60% AP) magic damage and is fouled: pinned for 0.6s, or 1.2s at 3 Brine. With no Mooring, lash the chain 6m straight ahead instead.",
     "icon": "maros_q",
-    "cooldown": 14.0,
+    "cooldown": 12.0,
     "cost": 70.0,
-    "range": 10.5
+    "range": 10.0
    },
    {
     "slot": "W",
-    "name": "Drop Mooring",
-    "description": "Plant or relocate the Mooring, visible to both teams and destroyed by 3 enemy hits. Allies who right-click it dash to it and gain a shield.",
+    "name": "Breakwall",
+    "description": "Plant or relocate the Mooring within 14m, visible to both teams and sunk by 3 enemy hits. Where it lands, its chain lies 6m back toward you as a boom for 2s: enemies cannot walk or dash over it; allies and projectiles pass. Replanting lays a new chain.",
     "icon": "maros_w",
     "cooldown": 12.0,
     "cost": 60.0,
@@ -1509,12 +1505,12 @@
    },
    {
     "slot": "R",
-    "name": "The Harbor Calls",
-    "description": "Channel 1s, then chains erupt from the Mooring and latch every enemy champion near it, slowing them 40%. After 2s, all still in the radius are dragged to the Mooring, damaged and stunned.",
+    "name": "Weigh Anchor",
+    "description": "Haul the Mooring home: its path is drawn, then over 1s the anchor drags along the ground to your feet. Every enemy champion within 1.5m of its path is snagged and dragged along with it, arriving stunned for 1s and taking 180/270/360 (+70% AP) magic damage (20% more if Brined). With no Mooring down, you first hurl the anchor 10m ahead, then haul. The Mooring then sits at your feet.",
     "icon": "maros_r",
-    "cooldown": 140.0,
+    "cooldown": 120.0,
     "cost": 100.0,
-    "range": 8.0
+    "range": 10.0
    }
   ]
  },
@@ -1580,6 +1576,74 @@
     "icon": "mei_r",
     "cooldown": 100.0,
     "cost": 100.0
+   }
+  ]
+ },
+ {
+  "id": "vane",
+  "name": "Meridian",
+  "title": "The True North",
+  "class": "Marksman",
+  "resource": "Mana",
+  "ranged": true,
+  "portrait": true,
+  "portrait_kind": "painted",
+  "pending": false,
+  "colour": "#5971b2",
+  "stats": {
+   "health": 570.0,
+   "health_growth": 92.0,
+   "resource_max": 380.0,
+   "attack": 55.0,
+   "attack_growth": 2.9,
+   "attack_range": 5.5,
+   "attack_cooldown": 1.54,
+   "armor": 26.0,
+   "magic_resist": 30.0,
+   "move_speed": 6.9
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "Chalk and Memory",
+    "description": "When an enemy champion leaves your team's vision, their last known position and heading are marked for 4s. They can see their own mark.",
+    "icon": "vane_p"
+   },
+   {
+    "slot": "Q",
+    "name": "Sightline",
+    "description": "Fire a brass beam down a line. The first champion hit is damaged and revealed, and is told they were revealed. It deals more damage the further it travelled, and a beam that passes one of your stakes continues from there.",
+    "icon": "vane_q",
+    "cooldown": 10.0,
+    "cost": 45.0,
+    "range": 9.0
+   },
+   {
+    "slot": "W",
+    "name": "Benchmark",
+    "description": "Plant a survey stake granting 6 units of vision for 90s, with two charges. It has 1 health, so anything destroys it, and pays 15 gold to whoever does.",
+    "icon": "vane_w",
+    "cooldown": 30.0,
+    "cost": 40.0,
+    "range": 7.0
+   },
+   {
+    "slot": "E",
+    "name": "Run the Line",
+    "description": "Dash up to 6m straight toward the standing Benchmark stake nearest your cursor within 10m, stopping at it; with no stake in reach, hop 3m toward the cursor. The dash removes all slows, its path is chalked on the ground for both teams, and the stake you reach sees 9m for 3s.",
+    "icon": "vane_e",
+    "cooldown": 18.0,
+    "cost": 60.0,
+    "range": 10.0
+   },
+   {
+    "slot": "R",
+    "name": "Triangulation",
+    "description": "Survey the triangle between you and your two standing stakes for 6s (with fewer than two stakes, a 70-degree wedge 12m long toward your cursor). Enemy champions inside are revealed to your team, slowed by 15% and chalked with their heading; allied champions inside move 15% faster. You are revealed to the enemy for the 6s. No damage.",
+    "icon": "vane_r",
+    "cooldown": 120.0,
+    "cost": 100.0,
+    "range": 12.0
    }
   ]
  },
@@ -1675,8 +1739,8 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Hollow",
-    "description": "The armour is a plate that eats damage before Mochi does (40 + 12% max health). When it breaks Mochi is exposed and gains 25% move speed until it rebuilds, which it does all at once after 6s without taking a hit.",
+    "name": "Loose Fit",
+    "description": "The suit is three pieces: helm, breastplate and greaves. Each worn piece gives +8 armour and magic resist and 4% damage reduction. When an enemy champion hits Mochi, at most once every 3s, a piece clatters off and lies on the ground 1.5m behind him for 8s. Walk over it to put it back on and heal 3% of your max health; an enemy who walks over it kicks it 3m away, and an unclaimed piece returns on its own after 8s. With no pieces on, the blob scurries at +25% move speed.",
     "icon": "mochi_p"
    },
    {
@@ -1696,7 +1760,7 @@
    },
    {
     "slot": "E",
-    "name": "Tumble",
+    "name": "Roly-Poly",
     "description": "A short roll. Minions and monsters in the way are shoved aside and hurt; champions are not.",
     "icon": "mochi_e",
     "cooldown": 9.0
@@ -1704,7 +1768,7 @@
    {
     "slot": "R",
     "name": "Pile On",
-    "description": "The armour collapses into a door 3.5m wide where Mochi stood, across the way Mochi hops, for 4s. Mochi hops out untargetable and lands at the aim point. The plate is gone while the door stands and comes back whole when it falls.",
+    "description": "The pieces you are wearing collapse into a door where Mochi stood, across the way Mochi hops, for 4s: 3.5m wide with the whole suit, a quarter less for each missing piece. Mochi hops out untargetable and lands at the aim point. The pieces stay in the door while it stands and come back when it falls.",
     "icon": "mochi_r",
     "cooldown": 110.0,
     "range": 6.0
@@ -1770,12 +1834,12 @@
    },
    {
     "slot": "R",
-    "name": "The Collection",
-    "description": "Channel, then march unstoppably to the chosen point, cleaving everything on the path. The path is drawn for both teams before you move.",
+    "name": "Seizure Notice",
+    "description": "After a 0.4s wind-up, nail a notice to every enemy champion in a 7m, 100-degree cone in front of you. For 5s each notice tallies the damage its holder deals to anyone. When it expires the holder takes 80/120/160 + 35% of their tally as true damage, and you relight 10 candle for each notice paid. While your notices stand, your candle does not burn.",
     "icon": "morvane_r",
     "cooldown": 120.0,
     "cost": 25.0,
-    "range": 18.0
+    "range": 7.0
    }
   ]
  },
@@ -1805,32 +1869,32 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Drawing a Crowd",
-    "description": "Trading blows with enemy champions builds Hype on a 0-100 meter both teams can read. Dealing and taking hits both earn it, and it decays out of combat. At 100 Hype you gain movement speed toward enemy champions until you spend it.",
+    "name": "Between Rounds",
+    "description": "Roar (0-100, seen by both teams) comes only from landing hits on enemy champions: 6 per basic attack, 10 per ability hit. Your first champion hit starts a 20s round. When the bell rings you heal 1% max health per 10 Roar held, gain 20% movement speed for 2s and refresh Bob and Weave, then your Roar halves and the next round starts if you are still fighting. After 6s out of combat the round and your Roar reset. Encore: any ability cast with 50 or more Roar spends 50 for that ability's Encore.",
     "icon": "mox_p"
    },
    {
     "slot": "Q",
-    "name": "One-Two",
-    "description": "Your next basic attack within 3s strikes twice, and you gain movement speed toward enemy champions briefly.",
+    "name": "Bob and Weave",
+    "description": "Sidestep 2.5m in any direction. If you end within 2.25m of an enemy champion, your next basic attack within 2.5s is a counter-jab that deals bonus physical damage and earns 6 Roar. Encore: you can sidestep again once within 2s.",
     "icon": "mox_q",
     "cooldown": 7.0,
     "cost": 30.0,
-    "range": 1.75
+    "range": 2.5
    },
    {
     "slot": "W",
-    "name": "Haymaker",
-    "description": "Spend all Hype to guard for 1.25s behind a shield that scales with the Hype spent, with the cone drawn on the ground. Then throw the Haymaker for heavy damage plus a share of everything the guard absorbed.",
+    "name": "Clinch",
+    "description": "Grab an adjacent enemy champion and tie them to you for 1.5s on a 1.5m leash: walking past it snaps them back, a dash or blink breaks it. Both of you are slowed by 30% and you take 20% less damage from them. Recast, or let it run out, to break with an uppercut that deals physical damage and knocks them up for 0.5s. Encore: the uppercut deals 50% more damage.",
     "icon": "mox_w",
     "cooldown": 14.0,
     "cost": 40.0,
-    "range": 4.0
+    "range": 1.75
    },
    {
     "slot": "E",
-    "name": "Cut the Ring",
-    "description": "Pull everything caught to either side of you inward. Enemies caught on both sides are slammed together in front of you and stunned; a catch on one side only is pulled and slowed.",
+    "name": "Off the Ropes",
+    "description": "Dash up to 4.5m. If you meet a wall, or cross the ropes of your Ring while it stands, you rebound 4m back along the line with a clothesline that deals physical damage, stuns the first enemy champion hit for 0.75s and slows everything else by 40% for 1s. In open ground it is only a dash. Encore: you rebound even in open ground.",
     "icon": "mox_e",
     "cooldown": 16.0,
     "cost": 55.0,
@@ -1838,12 +1902,11 @@
    },
    {
     "slot": "R",
-    "name": "The Main Event",
-    "description": "Grab an enemy champion, carry them, and slam them down for heavy damage, splashing and slowing enemies near the landing. The slam drops the Ring: for a few seconds you earn double Hype inside it, and enemies leaving it are briefly slowed.",
+    "name": "Title Bout",
+    "description": "Raise the Ring (4.5m radius) at your feet for 6/7/8s with an opening bell: enemies inside take physical damage and are slowed by 40% for 1s. The ropes never block. An enemy champion who leaves the Ring is Called Out for 4s: you move 25% faster toward them, and your next basic attack on them deals 100 (+60% AD) bonus physical damage. Your Roar gain doubles while you stand inside. Encore: the Ring is 1m wider.",
     "icon": "mox_r",
     "cooldown": 110.0,
-    "cost": 100.0,
-    "range": 3.75
+    "cost": 100.0
    }
   ]
  },
@@ -1897,11 +1960,12 @@
    },
    {
     "slot": "E",
-    "name": "Muffle the Bell",
-    "description": "Become invisible for 3s and gain 15% movement speed. An enemy champion within 3 m reveals you; attacking or casting ends it. Your first attack out of it picks a pocket at once, ignoring the 12s lockout, and slows 30% for 1s.",
+    "name": "Dropped Purse",
+    "description": "Toss a jingling coin purse to a point within 7m; it lies there for 4s. The first enemy champion to step within 1m takes the bait and is Marked for 4s (visible to all). You gain 25% movement speed while moving toward a Marked target, and your next basic attack on them picks their pocket at once, ignoring the 12s lockout, and slows them by 30% for 1s. Minions ignore the purse.",
     "icon": "neko_e",
-    "cooldown": 22.0,
-    "cost": 60.0
+    "cooldown": 20.0,
+    "cost": 60.0,
+    "range": 7.0
    },
    {
     "slot": "R",
@@ -1972,8 +2036,8 @@
    },
    {
     "slot": "R",
-    "name": "Salt the Step",
-    "description": "Sweep a huge 6m, 70-degree cone: enemies inside take 120/200/280 (+0.6 AP) magic damage and are swept back to the cone's edge (up to 4m). A line of salt and herbs is laid along that edge for 3/3.5/4s. Enemies cannot cross it, walking or dashing; allies and every projectile pass freely.",
+    "name": "Salted Threshold",
+    "description": "Pour an 8m straight line of salt, centred up to 6m away and laid across your aim, for 4s. It does not stop walking: enemy dashes and blinks that try to cross it end on the line, and each enemy who walks across it takes 120/200/280 (+0.6 AP) magic damage once and is slowed by 60%, fading over 1.5s. Allies and projectiles pass freely.",
     "icon": "nettle_r",
     "cooldown": 130,
     "cost": 100,
@@ -2007,14 +2071,14 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Rich Soil",
-    "description": "Any unit that dies near you leaves a Seed for 6s. Your abilities bloom the Seeds they touch, healing you and dealing a small burst of magic damage.",
+    "name": "Fed Ground",
+    "description": "Enemy units that die inside your Garden or within 3m of you feed the ground: you heal 14 (+2% of your max health for a champion), and a standing Garden grows 0.3m wider and lasts 0.5s longer per death (up to +2m and +3s). Overgrowth holds the fed size.",
     "icon": "nezra_p"
    },
    {
     "slot": "Q",
     "name": "Thornlash",
-    "description": "A vine whip lashes out in a line, damaging and slowing everything it touches. Lashing through your garden or a Seed deals more damage and doubles the slow.",
+    "description": "A vine whip lashes out in a line, damaging and slowing everything it touches. Lashing through your garden deals 40% more damage and slows harder.",
     "icon": "nezra_q",
     "cooldown": 5.0,
     "cost": 45.0,
@@ -2031,8 +2095,8 @@
    },
    {
     "slot": "E",
-    "name": "Grasping Root",
-    "description": "Roots burst from the ground after a moment, damaging and rooting everyone above them. Cast inside your garden they rise twice as fast and hold 50% longer.",
+    "name": "Flytrap",
+    "description": "A flytrap snaps shut from the ground after a moment, damaging and rooting everyone above it. Cast inside your garden it snaps twice as fast and holds 50% longer.",
     "icon": "nezra_e",
     "cooldown": 12.0,
     "cost": 60.0,
@@ -2041,7 +2105,7 @@
    {
     "slot": "R",
     "name": "Overgrowth",
-    "description": "Root yourself for 4s. You gain heavy damage reduction, your garden doubles in size and holds, and every second you pulse Thornlash damage around you and bloom every Seed in reach. You cannot move or be moved. Recast to end it.",
+    "description": "Root yourself for 4s. You gain heavy damage reduction, your garden doubles in size (fed growth included) and holds, and every second you pulse Thornlash damage around you. You cannot move or be moved. Recast to end it.",
     "icon": "nezra_r",
     "cooldown": 100.0,
     "cost": 100.0,
@@ -2098,7 +2162,7 @@
    {
     "slot": "E",
     "name": "The Short Chain",
-    "description": "Throw the chain. The first champion hit is bound for 1.5s: they keep their feet and may move, but crossing the leash snaps them back. A blink or dash across it breaks the chain.",
+    "description": "Throw the chain. The first champion hit is bound for 1.5s: they keep their feet and may move, but crossing the leash snaps them back, and the first snap bites for half the damage again. A blink or dash across it breaks the chain.",
     "icon": "nil_e",
     "cooldown": 18.0,
     "range": 6.0
@@ -2139,14 +2203,14 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Inkblot",
-    "description": "Your abilities stain enemies with Ink for 4s, stacking to 3. At 3 the ink fills their eyes: blinded (attacks miss) for 1.25s, and the stacks wash off. Once every 8s per target.",
+    "name": "Ink Pools",
+    "description": "Each ability hit on an enemy champion leaves a 1.5m puddle of ink under them for 4s (at most one fresh puddle per target each second). Enemies in your puddles are slowed by 15%. While you stand in your own ink (a puddle, Jet Away's cloud or Ink Tide) you move 20% faster and gain 4 mana per second.",
     "icon": "nix_p"
    },
    {
     "slot": "Q",
     "name": "Ink Jet",
-    "description": "Squirt a jet of ink down a line, piercing: magic damage and 1 Ink to everything hit.",
+    "description": "Squirt a jet of ink down a line, piercing: magic damage to everything hit.",
     "icon": "nix_q",
     "cooldown": 6.0,
     "cost": 40.0,
@@ -2155,7 +2219,7 @@
    {
     "slot": "W",
     "name": "Reef Grasp",
-    "description": "Tentacles burst up in a circle after 0.6s: magic damage, enemies dragged 1 toward the centre and slowed by 35% for 1.5s, and 1 Ink.",
+    "description": "Tentacles burst up in a circle after 0.6s: magic damage, enemies dragged 1 toward the centre and slowed by 35% for 1.5s.",
     "icon": "nix_w",
     "cooldown": 10.0,
     "cost": 70.0,
@@ -2164,7 +2228,7 @@
    {
     "slot": "E",
     "name": "Jet Away",
-    "description": "Blast away from the cursor, leaving an ink cloud where you stood for 3s. Enemies inside are slowed by 20% and gain 1 Ink each second.",
+    "description": "Blast away from the cursor, leaving an ink cloud where you stood for 3s. Enemies inside are slowed by 20%, and the cloud counts as your ink.",
     "icon": "nix_e",
     "cooldown": 16.0,
     "cost": 60.0
@@ -2172,7 +2236,7 @@
    {
     "slot": "R",
     "name": "Ink Tide",
-    "description": "Flood a wide circle for 6s. Allied champions inside, you included, are hidden from enemies unless an enemy champion comes within 2.5 of them. Enemies inside take magic damage and gain 1 Ink each second.",
+    "description": "Flood a wide circle for 6s. Allied champions inside, you included, are hidden from enemies unless an enemy champion comes within 2.5 of them. Enemies inside take magic damage each second, and the flood counts as your ink.",
     "icon": "nix_r",
     "cooldown": 130.0,
     "cost": 100.0,
@@ -2296,11 +2360,11 @@
    },
    {
     "slot": "R",
-    "name": "True Shape",
-    "description": "Spring up on your wings: for 1s a dragon shadow sweeps a 14 m by 5 m path, dealing 150/250/350 (+0.8 bonus AD) magic damage and Frightening enemies for 1/1.25/1.5s. Land at the aimed point (up to 10 m, over walls); Fang Cleave is refreshed and everyone hit counts as fresh again.",
+    "name": "Coil of the Old Wyrm",
+    "description": "Mark a point within 9 m. After 0.75s the shadow of your tail closes in a 4.5 m ring around it: enemies inside take 150/250/350 (+0.8 bonus AD) magic damage and are Frightened for 1/1.25/1.5s away from the nearest point on the ring, so they flee inward and bunch in the middle. Everyone hit counts as fresh again and Fang Cleave is refreshed.",
     "icon": "oldren_r",
-    "cooldown": 100.0,
-    "range": 14.0
+    "cooldown": 110.0,
+    "range": 9.0
    }
   ]
  },
@@ -2372,73 +2436,11 @@
   ]
  },
  {
-  "id": "ormond",
-  "name": "Ormond",
-  "title": "The Ironmonger",
-  "class": "Tank",
-  "resource": "Heat",
-  "ranged": false,
-  "portrait": true,
-  "portrait_kind": "painted",
-  "pending": false,
-  "colour": "#b27059",
-  "stats": {
-   "health": 670,
-   "health_growth": 112,
-   "resource_max": 100,
-   "attack": 60,
-   "attack_growth": 3.2,
-   "attack_range": 1.75,
-   "attack_cooldown": 1.6,
-   "armor": 36,
-   "magic_resist": 32,
-   "move_speed": 5.8
-  },
-  "kit": [
-   {
-    "slot": "P",
-    "name": "Forge-Hot",
-    "description": "Each basic attack adds 12 Heat and each ability that hits adds 20 (max 100, seen by both teams). It cools 10 per second after 3s out of combat. Above 50 Heat your attacks deal +15 (+1.5 per level) magic damage. At 100 your next Strike While Hot Brands.",
-    "icon": "ormond_p"
-   },
-   {
-    "slot": "Q",
-    "name": "Strike While Hot",
-    "description": "Slam the anvil 3m ahead into a 2.25m circle: 70/110/150/190/230 (+0.6 AD) physical damage and a 35% slow for 1.5s. At 100 Heat it spends it all, stuns for 0.75s and Brands everyone hit for 5s: the next hit from your side on a Branded enemy deals +5% of their max health as magic damage.",
-    "icon": "ormond_q",
-    "cooldown": 9,
-    "range": 3
-   },
-   {
-    "slot": "W",
-    "name": "Work the Iron",
-    "description": "For 3s you hammer in rhythm: +40% attack speed, attacks add double Heat, and you take 15% less damage.",
-    "icon": "ormond_w",
-    "cooldown": 15
-   },
-   {
-    "slot": "E",
-    "name": "Anvil Drop",
-    "description": "Leap to a point within 6m and slam down: enemies within 2.25m are knocked up for 0.75s and take 60/95/130/165/200 (+0.5 AD) physical damage (+20 Heat per champion hit).",
-    "icon": "ormond_e",
-    "cooldown": 16,
-    "range": 6
-   },
-   {
-    "slot": "R",
-    "name": "Quench",
-    "description": "Plunge the hammer into the ground: a scalding steam cloud bursts 5m round you for 4s, spending all Heat. Enemies inside take 30/45/60 magic damage per second (+1% per Heat spent) and are slowed 25%. Enemies outside cannot see in: it hides your team like brush. You gain 30/40/50 armour and magic resist for the duration.",
-    "icon": "ormond_r",
-    "cooldown": 120
-   }
-  ]
- },
- {
   "id": "oryssa",
   "name": "Oryssa",
   "title": "The Wyrmblood",
   "class": "Fighter",
-  "resource": "Rage",
+  "resource": "Ire",
   "ranged": false,
   "portrait": true,
   "portrait_kind": "painted",
@@ -2459,39 +2461,41 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Wyrmblood",
-    "description": "Basic attacks build 8 Fury, abilities 10, and taking champion damage 3. Above 50 Fury you gain 10% damage reduction. Fury decays out of combat, and at 100 it can be spent on Drake Form.",
+    "name": "Ivory Scale",
+    "description": "Ire (0-100) is earned only in combat: 8 per basic attack, 10 per ability and 3 per champion hit you take, and it bleeds away out of combat. It gates nothing. Each third of the bar grows a bone-ivory plate on you (up to 3), each worth 8 armour and magic resist. When a stun, knock-up, fear, taunt or slow lands on you while you wear a plate, the plate shatters: that effect lasts 40% less, the shards deal 30 (+4 per level) magic damage to enemies within 2.5m, and it spends that third of your Ire. At most one plate shatters every 1.5s.",
     "icon": "oryssa_p"
    },
    {
     "slot": "Q",
-    "name": "Talon Rake",
-    "description": "Your next basic attack strikes twice and resets your attack timer. In Drake Form both strikes cleave.",
+    "name": "Rend",
+    "description": "Rake the bone claw through a 90-degree, 3m wedge in front of you for physical damage. Each champion hit is Sundered for 3s (your basic attacks and abilities deal 12% more to them) and gives you 10 Ire. Hitting two or more champions refunds 2s of the cooldown.",
     "icon": "oryssa_q",
-    "cooldown": 8.0
+    "cooldown": 8.0,
+    "range": 3.0
    },
    {
     "slot": "W",
-    "name": "Cinderwake",
-    "description": "Burn nearby enemies for 3s and gain 20% movement speed for the duration. Drake Form widens the radius.",
+    "name": "Horn Rush",
+    "description": "Lower your horned crown and charge 4m. Enemies in your path take physical damage, are shoved 1.5m to the side they stood on and are slowed by 30% for 1s. Hitting a champion gives you 20% movement speed for 2s.",
     "icon": "oryssa_w",
     "cooldown": 12.0,
-    "range": 8.5
+    "range": 4.0
    },
    {
     "slot": "E",
-    "name": "Wyrmfire Spit",
-    "description": "Spit a fireball at the first enemy hit, marking them for 4s. Your attacks on a marked target deal 3% of their maximum health as bonus damage.",
+    "name": "Ember Gob",
+    "description": "Lob a glob of burning pitch at a point within 8m. It lands after 0.6s, dealing magic damage in 2m, and leaves a pitch pool for 3s: enemies in it are slowed by 25% and take 20 magic damage per second. You gain 4 Ire per second while you stand in it.",
     "icon": "oryssa_e",
-    "cooldown": 10.0
+    "cooldown": 10.0,
+    "range": 8.0
    },
    {
     "slot": "R",
-    "name": "LET IT OUT",
-    "description": "Requires 100 Fury. Leap to an area, damaging and knocking back enemies, then remain in Drake Form until your Fury empties: +200 health, longer cleaving attacks, and more damage reduction. Recast in Drake Form to spew a torrent of wyrmfire in a cone for massive damage, spending every drop of Fury and ending Drake Form. Dying in Drake Form grants the enemy team Wyrmslayer's Bounty.",
+    "name": "The Lair",
+    "description": "Tear your claw through the ground and burst out as the drake: enemies within 2.5m take physical damage and are knocked up for 0.5s, and all three Ivory Scale plates grow back. The torn ground is your lair for 5s (5m): enemies in it burn for 30/45/60 magic damage per second and are slowed by 20%. While you stand in it you are the drake: +250 max health, +0.5m attack reach, cleaving basic attacks and 20% less damage taken. Stepping out turns you back until your next lair. Dying as the drake grants the enemy team Wyrmslayer's Bounty.",
     "icon": "oryssa_r",
-    "cooldown": 12.0,
-    "range": 8.0
+    "cooldown": 120.0,
+    "range": 2.5
    }
   ]
  },
@@ -2604,7 +2608,7 @@
    {
     "slot": "W",
     "name": "Pay Up!",
-    "description": "Rattle the padlocks. Enemy champions within 3.5m are taunted for 1/1.1/1.2/1.3/1.4s: they walk at you and attack you, and cannot cast. You take 20% less damage for 2s.",
+    "description": "Serve notice. Enemy champions within 3.5m are Dunned for 2.5s: one who gets 2m farther from you than where they were served pays a Toll at once (4% of their max health as magic damage, feeding your Toll shield) and is padlocked (stunned 0.75s), once each. Staying close and fighting you costs nothing. You take 20% less damage for 2s.",
     "icon": "pell_w",
     "cooldown": 16,
     "cost": 70
@@ -2698,6 +2702,73 @@
   ]
  },
  {
+  "id": "bram",
+  "name": "Porter",
+  "title": "The Standing Gate",
+  "class": "Tank",
+  "resource": "Mana",
+  "ranged": false,
+  "portrait": true,
+  "portrait_kind": "painted",
+  "pending": false,
+  "colour": "#5976b2",
+  "stats": {
+   "health": 680.0,
+   "health_growth": 118.0,
+   "resource_max": 380.0,
+   "attack": 60.0,
+   "attack_growth": 3.0,
+   "attack_range": 1.25,
+   "attack_cooldown": 1.6,
+   "armor": 40.0,
+   "magic_resist": 34.0,
+   "move_speed": 5.8
+  },
+  "kit": [
+   {
+    "slot": "P",
+    "name": "Bar the Door",
+    "description": "Damage from your front arc is reduced by 20%, plus 2% per enemy champion facing you, to a maximum of 3. Damage from behind lands in full and reveals the attacker to your team. Frontal mitigation is disabled while your Open Door stands.",
+    "icon": "bram_p"
+   },
+   {
+    "slot": "Q",
+    "name": "Swing Shut",
+    "description": "Swing the door like a door on its hinge, sweeping a 150-degree arc 3 in front of you from your left to your right. Enemies swept take physical damage, are slowed by 30% for 1s and are carried 2 round the arc toward its right-hand end (walls stop them), ending bunched together.",
+    "icon": "bram_q",
+    "cooldown": 10.0,
+    "cost": 50.0,
+    "range": 3.0
+   },
+   {
+    "slot": "W",
+    "name": "Open Door",
+    "description": "Plant the door standing open up to 4 away for 5s: two short panels, square to your aim, frame a 1.5 doorway. The panels block movement and dashes for everyone; the way through is the doorway. An ally who comes through the doorway gains 30% move speed and a 60 shield for 2s; an enemy who comes through is slowed by 40% for 1s and revealed for 3s. Your frontal mitigation is disabled while it stands.",
+    "icon": "bram_w",
+    "cooldown": 18.0,
+    "cost": 70.0,
+    "range": 4.0
+   },
+   {
+    "slot": "E",
+    "name": "Hinge",
+    "description": "Brace for 2.5s, unstoppable. The first time each allied champion within 4 is hit by something in your front arc, you haul them 1.5 back toward your rear (walls stop them) and that hit is reduced by 40%.",
+    "icon": "bram_e",
+    "cooldown": 16.0,
+    "cost": 60.0
+   },
+   {
+    "slot": "R",
+    "name": "Knock Thrice",
+    "description": "Become unstoppable and slam the door three times, 0.6s apart, stepping 0.75m forward with each. Each slam strikes a 4m half-circle in front of you: enemies hit take physical damage, are slowed by 30% and are dragged 1m toward the door; enemies hit by the third slam are stunned for 1.25s. You can turn between slams.",
+    "icon": "bram_r",
+    "cooldown": 140.0,
+    "cost": 100.0,
+    "range": 4.0
+   }
+  ]
+ },
+ {
   "id": "quell",
   "name": "Quell",
   "title": "The Dead Note",
@@ -2768,7 +2839,7 @@
  {
   "id": "kitsune_rei",
   "name": "Rei",
-  "title": "The Nine-Tailed Shrine Maiden",
+  "title": "The Paper-Fox Shrine Maiden",
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
@@ -2791,14 +2862,14 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Two Places at Once",
-    "description": "While your fox-double stands, every Q and W you cast is cast again by the double, from where it stands and at the same point, for 50% damage. An enemy hit by both the spell and its echo is Bound: pinned for 0.5s (once per 6s each).",
+    "name": "Kekkai",
+    "description": "Your Q and W pin an ofuda talisman where they end (6s, at most 4). Any two within 7 are joined by a sacred rope: an enemy champion who crosses it is Bound, pinned for 0.5s (once per 6s each), and both talismans burn out.",
     "icon": "kitsune_rei_p"
    },
    {
     "slot": "Q",
-    "name": "Foxfire Talisman",
-    "description": "A talisman bursts on the first enemy it meets: magic damage and a 25% slow for 1.5s.",
+    "name": "Burning Ofuda",
+    "description": "A talisman bursts on the first enemy it meets: magic damage and a 25% slow for 1.5s. An ofuda is pinned where it ends.",
     "icon": "kitsune_rei_q",
     "cooldown": 6.0,
     "cost": 50.0,
@@ -2807,7 +2878,7 @@
    {
     "slot": "W",
     "name": "Binding Circle",
-    "description": "Lay a ring of talismans. After 0.75s it closes: magic damage, and enemies inside are pinned for 1s.",
+    "description": "Lay a ring of talismans. After 0.75s it closes: magic damage, and enemies inside are pinned for 1s. An ofuda is pinned at its centre.",
     "icon": "kitsune_rei_w",
     "cooldown": 13.0,
     "cost": 70.0,
@@ -2815,20 +2886,20 @@
    },
    {
     "slot": "E",
-    "name": "Fox-Double",
-    "description": "Dash and leave a foxfire double where you stood for 10s. Enemies see you until a champion hits it; two champion hits break it. Recast to swap places with it.",
+    "name": "Paper Gale",
+    "description": "Burst into a whirl of talismans and reform 4 away, untargetable on the way. The ground you crossed flutters with ofuda for 3s, slowing enemies on it by 30%, with an ofuda pinned at each end.",
     "icon": "kitsune_rei_e",
-    "cooldown": 18.0,
+    "cooldown": 16.0,
     "cost": 60.0
    },
    {
     "slot": "R",
-    "name": "Nine Tails",
-    "description": "Trade places with your double (placing one first if none stands), then both loose 5 wisps over 2s at the nearest enemies within 6, each for magic damage. A champion hit by wisps from both takes 30% more from every later wisp.",
+    "name": "Kitsunetsuki",
+    "description": "The fox possesses an enemy champion for 1.75s: they cannot attack or cast, and walk themselves back along the path they took in the last 2s (walls and slows still apply; a Kekkai rope they cross still binds them). Then they take magic damage.",
     "icon": "kitsune_rei_r",
-    "cooldown": 110.0,
+    "cooldown": 120.0,
     "cost": 100.0,
-    "range": 8.0
+    "range": 6.5
    }
   ]
  },
@@ -2858,39 +2929,39 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Tally",
-    "description": "Every 4th consecutive basic attack against the same target strikes twice, the second strike for 50% AD, and etches a permanent tally mark worth 1% attack speed. Switching targets resets the count but never the marks.",
+    "name": "Counted Strokes",
+    "description": "Each basic attack on the same target adds a Count (up to 5, shown over the target). Counts settle when you let go of that target, by switching or after 1.5s without a swing: the target then takes a delayed cut of 8% AD per Count as physical damage. A settle at 5 Counts etches a permanent tally mark worth 1% attack speed, uncapped and kept through death. Nothing strikes twice: the payoff lands when you let go.",
     "icon": "renshu_p"
    },
    {
     "slot": "Q",
-    "name": "Hundred Cuts",
-    "description": "Blink between up to 4 nearby enemies, striking each. You are invisible and untargetable during the flurry, and emerge beside the first enemy cut; click mid-flurry to choose which side. Deals bonus damage to your Duel target. Basic attacks reduce this cooldown by 1s.",
+    "name": "Held Flurry",
+    "description": "Hold for up to 1.2s: you walk forward at 40% of your movement speed and cut a 2.5m, 60-degree cone in front of you every 0.2s for physical damage. Bonus attack speed shortens the interval, down to 0.1s. Cuts on a champion add Counts. Release to end it early. You stay targetable throughout.",
     "icon": "renshu_q",
-    "cooldown": 14.0
+    "cooldown": 12.0,
+    "range": 2.5
    },
    {
     "slot": "W",
-    "name": "Still Water",
-    "description": "Parry for 1.5s while rooted. The first champion hit against you is negated, granting 40% attack speed for 3s, and your next basic attack in that window deals bonus damage and slows by 30%.",
+    "name": "Water's Edge",
+    "description": "Draw a 2.5m ring of still water around you for 1.5s; you move at 50% speed. The first enemy champion that walks or dashes into it, or strikes you from inside it, is answered at once by a cut for physical damage and slowed by 40% for 1s, and you gain 40% attack speed for 3s. It negates nothing: their hit still lands. If nothing breaks the water, 40% of the cooldown is refunded.",
     "icon": "renshu_w",
-    "cooldown": 16.0,
-    "range": 8.5
+    "cooldown": 16.0
    },
    {
     "slot": "E",
-    "name": "Keen Edge",
-    "description": "For 5s, gain 25% attack speed and deal bonus damage on every basic attack.",
+    "name": "Open Guard",
+    "description": "For 5s you gain 25% attack speed. Any target you bring to 3 Counts while it lasts has its guard opened: you deal 15% more damage to them for 4s.",
     "icon": "renshu_e",
     "cooldown": 16.0
    },
    {
     "slot": "R",
-    "name": "The Hundredth Duel",
-    "description": "Duel an enemy champion for 8s. You gain 35% movement speed for the duration, and 35% attack speed and slow immunity while near them. Killing them during the duel resets all your cooldowns and grants +1 attack damage and 5 tally marks permanently. If they survive, the cooldown is increased by 20%.",
+    "name": "Last Tally",
+    "description": "Name an enemy champion within 6m. For 8s each of your hits on them carves a tally (up to 10, seen by both teams), and you move 30% faster toward them. Recast, or at the end if they are within 6m, to draw-cut through them and land 2m past, dealing 60 + 15% AD per tally as physical damage. If they die during the tally, you gain +1 attack damage and 5 tally marks permanently and half the cooldown back.",
     "icon": "renshu_r",
-    "cooldown": 60.0,
-    "range": 8.0
+    "cooldown": 70.0,
+    "range": 6.0
    }
   ]
  },
@@ -2921,22 +2992,22 @@
    {
     "slot": "P",
     "name": "Hoarfrost",
-    "description": "Every hit you land or take lays a layer of Hoar: on the enemy a stacking slow, on you stacking damage reduction, five layers each. An enemy at five is Brittle, and your next ability shatters them for bonus damage. Your own five are what open the wyrm.",
+    "description": "Every hit you land or take lays a layer of Hoar: on the enemy a stacking slow, on you stacking damage reduction, five layers each. An enemy at five is Brittle, and your next ability shatters them for bonus damage. Your own five call Hoarfall.",
     "icon": "rime_p"
    },
    {
     "slot": "Q",
-    "name": "Flurry",
-    "description": "A three-step sword string on recasts: a lunge, a crosscut, an overhead. Each step lays Hoar. Paid once, and the cooldown starts when the string ends. As the wyrm: Rend, one sweep that cleaves everything in front of you.",
+    "name": "Splinter",
+    "description": "Flick the frost off your blade: an instant 5 m line of ice shards that pierces, dealing 60 (+0.7 bonus AD) physical damage and laying 1 Hoar on each enemy hit. If it shatters a Brittle enemy, splinters burst from them and lay 2 Hoar on every other enemy within 2.5 m.",
     "icon": "rime_q",
     "cooldown": 7.0,
     "cost": 30.0,
-    "range": 2.2
+    "range": 5.0
    },
    {
     "slot": "W",
     "name": "Frostbrand",
-    "description": "Plant the sword. Enemies nearby are dragged a step toward the blade and held as the ground rimes over under them. As the wyrm: Breath of Rime, a cone of frost that lays two layers of Hoar.",
+    "description": "Plant the sword. Enemies nearby are dragged a step toward the blade and held as the ground rimes over under them.",
     "icon": "rime_w",
     "cooldown": 12.0,
     "cost": 55.0,
@@ -2944,21 +3015,21 @@
    },
    {
     "slot": "E",
-    "name": "Glide",
-    "description": "A short frost-trailing dash that lays Hoar on everyone you pass. Recast within 1.5s to dash back to where you started. As the wyrm: Stoop, a long dive that knocks up everything where you land.",
+    "name": "Cold Snap",
+    "description": "Dash 4 m, laying 1 Hoar on every enemy you pass within 1 m and dealing damage. On landing, enemies within 2 m carrying 3 or more Hoar are stunned for 0.5s as the frost sets. No return.",
     "icon": "rime_e",
-    "cooldown": 14.0,
+    "cooldown": 15.0,
     "cost": 50.0,
     "range": 4.0
    },
    {
     "slot": "R",
-    "name": "Wyrm of Rime",
-    "description": "Needs five layers of your own Hoar. Shed the armour and become the wyrm, sword in claw, for 8s and a second more for every layer of Hoar on the enemy champions around you. Your Hoar does not thaw while it lasts. Recast to drive the sword into the ground, shattering every layer in reach and ending the form.",
+    "name": "Hoarfall",
+    "description": "Needs five layers of your own Hoar, which are spent. The wyrm bursts from your back and dives on a point within 8 m after a 0.8s warning: 150/250/350 (+0.8 bonus AD) magic damage in 3 m and a 0.75s knock-up, and every enemy hit is set straight to Brittle. For 4s afterwards your shatters deal double damage.",
     "icon": "rime_r",
-    "cooldown": 120.0,
+    "cooldown": 110.0,
     "cost": 100.0,
-    "range": 6.0
+    "range": 8.0
    }
   ]
  },
@@ -2988,21 +3059,22 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Hollow Mark",
-    "description": "Ability hits mark enemy champions for 4s. Your basic attacks from behind a marked target deal 12% of their missing health as bonus damage, once per mark.",
+    "name": "Chain-Bound",
+    "description": "Ability hits on enemy champions loop your fine chain around them for 4s. Your next basic attack on a chained champion yanks it: +12% of their missing health as bonus physical damage, and they are dragged 1m toward you (walls stop it). Once per chain, from any angle.",
     "icon": "sable_p"
    },
    {
     "slot": "Q",
-    "name": "Fangfall",
-    "description": "Dash through the enemy under your cursor, striking them and landing behind them. Applies Hollow Mark.",
+    "name": "Shadowline",
+    "description": "Fling your chain at a point up to 5m away and be drawn along it in 0.25s. Every enemy on the line takes physical damage and is Chain-Bound. If the line meets an enemy champion you stop 1m short of them.",
     "icon": "sable_q",
     "cooldown": 9.0,
-    "cost": 60.0
+    "cost": 60.0,
+    "range": 5.0
    },
    {
     "slot": "W",
-    "name": "Fan of Knives",
+    "name": "Hollow Fan",
     "description": "Throw daggers in a cone for damage and a 30% slow. The centre dagger deals 50% bonus damage to champions.",
     "icon": "sable_w",
     "cooldown": 7.0,
@@ -3053,14 +3125,14 @@
   "kit": [
    {
     "slot": "P",
-    "name": "The Long Field",
-    "description": "The tip does the reaping. Your basic attacks and abilities deal +25% damage to enemies in the outer band of their reach (the last metre). Enemy champions below 35% health are Ripe: a sheaf glows over them for your team, and you move 12% faster toward them.",
+    "name": "Ripening",
+    "description": "The tip does the reaping. Your basic attacks and abilities deal +25% damage to enemies in the outer band of their reach (the last metre). Each tip-band hit on an enemy champion adds a Ripeness (held 6s); at 4 they are Ripe for 4s, a sheaf over them for your team, and your next ability hit on them deals bonus damage equal to 10% of their missing health.",
     "icon": "sallow_p"
    },
    {
     "slot": "Q",
-    "name": "Reap",
-    "description": "Sweep a 180-degree, 3.5m arc: 70/105/140/175/210 (+0.9 bonus AD) physical damage. Champions caught in the tip band (2.5 to 3.5m) heal you for 15% of the damage dealt to them.",
+    "name": "Swath",
+    "description": "Sweep a 180-degree, 3.5m arc: 70/105/140/175/210 (+0.9 bonus AD) physical damage. Enemies inside the tip band are pushed up to 1m outward, into the tip of your swing; champions caught in the tip band (2.5 to 3.5m) are slowed 25% for 1s.",
     "icon": "sallow_q",
     "cooldown": 8,
     "range": 3.5
@@ -3074,18 +3146,19 @@
    },
    {
     "slot": "E",
-    "name": "Hooked Blade",
-    "description": "Hook the scythe down a 4.5m line. The first enemy hit takes 50/80/110/140/170 (+0.6 bonus AD) physical damage, is dragged to 3m in front of you (right into the tip band) and is slowed 30% for 1s. If it hits nothing, you vault 3m forward on the haft.",
+    "name": "Crowlift",
+    "description": "A flock of crows lifts you up to 3.5m toward the cursor. Landing, your blade sweeps a 2m circle: enemies hit take 50/80/110/140/170 (+0.6 bonus AD) physical damage and are slowed 30% for 1s. If an enemy champion stands in your Swath's tip band when you land, your next Swath within 2s counts its whole arc as tip band.",
     "icon": "sallow_e",
     "cooldown": 13,
-    "range": 4.5
+    "range": 3.5
    },
    {
     "slot": "R",
-    "name": "The Last Sheaf",
-    "description": "Wind up for 0.6s (the cut is drawn on the ground), then one 270-degree sweep, 4.5m: 150/225/300 (+1.0 bonus AD) physical damage. Enemy champions below 12/15/18% of max health are executed; in the tip band the threshold is a third higher. Killing a champion lets you recast within 5s, once per kill.",
+    "name": "Last Row",
+    "description": "Mark a 9m by 3m row ahead of you for 0.8s, then stride it at three times your speed, cutting everything in it once for 150/225/300 (+1.0 bonus AD) physical damage, +1% for every 1% of the target's missing health (up to +60%).",
     "icon": "sallow_r",
-    "cooldown": 110
+    "cooldown": 110,
+    "range": 9
    }
   ]
  },
@@ -3185,8 +3258,8 @@
    },
    {
     "slot": "Q",
-    "name": "Harpoon",
-    "description": "Throw your harpoon 8 m. It stops on the first enemy, dealing 70/105/140/175/210 (+0.8 bonus AD) physical damage and leaving a Barb, or sticks in terrain. For 3s the rope stays taut: recast to dash to whatever it struck, champion or wall. A champion more than 10 m away snaps the rope.",
+    "name": "Line Out",
+    "description": "Throw your harpoon 8 m. It stops on the first enemy, dealing 70/105/140/175/210 (+0.8 bonus AD) physical damage and leaving a Barb; walls do nothing to it. For 3s the line is played out (it snaps beyond 10 m): whenever the target is more than 6 m from you the line goes taut, slowing them 35%, and you move 20% faster while running toward them. Recast to reel it in early and refund 20% of the cooldown.",
     "icon": "selkie_q",
     "cooldown": 11.0,
     "cost": 55.0,
@@ -3260,29 +3333,29 @@
    },
    {
     "slot": "W",
-    "name": "Wingwall",
-    "description": "Snap your wings wide for 2.5s: you become a moving wall that blocks all enemy projectiles that strike you, and move 20% slower while spread.",
+    "name": "Hold the Gap",
+    "description": "Plant your feet and throw your wings out sideways for 2s. You cannot move, but can still attack and use Heaven's Palm. Your wings make a 3.5 m line across your facing that enemies cannot walk or dash through; allies and projectiles pass. Enemies whose dash or blink breaks on it are slowed 30% for 1s.",
     "icon": "sera_w",
     "cooldown": 18.0,
     "cost": 50.0
    },
    {
     "slot": "E",
-    "name": "Cast Out",
-    "description": "Seize an enemy within 250 units, hoist them, and throw them 400 units in the aimed direction: physical damage to the thrown target, and everyone at the landing point is slowed 30% for 1s.",
+    "name": "Bring Down",
+    "description": "Seize an enemy within 2.25 m and drag them down to the ground at your feet: 70 (+0.4 AD) physical damage and a 0.75s stun. If they were mid-dash, the dash ends on the spot and the stun lasts 1.5s.",
     "icon": "sera_e",
     "cooldown": 16.0,
     "cost": 55.0,
-    "range": 2.5
+    "range": 2.25
    },
    {
     "slot": "R",
     "name": "The Descent",
-    "description": "Ascend, and after 0.9s - the target ring drawn on the ground the entire time - crash down at a point up to 600 units away. Inner ring: heavy physical damage and a 1s knockup. Outer ring: 60% damage, and enemies are shoved 250 units outward from the crater.",
+    "description": "Beat up into the sky for 0.6s, rooted, with the corridor drawn on the ground, then dive in a straight line to a point up to 8 m away. Enemies in the 1.5 m-wide corridor take 150/250/350 (+0.6 AD) physical damage and are shoved 1.5 m out to their side of it. The first enemy champion within 1.25 m of the end is pinned under you, stunned 1.25s. Killed in the air, you never dive.",
     "icon": "sera_r",
     "cooldown": 120.0,
     "cost": 100.0,
-    "range": 6.0
+    "range": 8.0
    }
   ]
  },
@@ -3336,8 +3409,8 @@
    },
    {
     "slot": "E",
-    "name": "Kawarimi",
-    "description": "Blink to a planted kunai near the cursor, picking it up, in a puff of smoke; with none in reach, dash 3 instead. Your next basic attack within 3s throws 2 kunai.",
+    "name": "Wire Reel",
+    "description": "Fire a silver wire at the planted kunai nearest the cursor within 8m and be reeled along it at 16m/s (a real dash: a stun cuts it and dash blockers stop it). Enemies the wire crosses take 30 (+0.3 bonus AD) physical damage and are slowed 30% for 1s, and you pick the kunai up on arrival. With no kunai in reach the wire anchors in the first wall within 6m and reels you to its foot; with neither, dash 3m. Your next basic attack within 3s throws 2 kunai.",
     "icon": "shiro_e",
     "cooldown": 14.0,
     "range": 8.0
@@ -3378,14 +3451,14 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Rain Check",
-    "description": "Damage the open umbrella blocks is banked on her palm sigil as Resolve, up to 25% of her maximum health. Her next Closed Thrust spends it all, adding 50% of the banked Resolve as bonus physical damage to the first champion hit. Resolve fades after 6s without blocking.",
+    "name": "Reluctant Courage",
+    "description": "When an allied champion within 6m drops below 40% health (once per ally every 20s), Suzu steels herself: 25% move speed while running toward that ally for 2s, and her next Closed Thrust within 4s deals 25% more damage and slows everything it hits by 30% for 1s.",
     "icon": "suzu_p"
    },
    {
     "slot": "Q",
     "name": "Closed Thrust",
-    "description": "Snap the umbrella shut and lunge 350 units, stabbing everything in the line: 60/95/130/165/200 (+80% bonus AD) physical damage, plus the Resolve bonus on the first champion. While the greatsword lasts this is Downpour: no lunge, a 270-degree, 350-unit cleave around her with the same damage and Resolve bonus.",
+    "description": "Snap the umbrella shut and lunge 3.5m, stabbing everything in the line: 60/95/130/165/200 (+80% bonus AD) physical damage. Steeled by Reluctant Courage, it deals 25% more and slows by 30% for 1s.",
     "icon": "suzu_q",
     "cooldown": 8.0,
     "cost": 35.0,
@@ -3393,8 +3466,8 @@
    },
    {
     "slot": "W",
-    "name": "Open Umbrella",
-    "description": "Pop the canopy open toward the cursor for up to 2.5s (recast to close). She takes 40% less damage from the 120 degrees in front, walks at 75% speed and cannot attack; damage blocked becomes Resolve. Closing it bats the canopy shut: 40/65/90/115/140 (+40% bonus AD) physical damage, enemies in front pushed 150 units and slowed 30% for 1s.",
+    "name": "Rain Shelter",
+    "description": "Hold the umbrella straight up for 2s: every hit you take, from any direction, loses a flat 15/25/35/45/55 before armour and resist. Strong against many small hits, weak against one big one. You walk at 80% speed and cannot attack. When it closes (recast to close early) you shake the rain off: enemies within 2.5m are slowed by 25% for 1s.",
     "icon": "suzu_w",
     "cooldown": 14.0,
     "cost": 40.0,
@@ -3410,12 +3483,12 @@
    },
    {
     "slot": "R",
-    "name": "The Change Finishes",
-    "description": "The umbrella becomes a full greatsword for 8s. On cast she leaps up to 450 units and slams down: 150/250/350 (+70% bonus AD) physical damage within 275 units and a 0.5s knock-up. While it lasts she gains 20/35/50 attack damage and 75 attack range, and Closed Thrust becomes Downpour. She cannot open the umbrella until the change fades.",
+    "name": "Monsoon",
+    "description": "The umbrella opens to full size over you for 4s: a 4m dome that follows you. Allied champions under it take 25% less damage from enemies outside it. Enemies under it are slowed by 25% and pelted every 0.5s for 20/30/40 (+10% bonus AD) physical damage. When it ends, or on recast, the canopy snaps shut with a bat all round: 150/250/350 (+70% bonus AD) physical damage and a 1.5m push.",
     "icon": "suzu_r",
     "cooldown": 110.0,
     "cost": 100.0,
-    "range": 4.5
+    "range": 4.0
    }
   ]
  },
@@ -3446,7 +3519,7 @@
    {
     "slot": "P",
     "name": "Hold the Line",
-    "description": "You take 4% less damage per enemy champion near you, to a maximum of 16%. Your attacks deal bonus damage to enemies facing away from you.",
+    "description": "You take 4% less damage per enemy champion near you, to a maximum of 16%; Close Ranks stacks on top, but at least 10% of every hit always gets through. Your attacks deal bonus damage to enemies facing away from you.",
     "icon": "thane_p"
    },
    {
@@ -3460,8 +3533,8 @@
    },
    {
     "slot": "W",
-    "name": "Bulwark",
-    "description": "Raise the tower shield for 2.5s. Enemy projectiles that strike its front are stopped and you take 25% less damage from that side. You move slower while it is up. Recast to lower it.",
+    "name": "Close Ranks",
+    "description": "Lock shields for 2.5s. You and every allied champion within 3m of you take 8% less damage for each allied champion (you included) inside that 3m, up to 24%. You move 20% slower while the ranks hold. Blocks no projectiles.",
     "icon": "thane_w",
     "cooldown": 18.0,
     "cost": 50.0,
@@ -3478,12 +3551,12 @@
    },
    {
     "slot": "R",
-    "name": "Plant the Banner",
-    "description": "Leap and slam the banner down, knocking up and damaging enemies nearby. The banner stands for 8s: allies inside take less damage and move faster, enemies inside are slowed. Three attacks destroy it.",
+    "name": "Sound the Charge",
+    "description": "Raise the banner and sound the horn: after 0.75s, enemies within 3.5m take physical damage and are knocked back 2m. For 6s every allied champion within 8m (you too) gains 25% move speed while moving toward the nearest visible enemy champion, and First In's cooldown is reset.",
     "icon": "thane_r",
-    "cooldown": 130.0,
+    "cooldown": 120.0,
     "cost": 100.0,
-    "range": 5.0
+    "range": 8.0
    }
   ]
  },
@@ -3558,7 +3631,7 @@
  {
   "id": "umi",
   "name": "Umi",
-  "title": "The Mad Tinker",
+  "title": "The Wind-Up Inventor",
   "class": "Mage",
   "resource": "Mana",
   "ranged": true,
@@ -3582,7 +3655,7 @@
    {
     "slot": "P",
     "name": "Wind-Up",
-    "description": "Clank, a clockwork toolbox on spider legs, walks at her side and builds her turrets. Turrets have 8s of wind and stop firing when it runs down; her basic attacks wind her nearest turret 2s, and Clank beside one winds it 1s per second. Clank can be broken (300 +40 per level health); while it is (20s) she cannot build.",
+    "description": "Tock, a clockwork toolbox on spider legs, walks at her side and builds her contraptions. A contraption has 8s of wind and stops working when it runs down; her basic attacks wind her nearest contraption 2s, and Tock beside one winds it 1s per second. Tock can be broken (300 +40 per level health); while it is (20s) she cannot build.",
     "icon": "umi_p"
    },
    {
@@ -3596,8 +3669,8 @@
    },
    {
     "slot": "W",
-    "name": "Build It!",
-    "description": "Clank scuttles to a point and unfolds a Clockwork Turret 0.75s after it arrives. The turret fires every 0.8s at the nearest enemy, champions Umi has damaged first, for magic damage while it has wind. Up to 2 turrets; 2 charges.",
+    "name": "Cog Lobber",
+    "description": "Tock scuttles to a point within 7.5m and assembles a Cog Lobber (3 hits break it; one at a time). While wound it lobs a cog every 2.5s at the enemy champion you damaged most recently within 9m (otherwise the nearest enemy). Each cog lands on a 1.5m circle drawn 0.8s ahead for 60 (+0.3 AP) magic damage and a 20% slow for 1s.",
     "icon": "umi_w",
     "cooldown": 16.0,
     "cost": 60.0,
@@ -3606,7 +3679,7 @@
    {
     "slot": "E",
     "name": "Big Wrench",
-    "description": "Swing the wrench through a cone: magic damage, enemies knocked back, and every turret near her fully rewound.",
+    "description": "Swing the wrench through a cone: magic damage, enemies knocked back, and every contraption near her fully rewound.",
     "icon": "umi_e",
     "cooldown": 14.0,
     "cost": 60.0,
@@ -3615,7 +3688,7 @@
    {
     "slot": "R",
     "name": "Prototype!",
-    "description": "Fire whatever is in Clank's lid, in a fixed loop of three shown over her head. Spring Boots: leap and land for magic damage and a 1s stun around her. Tesla Coil: Clank chains lightning between up to 3 enemies every 0.5s for 6s, slowing 20%. Steam Hammer: after 0.75s a giant fist slams a line for magic damage and a 1s knock-up.",
+    "description": "Fire whatever is in Tock's lid, in a fixed loop of three shown over her head. Spring Boots: leap and land for magic damage and a 1s stun around her. Tesla Coil: Tock chains lightning between up to 3 enemies every 0.5s for 6s, slowing 20%. Steam Hammer: after 0.75s a giant fist slams a line for magic damage and a 1s knock-up.",
     "icon": "umi_r",
     "cooldown": 90.0,
     "cost": 100.0,
@@ -3732,16 +3805,16 @@
    },
    {
     "slot": "W",
-    "name": "Bone Carapace",
-    "description": "Skulls lock over your plate: a shield of 70/100/130/160/190 (+8% max health) for 3s. When it breaks or expires the skulls burst for 50/75/100/125/150 (+3% max health) magic damage within 3m.",
+    "name": "Collect the Tithe",
+    "description": "Wrench tribute from everyone kneeling to you: every enemy within 6m that currently Kneels (slowed, knocked up or taunted by you) takes 50/75/100/125/150 (+3% of your max health) magic damage. You then gain a shield of 50/70/90/110/130 (+4% max health), plus 25 (+2% max health) for each enemy champion you collected from (up to 3), for 3s. With nobody kneeling you get the base shield only.",
     "icon": "valgor_w",
-    "cooldown": 16,
+    "cooldown": 14,
     "cost": 60
    },
    {
     "slot": "E",
     "name": "KNEEL.",
-    "description": "Bellow at everything within 3.25m: enemy champions are taunted for 1/1.1/1.2/1.3/1.4s, forced to walk at and attack you. You gain 20 armour and magic resist for 3s.",
+    "description": "After a 0.3s wind-up, stamp the greatsword\u2019s pommel: enemy champions within 3m are forced to their knees, stunned for 0.6s (minions 1s), and you gain 8 armour and magic resist for each champion downed (up to 24) for 4s.",
     "icon": "valgor_e",
     "cooldown": 18,
     "cost": 70
@@ -3754,73 +3827,6 @@
     "cooldown": 130,
     "cost": 100,
     "range": 6
-   }
-  ]
- },
- {
-  "id": "vane",
-  "name": "Vane",
-  "title": "The True North",
-  "class": "Marksman",
-  "resource": "Mana",
-  "ranged": true,
-  "portrait": true,
-  "portrait_kind": "painted",
-  "pending": false,
-  "colour": "#5971b2",
-  "stats": {
-   "health": 570.0,
-   "health_growth": 92.0,
-   "resource_max": 380.0,
-   "attack": 55.0,
-   "attack_growth": 2.9,
-   "attack_range": 5.5,
-   "attack_cooldown": 1.54,
-   "armor": 26.0,
-   "magic_resist": 30.0,
-   "move_speed": 6.9
-  },
-  "kit": [
-   {
-    "slot": "P",
-    "name": "Chalk and Memory",
-    "description": "When an enemy champion leaves your team's vision, their last known position and heading are marked for 4s. They can see their own mark.",
-    "icon": "vane_p"
-   },
-   {
-    "slot": "Q",
-    "name": "Sightline",
-    "description": "Fire a brass beam down a line. The first champion hit is damaged and revealed, and is told they were revealed. It deals more damage the further it travelled, and a beam that passes one of your stakes continues from there.",
-    "icon": "vane_q",
-    "cooldown": 10.0,
-    "cost": 45.0,
-    "range": 9.0
-   },
-   {
-    "slot": "W",
-    "name": "Benchmark",
-    "description": "Plant a survey stake granting 6 units of vision for 90s, with two charges. It has 1 health, so anything destroys it, and pays 15 gold to whoever does.",
-    "icon": "vane_w",
-    "cooldown": 30.0,
-    "cost": 40.0,
-    "range": 7.0
-   },
-   {
-    "slot": "E",
-    "name": "Backsight",
-    "description": "Return to where you stood four seconds ago and remove all slows. The return point is drawn on the ground for both teams the whole time.",
-    "icon": "vane_e",
-    "cooldown": 22.0,
-    "cost": 60.0
-   },
-   {
-    "slot": "R",
-    "name": "The True North",
-    "description": "Survey the field for 5s. Every enemy champion is revealed to your team and allies moving toward one gain movement speed. For the same 5s you are revealed to them.",
-    "icon": "vane_r",
-    "cooldown": 160.0,
-    "cost": 100.0,
-    "range": 40.0
    }
   ]
  },
@@ -3940,20 +3946,19 @@
    },
    {
     "slot": "E",
-    "name": "Velvet Step",
-    "description": "Dash, leaving an afterimage behind for 3s. Your next attack strikes twice more, and a recast returns you to the afterimage.",
+    "name": "Feint",
+    "description": "Dash 4m. Enemy champions within 3m who were moving toward you lunge at empty air: slowed 30% for 1s, and each gains a Desire stack. The spot you left is drawn for 1s. Your next 2 basic attacks deal +40% AD. No return.",
     "icon": "vessa_e",
     "cooldown": 12.0,
     "cost": 40.0
    },
    {
     "slot": "R",
-    "name": "The Due",
-    "description": "Unleash a heart-shaped nova, dealing double damage to enemies below a third of their health. Kills refund half the cooldown.",
+    "name": "The Debt Comes Due",
+    "description": "Call in every Desire stack on every enemy champion within 8m. Each is reeled 1m toward you per stack (up to 3m, stopping a body short) and takes 70/110/150 (+0.25 AP) magic damage per stack; those with 3 stacks are also Smitten for 1s. You heal for 25% of the damage dealt and every stack is spent. A kill refunds half the cooldown.",
     "icon": "vessa_r",
-    "cooldown": 110.0,
-    "cost": 100.0,
-    "range": 4.5
+    "cooldown": 100.0,
+    "cost": 100.0
    }
   ]
  },
@@ -4067,8 +4072,8 @@
    },
    {
     "slot": "E",
-    "name": "Roll Away",
-    "description": "Tumble a short distance. Your next basic attack within 3s fires twice, and if Tatters is on that target the second shot trips it.",
+    "name": "Caltrops",
+    "description": "Hop 2.5m back, away from the cursor, scattering caltrops in a 2m circle where you stood for 3s. The first time each enemy champion walks into them they take 40 (+0.4 bonus AD) physical damage, are Scented and are slowed 35% for 1.25s. If Tatters bites a target while it is slowed by the caltrops, the bite trips it (stunned 0.5s), once per cast.",
     "icon": "wick_e",
     "cooldown": 12.0,
     "cost": 50.0
@@ -4116,12 +4121,12 @@
    },
    {
     "slot": "Q",
-    "name": "Broadhead",
-    "description": "Press to start drawing (slowed by 30%), release or press again to loose: 7 on a tap, up to 12 after 1.5s of drawing, with up to 80% more damage. At full draw it pierces everything. Held for 3s, it looses on its own.",
+    "name": "Glancing Shot",
+    "description": "Loose an arrow down a 9 line: physical damage to the first enemy hit. If it reaches a wall first it glances off once and flies on another 6, and the first enemy it then hits takes 40% more and is slowed by 25% for 1.25s. A nocked Full Draw is spent on the shot for 2 more range, and it goes through one more enemy.",
     "icon": "wren_q",
-    "cooldown": 10.0,
+    "cooldown": 9.0,
     "cost": 55.0,
-    "range": 12.0
+    "range": 9.0
    },
    {
     "slot": "W",
@@ -4142,12 +4147,11 @@
    },
    {
     "slot": "R",
-    "name": "The Long Shot",
-    "description": "Root yourself and draw for 1.5s while a 25 line shows to everyone (recast to loose early for 60% damage). The first enemy champion hit takes physical damage and is driven back up to 4; if they strike a wall they are pinned to it and stunned.",
+    "name": "Standing Ground",
+    "description": "Plant your bow-stave at your feet and claim a 3m circle for 8s. Inside it you always count as standing still: Full Draw re-nocks 0.4s after each basic attack, and you have +1.5m attack range on top of Full Draw's. Each Full Draw arrow that hits a champion drives them back 1.5m; if stone cuts the drive short they are pinned for 1s (once per champion per cast). Stepping out of the circle ends it.",
     "icon": "wren_r",
     "cooldown": 120.0,
-    "cost": 100.0,
-    "range": 25.0
+    "cost": 100.0
    }
   ]
  },
@@ -4178,7 +4182,7 @@
    {
     "slot": "P",
     "name": "The Land Answers",
-    "description": "Each of Yara's abilities leaves its pictograph painted on the ground for 4s. Within 200 units of any of her paintings she gains 12% move speed and regenerates 3% of her max mana per second. Enemies see only faded smudges - the language is hers; the threats stay drawn for everyone.",
+    "description": "Each of Yara's abilities leaves its pictograph painted on the ground for 4s. Within 2m of any of her paintings (or anywhere on her Road) she gains 12% move speed and regenerates 3% of her max mana per second. Enemies see only faded smudges - the language is hers; the threats stay drawn for everyone.",
     "icon": "yara_p"
    },
    {
@@ -4201,12 +4205,12 @@
    },
    {
     "slot": "E",
-    "name": "\"Pas.\" (The Door.)",
-    "description": "Instant. Yara paints a doorway on a piece of terrain within 350 - natural wall, gate, or conjured terrain, including ice. For 3s that segment is passable for her team only. The door is drawn on both sides, visible to everyone. She has no other mobility: no wall, no way out.",
+    "name": "\"Ul.\" (The Road.)",
+    "description": "Yara paints a road 7m long and 1.2m wide from her feet toward the cursor, lasting 4s. Allied champions on it gain 35% move speed and enemies on it are slowed by 15%. The whole road counts as one of her paintings, and a Runner loosed along it runs twice as fast. It needs no terrain; she still has no dash.",
     "icon": "yara_e",
-    "cooldown": 22.0,
+    "cooldown": 18.0,
     "cost": 60.0,
-    "range": 3.5
+    "range": 7.0
    },
    {
     "slot": "R",
@@ -4252,7 +4256,7 @@
    {
     "slot": "Q",
     "name": "Nip",
-    "description": "Bite at the shins, dealing bonus damage to enemies who cannot see you.",
+    "description": "Bite at the shins, dealing 40% more damage to enemies your Pips have slowed.",
     "icon": "yip_q",
     "cooldown": 7.0,
     "cost": 30.0,
@@ -4260,8 +4264,8 @@
    },
    {
     "slot": "W",
-    "name": "Stash",
-    "description": "Dig for 0.5s and bury a Pip. An enemy champion who steps near an armed one triggers it for damage, a slow, and a brief blind. Abilities, movement and vision are unaffected, and no Pip may blind the same target twice within 6s.",
+    "name": "Wake the Neighbours",
+    "description": "2 charges, 14s refill. Dig for 0.5s and bury a Pip at your feet. An enemy champion who steps near an armed one makes it squeak: it deals no damage, reveals them for 3s and wakes every other Pip within 6m. Those pop up (visible, one hit kills them) and run at the victim faster than a champion walks; each one that arrives deals 25 (+0.2 AP) magic damage and stacks a 10% slow (up to 40%, 2s), then buries itself where it stopped.",
     "icon": "yip_w",
     "cooldown": 14.0,
     "cost": 40.0,
@@ -4278,7 +4282,7 @@
    {
     "slot": "R",
     "name": "Everybody Up!",
-    "description": "Every Pip rises and walks at the nearest enemy, revealed to both teams from the moment it stands, faster than a champion can walk, and destroyed by any single point of damage. Any Pip still standing after 5s buries itself again.",
+    "description": "Every Pip rises and walks at the nearest enemy, revealed to both teams from the moment it stands, faster than a champion can walk, and destroyed by any single point of damage. Each one that reaches an enemy champion bites like a woken Pip. Standing Pips return to the ground after 5s.",
     "icon": "yip_r",
     "cooldown": 120.0,
     "cost": 100.0,
@@ -4342,8 +4346,8 @@
    },
    {
     "slot": "R",
-    "name": "Undertow",
-    "description": "Sink into a pool of shadow for up to 5s: untargetable, invisible, unable to act, moving at 70% speed. Recast to surface early. On surfacing: +50% move speed for 4s, and for those 4s every basic attack takes 1s off all of your ability cooldowns.",
+    "name": "Eyes Shut",
+    "description": "Close your mask for 6s. Your own screen drains to grey and marked champions burn through in cold blue (only you see it; your team's vision is unchanged). You gain 35% attack speed and 25% move speed, and your basic attacks on marked champions deal 30 (+0.3 bonus AD) bonus physical damage, refresh the mark and take 1s off Q, W and E. A marked champion dying adds 3s.",
     "icon": "zax_r",
     "cooldown": 100
    }
@@ -4375,14 +4379,14 @@
   "kit": [
    {
     "slot": "P",
-    "name": "Four Hands",
-    "description": "Each ability she casts lights one of her four hands. With all four lit, her next Bright Note or Low Note is a Chord, 50% stronger with a bonus effect, and the hands go dark.",
+    "name": "Counterpoint",
+    "description": "Her hands keep the rhythm. Casting the opposite note from her last one (Bright Note after Low Note, or Low Note after Bright Note) within 6s lights a hand, up to four, and each lit hand makes her notes 10% stronger. The same note twice in a row, or 6s without a note, lets every hand go dark. With three or more lit her notes carry their bonus effect. Hand Unseen and Full Choir do not break the rhythm.",
     "icon": "zefira_p"
    },
    {
     "slot": "Q",
     "name": "Bright Note",
-    "description": "A ring of song heals allied champions around her, the most wounded of them 50% more. Chord: they also gain 20% movement speed for 1.5s.",
+    "description": "A ring of song heals allied champions around her, the most wounded of them 50% more. With three or more hands lit: they also gain 20% movement speed for 1.5s.",
     "icon": "zefira_q",
     "cooldown": 9.0,
     "cost": 60.0
@@ -4390,7 +4394,7 @@
    {
     "slot": "W",
     "name": "Low Note",
-    "description": "A bass wave rolls through a cone: magic damage and a 25% slow for 1.5s. Chord: the slow is 50% and enemies are pulled toward her.",
+    "description": "A bass wave rolls through a cone: magic damage and a 25% slow for 1.5s. With three or more hands lit: enemies are also pulled 1m toward her.",
     "icon": "zefira_w",
     "cooldown": 8.0,
     "cost": 50.0,
@@ -4399,7 +4403,7 @@
    {
     "slot": "E",
     "name": "Hand Unseen",
-    "description": "Send one floating hand to a champion. An ally is held in a shield for 3s, and whoever breaks it is slapped (40% slow for 1s). An enemy is gripped after 0.5s: stunned for 1s and dealt magic damage. The hand cannot be lit until it returns.",
+    "description": "Send one floating hand to a champion. An ally is held in a shield for 3s, and whoever breaks it is slapped (40% slow for 1s). An enemy is gripped after 0.5s: stunned for 1s and dealt magic damage. The hand cannot be lit until it returns, so at most three are lit while it is away.",
     "icon": "zefira_e",
     "cooldown": 15.0,
     "cost": 70.0,
