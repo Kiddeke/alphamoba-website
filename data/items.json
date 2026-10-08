@@ -105,7 +105,7 @@
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Pass the Plate",
-  "passive_text": "When you damage an enemy champion, the most wounded allied champion within 6m heals 12 + 3 per level. Once every 6s.",
+  "passive_text": "When you damage an enemy champion, the most wounded allied champion within 6m heals 15 + 3 per level. Once every 6s.",
   "charges": 0,
   "components": [],
   "stats": {
@@ -213,7 +213,7 @@
   "charges": 0,
   "components": [],
   "stats": {
-   "Health": 110.0,
+   "Health": 130.0,
    "Armour": 8.0
   },
   "art": true
@@ -1541,9 +1541,9 @@
   "description": "A tally-stick of wych-elm, scored with smouldering witch-marks.",
   "active": "Count Them Off",
   "active_cooldown": 45.0,
-  "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 50 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
+  "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 70 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Witch-Marks",
-  "passive_text": "Jungle brand for spell junglers (Fell only). Your abilities deal 15% more damage to monsters. At 15 tallies, Count Them Off's ring is 3m and the mark lasts 4s.",
+  "passive_text": "Jungle brand for spell junglers (Fell only). Your abilities deal 20% more damage to monsters. At 15 tallies, Count Them Off's ring is 3m and the mark lasts 4s.",
   "charges": 0,
   "components": [
    {
@@ -1556,7 +1556,7 @@
    }
   ],
   "stats": {
-   "Health": 120.0,
+   "Health": 200.0,
    "Ability power": 40.0,
    "Health regen": 3.0,
    "Ability haste": 10.0
@@ -1608,7 +1608,7 @@
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Lantern Wake",
-  "passive_text": "Jungle brand for tanks (Fell only). Monsters at the camp you fight take 10 + 1.5% of your max health magic damage a second. Each camp you clear leaves a lantern for 90s (up to 4) that sees 6m and reveals enemy champions who enter. At 15 tallies: up to 6 lanterns, and they slow intruders 25%.",
+  "passive_text": "Jungle brand for tanks (Fell only). Monsters at the camp you fight take 15 + 2% of your max health magic damage a second. Each camp you clear leaves a lantern for 90s (up to 4) that sees 6m and reveals enemy champions who enter. At 15 tallies: up to 6 lanterns, and they slow intruders 25%.",
   "charges": 0,
   "components": [
    {
@@ -1822,6 +1822,38 @@
   "art": true
  },
  {
+  "id": "duskfang_reaver",
+  "name": "Otter-Spear",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2350,
+  "description": "Barbed so the catch stays on, however hard it pulls.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Snag",
+  "passive_text": "Your hits barb enemy champions for 3s. A barbed champion who dashes, blinks or Bolts is pinned where they land for 0.6s and revealed for 2s (once per champion every 10s).",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   }
+  ],
+  "stats": {
+   "Attack damage": 70.0,
+   "Attack speed": 0.15,
+   "Move speed": 0.5,
+   "Ability haste": 15.0,
+   "Lifesteal": 0.08
+  },
+  "art": true
+ },
+ {
   "id": "lamplighters_pole",
   "name": "Beater's Rattle",
   "tier": 3,
@@ -1878,7 +1910,8 @@
   ],
   "stats": {
    "Health": 800.0,
-   "Health regen": 10.0
+   "Health regen": 10.0,
+   "Ability haste": 5.0
   },
   "art": true
  },
@@ -2037,36 +2070,6 @@
    "Ability power": 110.0,
    "Move speed": 0.3,
    "Ability haste": 10.0
-  },
-  "art": true
- },
- {
-  "id": "duskfang_reaver",
-  "name": "Otter-Spear",
-  "tier": 3,
-  "category": "Attack",
-  "cost": 2450,
-  "description": "Barbed so the catch stays on, however hard it pulls.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "Snag",
-  "passive_text": "Your hits barb enemy champions for 3s. A barbed champion who dashes, blinks or Bolts is pinned where they land for 0.6s and revealed for 2s (once per champion every 10s).",
-  "charges": 0,
-  "components": [
-   {
-    "id": "skirmishers_talon",
-    "name": "Skirmisher's Talon"
-   },
-   {
-    "id": "serrated_fang",
-    "name": "Serrated Fang"
-   }
-  ],
-  "stats": {
-   "Attack damage": 65.0,
-   "Attack speed": 0.25,
-   "Move speed": 0.5
   },
   "art": true
  },
@@ -2414,6 +2417,40 @@
   "art": true
  },
  {
+  "id": "nightshade_dirk",
+  "name": "Nightshade Dirk",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "Dipped in deadly nightshade. The cut is small; the yawn is what kills.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Nightshade",
+  "passive_text": "Your basics and ability hits poison enemy champions for 3s. Their ability cooldowns run 25% slower while poisoned.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "mothknife",
+    "name": "Mothknife"
+   },
+   {
+    "id": "billhook",
+    "name": "Billhook"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Attack damage": 70.0,
+   "Move speed": 0.3,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
   "id": "owlhush_blade",
   "name": "Owlhush Darts",
   "tier": 3,
@@ -2527,7 +2564,7 @@
    }
   ],
   "stats": {
-   "Attack damage": 45.0,
+   "Attack damage": 50.0,
    "Attack speed": 0.45,
    "Move speed": 0.2
   },
@@ -2619,7 +2656,7 @@
   ],
   "stats": {
    "Mana": 150.0,
-   "Ability power": 65.0,
+   "Ability power": 75.0,
    "Health regen": 2.0,
    "Mana regen": 2.0,
    "Ability haste": 20.0
@@ -2714,7 +2751,7 @@
   ],
   "stats": {
    "Health": 450.0,
-   "Ability power": 90.0,
+   "Ability power": 80.0,
    "Armour": 30.0
   },
   "art": true
@@ -2894,8 +2931,8 @@
    }
   ],
   "stats": {
-   "Health": 250.0,
-   "Ability power": 60.0,
+   "Health": 300.0,
+   "Ability power": 70.0,
    "Health regen": 3.0,
    "Mana regen": 3.0,
    "Ability haste": 15.0
@@ -3018,7 +3055,8 @@
   ],
   "stats": {
    "Health": 700.0,
-   "Armour": 55.0
+   "Armour": 55.0,
+   "Ability haste": 10.0
   },
   "art": true
  },
@@ -3084,6 +3122,36 @@
    "Health": 450.0,
    "Magic resist": 60.0,
    "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "hags_loupe",
+  "name": "Hag's Loupe",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "She reads the small print with it, and sets fire to ants.",
+  "active": "Burning Point",
+  "active_cooldown": 40.0,
+  "active_text": "Aim within 9m: after 0.75s, a 1.2m spot there burns enemies for 70 + 35% AP magic damage, doubled on a champion standing still.",
+  "passive": "Magnify",
+  "passive_text": "Your ability hits on an enemy champion that deal less than 10% of their max health deal 20% more.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "whisperglass",
+    "name": "Whisperglass"
+   },
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   }
+  ],
+  "stats": {
+   "Mana": 300.0,
+   "Ability power": 110.0,
+   "Ability haste": 15.0
   },
   "art": true
  },
@@ -3215,6 +3283,71 @@
   "art": true
  },
  {
+  "id": "redhand_cleaver",
+  "name": "Redhand Cleaver",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2600,
+  "description": "It chips on every bone it meets, and leaves the chips behind.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Shards",
+  "passive_text": "Your basics on an enemy champion leave a shard in them for 6s, up to 3.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Attack damage": 65.0,
+   "Attack speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "riverclam_pearl",
+  "name": "Riverclam Pearl",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "Every grain of grit the river gave it, it gave back as a pearl.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Grit",
+  "passive_text": "Each enemy champion ability that hits you adds 1 grit, up to 4.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tidewardens_pearl",
+    "name": "Tidewarden's Pearl"
+   },
+   {
+    "id": "spellbreaker_shroud",
+    "name": "Spellbreaker Shroud"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Mana": 150.0,
+   "Ability power": 75.0,
+   "Magic resist": 30.0
+  },
+  "art": true
+ },
+ {
   "id": "tidewell_pearl",
   "name": "Wishing-Well Bucket",
   "tier": 3,
@@ -3331,10 +3464,44 @@
    }
   ],
   "stats": {
-   "Health": 450.0,
-   "Attack damage": 40.0,
+   "Health": 500.0,
+   "Attack damage": 45.0,
    "Health regen": 4.5,
    "Lifesteal": 0.07
+  },
+  "art": true
+ },
+ {
+  "id": "balefire_axe",
+  "name": "Balefire Axe",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2700,
+  "description": "Cut from the heart of a beacon fire. It has never quite gone out.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Set Alight",
+  "passive_text": "Your basics set enemy champions alight for 3s, burning for 10 + 15% bonus AD magic damage a second.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Skull-Cup"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Attack damage": 55.0,
+   "Attack speed": 0.25
   },
   "art": true
  },
@@ -3807,7 +3974,7 @@
   "description": "Wych-elm wound with a whole coven's tally cords.",
   "active": "Count Them Off",
   "active_cooldown": 45.0,
-  "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 50 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
+  "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 70 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Second Count",
   "passive_text": "Jungle legendary (Fell only). Your abilities deal 25% more damage to monsters. Count Them Off lands again 1s later for 60% damage; champions hit by both are stunned for 0.75s.",
   "charges": 0,
@@ -3944,8 +4111,8 @@
    }
   ],
   "stats": {
-   "Health": 200.0,
-   "Attack damage": 60.0,
+   "Health": 300.0,
+   "Attack damage": 70.0,
    "Ability haste": 18.0
   },
   "art": true
