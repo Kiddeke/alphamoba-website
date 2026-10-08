@@ -307,6 +307,8 @@ def item(path):
         "active_text": f.get("active_text", "") or "",
         "passive": f.get("passive_name", "") or "",
         "passive_text": f.get("passive_text", "") or "",
+        "passive2": f.get("passive2_name", "") or "",
+        "passive2_text": f.get("passive2_text", "") or "",
         "charges": int(num(f, "charges")),
         "components": components,
         "stats": stats,

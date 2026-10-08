@@ -74,7 +74,7 @@
     var itemSearch = document.querySelector("[data-item-search]");
     var allItems = [];
     var tier = "all", cat = "all";
-    var tierNames = { 0: "Starter", 1: "Basic", 2: "Advanced", 3: "Finished" };
+    var tierNames = { 0: "Starter", 1: "Basic", 2: "Epic", 3: "Legendary" };
 
     function renderItems() {
       var q = (itemSearch && itemSearch.value.trim().toLowerCase()) || "";
@@ -82,7 +82,7 @@
         if (tier !== "all" && String(i.tier) !== tier) return false;
         if (cat !== "all" && i.category !== cat) return false;
         if (!q) return true;
-        return (i.name + " " + i.description + " " + i.category + " " + (i.passive || "") + " " + (i.active || "")).toLowerCase().indexOf(q) !== -1;
+        return (i.name + " " + i.description + " " + i.category + " " + (i.passive || "") + " " + (i.passive2 || "") + " " + (i.active || "")).toLowerCase().indexOf(q) !== -1;
       });
       items.innerHTML = shown.map(function (i) {
         var stats = Object.keys(i.stats).map(function (k) {
@@ -97,6 +97,8 @@
           : "";
         var passive = i.passive_text
           ? '<p class="item-passive"><strong>' + esc(i.passive || "Unique passive") + '</strong> ' + esc(i.passive_text) + "</p>" : "";
+        if (i.passive2_text)
+          passive += '<p class="item-passive"><strong>' + esc(i.passive2 || "Unique passive") + '</strong> ' + esc(i.passive2_text) + "</p>";
         var active = i.active ? '<p class="item-active">Active — ' + esc(i.active) + (i.active_cooldown ? " (" + fmt(i.active_cooldown) + "s)" : "") +
           (i.active_text ? '<span class="item-active-text"> ' + esc(i.active_text) + "</span>" : "") + "</p>" : "";
         var art = i.art
@@ -107,7 +109,7 @@
           '<p class="item-cat">' + esc(tierNames[i.tier] || "Tier " + i.tier) + " · " + esc(i.category) + "</p></div>" +
           '<span class="cost">' + i.cost + "</span></div>" +
           (stats ? '<ul class="item-stats">' + stats + "</ul>" : "") +
-          active +
+          passive + active +
           '<p class="item-desc">' + esc(i.description) + "</p>" + build + "</li>";
       }).join("") || '<li class="roster-empty">Nothing on the shelf matches.</li>';
       var count = document.querySelector("[data-item-count]");

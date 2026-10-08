@@ -11,6 +11,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 2,
   "components": [],
   "stats": {
@@ -30,6 +32,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 2,
   "components": [],
   "stats": {
@@ -49,6 +53,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 2,
   "components": [],
   "stats": {
@@ -69,6 +75,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {},
@@ -86,6 +94,8 @@
   "active_text": "",
   "passive": "Notches",
   "passive_text": "Jungle starter, Fell only, one per bag. Takedowns and large monsters add tallies. Upgrades into a brand.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -106,10 +116,12 @@
   "active_text": "",
   "passive": "Pass the Plate",
   "passive_text": "When you damage an enemy champion, the most wounded allied champion within 6m heals 15 + 3 per level. Once every 6s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
-   "Health": 40.0,
+   "Health": 70.0,
    "Move speed": 0.2,
    "Health regen": 1.5,
    "Mana regen": 1.5
@@ -128,6 +140,8 @@
   "active_text": "",
   "passive": "Waxed String",
   "passive_text": "Killing a minion or monster gives 8% attack speed for 3s, stacking 3 times.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -149,6 +163,8 @@
   "active_text": "",
   "passive": "Poultice",
   "passive_text": "When you drop below 40% health, heal 70 + 6 per level over 5s. Once every 45s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -169,6 +185,8 @@
   "active_text": "",
   "passive": "Chalk Notes",
   "passive_text": "When your ability hits an enemy champion, restore 12 mana. Once every 4s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -190,6 +208,8 @@
   "active_text": "",
   "passive": "First Cut",
   "passive_text": "Your first basic on an enemy champion after 5s without hitting one deals 18 bonus physical damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -210,6 +230,8 @@
   "active_text": "",
   "passive": "Return Blow",
   "passive_text": "When an enemy champion hits you with a basic, your next basic on them within 3s deals 15 bonus physical damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -230,6 +252,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -250,6 +274,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {},
@@ -267,6 +293,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -286,6 +314,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -306,6 +336,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -325,6 +357,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -344,6 +378,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -363,6 +399,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -382,6 +420,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -401,6 +441,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -420,6 +462,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -439,6 +483,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -460,6 +506,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -480,6 +528,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -500,6 +550,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -520,6 +572,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -540,6 +594,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -560,6 +616,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -579,6 +637,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -598,6 +658,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -617,6 +679,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -636,6 +700,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -655,6 +721,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -684,6 +752,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -713,6 +783,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -742,6 +814,8 @@
   "active_text": "",
   "passive": "Tattle",
   "passive_text": "When an enemy destroys one of your wards, they are revealed for 4s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -773,6 +847,8 @@
   "active_text": "",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -802,6 +878,8 @@
   "active_text": "",
   "passive": "Ash",
   "passive_text": "Enemy champions you damage with abilities heal 35% less for 3s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -832,6 +910,8 @@
   "active_text": "",
   "passive": "Salt in It",
   "passive_text": "Enemy champions you damage heal 35% less for 3s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -862,6 +942,8 @@
   "active_text": "",
   "passive": "Tidewater",
   "passive_text": "While below 50% mana, your mana regen is doubled.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -892,6 +974,8 @@
   "active_text": "",
   "passive": "Last Drop",
   "passive_text": "Below 40% health, your lifesteal heals double.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -921,6 +1005,8 @@
   "active_text": "",
   "passive": "Long Draw",
   "passive_text": "Ranged champions reach 0.4m further with basics.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -951,6 +1037,8 @@
   "active_text": "",
   "passive": "Lifebinder",
   "passive_text": "Your heals and shields on other champions are 8% stronger.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -982,6 +1070,8 @@
   "active_text": "",
   "passive": "Still Water",
   "passive_text": "After 5s without casting, your next ability winds up 30% faster.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1012,6 +1102,8 @@
   "active_text": "",
   "passive": "Cut Them Off",
   "passive_text": "Your basics deal 12 bonus physical damage to champions moving away from you.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1041,6 +1133,8 @@
   "active_text": "",
   "passive": "Solace",
   "passive_text": "When crowd control lands on an allied champion within 6m, they gain a shield of 30 + 15% AP for 2s. Once every 12s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1071,6 +1165,8 @@
   "active_text": "",
   "passive": "Lead the Way",
   "passive_text": "Allied champions within 5m of you gain 0.35 move speed while heading toward an enemy champion.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1102,6 +1198,8 @@
   "active_text": "",
   "passive": "Answer in Kind",
   "passive_text": "When an enemy champion's ability hits you, your next ability hit on them within 4s deals 30 bonus magic damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1131,6 +1229,8 @@
   "active_text": "",
   "passive": "Hollow Point",
   "passive_text": "Your basics ignore 15% of the target's armour.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1160,6 +1260,8 @@
   "active_text": "",
   "passive": "Wardstone",
   "passive_text": "When an enemy champion's ability hits you, regenerate 1% of your max health a second for 3s. Once every 8s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1190,6 +1292,8 @@
   "active_text": "",
   "passive": "Victor's Due",
   "passive_text": "Champion takedowns heal you for 8% of your max health.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1219,6 +1323,8 @@
   "active_text": "",
   "passive": "Torchlight",
   "passive_text": "Your ability hits reveal enemy champions for 2s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1248,6 +1354,8 @@
   "active_text": "",
   "passive": "Frost-Set",
   "passive_text": "A hit that takes more than 8% of your max health gives you 15 armour for 2s. Once every 6s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1278,6 +1386,8 @@
   "active_text": "",
   "passive": "Unseen",
   "passive_text": "Your first hit on an enemy champion who could not see you deals 25 bonus physical damage. Once every 8s per champion.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1308,6 +1418,8 @@
   "active_text": "",
   "passive": "Knit",
   "passive_text": "Each time an enemy champion damages you, gain 1 health regen for 5s, stacking up to 8.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1337,6 +1449,8 @@
   "active_text": "",
   "passive": "Rune-Ward",
   "passive_text": "When your ability hits an enemy champion, gain a shield of 25 + 10% AP for 2s. Once every 8s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1367,6 +1481,8 @@
   "active_text": "",
   "passive": "Unhurried",
   "passive_text": "Slows on you last 25% shorter.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1396,6 +1512,8 @@
   "active_text": "",
   "passive": "Shield-Rim",
   "passive_text": "Minions and monsters deal you 20% less damage, and towers 10% less.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1425,6 +1543,8 @@
   "active_text": "",
   "passive": "Rend",
   "passive_text": "Your first ability hit on an enemy champion every 6s deals 20 bonus physical damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1454,6 +1574,8 @@
   "active_text": "",
   "passive": "Iron Guard",
   "passive_text": "Your first basic on an enemy champion every 6s gives you a shield of 40 + 4% of your bonus health for 2s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1484,6 +1606,8 @@
   "active_text": "For 4s, wards, towers and minions cannot see you; enemy champions within 7m still can. Dealing or taking damage ends it. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "The Brand Takes",
   "passive_text": "Jungle brand for assassins (Fell only). At 15 tallies, Snuff the Lantern lasts 5s and taking damage no longer ends it.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1515,6 +1639,8 @@
   "active_text": "",
   "passive": "Burrs",
   "passive_text": "Champions who basic attack you get a burr (up to 4, for 5s). Your next hit on them tears the burrs out for 12 + 1% of your max health magic damage each.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1544,6 +1670,8 @@
   "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 70 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Witch-Marks",
   "passive_text": "Jungle brand for spell junglers (Fell only). Your abilities deal 20% more damage to monsters. At 15 tallies, Count Them Off's ring is 3m and the mark lasts 4s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1575,6 +1703,8 @@
   "active_text": "",
   "passive": "Ironsong",
   "passive_text": "Allied champions within 5m of you gain 3 armour and 3 magic resist for each enemy champion within 8m of you, up to 12 each.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1609,6 +1739,8 @@
   "active_text": "",
   "passive": "Lantern Wake",
   "passive_text": "Jungle brand for tanks (Fell only). Monsters at the camp you fight take 15 + 2% of your max health magic damage a second. Each camp you clear leaves a lantern for 90s (up to 4) that sees 6m and reveals enemy champions who enter. At 15 tallies: up to 6 lanterns, and they slow intruders 25%.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1643,6 +1775,8 @@
   "active_text": "Near a camp (6m): its monsters attack the nearest enemy champion within 9m for 4s. If none is near, the camp does not attack you for 3s. Cooldown 1s shorter per tally (40s minimum).",
   "passive": "The Brand Takes",
   "passive_text": "Jungle brand for fighters (Fell only). At 15 tallies, roused monsters hunt for 5s and deal 25% more damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1677,6 +1811,8 @@
   "active_text": "",
   "passive": "Calm Before",
   "passive_text": "Each full second without casting builds 1 Calm, up to 5. Your next ability's first hit deals 6% more damage per Calm.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1708,6 +1844,8 @@
   "active_text": "",
   "passive": "Weight of the Blade",
   "passive_text": "Each basic on the same target within 2.5s adds 1 Weight (up to 5): +5% basic damage each. At 5 Weight your basic interrupts casts, channels and recalls and slows 30% for 1s, then Weight drops to 2. Once per target every 6s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1738,6 +1876,8 @@
   "active_text": "",
   "passive": "Harrow",
   "passive_text": "When your basic kills a minion or monster, 40% of the hit splashes on enemies within 2m of it (not champions).",
+  "passive2": "Siege Stones",
+  "passive2_text": "Your basics deal 25% more damage to towers.",
   "charges": 0,
   "components": [
    {
@@ -1767,6 +1907,8 @@
   "active_text": "",
   "passive": "Night Watch",
   "passive_text": "Your wards take 2 hits to destroy, and an enemy who destroys one is revealed for 6s.",
+  "passive2": "Long Watch",
+  "passive2_text": "Your wards last 50% longer.",
   "charges": 0,
   "components": [
    {
@@ -1799,6 +1941,8 @@
   "active_text": "",
   "passive": "Burrs",
   "passive_text": "Champions who basic attack you get a burr (up to 4, for 5s). Your next hit on them tears the burrs out for 12 + 1% of your max health magic damage each.",
+  "passive2": "Hard Lesson",
+  "passive2_text": "When crowd control lands on you, gain 30 armour and 30 magic resist for 3s. Once every 8s.",
   "charges": 0,
   "components": [
    {
@@ -1833,6 +1977,8 @@
   "active_text": "",
   "passive": "Snag",
   "passive_text": "Your hits barb enemy champions for 3s. A barbed champion who dashes, blinks or Bolts is pinned where they land for 0.6s and revealed for 2s (once per champion every 10s).",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1865,6 +2011,8 @@
   "active_text": "",
   "passive": "Flushed Out",
   "passive_text": "Enemy champions within 5m of you cannot hide in brush.",
+  "passive2": "Keen Eyes",
+  "passive2_text": "Allied champions within 6m of you see 2m farther.",
   "charges": 0,
   "components": [
    {
@@ -1897,6 +2045,8 @@
   "active_text": "",
   "passive": "Rooted Heart",
   "passive_text": "Knockbacks, drags and pulls move you half as far, and knock-ups on you last 40% less.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1927,6 +2077,8 @@
   "active_text": "Enemy champions within 12m are revealed to your team for 2s.",
   "passive": "Rod Twitches",
   "passive_text": "When an enemy champion you cannot see comes within 8m of you, you are warned.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1959,6 +2111,8 @@
   "active_text": "Aim a line: after 0.5s the ground splits 7m ahead, dealing 90 + 90% bonus AD physical damage. The crack stands for 3s as a low wall enemies can't walk through (dashes go over).",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -1988,6 +2142,8 @@
   "active_text": "",
   "passive": "Echo Arrow",
   "passive_text": "0.35s after your basic lands on a champion or monster, a ghost arrow hits it for 30% of the damage as magic damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2022,6 +2178,8 @@
   "active_text": "Aim: vent all your Grudge in a 5m cone as magic damage equal to the Grudge + 40% AP, healing for 35% of what it deals to champions.",
   "passive": "Grudge",
   "passive_text": "20% of the damage champions deal you is stored as Grudge, up to 350. It drains once you are out of champion fights for 5s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2051,6 +2209,8 @@
   "active_text": "",
   "passive": "Hare's Run",
   "passive_text": "After 3s without dealing or taking champion damage, gain 0.6 move speed.",
+  "passive2": "Out of the Bracken",
+  "passive2_text": "Your first ability hit within 2s of leaving brush deals 12% more damage.",
   "charges": 0,
   "components": [
    {
@@ -2085,6 +2245,8 @@
   "active_text": "",
   "passive": "Read Twice",
   "passive_text": "The first stun, slow, fear or taunt on you every 15s lasts half as long.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2115,6 +2277,8 @@
   "active_text": "",
   "passive": "Errata",
   "passive_text": "When an ability hits no enemy champion, refund 20% of its cooldown.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2145,6 +2309,8 @@
   "active_text": "",
   "passive": "Brine",
   "passive_text": "Enemy champions you damage heal 40% less for 3s.",
+  "passive2": "Brine Burns",
+  "passive2_text": "While brined, 20% of the healing they would get is dealt to them as magic damage instead.",
   "charges": 0,
   "components": [
    {
@@ -2175,6 +2341,8 @@
   "active_text": "",
   "passive": "Startle",
   "passive_text": "When an enemy champion dashes or blinks to within 4m of you, gain a shield of 60 + 25% AP for 2s and 1 move speed that fades over 1.5s. Once every 15s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2205,6 +2373,8 @@
   "active_text": "",
   "passive": "Hook",
   "passive_text": "Your basics on an enemy champion who is moving away from you drag them 0.5m toward you. Once every 2s per champion.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2235,6 +2405,8 @@
   "active_text": "",
   "passive": "Felling",
   "passive_text": "Your basics deal bonus physical damage equal to 4% of the target's bonus health.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2265,6 +2437,8 @@
   "active_text": "",
   "passive": "Safe Crossing",
   "passive_text": "When an allied champion within 8m dashes or uses Bolt, they gain a shield of 50 + 20% AP for 2s when they land. Once per ally every 10s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2298,6 +2472,8 @@
   "active_text": "",
   "passive": "Choking Smoke",
   "passive_text": "Enemy champions within 3.5m of you heal 30% less, or 50% less while you are below 50% health.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2333,6 +2509,8 @@
   "active_text": "",
   "passive": "Prise",
   "passive_text": "Your damage to shields is 30% higher.",
+  "passive2": "Loot the Grave",
+  "passive2_text": "Breaking an enemy champion's shield takes 2s off your basic abilities' cooldowns.",
   "charges": 0,
   "components": [
    {
@@ -2362,6 +2540,8 @@
   "active_text": "",
   "passive": "Bolt-Hole",
   "passive_text": "A champion takedown gives you 1 move speed that fades over 3s, and you pass through units for 3s.",
+  "passive2": "Hare's Luck",
+  "passive2_text": "The first champion hit on you within 3s of a takedown deals 50% less.",
   "charges": 0,
   "components": [
    {
@@ -2397,6 +2577,8 @@
   "active_text": "",
   "passive": "Guard Dog",
   "passive_text": "When an enemy champion damages an allied champion within 6m of you, gain 0.8 move speed toward that enemy for 2s. Once every 8s.",
+  "passive2": "Hackles Up",
+  "passive2_text": "Your next basic on that enemy within 3s taunts them for 0.5s.",
   "charges": 0,
   "components": [
    {
@@ -2428,6 +2610,8 @@
   "active_text": "",
   "passive": "Nightshade",
   "passive_text": "Your basics and ability hits poison enemy champions for 3s. Their ability cooldowns run 25% slower while poisoned.",
+  "passive2": "Heavy Eyelids",
+  "passive2_text": "A champion poisoned for 3s without a break is slowed 30% for 1.5s. Once every 8s per champion.",
   "charges": 0,
   "components": [
    {
@@ -2462,6 +2646,8 @@
   "active_text": "",
   "passive": "Hush",
   "passive_text": "When you hit an enemy champion who could not see you, their sight shrinks to 3m for 2s.",
+  "passive2": "Soft Feet",
+  "passive2_text": "While no enemy champion can see you, gain 0.5 move speed.",
   "charges": 0,
   "components": [
    {
@@ -2492,6 +2678,8 @@
   "active_text": "",
   "passive": "Ashfall",
   "passive_text": "Enemy champions you damage with abilities heal 40% less for 3s.",
+  "passive2": "Last Rites",
+  "passive2_text": "Ash also cuts the shields they are given by 40%.",
   "charges": 0,
   "components": [
    {
@@ -2522,6 +2710,8 @@
   "active_text": "",
   "passive": "Scry",
   "passive_text": "Your abilities deal 15% more damage to champions your team cannot see, and reveal them for 2s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2552,6 +2742,8 @@
   "active_text": "For 3.5s you basic attack while moving, at 75% speed and 0.5m less reach.",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2582,6 +2774,8 @@
   "active_text": "",
   "passive": "Front Rank",
   "passive_text": "Allied champions within 3m behind you (on your far side from the nearest enemy champion) take 10% less damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2611,6 +2805,8 @@
   "active_text": "",
   "passive": "Ill Wind",
   "passive_text": "Your heals and shields on an ally are 10% stronger for each enemy champion within 6m of them, up to 30%.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2643,6 +2839,8 @@
   "active_text": "",
   "passive": "Will-o'-Wisp",
   "passive_text": "Every 8s, your next ability hit on an enemy champion sends a wisp to the most wounded allied champion within 8m, healing them 30 + 15% AP.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2675,6 +2873,8 @@
   "active_text": "",
   "passive": "Through the Argument",
   "passive_text": "When your damage breaks an enemy champion's shield, it bites for 60 + 60% bonus AD physical damage and cuts their healing and shields 40% for 4s. Once per champion every 8s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2705,6 +2905,8 @@
   "active_text": "",
   "passive": "Grindstone",
   "passive_text": "An enemy champion who hits you with 4 basics within 3s is blinded for 1s: their basics miss. Once every 8s per champion.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2738,6 +2940,8 @@
   "active_text": "",
   "passive": "Load-Bearing Cracks",
   "passive_text": "Once every 8s, a hit that would take more than 12% of your max health takes only 12% now; the rest is paid over the next 3s.",
+  "passive2": "Shatter Back",
+  "passive2_text": "When held damage finishes paying, enemies within 3m take magic damage equal to 30% of it.",
   "charges": 0,
   "components": [
    {
@@ -2768,6 +2972,8 @@
   "active_text": "",
   "passive": "Long Shot",
   "passive_text": "Your basics deal up to 15% more damage the farther the target is: nothing at 3m, the full 15% at 6m.",
+  "passive2": "Stand Off",
+  "passive2_text": "While no enemy champion is within 4m of you, gain 15% attack speed.",
   "charges": 0,
   "components": [
    {
@@ -2798,6 +3004,8 @@
   "active_text": "",
   "passive": "Rot",
   "passive_text": "Your ability hits deal bonus magic damage equal to 3% of the target's bonus health.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2829,6 +3037,8 @@
   "active_text": "For 4s, heals on you are banked. Then you heal 150% of the bank, and enemies within 3.5m take physical damage equal to 40% of it (up to 80 + 100% bonus AD).",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2859,6 +3069,8 @@
   "active_text": "",
   "passive": "Smoulder",
   "passive_text": "Your ability hits deal bonus magic damage equal to 1.5% of your max health.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2889,6 +3101,8 @@
   "active_text": "For 4s your ability wind-ups are halved and each ability that hits an enemy champion refunds 30% of its cooldown. Then heals and shields on you are cut 50% for 5s.",
   "passive": "",
   "passive_text": "",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2919,6 +3133,8 @@
   "active_text": "",
   "passive": "Shares the Cup",
   "passive_text": "Heals and shields you give allied champions also restore 6% of the amount as their mana (or resource).",
+  "passive2": "Out of Season",
+  "passive2_text": "Your heals on allied champions below 35% health are 20% stronger.",
   "charges": 0,
   "components": [
    {
@@ -2951,6 +3167,8 @@
   "active_text": "Throw a trap within 6m. It arms after 1s and lasts 60s (2 at most). The first enemy champion to step on it is chained within 2m of it for 2s and revealed. A dash or blink breaks the chain.",
   "passive": "Keeper's Due",
   "passive_text": "Each basic you land on a chained champion holds the chain 0.5s longer, up to 4s in all.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -2981,6 +3199,8 @@
   "active_text": "",
   "passive": "Lock",
   "passive_text": "Your stuns, pins, roots, taunts and knock-ups on champions last 15% longer.",
+  "passive2": "Turnkey",
+  "passive2_text": "When one of them ends, the champion is slowed 25%, easing off over 1.5s.",
   "charges": 0,
   "components": [
    {
@@ -3012,6 +3232,8 @@
   "active_text": "",
   "passive": "Garrotte",
   "passive_text": "Your first hit on an enemy champion from behind silences them for 0.75s. Once every 10s per champion.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3042,6 +3264,8 @@
   "active_text": "",
   "passive": "Earned Bulk",
   "passive_text": "Each time you stun, pin, root, taunt or knock up an enemy champion, gain a shield of 6% of your max health for 3s. Once per champion every 3s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3072,6 +3296,8 @@
   "active_text": "Wrap an allied champion within 7m, or yourself: they take 30% less damage from champions for 2.5s.",
   "passive": "Warm",
   "passive_text": "A wrapped champion regenerates 2% of their max health a second.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3103,6 +3329,8 @@
   "active_text": "",
   "passive": "Earth the Spell",
   "passive_text": "The first enemy ability to hit an allied champion within 5m of you every 10s sends 30% of its damage to you instead.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3137,6 +3365,8 @@
   "active_text": "Aim within 9m: after 0.75s, a 1.2m spot there burns enemies for 70 + 35% AP magic damage, doubled on a champion standing still.",
   "passive": "Magnify",
   "passive_text": "Your ability hits on an enemy champion that deal less than 10% of their max health deal 20% more.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3167,6 +3397,8 @@
   "active_text": "",
   "passive": "Kiln-Heat",
   "passive_text": "Each basic on an enemy champion adds 1 heat (up to 5, for 4s). Your abilities deal 4% more damage per heat.",
+  "passive2": "Glazed",
+  "passive2_text": "At 5 heat, gain 20 armour and 20 magic resist.",
   "charges": 0,
   "components": [
    {
@@ -3198,6 +3430,8 @@
   "active_text": "Enemy champions within 3.5m are taunted for 0.75s. The bell tolls again from the same spot 1.5s later, taunting those still within 3.5m for 0.5s.",
   "passive": "Hollow Toll",
   "passive_text": "Each champion the bell taunts takes 5s off its cooldown.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3229,6 +3463,8 @@
   "active_text": "",
   "passive": "Spin Silk",
   "passive_text": "Each basic or ability you land on an enemy champion spins 1 silk, up to 10. The next champion hit on you is cut by 8 per silk, spending them all.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3263,6 +3499,8 @@
   "active_text": "",
   "passive": "Spun Slow",
   "passive_text": "Shields you give grow by 6% of their size each second they hold, up to 30%.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3294,6 +3532,8 @@
   "active_text": "",
   "passive": "Shards",
   "passive_text": "Your basics on an enemy champion leave a shard in them for 6s, up to 3.",
+  "passive2": "Twist",
+  "passive2_text": "When a champion with shards in them casts an ability, each shard deals 25 + 25% bonus AD physical damage, and the shards come out.",
   "charges": 0,
   "components": [
    {
@@ -3328,6 +3568,8 @@
   "active_text": "",
   "passive": "Grit",
   "passive_text": "Each enemy champion ability that hits you adds 1 grit, up to 4.",
+  "passive2": "Pearl",
+  "passive2_text": "At 4 grit, your next ability hit on an enemy champion spends it for 60 + 30% AP bonus magic damage and heals you 6% of your max health.",
   "charges": 0,
   "components": [
    {
@@ -3359,6 +3601,8 @@
   "active_text": "",
   "passive": "Deep Well",
   "passive_text": "When you drop below 25% mana, restore 30% of your max mana over 3s. Once every 40s.",
+  "passive2": "Brimming",
+  "passive2_text": "While above 75% mana, your abilities deal 8% more damage.",
   "charges": 0,
   "components": [
    {
@@ -3390,6 +3634,8 @@
   "active_text": "",
   "passive": "Cast Iron",
   "passive_text": "When enemy champions deal you 30% of your max health within 3s, heal 35% of that over 4s and take 25% less damage for 2s. Once every 45s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3421,6 +3667,8 @@
   "active_text": "",
   "passive": "Marked Hand",
   "passive_text": "When crowd control lands on you, the champion who cast it is revealed for 4s and takes 10% more damage from your team.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3452,6 +3700,8 @@
   "active_text": "",
   "passive": "Blood Up",
   "passive_text": "Below 50% health, your basics heal you for 3% of your missing health.",
+  "passive2": "Hackles",
+  "passive2_text": "Below 30% health, gain 25% attack speed.",
   "charges": 0,
   "components": [
    {
@@ -3483,6 +3733,8 @@
   "active_text": "",
   "passive": "Set Alight",
   "passive_text": "Your basics set enemy champions alight for 3s, burning for 10 + 15% bonus AD magic damage a second.",
+  "passive2": "Wildfire",
+  "passive2_text": "Another enemy champion who comes within 2.5m of one you set alight catches fire too. Caught fire does not spread.",
   "charges": 0,
   "components": [
    {
@@ -3517,6 +3769,8 @@
   "active_text": "",
   "passive": "Corpse-Light",
   "passive_text": "When you would die, you fight on as a ghost for 3s, then die. Get a champion takedown in that time and you live, at 20% health. Once every 150s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3547,6 +3801,8 @@
   "active_text": "",
   "passive": "Slippery",
   "passive_text": "When crowd control lands on you, gain 1 move speed that fades over 1.5s and pass through units for 1.5s. Once every 12s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3578,6 +3834,8 @@
   "active_text": "",
   "passive": "Moving Target",
   "passive_text": "While moving, you take 12% less damage from champions.",
+  "passive2": "Gone to Ground",
+  "passive2_text": "When a champion's hit takes you below 35% health, gain 1 move speed that fades over 2s. Once every 30s.",
   "charges": 0,
   "components": [
    {
@@ -3609,6 +3867,8 @@
   "active_text": "",
   "passive": "Parry",
   "passive_text": "Every 8s, the next champion basic that hits you deals 60% less, and your next basic on that champion within 2s deals 40 + 40% bonus AD bonus physical damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3640,6 +3900,8 @@
   "active_text": "",
   "passive": "Wail",
   "passive_text": "When a champion's hit takes you below 30% health, enemies within 3m are frightened for 1s. Once every 60s.",
+  "passive2": "Ill Omen",
+  "passive2_text": "Champions you frighten take 15% more damage from your team for 2s.",
   "charges": 0,
   "components": [
    {
@@ -3671,6 +3933,8 @@
   "active_text": "",
   "passive": "Bloodletting",
   "passive_text": "Your abilities that hit an enemy champion heal you for 3% of your missing health, up to 3 champions a cast.",
+  "passive2": "Thin Blood",
+  "passive2_text": "A champion you bleed this way heals 25% less for 3s.",
   "charges": 0,
   "components": [
    {
@@ -3701,6 +3965,8 @@
   "active_text": "Aim within 8m: for 3s, enemy champions in a 3.5m circle there see only 2m around them.",
   "passive": "Dusk-Struck",
   "passive_text": "Your abilities deal 10% more damage to champions whose sight is cut.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3731,6 +3997,8 @@
   "active_text": "",
   "passive": "Whistled In",
   "passive_text": "Allied champions within 9m who are moving toward you gain 0.5 move speed.",
+  "passive2": "Lead Ewe",
+  "passive2_text": "Your move speed rises to match the fastest allied champion within 6m.",
   "charges": 0,
   "components": [
    {
@@ -3763,6 +4031,8 @@
   "active_text": "",
   "passive": "Knots",
   "passive_text": "You carry 3 knots. When an enemy champion's hit would take more than 8% of your max health, a knot unties and halves it; a knot reties every 20s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3794,6 +4064,8 @@
   "active_text": "",
   "passive": "Fend Off",
   "passive_text": "When an enemy champion dashes or blinks to within 3m of you, your next basic on them within 2s knocks them 2m back and slows them 30% for 1s. Once every 10s.",
+  "passive2": "Point Blank",
+  "passive2_text": "Your basics deal 10% more damage to targets within 3m.",
   "charges": 0,
   "components": [
    {
@@ -3825,6 +4097,8 @@
   "active_text": "",
   "passive": "Toll for Many",
   "passive_text": "An ability that hits 2 enemy champions deals 10% more damage to each; one that hits 3 or more deals 20% more.",
+  "passive2": "Peal",
+  "passive2_text": "When an ability hits 3 or more enemy champions, gain a shield of 60 + 20% AP for 2s.",
   "charges": 0,
   "components": [
    {
@@ -3855,6 +4129,8 @@
   "active_text": "",
   "passive": "Empty Road",
   "passive_text": "While no allied champion is within 15m of you, an enemy champion who comes within 12m is revealed for 3s. Once per champion every 20s.",
+  "passive2": "Batter",
+  "passive2_text": "Your basics deal 30% more damage to towers.",
   "charges": 0,
   "components": [
    {
@@ -3886,6 +4162,8 @@
   "active_text": "Plant it at your feet for 8s. Allied champions within 6m of it deal 15% more damage to towers and monsters, and take 15% less from them.",
   "passive": "Muster",
   "passive_text": "Allied minions within 6m of you deal 25% more damage to towers.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3917,6 +4195,8 @@
   "active_text": "",
   "passive": "Last Sheaf",
   "passive_text": "Your abilities deal 10% more damage to champions below 50% health.",
+  "passive2": "Gleaning",
+  "passive2_text": "A champion takedown takes 20% off your basic abilities' remaining cooldowns.",
   "charges": 0,
   "components": [
    {
@@ -3947,6 +4227,8 @@
   "active_text": "For 6s, your next 3 Q, W or E casts come back after 1s. When the 6s end, each ability cast this way goes on its full cooldown plus 2s.",
   "passive": "Running Sand",
   "passive_text": "Each ability you cast takes 2s off Turn the Glass.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -3977,6 +4259,8 @@
   "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 70 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Second Count",
   "passive_text": "Jungle legendary (Fell only). Your abilities deal 25% more damage to monsters. Count Them Off lands again 1s later for 60% damage; champions hit by both are stunned for 0.75s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -4008,6 +4292,8 @@
   "active_text": "A mummer in your shape walks on the way you are moving for 4s. Enemies can't tell it from you until a champion hits it.",
   "passive": "Stage Fright",
   "passive_text": "An enemy champion who hits your mummer is revealed for 3s and slowed 30% for 1s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -4038,6 +4324,8 @@
   "active_text": "Mark an enemy champion within 6m for 8s: you deal them 12% more damage and gain 0.4 move speed. If they get 10m away, the mark ends and they are slowed 40% for 1.5s and revealed for 3s.",
   "passive": "Satisfaction",
   "passive_text": "If your quarry dies while marked, heal 20% of your max health and the cooldown drops to 15s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -4068,6 +4356,8 @@
   "active_text": "",
   "passive": "Yoked",
   "passive_text": "Your shoves, drags and pulls move enemies 30% farther.",
+  "passive2": "Against the Wall",
+  "passive2_text": "An enemy champion you move into a wall is pinned for 0.6s. Once every 6s per champion.",
   "charges": 0,
   "components": [
    {
@@ -4099,6 +4389,8 @@
   "active_text": "For 4s, wards, towers and minions cannot see you; enemy champions within 7m still can. Dealing or taking damage ends it. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Blackout",
   "passive_text": "Jungle legendary (Fell only). While Snuff the Lantern lasts, enemy wards and lanterns within 9m see nothing, and your first hit on a champion deals 40 + 60% bonus AD physical damage and slows them 35% for 1.5s.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -4129,6 +4421,8 @@
   "active_text": "Near a camp (6m): its monsters attack the nearest enemy champion within 9m for 6s. If none is near, the camp does not attack you for 3s. Cooldown 1s shorter per tally (40s minimum).",
   "passive": "Run with the Pack",
   "passive_text": "Jungle legendary (Fell only). Roused monsters hunt for 6s and move 25% faster, and champions they hit take 12% more damage from you for 3s. Monsters deal you 25% less damage.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
@@ -4159,6 +4453,8 @@
   "active_text": "Mark the large or epic monster nearest your aim within 7m for 8s. Your team deals it 20% more damage; enemy champions, and their Fell, deal it 50% less.",
   "passive": "Lantern Wake",
   "passive_text": "Jungle legendary (Fell only), keeps Wakebrand's burning camps and lanterns. Lanterns last 150s and see 8m.",
+  "passive2": "",
+  "passive2_text": "",
   "charges": 0,
   "components": [
    {
