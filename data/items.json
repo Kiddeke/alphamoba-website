@@ -85,7 +85,7 @@
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Notches",
-  "passive_text": "The jungle's starter: only a champion carrying Fell can buy it, and only one Tally-Stick or brand fits a bag. Takedowns and large monsters notch your tallies. Brand it for your class: Sootbrand (assassins), Marrowbrand (fighters) or Wakebrand (tanks).",
+  "passive_text": "Jungle starter, Fell only, one per bag. Takedowns and large monsters add tallies. Upgrades into a brand.",
   "charges": 0,
   "components": [],
   "stats": {
@@ -1232,9 +1232,9 @@
   "description": "A tally-stick hatchet with a dead lantern for a head. Whoever carries it brings the dark along.",
   "active": "Snuff the Lantern",
   "active_cooldown": 45.0,
-  "active_text": "For 4s wards, towers and minions lose sight of you; only enemy champions within 7m can see you. Dealing damage puts it out, and so does taking it. The cooldown is 1s shorter per tally, down to 30s.",
+  "active_text": "For 4s, wards, towers and minions cannot see you; enemy champions within 7m still can. Dealing or taking damage ends it. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "The Brand Takes",
-  "passive_text": "Jungle brand for assassins (Fell only). At 15 tallies the brand takes: Snuff the Lantern lasts 5s and taking damage no longer puts it out.",
+  "passive_text": "Jungle brand for assassins (Fell only). At 15 tallies, Snuff the Lantern lasts 5s and taking damage no longer ends it.",
   "charges": 0,
   "components": [
    {
@@ -1292,9 +1292,9 @@
   "description": "A tally-stick cut from wych-elm and scored with witch-marks. The notches smoulder, and every one of them can be thrown.",
   "active": "Count Them Off",
   "active_cooldown": 45.0,
-  "active_text": "Aim within 8m: after 0.6s the notches burst in a 2.5m ring for 50 + 35% AP + 4 per tally magic damage (half again to monsters). Enemy champions caught are counted for 3s: your abilities deal them 10% more. The cooldown is 1s shorter per tally, down to 30s.",
+  "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 50 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Witch-Marks",
-  "passive_text": "Jungle brand for spell-damage junglers (Fell only). Your abilities deal 15% more damage to monsters. At 15 tallies the brand takes: Count Them Off lands in a 3m ring and the count lasts 4s.",
+  "passive_text": "Jungle brand for spell junglers (Fell only). Your abilities deal 15% more damage to monsters. At 15 tallies, Count Them Off's ring is 3m and the mark lasts 4s.",
   "charges": 0,
   "components": [
    {
@@ -1451,7 +1451,7 @@
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Lantern Wake",
-  "passive_text": "Jungle brand for tanks (Fell only). The camp you are fighting is lamplit: each of its monsters within 6m of you burns for 10 + 1.5% of your max health magic damage a second. Each camp you clear hangs a lantern at its mouth for 90s (up to 4; the oldest goes out). A lantern sees 6m and dies to one hit; when an enemy champion walks into its light it rings, warning your team and revealing them for 2s. At 15 tallies the brand takes: up to 6 lanterns, and a ringing lantern slows the intruder 25% for 1.5s.",
+  "passive_text": "Jungle brand for tanks (Fell only). Monsters within 6m of the camp you are fighting take 10 + 1.5% of your max health magic damage per second. Clearing a camp hangs a lantern for 90s (max 4) that sees 6m and reveals enemy champions who enter for 2s. At 15 tallies: max 6 lanterns, and they slow intruders 25%.",
   "charges": 0,
   "components": [
    {
@@ -1483,9 +1483,9 @@
   "description": "A thighbone from the hound ossuary, notched by the pack it was taken from. The pack still answers to it.",
   "active": "Rouse the Den",
   "active_cooldown": 60.0,
-  "active_text": "Within 6m of a living camp (not a pit boss): every monster in it turns on the nearest enemy champion within 9m of the camp for 4s, leaving its leash to hunt only them, then walks home. With no enemy champion near, the camp is calmed instead and will not swing at you for 3s. The cooldown is 1s shorter per tally, down to 40s.",
+  "active_text": "Near a camp (6m): its monsters attack the nearest enemy champion within 9m for 4s. If none is near, the camp does not attack you for 3s. Cooldown 1s shorter per tally (40s minimum).",
   "passive": "The Brand Takes",
-  "passive_text": "Jungle brand for fighters (Fell only). At 15 tallies the brand takes: roused monsters hunt for 5s and hit 25% harder.",
+  "passive_text": "Jungle brand for fighters (Fell only). At 15 tallies, roused monsters hunt for 5s and deal 25% more damage.",
   "charges": 0,
   "components": [
    {
@@ -2002,7 +2002,7 @@
   "active_cooldown": 45.0,
   "active_text": "Aim within 8m: after 0.6s the notches burst in a 2.5m ring for 50 + 35% AP + 4 per tally magic damage (half again to monsters). Enemy champions caught are counted for 3s: your abilities deal them 10% more. The cooldown is 1s shorter per tally, down to 30s.",
   "passive": "Second Count",
-  "passive_text": "Jungle legendary for spell-damage junglers (Fell only), built from the Wychbrand, keeping Witch-Marks (now 25% on monsters) and Count Them Off. One second after the ring lands it lands again on the same ground for 60% of the damage, and an enemy champion caught by both is pinned for 0.75s.",
+  "passive_text": "Jungle legendary (Fell only), keeps Witch-Marks (now 25%) and Count Them Off. The ring lands again 1s later for 60% damage; champions hit by both are stunned for 0.75s.",
   "charges": 0,
   "components": [
    {
@@ -2033,7 +2033,7 @@
   "active_cooldown": 45.0,
   "active_text": "For 4s wards, towers and minions lose sight of you; only enemy champions within 7m can see you. Dealing damage puts it out, and so does taking it. The cooldown is 1s shorter per tally, down to 30s.",
   "passive": "Blackout",
-  "passive_text": "Jungle legendary for assassins (Fell only), built from the Sootbrand, keeping Snuff the Lantern (and its taking at 15 tallies). While you are snuffed, every enemy ward and lantern within 9m of you sees nothing. Out of the Dark: the blow that relights your lantern on an enemy champion deals 40 + 60% bonus AD physical damage more and slows them 35% for 1.5s.",
+  "passive_text": "Jungle legendary (Fell only), keeps Snuff the Lantern. While snuffed, enemy wards and lanterns within 9m see nothing. Your first hit on a champion while snuffed deals 40 + 60% bonus AD physical damage and slows 35% for 1.5s.",
   "charges": 0,
   "components": [
    {
@@ -2063,7 +2063,7 @@
   "active_cooldown": 60.0,
   "active_text": "Within 6m of a living camp (not a pit boss): every monster in it turns on the nearest enemy champion within 9m of the camp for 4s, leaving its leash to hunt only them, then walks home. With no enemy champion near, the camp is calmed instead and will not swing at you for 3s. The cooldown is 1s shorter per tally, down to 40s.",
   "passive": "Run with the Pack",
-  "passive_text": "Jungle legendary for fighters (Fell only), built from the Marrowbrand, keeping Rouse the Den. Roused monsters hunt for 6s (7s once the brand has taken) and run 25% faster, and an enemy champion they strike is harried for 3s: your basics and abilities deal them 12% more. Den-Keeper: monsters deal you 25% less damage.",
+  "passive_text": "Jungle legendary (Fell only), keeps Rouse the Den. Roused monsters hunt for 6s and move 25% faster. Champions they hit take 12% more damage from you for 3s. Monsters deal you 25% less damage.",
   "charges": 0,
   "components": [
    {
@@ -2091,9 +2091,9 @@
   "description": "A shepherd's crook with the wake-lantern hung from its hook. Whatever it is held over belongs to the flock.",
   "active": "Hold the Prize",
   "active_cooldown": 75.0,
-  "active_text": "Hang the crook over the epic or large monster nearest your aim within 7m for 8s: your team deals it 20% more damage, and enemy champions deal it 50% less, Fell included.",
+  "active_text": "Mark the large or epic monster nearest your aim within 7m for 8s. Your team deals it 20% more damage; enemy champions, and their Fell, deal it 50% less.",
   "passive": "Lantern Wake",
-  "passive_text": "Jungle legendary for tanks (Fell only), built from the Wakebrand, keeping its lamplit camps and lanterns; the lanterns now burn for 150s and see 8m.",
+  "passive_text": "Jungle legendary (Fell only), keeps Wakebrand's burning camps and lanterns. Lanterns last 150s and see 8m.",
   "charges": 0,
   "components": [
    {
