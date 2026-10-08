@@ -222,6 +222,9 @@ small { color: var(--faded); }
 .item .item-desc { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: #cfc8b4; margin: 0 0 6px; }
 .item .item-build { font-size: 0.85rem; color: var(--faded); margin: 0; }
 .item .item-active { font-size: 0.88rem; color: var(--ember); margin: 0 0 6px; }
+.item .item-active-text { color: var(--parchment); }
+.item .item-passive { font-size: 0.88rem; margin: 0 0 6px; }
+.item .item-passive strong { color: var(--ember); font-weight: 600; }
 .tier-0 { --accent: #8fa385; }
 .tier-1 { --accent: #a9b8ad; }
 .tier-2 { --accent: #6bc7b8; }

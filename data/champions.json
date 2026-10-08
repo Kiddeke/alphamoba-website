@@ -3619,10 +3619,10 @@
    },
    {
     "slot": "R",
-    "name": "Sealed in Amber",
-    "description": "Seal one champion in amber. An ally is encased, untargetable and immune to everything but unable to act, then released with a heal plus 15% of their missing health. An enemy is encased, stunned and untargetable.",
+    "name": "Swarm Guard",
+    "description": "Send the hive to an allied champion or herself for 4s. Whenever an enemy champion damages them, a bee flies back at the attacker (at most once a second each) for magic damage and sticks them in honey, slowing 30% for 1s. When the swarm leaves, they are healed for 25% of the damage enemy champions dealt them meanwhile.",
     "icon": "thessaly_r",
-    "cooldown": 120.0,
+    "cooldown": 110.0,
     "cost": 100.0,
     "range": 6.5
    }

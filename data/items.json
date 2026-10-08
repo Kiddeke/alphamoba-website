@@ -8,6 +8,9 @@
   "description": "A swallow of banked firelight. It does not warm you so much as remind you what you were going to cast.",
   "active": "drink",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 2,
   "components": [],
   "stats": {
@@ -24,6 +27,9 @@
   "description": "Pressed from the wood's own sap and left to turn. It tastes of bark and it works, which is all anyone asks of it.",
   "active": "drink",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 2,
   "components": [],
   "stats": {
@@ -40,6 +46,9 @@
   "description": "Dug from under the oldest tree on the ridge and boiled down twice. The vendor will not say what the second boiling is for.",
   "active": "drink",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 2,
   "components": [],
   "stats": {
@@ -57,9 +66,32 @@
   "description": "It sheds no light you can read by. What it does is leave one behind wherever you have been standing long enough.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {},
+  "art": true
+ },
+ {
+  "id": "tally_stick",
+  "name": "Tally-Stick",
+  "tier": 0,
+  "category": "Defense",
+  "cost": 400,
+  "description": "A hazel stick with nothing cut into it yet. Every takedown and every great beast you bring down earns it a notch.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Notches",
+  "passive_text": "The jungle's starter: only a champion carrying Fell can buy it, and only one Tally-Stick or brand fits a bag. Takedowns and large monsters notch your tallies. Brand it for your class: Sootbrand (assassins), Marrowbrand (fighters) or Wakebrand (tanks).",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 120.0,
+   "Health regen": 3.0
+  },
   "art": true
  },
  {
@@ -71,6 +103,9 @@
   "description": "Cut for the first mile rather than the last. You will replace them, and you will miss them.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -88,6 +123,9 @@
   "description": "Given, never spent, and warm out of all proportion to its size. It looks after whoever looks after others.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -106,6 +144,9 @@
   "description": "First-year exercises, annotated by someone who survived them. The margins are the useful part.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -124,6 +165,9 @@
   "description": "A field stone worn concave by twenty years of the same arm. Every carry starts by learning to use one.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -141,6 +185,9 @@
   "description": "Standard issue, dented flat across the boss. Whoever carried it last walked home.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -158,6 +205,9 @@
   "description": "Coals that were lit at the first watchfire and have never once been out. They are in a hurry to be somewhere new.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {},
@@ -172,6 +222,9 @@
   "description": "Featherlight boots stitched from wind-tanned leather. Win the lane by outrunning it.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -188,6 +241,9 @@
   "description": "A cracked lens that still bends a spell true. The first purchase of every caster.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -204,6 +260,9 @@
   "description": "A palm of cold pig iron. It has no opinion about swords; it simply disagrees with them.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -220,6 +279,9 @@
   "description": "A dependable length of sharpened steel. The first purchase of every carry.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -236,6 +298,9 @@
   "description": "Woven from thread that spells forget mid-sentence.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -252,6 +317,9 @@
   "description": "A sprig of everbloom sealed in amber. Wounds close while you trade and farm.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -268,6 +336,9 @@
   "description": "Supple gloves that never lose their grip. Your basic attacks come 15% faster.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -284,6 +355,9 @@
   "description": "A band sized for a giant's finger, worn as a bracer. Its old strength thickens your blood.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -300,6 +374,9 @@
   "description": "Lit at dusk and not once since allowed to go out. The people around it sleep better.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -318,6 +395,9 @@
   "description": "It never washes clean, and the owner stopped trying. What you take, you keep.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -335,6 +415,9 @@
   "description": "Burns steady in wind that puts torches out. Small magic, but it never asks for a rest.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -352,6 +435,9 @@
   "description": "Every spell the owner ever paid for, itemised. Reading it back is cheaper than casting them again.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -369,6 +455,9 @@
   "description": "Small, ugly, and studded all the way round the rim. Blocking with it is only half of what it does.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -385,6 +474,9 @@
   "description": "The sand in it runs a little to the left of now. Spells come back before you have finished missing them.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -402,6 +494,9 @@
   "description": "Glass with a coal still burning at its heart. Hold it up and the light comes out hotter than it went in.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -418,6 +513,9 @@
   "description": "Pulled from something that bit through a shield. It has not stopped wanting to.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -434,6 +532,9 @@
   "description": "Quarried, not forged, and strapped on with rope. Subtlety was never the point.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [],
   "stats": {
@@ -450,6 +551,9 @@
   "description": "Plated at the shin and nowhere else. Everything that matters is already past you.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -476,6 +580,9 @@
   "description": "Sigils stitched into the sole, face down, so every step presses them into the ground.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -502,6 +609,9 @@
   "description": "Light boots cut for open ground. You arrive first, which is usually the whole trick.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -528,6 +638,9 @@
   "description": "The buckles are set with the same stone as a good wand. Walking in them costs a spell less.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -554,6 +667,9 @@
   "description": "Ground from a still lake at dusk. Thought carries further through it than sound.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -582,6 +698,9 @@
   "description": "Cool to the touch, always. Magic pools in it faster than you can spend it.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -610,6 +729,9 @@
   "description": "Light enough to carry all day, long enough to end the argument. Favoured by people who pick their fights.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -636,6 +758,9 @@
   "description": "One note and the line holds. Bulk for the champion who stands where it is worst.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -663,6 +788,9 @@
   "description": "Swung slow, and the smoke goes where it is needed rather than up. Nobody nearby stays hurt for long.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -690,6 +818,9 @@
   "description": "A conqueror's greatsword that refuses to dull. Power and bulk in one heavy swing.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -716,6 +847,9 @@
   "description": "The flame is set into the glass rather than on top of it. It has been going out for four hundred years.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -742,6 +876,9 @@
   "description": "Half a mouthful left, and the bottle has been full for a century. It fills from whoever you were fighting.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -768,6 +905,9 @@
   "description": "A slab of altar-stone worn like a promise. Curses read it and reconsider.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -795,6 +935,9 @@
   "description": "Carried ahead of the column, never behind it. The road is shorter for everyone who can see it.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -823,6 +966,9 @@
   "description": "Woven green and still growing. Cuts close over quietly while you are busy with the next one.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -849,6 +995,9 @@
   "description": "Chained shut, and the chain is the spell. What it holds is filed, indexed and immediately available.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -876,6 +1025,9 @@
   "description": "Woven from a silence. Incantations arrive at it already forgetting what they were for.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -903,6 +1055,9 @@
   "description": "Strung with something that hums before you draw it. The arrows leave before the wind notices.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -930,6 +1085,9 @@
   "description": "Built to lock edge to edge with the one beside it. Alone it is merely very good.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -956,6 +1114,9 @@
   "description": "Cold enough to ache through the glove. Casters who stand in the fight learn to want that.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -983,6 +1144,9 @@
   "description": "A tooth on a handle, and the handle was the afterthought. It comes back up faster than it went down.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1001,33 +1165,6 @@
   "art": true
  },
  {
-  "id": "bramblehide_vest",
-  "name": "Bramblehide Vest",
-  "tier": 2,
-  "category": "Defense",
-  "cost": 1350,
-  "description": "Thorn and hide cured together until neither lets go. Hitting it is a decision you make once.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "charges": 0,
-  "components": [
-   {
-    "id": "bulwark_slab",
-    "name": "Bulwark Slab"
-   },
-   {
-    "id": "iron_shard",
-    "name": "Iron Shard"
-   }
-  ],
-  "stats": {
-   "Health": 350.0,
-   "Armour": 25.0,
-   "Thorns": 0.1
-  },
-  "art": true
- },
- {
   "id": "eclipse_prism",
   "name": "Eclipse Prism",
   "tier": 2,
@@ -1036,6 +1173,9 @@
   "description": "Split light goes in and one dark line comes out. Whatever it takes from the beam, it keeps.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1062,6 +1202,9 @@
   "description": "Forged with the guard oversized on purpose. The kind of blade you buy when you plan to still be there at the end.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1081,6 +1224,66 @@
   "art": true
  },
  {
+  "id": "sootbrand",
+  "name": "Sootbrand",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1350,
+  "description": "A tally-stick hatchet with a dead lantern for a head. Whoever carries it brings the dark along.",
+  "active": "Snuff the Lantern",
+  "active_cooldown": 45.0,
+  "active_text": "For 4s wards, towers and minions lose sight of you; only enemy champions within 7m can see you. Dealing damage puts it out, and so does taking it. The cooldown is 1s shorter per tally, down to 30s.",
+  "passive": "The Brand Takes",
+  "passive_text": "Jungle brand for assassins (Fell only). At 15 tallies the brand takes: Snuff the Lantern lasts 5s and taking damage no longer puts it out.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tally_stick",
+    "name": "Tally-Stick"
+   },
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   }
+  ],
+  "stats": {
+   "Health": 120.0,
+   "Attack damage": 30.0,
+   "Health regen": 3.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "teasel_jerkin",
+  "name": "Teasel Jerkin",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1350,
+  "description": "Stitched with the dried heads of teasels, the burrs wool-carders use. Whatever brushes against it takes some home.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Burrs",
+  "passive_text": "Basic attacks that hit you leave a teasel burr in the enemy champion who swung (up to 4, for 5s). Your next basic or ability hit on them tears every burr out for 12 + 1% of your max health magic damage each.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Armour": 25.0
+  },
+  "art": true
+ },
+ {
   "id": "hollow_point_quiver",
   "name": "Hollow Point Quiver",
   "tier": 2,
@@ -1089,6 +1292,9 @@
   "description": "Every shaft bored out down its length. Lighter to loose, and considerably worse to be hit by.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1116,6 +1322,9 @@
   "description": "The pole rings a low note when the line moves. Everyone under it stands a little squarer.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1147,6 +1356,9 @@
   "description": "It refills from underneath, and nobody has found the spring. Drink as fast as you like.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1175,6 +1387,9 @@
   "description": "Holds one feather and a great deal of patience. Curses land on it instead of on your friends.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1195,34 +1410,70 @@
   "art": true
  },
  {
-  "id": "ironhide_plating",
-  "name": "Ironhide Plating",
-  "tier": 3,
+  "id": "wakebrand",
+  "name": "Wakebrand",
+  "tier": 2,
   "category": "Defense",
   "cost": 1500,
-  "description": "Scale salvaged from something that used to win fights. It still does.",
+  "description": "A notched staff hung with a paper lantern on a bone hook. It leaves a light burning wherever its keeper has been.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Lantern Wake",
+  "passive_text": "Jungle brand for tanks (Fell only). Each camp you clear hangs a lantern at its mouth for 90s (up to 4; the oldest goes out). A lantern sees 6m and dies to one hit; when an enemy champion walks into its light it rings, warning your team and revealing them for 2s. At 15 tallies the brand takes: up to 6 lanterns, and a ringing lantern slows the intruder 25% for 1.5s.",
   "charges": 0,
   "components": [
    {
-    "id": "giants_ring",
-    "name": "Giant's Ring"
-   },
-   {
-    "id": "regrowth_charm",
-    "name": "Regrowth Charm"
+    "id": "tally_stick",
+    "name": "Tally-Stick"
    },
    {
     "id": "iron_shard",
     "name": "Iron Shard"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
    }
   ],
   "stats": {
-   "Health": 500.0,
-   "Armour": 40.0,
-   "Health regen": 8.0,
-   "Thorns": 0.15
+   "Health": 300.0,
+   "Armour": 20.0,
+   "Magic resist": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "marrowbrand",
+  "name": "Marrowbrand",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1550,
+  "description": "A thighbone from the hound ossuary, notched by the pack it was taken from. The pack still answers to it.",
+  "active": "Rouse the Den",
+  "active_cooldown": 60.0,
+  "active_text": "Within 6m of a living camp (not a pit boss): every monster in it turns on the nearest enemy champion within 9m of the camp for 4s, leaving its leash to hunt only them, then walks home. With no enemy champion near, the camp is calmed instead and will not swing at you for 3s. The cooldown is 1s shorter per tally, down to 40s.",
+  "passive": "The Brand Takes",
+  "passive_text": "Jungle brand for fighters (Fell only). At 15 tallies the brand takes: roused monsters hunt for 5s and hit 25% harder.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tally_stick",
+    "name": "Tally-Stick"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 300.0,
+   "Attack damage": 25.0,
+   "Health regen": 5.0
   },
   "art": true
  },
@@ -1235,6 +1486,9 @@
   "description": "Worn by those who ask the sky for favours and are answered. Ability power at its highest.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Calm Before",
+  "passive_text": "Each full second without casting an ability builds Calm (up to 5). Your next ability's first hit deals 6% more damage per Calm, spending it.",
   "charges": 0,
   "components": [
    {
@@ -1255,40 +1509,6 @@
   "art": true
  },
  {
-  "id": "tallybrand",
-  "name": "Tallybrand",
-  "tier": 3,
-  "category": "Attack",
-  "cost": 2000,
-  "description": "Every kill notches the haft, and the flame burns a little hotter for each. It keeps watching after you walk away.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "charges": 0,
-  "components": [
-   {
-    "id": "bloodied_kerchief",
-    "name": "Bloodied Kerchief"
-   },
-   {
-    "id": "long_blade",
-    "name": "Long Blade"
-   },
-   {
-    "id": "iron_shard",
-    "name": "Iron Shard"
-   }
-  ],
-  "stats": {
-   "Attack damage": 25.0,
-   "Armour": 25.0,
-   "Lifesteal": 0.15,
-   "On-hit magic": 25.0,
-   "Cull chance": 0.25,
-   "Cull bonus": 200.0
-  },
-  "art": true
- },
- {
   "id": "reavers_cleaver",
   "name": "Reaver's Cleaver",
   "tier": 3,
@@ -1297,6 +1517,9 @@
   "description": "Too heavy to parry, too broad to dodge. What a carry graduates to.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Weight of the Blade",
+  "passive_text": "Each basic on the same target within 2.5s of the last adds Weight (up to 5): +5% basic damage per Weight. A basic at full Weight is a Heavy Blow: it interrupts the target's cast, channel or recall and slows them 30% for 1s, and Weight drops to 2. One Heavy Blow per target every 6s.",
   "charges": 0,
   "components": [
    {
@@ -1316,6 +1539,40 @@
   "art": true
  },
  {
+  "id": "ironhide_plating",
+  "name": "Ironhide Plating",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2300,
+  "description": "Scale salvaged from something that used to win fights. It still does.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Hard Lesson",
+  "passive_text": "When crowd control lands on you, the plating hardens: +30 armour and +30 magic resist for 3s. Once every 8s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "teasel_jerkin",
+    "name": "Teasel Jerkin"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   },
+   {
+    "id": "regrowth_charm",
+    "name": "Regrowth Charm"
+   }
+  ],
+  "stats": {
+   "Health": 500.0,
+   "Armour": 40.0,
+   "Health regen": 8.0
+  },
+  "art": true
+ },
+ {
   "id": "colossus_heart",
   "name": "Colossus Heart",
   "tier": 3,
@@ -1324,6 +1581,9 @@
   "description": "Still beating, and it was never in a person. What it is attached to becomes difficult to finish.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Rooted Heart",
+  "passive_text": "Knockbacks, drags and pulls move you half as far, and knock-ups on you last 40% less.",
   "charges": 0,
   "components": [
    {
@@ -1348,8 +1608,11 @@
   "category": "Attack",
   "cost": 2400,
   "description": "Too much sword for one person, which is why it is carried by someone who is not being reasonable.",
-  "active": "",
-  "active_cooldown": 0.0,
+  "active": "Sunder the Ground",
+  "active_cooldown": 45.0,
+  "active_text": "Aim a line. After 0.5s the ground splits 7m ahead of you: enemies on it take 90 + 90% bonus AD physical damage, and the crack stands for 3s as a low wall enemies cannot walk through (dashes and blinks fly over it).",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1363,19 +1626,22 @@
   ],
   "stats": {
    "Attack damage": 85.0,
-   "Ability haste": 15.0
+   "Ability haste": 10.0
   },
   "art": true
  },
  {
   "id": "duskfang_reaver",
-  "name": "Duskfang Reaver",
+  "name": "Belltongue Dirk",
   "tier": 3,
   "category": "Attack",
   "cost": 2450,
-  "description": "Dark all the way down the edge, so you learn where it is from the sound. Usually too late.",
+  "description": "A dirk with a curfew bell for a guard. When it rings for you, you have already been told to stay where you are.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Heard Too Late",
+  "passive_text": "Your basics and abilities ring enemy champions for 3s. A rung champion who dashes, blinks or Bolts is pinned where they land for 0.6s and revealed to your team for 2s. Once every 10s per champion.",
   "charges": 0,
   "components": [
    {
@@ -1396,13 +1662,16 @@
  },
  {
   "id": "emberheart_crucible",
-  "name": "Emberheart Crucible",
+  "name": "Grudgefire Crucible",
   "tier": 3,
   "category": "Magic",
   "cost": 2450,
-  "description": "A furnace small enough to carry and hot enough to matter. It keeps its wearer standing as readily as it burns.",
-  "active": "",
-  "active_cooldown": 0.0,
+  "description": "A furnace small enough to carry, stoked with every blow you took. It gives each one back, hotter.",
+  "active": "Vent the Crucible",
+  "active_cooldown": 25.0,
+  "active_text": "Aim: vent all your Grudge in a 5m cone as magic damage equal to the Grudge + 40% AP, and heal for 35% of what it deals to champions. Needs Grudge.",
+  "passive": "Grudge",
+  "passive_text": "20% of the damage you take from enemy champions is stored as Grudge (up to 350). It cools by a tenth a second once you have been out of champion fights for 5s.",
   "charges": 0,
   "components": [
    {
@@ -1429,6 +1698,9 @@
   "description": "Sworn on, then worn. Magic reads the oath, checks it twice, and goes around.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Read Twice",
+  "passive_text": "The first stun, slow, fear or taunt to land on you every 15s lasts half as long.",
   "charges": 0,
   "components": [
    {
@@ -1453,9 +1725,12 @@
   "tier": 3,
   "category": "Defense",
   "cost": 2500,
-  "description": "The front rank in one object. It gives back rather more than it is given.",
+  "description": "The front rank in one object. The ones behind it are the reason it holds.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Front Rank",
+  "passive_text": "Allied champions within 3m behind you, on your far side from the nearest enemy champion, take 10% less damage.",
   "charges": 0,
   "components": [
    {
@@ -1469,8 +1744,7 @@
   ],
   "stats": {
    "Health": 500.0,
-   "Armour": 70.0,
-   "Thorns": 0.12
+   "Armour": 70.0
   },
   "art": true
  },
@@ -1483,6 +1757,9 @@
   "description": "Every page is an index to a page you have not reached. Nothing in it is ever more than a moment away.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Footnote",
+  "passive_text": "An ability that hits an enemy champion from 7m or further footnotes them for 4s: they are revealed to your team, and your next ability on them deals 12% more damage. Once every 6s per champion.",
   "charges": 0,
   "components": [
    {
@@ -1508,8 +1785,11 @@
   "category": "Attack",
   "cost": 2500,
   "description": "The string never fully stops moving. By the time the first shot lands there are three more behind it.",
-  "active": "",
-  "active_cooldown": 0.0,
+  "active": "Loose on the Run",
+  "active_cooldown": 45.0,
+  "active_text": "For 3.5s you basic attack while moving: your swings fire without stopping your feet, at whoever you last attacked or the nearest enemy champion in reach. You walk at 75% speed while drawing, and reach 0.5m less.",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1524,7 +1804,7 @@
   "stats": {
    "Attack damage": 45.0,
    "Attack speed": 0.45,
-   "Move speed": 0.4
+   "Move speed": 0.2
   },
   "art": true
  },
@@ -1537,6 +1817,9 @@
   "description": "Frozen mid-shatter and held there. The cracks are load-bearing.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Load-Bearing Cracks",
+  "passive_text": "Once every 8s, a hit that would take more than 12% of your max health takes only 12% now; the rest is held in the cracks and paid over the next 3s. Shields still soak it and heals do not cancel it.",
   "charges": 0,
   "components": [
    {
@@ -1564,6 +1847,9 @@
   "description": "Built by someone who got tired of shields. It goes through the argument rather than around it.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Through the Argument",
+  "passive_text": "When your damage breaks an enemy champion's shield, the Bane bites: 60 + 60% bonus AD physical damage, and their healing and shields are cut 40% for 4s. Once every 8s per champion.",
   "charges": 0,
   "components": [
    {
@@ -1589,8 +1875,11 @@
   "category": "Attack",
   "cost": 2600,
   "description": "It has never needed sharpening and never will. Whatever it takes out of a fight, it gives back to the arm holding it.",
-  "active": "",
-  "active_cooldown": 0.0,
+  "active": "Blood Levy",
+  "active_cooldown": 50.0,
+  "active_text": "For 4s every heal you would receive is banked instead. Then the Levy pays out: you heal 150% of the bank, and enemies within 3.5m take physical damage equal to 40% of it (up to 80 + 100% bonus AD). Die first and it is lost.",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1605,7 +1894,7 @@
   "stats": {
    "Health": 400.0,
    "Attack damage": 75.0,
-   "Lifesteal": 0.12
+   "Lifesteal": 0.1
   },
   "art": true
  },
@@ -1616,8 +1905,11 @@
   "category": "Magic",
   "cost": 2600,
   "description": "Worn by those who ask the dark for favours and are also answered. It answers faster than the sky does.",
-  "active": "",
-  "active_cooldown": 0.0,
+  "active": "Favour Owed",
+  "active_cooldown": 60.0,
+  "active_text": "For 4s your ability wind-ups are halved and each ability that hits an enemy champion refunds 30% of its cooldown. Then the favour is owed: healing and shields on you are cut 50% for 5s.",
+  "passive": "",
+  "passive_text": "",
   "charges": 0,
   "components": [
    {
@@ -1645,6 +1937,9 @@
   "description": "Something is always flowering in it, out of season and out of soil. Whoever holds it stops being the one who runs out.",
   "active": "",
   "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Shares the Cup",
+  "passive_text": "Heals and shields you give allied champions also restore 6% of the amount as their mana, or the same share of their own resource.",
   "charges": 0,
   "components": [
    {

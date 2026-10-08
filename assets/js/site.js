@@ -82,7 +82,7 @@
         if (tier !== "all" && String(i.tier) !== tier) return false;
         if (cat !== "all" && i.category !== cat) return false;
         if (!q) return true;
-        return (i.name + " " + i.description + " " + i.category).toLowerCase().indexOf(q) !== -1;
+        return (i.name + " " + i.description + " " + i.category + " " + (i.passive || "") + " " + (i.active || "")).toLowerCase().indexOf(q) !== -1;
       });
       items.innerHTML = shown.map(function (i) {
         var stats = Object.keys(i.stats).map(function (k) {
@@ -95,7 +95,10 @@
         var build = i.components.length
           ? '<p class="item-build">Built from ' + i.components.map(function (c) { return esc(c.name); }).join(" + ") + "</p>"
           : "";
-        var active = i.active ? '<p class="item-active">Active — ' + esc(i.active) + (i.active_cooldown ? " (" + fmt(i.active_cooldown) + "s)" : "") + "</p>" : "";
+        var passive = i.passive_text
+          ? '<p class="item-passive"><strong>' + esc(i.passive || "Unique passive") + '</strong> ' + esc(i.passive_text) + "</p>" : "";
+        var active = i.active ? '<p class="item-active">Active — ' + esc(i.active) + (i.active_cooldown ? " (" + fmt(i.active_cooldown) + "s)" : "") +
+          (i.active_text ? '<span class="item-active-text"> ' + esc(i.active_text) + "</span>" : "") + "</p>" : "";
         var art = i.art
           ? '<img class="item-icon" src="' + ROOT + 'assets/img/items/' + esc(i.id) + '.png" alt="" width="128" height="128" loading="lazy">'
           : '<span class="item-icon item-icon-blank" aria-hidden="true">' + esc(i.name.charAt(0)) + "</span>";

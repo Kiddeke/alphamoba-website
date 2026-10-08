@@ -287,7 +287,7 @@ def item(path):
         "bonus_attack_speed": "Attack speed", "bonus_move_speed": "Move speed",
         "bonus_health_regen": "Health regen", "bonus_mana_regen": "Mana regen",
         "ability_haste": "Ability haste", "lifesteal": "Lifesteal", "thorns": "Thorns",
-        "on_hit_magic": "On-hit magic", "cull_chance": "Cull chance", "cull_bonus": "Cull bonus",
+        "on_hit_magic": "On-hit magic",
         "restore_health": "Restores health", "restore_mana": "Restores mana",
     }
     for key, label in labels.items():
@@ -304,6 +304,9 @@ def item(path):
         "description": f.get("description", ""),
         "active": f.get("active_name", "") or "",
         "active_cooldown": num(f, "active_cooldown"),
+        "active_text": f.get("active_text", "") or "",
+        "passive": f.get("passive_name", "") or "",
+        "passive_text": f.get("passive_text", "") or "",
         "charges": int(num(f, "charges")),
         "components": components,
         "stats": stats,
