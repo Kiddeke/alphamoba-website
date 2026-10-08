@@ -95,6 +95,130 @@
   "art": true
  },
  {
+  "id": "almsgivers_coin",
+  "name": "Almsgiver's Coin",
+  "tier": 0,
+  "category": "Support",
+  "cost": 450,
+  "description": "Given, never spent.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Pass the Plate",
+  "passive_text": "When you damage an enemy champion, the most wounded allied champion within 6m heals 12 + 3 per level. Once every 6s.",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 40.0,
+   "Move speed": 0.2,
+   "Health regen": 1.5,
+   "Mana regen": 1.5
+  },
+  "art": true
+ },
+ {
+  "id": "fletchers_wax",
+  "name": "Fletcher's Wax",
+  "tier": 0,
+  "category": "Attack",
+  "cost": 450,
+  "description": "Beeswax for the bowstring. It keeps the damp out.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Waxed String",
+  "passive_text": "Killing a minion or monster gives 8% attack speed for 3s, stacking 3 times.",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 40.0,
+   "Attack damage": 6.0,
+   "Attack speed": 0.08
+  },
+  "art": true
+ },
+ {
+  "id": "hedgewifes_poultice",
+  "name": "Hedgewife's Poultice",
+  "tier": 0,
+  "category": "Defense",
+  "cost": 450,
+  "description": "Moss and honey in linen, and something she would not name.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Poultice",
+  "passive_text": "When you drop below 40% health, heal 70 + 6 per level over 5s. Once every 45s.",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 100.0,
+   "Health regen": 2.0
+  },
+  "art": true
+ },
+ {
+  "id": "novices_codex",
+  "name": "Novice's Slate",
+  "tier": 0,
+  "category": "Magic",
+  "cost": 450,
+  "description": "First-year spells in chalk. The useful part is what the teacher added.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Chalk Notes",
+  "passive_text": "When your ability hits an enemy champion, restore 12 mana. Once every 4s.",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 60.0,
+   "Ability power": 15.0,
+   "Mana regen": 1.0
+  },
+  "art": true
+ },
+ {
+  "id": "reavers_whetstone",
+  "name": "Reaver's Whetstone",
+  "tier": 0,
+  "category": "Attack",
+  "cost": 450,
+  "description": "A field stone worn hollow by one arm.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "First Cut",
+  "passive_text": "Your first basic on an enemy champion after 5s without hitting one deals 18 bonus physical damage.",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 80.0,
+   "Attack damage": 8.0
+  },
+  "art": true
+ },
+ {
+  "id": "sentrys_bulwark",
+  "name": "Sentry's Kettle-Hat",
+  "tier": 0,
+  "category": "Defense",
+  "cost": 450,
+  "description": "Standard issue, dented flat across the crown.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Return Blow",
+  "passive_text": "When an enemy champion hits you with a basic, your next basic on them within 3s deals 15 bonus physical damage.",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 110.0,
+   "Armour": 8.0
+  },
+  "art": true
+ },
+ {
   "id": "trailblazers_sandals",
   "name": "Trailblazer's Sandals",
   "tier": 0,
@@ -111,88 +235,6 @@
   "stats": {
    "Health": 80.0,
    "Move speed": 0.4
-  },
-  "art": true
- },
- {
-  "id": "almsgivers_coin",
-  "name": "Almsgiver's Coin",
-  "tier": 0,
-  "category": "Support",
-  "cost": 500,
-  "description": "Given, never spent, and warm out of all proportion to its size. It looks after whoever looks after others.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [],
-  "stats": {
-   "Move speed": 0.2,
-   "Health regen": 2.0,
-   "Mana regen": 2.0
-  },
-  "art": true
- },
- {
-  "id": "novices_codex",
-  "name": "Novice's Codex",
-  "tier": 0,
-  "category": "Magic",
-  "cost": 500,
-  "description": "First-year exercises, annotated by someone who survived them. The margins are the useful part.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [],
-  "stats": {
-   "Health": 50.0,
-   "Ability power": 18.0,
-   "Mana regen": 2.0
-  },
-  "art": true
- },
- {
-  "id": "reavers_whetstone",
-  "name": "Reaver's Whetstone",
-  "tier": 0,
-  "category": "Attack",
-  "cost": 500,
-  "description": "A field stone worn concave by twenty years of the same arm. Every carry starts by learning to use one.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [],
-  "stats": {
-   "Attack damage": 8.0,
-   "Health regen": 2.0
-  },
-  "art": true
- },
- {
-  "id": "sentrys_bulwark",
-  "name": "Sentry's Bulwark",
-  "tier": 0,
-  "category": "Defense",
-  "cost": 500,
-  "description": "Standard issue, dented flat across the boss. Whoever carried it last walked home.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [],
-  "stats": {
-   "Health": 120.0,
-   "Armour": 8.0
   },
   "art": true
  },
@@ -233,12 +275,32 @@
   "art": true
  },
  {
+  "id": "thistledown",
+  "name": "Thistledown",
+  "tier": 1,
+  "category": "Support",
+  "cost": 300,
+  "description": "Seed fluff twisted in paper. It wants to be somewhere else.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Health": 60.0,
+   "Move speed": 0.3
+  },
+  "art": true
+ },
+ {
   "id": "apprentice_focus",
   "name": "Apprentice Focus",
   "tier": 1,
   "category": "Magic",
   "cost": 350,
-  "description": "A cracked lens that still bends a spell true. The first purchase of every caster.",
+  "description": "A cracked lens that still bends a spell true.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -257,7 +319,7 @@
   "tier": 1,
   "category": "Defense",
   "cost": 350,
-  "description": "A palm of cold pig iron. It has no opinion about swords; it simply disagrees with them.",
+  "description": "A palm of cold pig iron.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -276,7 +338,7 @@
   "tier": 1,
   "category": "Attack",
   "cost": 350,
-  "description": "A dependable length of sharpened steel. The first purchase of every carry.",
+  "description": "A dependable length of sharpened steel.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -314,7 +376,7 @@
   "tier": 1,
   "category": "Defense",
   "cost": 350,
-  "description": "A sprig of everbloom sealed in amber. Wounds close while you trade and farm.",
+  "description": "A sprig of everbloom sealed in amber.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -333,7 +395,7 @@
   "tier": 1,
   "category": "Attack",
   "cost": 400,
-  "description": "Supple gloves that never lose their grip. Your basic attacks come 15% faster.",
+  "description": "Supple gloves that never lose their grip.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -352,7 +414,7 @@
   "tier": 1,
   "category": "Defense",
   "cost": 400,
-  "description": "A band sized for a giant's finger, worn as a bracer. Its old strength thickens your blood.",
+  "description": "A band sized for a giant's finger, worn as a bracer.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -367,11 +429,11 @@
  },
  {
   "id": "vigil_lantern",
-  "name": "Vigil Lantern",
+  "name": "Rowan Cross",
   "tier": 1,
   "category": "Support",
   "cost": 400,
-  "description": "Lit at dusk and not once since allowed to go out. The people around it sleep better.",
+  "description": "Two rowan twigs bound in red thread. Nothing ill steps over it.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -392,7 +454,7 @@
   "tier": 1,
   "category": "Attack",
   "cost": 450,
-  "description": "It never washes clean, and the owner stopped trying. What you take, you keep.",
+  "description": "It never washes clean, and the owner stopped trying.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -412,7 +474,7 @@
   "tier": 1,
   "category": "Support",
   "cost": 450,
-  "description": "Burns steady in wind that puts torches out. Small magic, but it never asks for a rest.",
+  "description": "Burns steady in wind that puts torches out.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -428,11 +490,11 @@
  },
  {
   "id": "scribes_ledger",
-  "name": "Scribe's Ledger",
+  "name": "Scribe's Inkhorn",
   "tier": 1,
   "category": "Magic",
   "cost": 450,
-  "description": "Every spell the owner ever paid for, itemised. Reading it back is cheaper than casting them again.",
+  "description": "Every spell the owner ever paid for went through this ink.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -447,12 +509,12 @@
   "art": true
  },
  {
-  "id": "barbed_buckler",
-  "name": "Barbed Buckler",
+  "id": "billhook",
+  "name": "Billhook",
   "tier": 1,
-  "category": "Defense",
+  "category": "Attack",
   "cost": 500,
-  "description": "Small, ugly, and studded all the way round the rim. Blocking with it is only half of what it does.",
+  "description": "A hedge-layer's blade with a hook at the tip.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -461,7 +523,8 @@
   "charges": 0,
   "components": [],
   "stats": {
-   "Armour": 22.0
+   "Attack damage": 10.0,
+   "Ability haste": 6.0
   },
   "art": true
  },
@@ -471,7 +534,7 @@
   "tier": 1,
   "category": "Magic",
   "cost": 500,
-  "description": "The sand in it runs a little to the left of now. Spells come back before you have finished missing them.",
+  "description": "The sand in it runs a little to the left of now.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -491,7 +554,7 @@
   "tier": 1,
   "category": "Magic",
   "cost": 500,
-  "description": "Glass with a coal still burning at its heart. Hold it up and the light comes out hotter than it went in.",
+  "description": "Glass with a coal still burning at its heart.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -510,7 +573,7 @@
   "tier": 1,
   "category": "Attack",
   "cost": 500,
-  "description": "Pulled from something that bit through a shield. It has not stopped wanting to.",
+  "description": "Pulled from something that bit through a shield.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -524,12 +587,50 @@
   "art": true
  },
  {
+  "id": "barbed_buckler",
+  "name": "Studded Belt",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 500,
+  "description": "Thick hide, ugly, and studded all the way round.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Armour": 22.0
+  },
+  "art": true
+ },
+ {
+  "id": "hagstone",
+  "name": "Hagstone",
+  "tier": 1,
+  "category": "Defense",
+  "cost": 550,
+  "description": "A stone with a hole worn through it. Spells look back at you through it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "",
+  "passive_text": "",
+  "charges": 0,
+  "components": [],
+  "stats": {
+   "Magic resist": 25.0
+  },
+  "art": true
+ },
+ {
   "id": "bulwark_slab",
   "name": "Bulwark Slab",
   "tier": 1,
   "category": "Defense",
   "cost": 600,
-  "description": "Quarried, not forged, and strapped on with rope. Subtlety was never the point.",
+  "description": "Quarried, not forged, and strapped on with rope.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -630,6 +731,37 @@
   "art": true
  },
  {
+  "id": "tattlers_lantern",
+  "name": "Magpie Cage",
+  "tier": 2,
+  "category": "Support",
+  "cost": 900,
+  "description": "The bird in it screams at anyone who touches what is yours.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Tattle",
+  "passive_text": "When an enemy destroys one of your wards, they are revealed for 4s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "vigil_lantern",
+    "name": "Rowan Cross"
+   },
+   {
+    "id": "thistledown",
+    "name": "Thistledown"
+   }
+  ],
+  "stats": {
+   "Health": 150.0,
+   "Move speed": 0.2,
+   "Health regen": 2.0,
+   "Mana regen": 2.0
+  },
+  "art": true
+ },
+ {
   "id": "sorcerers_treads",
   "name": "Sorcerer's Treads",
   "tier": 2,
@@ -659,17 +791,17 @@
   "art": true
  },
  {
-  "id": "whisperglass",
-  "name": "Whisperglass",
+  "id": "ash_censer",
+  "name": "Ash Censer",
   "tier": 2,
   "category": "Magic",
-  "cost": 900,
-  "description": "Ground from a still lake at dusk. Thought carries further through it than sound.",
+  "cost": 950,
+  "description": "Swung once over the dead, and never cleaned.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Ash",
+  "passive_text": "Enemy champions you damage with abilities heal 35% less for 3s.",
   "charges": 0,
   "components": [
    {
@@ -682,10 +814,39 @@
    }
   ],
   "stats": {
-   "Mana": 200.0,
-   "Ability power": 50.0,
-   "Mana regen": 2.0,
-   "Ability haste": 10.0
+   "Ability power": 30.0,
+   "Health regen": 2.0,
+   "Ability haste": 5.0
+  },
+  "art": true
+ },
+ {
+  "id": "salt_knife",
+  "name": "Salt Knife",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 950,
+  "description": "Kept in the salt box, and it remembers.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Salt in It",
+  "passive_text": "Enemy champions you damage heal 35% less for 3s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   },
+   {
+    "id": "thistledown",
+    "name": "Thistledown"
+   }
+  ],
+  "stats": {
+   "Health": 100.0,
+   "Attack damage": 22.0,
+   "Move speed": 0.2
   },
   "art": true
  },
@@ -694,13 +855,13 @@
   "name": "Tidewarden's Pearl",
   "tier": 2,
   "category": "Magic",
-  "cost": 1050,
-  "description": "Cool to the touch, always. Magic pools in it faster than you can spend it.",
+  "cost": 1000,
+  "description": "Cool to the touch, always.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Tidewater",
+  "passive_text": "While below 50% mana, your mana regen is doubled.",
   "charges": 0,
   "components": [
    {
@@ -714,156 +875,8 @@
   ],
   "stats": {
    "Health": 200.0,
-   "Mana": 250.0,
-   "Ability power": 40.0,
-   "Mana regen": 3.0
-  },
-  "art": true
- },
- {
-  "id": "skirmishers_talon",
-  "name": "Skirmisher's Talon",
-  "tier": 2,
-  "category": "Attack",
-  "cost": 1100,
-  "description": "Light enough to carry all day, long enough to end the argument. Favoured by people who pick their fights.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "long_blade",
-    "name": "Long Blade"
-   },
-   {
-    "id": "duelist_gloves",
-    "name": "Duelist Gloves"
-   }
-  ],
-  "stats": {
-   "Attack damage": 30.0,
-   "Attack speed": 0.2
-  },
-  "art": true
- },
- {
-  "id": "warcallers_horn",
-  "name": "Warcaller's Horn",
-  "tier": 2,
-  "category": "Defense",
-  "cost": 1100,
-  "description": "One note and the line holds. Bulk for the champion who stands where it is worst.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "giants_ring",
-    "name": "Giant's Ring"
-   },
-   {
-    "id": "long_blade",
-    "name": "Long Blade"
-   }
-  ],
-  "stats": {
-   "Health": 320.0,
-   "Attack damage": 22.0,
-   "Health regen": 4.0
-  },
-  "art": true
- },
- {
-  "id": "lifebinders_censer",
-  "name": "Lifebinder's Censer",
-  "tier": 2,
-  "category": "Support",
-  "cost": 1150,
-  "description": "Swung slow, and the smoke goes where it is needed rather than up. Nobody nearby stays hurt for long.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "kindled_wick",
-    "name": "Kindled Wick"
-   },
-   {
-    "id": "vigil_lantern",
-    "name": "Vigil Lantern"
-   }
-  ],
-  "stats": {
-   "Ability power": 40.0,
-   "Health regen": 5.0,
-   "Mana regen": 3.0
-  },
-  "art": true
- },
- {
-  "id": "warlords_edge",
-  "name": "Warlord's Edge",
-  "tier": 2,
-  "category": "Attack",
-  "cost": 1150,
-  "description": "A conqueror's greatsword that refuses to dull. Power and bulk in one heavy swing.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "long_blade",
-    "name": "Long Blade"
-   },
-   {
-    "id": "giants_ring",
-    "name": "Giant's Ring"
-   }
-  ],
-  "stats": {
-   "Health": 200.0,
-   "Attack damage": 38.0
-  },
-  "art": true
- },
- {
-  "id": "cinderglass_torch",
-  "name": "Cinderglass Torch",
-  "tier": 2,
-  "category": "Magic",
-  "cost": 1200,
-  "description": "The flame is set into the glass rather than on top of it. It has been going out for four hundred years.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "ember_lens",
-    "name": "Ember Lens"
-   },
-   {
-    "id": "apprentice_focus",
-    "name": "Apprentice Focus"
-   }
-  ],
-  "stats": {
-   "Ability power": 65.0,
-   "Ability haste": 8.0
+   "Mana": 150.0,
+   "Ability power": 30.0
   },
   "art": true
  },
@@ -872,13 +885,13 @@
   "name": "Vampire's Draught",
   "tier": 2,
   "category": "Attack",
-  "cost": 1200,
-  "description": "Half a mouthful left, and the bottle has been full for a century. It fills from whoever you were fighting.",
+  "cost": 1000,
+  "description": "Half a mouthful left, and it has been half full for a century.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Last Drop",
+  "passive_text": "Below 40% health, your lifesteal heals double.",
   "charges": 0,
   "components": [
    {
@@ -891,158 +904,8 @@
    }
   ],
   "stats": {
-   "Attack damage": 25.0,
-   "Lifesteal": 0.1
-  },
-  "art": true
- },
- {
-  "id": "wardstone_mantle",
-  "name": "Wardstone Mantle",
-  "tier": 2,
-  "category": "Defense",
-  "cost": 1200,
-  "description": "A slab of altar-stone worn like a promise. Curses read it and reconsider.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "null_cloak",
-    "name": "Null Cloak"
-   },
-   {
-    "id": "giants_ring",
-    "name": "Giant's Ring"
-   }
-  ],
-  "stats": {
-   "Health": 250.0,
-   "Magic resist": 35.0,
-   "Ability haste": 10.0
-  },
-  "art": true
- },
- {
-  "id": "wayfarers_banner",
-  "name": "Wayfarer's Banner",
-  "tier": 2,
-  "category": "Support",
-  "cost": 1200,
-  "description": "Carried ahead of the column, never behind it. The road is shorter for everyone who can see it.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "vigil_lantern",
-    "name": "Vigil Lantern"
-   },
-   {
-    "id": "giants_ring",
-    "name": "Giant's Ring"
-   }
-  ],
-  "stats": {
-   "Health": 250.0,
-   "Move speed": 0.4,
-   "Health regen": 3.0,
-   "Ability haste": 10.0
-  },
-  "art": true
- },
- {
-  "id": "grovewarden_girdle",
-  "name": "Grovewarden Girdle",
-  "tier": 2,
-  "category": "Defense",
-  "cost": 1250,
-  "description": "Woven green and still growing. Cuts close over quietly while you are busy with the next one.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "bulwark_slab",
-    "name": "Bulwark Slab"
-   },
-   {
-    "id": "regrowth_charm",
-    "name": "Regrowth Charm"
-   }
-  ],
-  "stats": {
-   "Health": 400.0,
-   "Health regen": 6.0
-  },
-  "art": true
- },
- {
-  "id": "runewardens_tome",
-  "name": "Runewarden's Tome",
-  "tier": 2,
-  "category": "Magic",
-  "cost": 1250,
-  "description": "Chained shut, and the chain is the spell. What it holds is filed, indexed and immediately available.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "scribes_ledger",
-    "name": "Scribe's Ledger"
-   },
-   {
-    "id": "apprentice_focus",
-    "name": "Apprentice Focus"
-   }
-  ],
-  "stats": {
-   "Mana": 300.0,
-   "Ability power": 55.0,
-   "Ability haste": 15.0
-  },
-  "art": true
- },
- {
-  "id": "spellbreaker_shroud",
-  "name": "Spellbreaker Shroud",
-  "tier": 2,
-  "category": "Defense",
-  "cost": 1250,
-  "description": "Woven from a silence. Incantations arrive at it already forgetting what they were for.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "null_cloak",
-    "name": "Null Cloak"
-   },
-   {
-    "id": "bulwark_slab",
-    "name": "Bulwark Slab"
-   }
-  ],
-  "stats": {
-   "Health": 200.0,
-   "Magic resist": 45.0,
-   "Ability haste": 8.0
+   "Attack damage": 22.0,
+   "Lifesteal": 0.09
   },
   "art": true
  },
@@ -1051,13 +914,13 @@
   "name": "Windshear Bow",
   "tier": 2,
   "category": "Attack",
-  "cost": 1250,
-  "description": "Strung with something that hums before you draw it. The arrows leave before the wind notices.",
+  "cost": 1000,
+  "description": "Strung with something that hums before you draw it.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Long Draw",
+  "passive_text": "Ranged champions reach 0.4m further with basics.",
   "charges": 0,
   "components": [
    {
@@ -1065,58 +928,60 @@
     "name": "Duelist Gloves"
    },
    {
-    "id": "long_blade",
-    "name": "Long Blade"
+    "id": "thistledown",
+    "name": "Thistledown"
    }
   ],
   "stats": {
-   "Attack damage": 18.0,
-   "Attack speed": 0.25,
-   "Move speed": 0.3
+   "Attack damage": 12.0,
+   "Attack speed": 0.22,
+   "Move speed": 0.25
   },
   "art": true
  },
  {
-  "id": "aegis_of_the_line",
-  "name": "Aegis of the Line",
+  "id": "lifebinders_censer",
+  "name": "Lifebinder's Needle",
   "tier": 2,
-  "category": "Defense",
-  "cost": 1300,
-  "description": "Built to lock edge to edge with the one beside it. Alone it is merely very good.",
+  "category": "Support",
+  "cost": 1050,
+  "description": "Bone needle, gut thread. It stitches faster than wounds open.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Lifebinder",
+  "passive_text": "Your heals and shields on other champions are 8% stronger.",
   "charges": 0,
   "components": [
    {
-    "id": "bulwark_slab",
-    "name": "Bulwark Slab"
+    "id": "kindled_wick",
+    "name": "Kindled Wick"
    },
    {
-    "id": "barbed_buckler",
-    "name": "Barbed Buckler"
+    "id": "vigil_lantern",
+    "name": "Rowan Cross"
    }
   ],
   "stats": {
-   "Health": 250.0,
-   "Armour": 45.0
+   "Ability power": 25.0,
+   "Health regen": 2.0,
+   "Mana regen": 2.0,
+   "Ability haste": 5.0
   },
   "art": true
  },
  {
-  "id": "frostmarrow_sigil",
-  "name": "Frostmarrow Sigil",
+  "id": "whisperglass",
+  "name": "Whisperglass",
   "tier": 2,
   "category": "Magic",
-  "cost": 1300,
-  "description": "Cold enough to ache through the glove. Casters who stand in the fight learn to want that.",
+  "cost": 1050,
+  "description": "Ground from a still lake at dusk.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Still Water",
+  "passive_text": "After 5s without casting, your next ability winds up 30% faster.",
   "charges": 0,
   "components": [
    {
@@ -1124,42 +989,103 @@
     "name": "Apprentice Focus"
    },
    {
-    "id": "barbed_buckler",
-    "name": "Barbed Buckler"
+    "id": "chroniclers_cuff",
+    "name": "Chronicler's Cuff"
    }
   ],
   "stats": {
-   "Health": 250.0,
-   "Ability power": 50.0,
-   "Armour": 20.0
+   "Mana": 150.0,
+   "Ability power": 30.0,
+   "Ability haste": 10.0
   },
   "art": true
  },
  {
-  "id": "rendfang_pick",
-  "name": "Rendfang Pick",
+  "id": "skirmishers_talon",
+  "name": "Skirmisher's Talon",
   "tier": 2,
   "category": "Attack",
-  "cost": 1300,
-  "description": "A tooth on a handle, and the handle was the afterthought. It comes back up faster than it went down.",
+  "cost": 1100,
+  "description": "Long enough to end the argument.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Cut Them Off",
+  "passive_text": "Your basics deal 12 bonus physical damage to champions moving away from you.",
   "charges": 0,
   "components": [
    {
-    "id": "serrated_fang",
-    "name": "Serrated Fang"
-   },
-   {
     "id": "long_blade",
     "name": "Long Blade"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
    }
   ],
   "stats": {
-   "Attack damage": 45.0,
+   "Attack damage": 25.0,
+   "Attack speed": 0.18
+  },
+  "art": true
+ },
+ {
+  "id": "solace_reliquary",
+  "name": "Solace Reliquary",
+  "tier": 2,
+  "category": "Support",
+  "cost": 1100,
+  "description": "Holds one feather and a great deal of patience.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Solace",
+  "passive_text": "When crowd control lands on an allied champion within 6m, they gain a shield of 30 + 15% AP for 2s. Once every 12s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "kindled_wick",
+    "name": "Kindled Wick"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   }
+  ],
+  "stats": {
+   "Health": 150.0,
+   "Ability power": 20.0,
+   "Magic resist": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "wayfarers_banner",
+  "name": "Wayfarer's Banner",
+  "tier": 2,
+  "category": "Support",
+  "cost": 1100,
+  "description": "Carried ahead of the column, never behind it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Lead the Way",
+  "passive_text": "Allied champions within 5m of you gain 0.35 move speed while heading toward an enemy champion.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "vigil_lantern",
+    "name": "Rowan Cross"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Move speed": 0.2,
+   "Health regen": 2.0,
    "Ability haste": 8.0
   },
   "art": true
@@ -1169,13 +1095,13 @@
   "name": "Eclipse Prism",
   "tier": 2,
   "category": "Magic",
-  "cost": 1350,
-  "description": "Split light goes in and one dark line comes out. Whatever it takes from the beam, it keeps.",
+  "cost": 1150,
+  "description": "Split light goes in and one dark line comes out.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Answer in Kind",
+  "passive_text": "When an enemy champion's ability hits you, your next ability hit on them within 4s deals 30 bonus magic damage.",
   "charges": 0,
   "components": [
    {
@@ -1188,23 +1114,346 @@
    }
   ],
   "stats": {
-   "Ability power": 70.0,
-   "Magic resist": 25.0
+   "Ability power": 45.0,
+   "Magic resist": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "hollow_point_quiver",
+  "name": "Hollow Point Quiver",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1150,
+  "description": "Every shaft bored out down its length.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Hollow Point",
+  "passive_text": "Your basics ignore 15% of the target's armour.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   }
+  ],
+  "stats": {
+   "Attack damage": 28.0,
+   "Attack speed": 0.15
+  },
+  "art": true
+ },
+ {
+  "id": "wardstone_mantle",
+  "name": "Wardstone Mantle",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1150,
+  "description": "A slab of altar stone worn like a promise.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Wardstone",
+  "passive_text": "When an enemy champion's ability hits you, regenerate 1% of your max health a second for 3s. Once every 8s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Magic resist": 30.0,
+   "Ability haste": 5.0
+  },
+  "art": true
+ },
+ {
+  "id": "warlords_edge",
+  "name": "Warlord's Skull-Cup",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1150,
+  "description": "He drinks from the last one who stood against him.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Victor's Due",
+  "passive_text": "Champion takedowns heal you for 8% of your max health.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Attack damage": 30.0
+  },
+  "art": true
+ },
+ {
+  "id": "cinderglass_torch",
+  "name": "Cinderglass Torch",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1200,
+  "description": "The flame is set inside the glass, not on top of it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Torchlight",
+  "passive_text": "Your ability hits reveal enemy champions for 2s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   },
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   }
+  ],
+  "stats": {
+   "Ability power": 60.0,
+   "Ability haste": 6.0
+  },
+  "art": true
+ },
+ {
+  "id": "frostmarrow_sigil",
+  "name": "Frostmarrow Sigil",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1200,
+  "description": "Cold enough to ache through the glove.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Frost-Set",
+  "passive_text": "A hit that takes more than 8% of your max health gives you 15 armour for 2s. Once every 6s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   },
+   {
+    "id": "barbed_buckler",
+    "name": "Studded Belt"
+   }
+  ],
+  "stats": {
+   "Health": 150.0,
+   "Ability power": 30.0,
+   "Armour": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "mothknife",
+  "name": "Mothknife",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1200,
+  "description": "Grey as moth dust and about as loud.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Unseen",
+  "passive_text": "Your first hit on an enemy champion who could not see you deals 25 bonus physical damage. Once every 8s per champion.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "billhook",
+    "name": "Billhook"
+   },
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   }
+  ],
+  "stats": {
+   "Attack damage": 32.0,
+   "Move speed": 0.1,
+   "Ability haste": 8.0
+  },
+  "art": true
+ },
+ {
+  "id": "grovewarden_girdle",
+  "name": "Ivy Girdle",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1250,
+  "description": "Woven green and still growing.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Knit",
+  "passive_text": "Each time an enemy champion damages you, gain 1 health regen for 5s, stacking up to 8.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   },
+   {
+    "id": "regrowth_charm",
+    "name": "Regrowth Charm"
+   }
+  ],
+  "stats": {
+   "Health": 380.0,
+   "Health regen": 4.0
+  },
+  "art": true
+ },
+ {
+  "id": "runewardens_tome",
+  "name": "Runewarden's Tome",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1250,
+  "description": "Chained shut, and the chain is the spell.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Rune-Ward",
+  "passive_text": "When your ability hits an enemy champion, gain a shield of 25 + 10% AP for 2s. Once every 8s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "scribes_ledger",
+    "name": "Scribe's Inkhorn"
+   },
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   }
+  ],
+  "stats": {
+   "Mana": 300.0,
+   "Ability power": 40.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "spellbreaker_shroud",
+  "name": "Spellbreaker Shroud",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1250,
+  "description": "Woven from a silence.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Unhurried",
+  "passive_text": "Slows on you last 25% shorter.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   },
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Magic resist": 35.0
+  },
+  "art": true
+ },
+ {
+  "id": "aegis_of_the_line",
+  "name": "Aegis of the Line",
+  "tier": 2,
+  "category": "Defense",
+  "cost": 1300,
+  "description": "Built to lock edge to edge with the one beside it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Shield-Rim",
+  "passive_text": "Minions and monsters deal you 20% less damage, and towers 10% less.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   },
+   {
+    "id": "barbed_buckler",
+    "name": "Studded Belt"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Armour": 35.0
+  },
+  "art": true
+ },
+ {
+  "id": "rendfang_pick",
+  "name": "Rendfang Pick",
+  "tier": 2,
+  "category": "Attack",
+  "cost": 1300,
+  "description": "A tooth on a handle. The handle was the afterthought.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Rend",
+  "passive_text": "Your first ability hit on an enemy champion every 6s deals 20 bonus physical damage.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Attack damage": 38.0,
+   "Ability haste": 8.0
   },
   "art": true
  },
  {
   "id": "ironbrand_cutlass",
-  "name": "Ironbrand Cutlass",
+  "name": "Dockhand's Knuckles",
   "tier": 2,
   "category": "Attack",
   "cost": 1350,
-  "description": "Forged with the guard oversized on purpose. The kind of blade you buy when you plan to still be there at the end.",
+  "description": "Cast in one piece. The best guard is hitting first.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Iron Guard",
+  "passive_text": "Your first basic on an enemy champion every 6s gives you a shield of 40 + 4% of your bonus health for 2s.",
   "charges": 0,
   "components": [
    {
@@ -1213,13 +1462,13 @@
    },
    {
     "id": "barbed_buckler",
-    "name": "Barbed Buckler"
+    "name": "Studded Belt"
    }
   ],
   "stats": {
-   "Health": 250.0,
-   "Attack damage": 30.0,
-   "Armour": 18.0
+   "Health": 200.0,
+   "Attack damage": 20.0,
+   "Armour": 22.0
   },
   "art": true
  },
@@ -1260,12 +1509,12 @@
   "tier": 2,
   "category": "Defense",
   "cost": 1350,
-  "description": "Stitched with the dried heads of teasels, the burrs wool-carders use. Whatever brushes against it takes some home.",
+  "description": "Stitched with the dried heads of teasels, the burrs wool-carders use.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Burrs",
-  "passive_text": "Basic attacks that hit you leave a teasel burr in the enemy champion who swung (up to 4, for 5s). Your next basic or ability hit on them tears every burr out for 12 + 1% of your max health magic damage each.",
+  "passive_text": "Champions who basic attack you get a burr (up to 4, for 5s). Your next hit on them tears the burrs out for 12 + 1% of your max health magic damage each.",
   "charges": 0,
   "components": [
    {
@@ -1289,7 +1538,7 @@
   "tier": 2,
   "category": "Magic",
   "cost": 1350,
-  "description": "A tally-stick cut from wych-elm and scored with witch-marks. The notches smoulder, and every one of them can be thrown.",
+  "description": "A tally-stick of wych-elm, scored with smouldering witch-marks.",
   "active": "Count Them Off",
   "active_cooldown": 45.0,
   "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 50 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
@@ -1315,47 +1564,17 @@
   "art": true
  },
  {
-  "id": "hollow_point_quiver",
-  "name": "Hollow Point Quiver",
-  "tier": 2,
-  "category": "Attack",
-  "cost": 1400,
-  "description": "Every shaft bored out down its length. Lighter to loose, and considerably worse to be hit by.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "serrated_fang",
-    "name": "Serrated Fang"
-   },
-   {
-    "id": "duelist_gloves",
-    "name": "Duelist Gloves"
-   }
-  ],
-  "stats": {
-   "Attack damage": 35.0,
-   "Attack speed": 0.15,
-   "Ability haste": 5.0
-  },
-  "art": true
- },
- {
   "id": "ironsong_standard",
-  "name": "Ironsong Standard",
+  "name": "Singing Horseshoe",
   "tier": 2,
   "category": "Defense",
   "cost": 1400,
-  "description": "The pole rings a low note when the line moves. Everyone under it stands a little squarer.",
+  "description": "Nailed over the door. It rings a low note when trouble comes up the path.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "",
-  "passive_text": "",
+  "passive": "Ironsong",
+  "passive_text": "Allied champions within 5m of you gain 3 armour and 3 magic resist for each enemy champion within 8m of you, up to 12 each.",
   "charges": 0,
   "components": [
    {
@@ -1372,71 +1591,9 @@
    }
   ],
   "stats": {
-   "Health": 300.0,
-   "Armour": 25.0,
-   "Magic resist": 25.0
-  },
-  "art": true
- },
- {
-  "id": "mindspring_chalice",
-  "name": "Mindspring Chalice",
-  "tier": 2,
-  "category": "Magic",
-  "cost": 1400,
-  "description": "It refills from underneath, and nobody has found the spring. Drink as fast as you like.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "scribes_ledger",
-    "name": "Scribe's Ledger"
-   },
-   {
-    "id": "chroniclers_cuff",
-    "name": "Chronicler's Cuff"
-   }
-  ],
-  "stats": {
-   "Mana": 400.0,
-   "Ability power": 40.0,
-   "Mana regen": 5.0,
-   "Ability haste": 10.0
-  },
-  "art": true
- },
- {
-  "id": "solace_reliquary",
-  "name": "Solace Reliquary",
-  "tier": 2,
-  "category": "Support",
-  "cost": 1450,
-  "description": "Holds one feather and a great deal of patience. Curses land on it instead of on your friends.",
-  "active": "",
-  "active_cooldown": 0.0,
-  "active_text": "",
-  "passive": "",
-  "passive_text": "",
-  "charges": 0,
-  "components": [
-   {
-    "id": "kindled_wick",
-    "name": "Kindled Wick"
-   },
-   {
-    "id": "null_cloak",
-    "name": "Null Cloak"
-   }
-  ],
-  "stats": {
    "Health": 250.0,
-   "Ability power": 30.0,
-   "Magic resist": 20.0,
-   "Health regen": 4.0
+   "Armour": 22.0,
+   "Magic resist": 22.0
   },
   "art": true
  },
@@ -1451,7 +1608,7 @@
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Lantern Wake",
-  "passive_text": "Jungle brand for tanks (Fell only). Monsters within 6m of the camp you are fighting take 10 + 1.5% of your max health magic damage per second. Clearing a camp hangs a lantern for 90s (max 4) that sees 6m and reveals enemy champions who enter for 2s. At 15 tallies: max 6 lanterns, and they slow intruders 25%.",
+  "passive_text": "Jungle brand for tanks (Fell only). Monsters at the camp you fight take 10 + 1.5% of your max health magic damage a second. Each camp you clear leaves a lantern for 90s (up to 4) that sees 6m and reveals enemy champions who enter. At 15 tallies: up to 6 lanterns, and they slow intruders 25%.",
   "charges": 0,
   "components": [
    {
@@ -1480,7 +1637,7 @@
   "tier": 2,
   "category": "Attack",
   "cost": 1550,
-  "description": "A thighbone from the hound ossuary, notched by the pack it was taken from. The pack still answers to it.",
+  "description": "A thighbone from the hound ossuary. The pack still answers to it.",
   "active": "Rouse the Den",
   "active_cooldown": 60.0,
   "active_text": "Near a camp (6m): its monsters attack the nearest enemy champion within 9m for 4s. If none is near, the camp does not attack you for 3s. Cooldown 1s shorter per tally (40s minimum).",
@@ -1514,12 +1671,12 @@
   "tier": 3,
   "category": "Magic",
   "cost": 2000,
-  "description": "Worn by those who ask the sky for favours and are answered. Ability power at its highest.",
+  "description": "Worn by those who ask the sky for favours and are answered.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Calm Before",
-  "passive_text": "Each full second without casting an ability builds Calm (up to 5). Your next ability's first hit deals 6% more damage per Calm, spending it.",
+  "passive_text": "Each full second without casting builds 1 Calm, up to 5. Your next ability's first hit deals 6% more damage per Calm.",
   "charges": 0,
   "components": [
    {
@@ -1532,30 +1689,30 @@
    }
   ],
   "stats": {
-   "Mana": 350.0,
-   "Ability power": 115.0,
-   "Mana regen": 5.0,
-   "Ability haste": 20.0
+   "Mana": 250.0,
+   "Ability power": 95.0,
+   "Mana regen": 2.0,
+   "Ability haste": 15.0
   },
   "art": true
  },
  {
   "id": "reavers_cleaver",
-  "name": "Reaver's Cleaver",
+  "name": "War-Scythe",
   "tier": 3,
   "category": "Attack",
   "cost": 2050,
-  "description": "Too heavy to parry, too broad to dodge. What a carry graduates to.",
+  "description": "A scythe blade set straight on its pole. Too long to parry, too heavy to stop.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Weight of the Blade",
-  "passive_text": "Each basic on the same target within 2.5s of the last adds Weight (up to 5): +5% basic damage per Weight. A basic at full Weight is a Heavy Blow: it interrupts the target's cast, channel or recall and slows them 30% for 1s, and Weight drops to 2. One Heavy Blow per target every 6s.",
+  "passive_text": "Each basic on the same target within 2.5s adds 1 Weight (up to 5): +5% basic damage each. At 5 Weight your basic interrupts casts, channels and recalls and slows 30% for 1s, then Weight drops to 2. Once per target every 6s.",
   "charges": 0,
   "components": [
    {
     "id": "warlords_edge",
-    "name": "Warlord's Edge"
+    "name": "Warlord's Skull-Cup"
    },
    {
     "id": "duelist_gloves",
@@ -1563,9 +1720,70 @@
    }
   ],
   "stats": {
-   "Attack damage": 70.0,
+   "Attack damage": 60.0,
    "Attack speed": 0.2,
-   "Lifesteal": 0.12
+   "Lifesteal": 0.1
+  },
+  "art": true
+ },
+ {
+  "id": "harrowing_bow",
+  "name": "Crowscarer's Sling",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2200,
+  "description": "For clearing a field of crows before they can settle.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Harrow",
+  "passive_text": "When your basic kills a minion or monster, 40% of the hit splashes on enemies within 2m of it (not champions).",
+  "charges": 0,
+  "components": [
+   {
+    "id": "hollow_point_quiver",
+    "name": "Hollow Point Quiver"
+   },
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   }
+  ],
+  "stats": {
+   "Attack damage": 60.0,
+   "Attack speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "nightwatch_lantern",
+  "name": "Curfew Horn",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2300,
+  "description": "Blown round the walls at midnight, and again at three.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Night Watch",
+  "passive_text": "Your wards take 2 hits to destroy, and an enemy who destroys one is revealed for 6s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tattlers_lantern",
+    "name": "Magpie Cage"
+   },
+   {
+    "id": "wayfarers_banner",
+    "name": "Wayfarer's Banner"
+   }
+  ],
+  "stats": {
+   "Health": 375.0,
+   "Move speed": 0.3,
+   "Health regen": 3.5,
+   "Mana regen": 2.0,
+   "Ability haste": 15.0
   },
   "art": true
  },
@@ -1575,12 +1793,12 @@
   "tier": 3,
   "category": "Defense",
   "cost": 2300,
-  "description": "Scale salvaged from something that used to win fights. It still does.",
+  "description": "Scale salvaged from something that used to win fights.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "Hard Lesson",
-  "passive_text": "When crowd control lands on you, the plating hardens: +30 armour and +30 magic resist for 3s. Once every 8s.",
+  "passive": "Burrs",
+  "passive_text": "Champions who basic attack you get a burr (up to 4, for 5s). Your next hit on them tears the burrs out for 12 + 1% of your max health magic damage each.",
   "charges": 0,
   "components": [
    {
@@ -1604,12 +1822,44 @@
   "art": true
  },
  {
+  "id": "lamplighters_pole",
+  "name": "Beater's Rattle",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2400,
+  "description": "The beaters go in first. Nothing stays in the bracken once it starts.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Flushed Out",
+  "passive_text": "Enemy champions within 5m of you cannot hide in brush.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ironsong_standard",
+    "name": "Singing Horseshoe"
+   },
+   {
+    "id": "vigil_lantern",
+    "name": "Rowan Cross"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Armour": 25.0,
+   "Magic resist": 25.0,
+   "Health regen": 3.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
   "id": "colossus_heart",
   "name": "Colossus Heart",
   "tier": 3,
   "category": "Defense",
   "cost": 2400,
-  "description": "Still beating, and it was never in a person. What it is attached to becomes difficult to finish.",
+  "description": "Still beating, and it was never in a person.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
@@ -1619,7 +1869,7 @@
   "components": [
    {
     "id": "grovewarden_girdle",
-    "name": "Grovewarden Girdle"
+    "name": "Ivy Girdle"
    },
    {
     "id": "bulwark_slab",
@@ -1633,15 +1883,47 @@
   "art": true
  },
  {
+  "id": "hazel_rod",
+  "name": "Hazel Rod",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2400,
+  "description": "Forked hazel. It dips for water, and for people hiding.",
+  "active": "Dowse",
+  "active_cooldown": 60.0,
+  "active_text": "Enemy champions within 12m are revealed to your team for 2s.",
+  "passive": "Rod Twitches",
+  "passive_text": "When an enemy champion you cannot see comes within 8m of you, you are warned.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tattlers_lantern",
+    "name": "Magpie Cage"
+   },
+   {
+    "id": "whisperglass",
+    "name": "Whisperglass"
+   }
+  ],
+  "stats": {
+   "Health": 275.0,
+   "Mana": 100.0,
+   "Ability power": 50.0,
+   "Move speed": 0.2,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
   "id": "sunderers_greatblade",
   "name": "Sunderer's Greatblade",
   "tier": 3,
   "category": "Attack",
   "cost": 2400,
-  "description": "Too much sword for one person, which is why it is carried by someone who is not being reasonable.",
+  "description": "Too much sword for one person.",
   "active": "Sunder the Ground",
   "active_cooldown": 45.0,
-  "active_text": "Aim a line. After 0.5s the ground splits 7m ahead of you: enemies on it take 90 + 90% bonus AD physical damage, and the crack stands for 3s as a low wall enemies cannot walk through (dashes and blinks fly over it).",
+  "active_text": "Aim a line: after 0.5s the ground splits 7m ahead, dealing 90 + 90% bonus AD physical damage. The crack stands for 3s as a low wall enemies can't walk through (dashes go over).",
   "passive": "",
   "passive_text": "",
   "charges": 0,
@@ -1662,17 +1944,114 @@
   "art": true
  },
  {
-  "id": "duskfang_reaver",
-  "name": "Belltongue Dirk",
+  "id": "wraithstring_bow",
+  "name": "Wraithstring Bow",
   "tier": 3,
   "category": "Attack",
-  "cost": 2450,
-  "description": "A dirk with a curfew bell for a guard. When it rings for you, you have already been told to stay where you are.",
+  "cost": 2400,
+  "description": "Strung with a hair from a hanged man. It fires twice.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "Heard Too Late",
-  "passive_text": "Your basics and abilities ring enemy champions for 3s. A rung champion who dashes, blinks or Bolts is pinned where they land for 0.6s and revealed to your team for 2s. Once every 10s per champion.",
+  "passive": "Echo Arrow",
+  "passive_text": "0.35s after your basic lands on a champion or monster, a ghost arrow hits it for 30% of the damage as magic damage.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "duelist_gloves",
+    "name": "Duelist Gloves"
+   },
+   {
+    "id": "thistledown",
+    "name": "Thistledown"
+   }
+  ],
+  "stats": {
+   "Attack damage": 45.0,
+   "Attack speed": 0.5,
+   "Move speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "emberheart_crucible",
+  "name": "Grudgefire Crucible",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2450,
+  "description": "A furnace small enough to carry, stoked with every blow you took.",
+  "active": "Vent the Crucible",
+  "active_cooldown": 25.0,
+  "active_text": "Aim: vent all your Grudge in a 5m cone as magic damage equal to the Grudge + 40% AP, healing for 35% of what it deals to champions.",
+  "passive": "Grudge",
+  "passive_text": "20% of the damage champions deal you is stored as Grudge, up to 350. It drains once you are out of champion fights for 5s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 400.0,
+   "Ability power": 110.0
+  },
+  "art": true
+ },
+ {
+  "id": "harewitch_staff",
+  "name": "Harewitch Staff",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2450,
+  "description": "The witch who carried it was seen as a hare more often than not.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Hare's Run",
+  "passive_text": "After 3s without dealing or taking champion damage, gain 0.6 move speed.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   },
+   {
+    "id": "thistledown",
+    "name": "Thistledown"
+   },
+   {
+    "id": "apprentice_focus",
+    "name": "Apprentice Focus"
+   }
+  ],
+  "stats": {
+   "Ability power": 110.0,
+   "Move speed": 0.3,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "duskfang_reaver",
+  "name": "Otter-Spear",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2450,
+  "description": "Barbed so the catch stays on, however hard it pulls.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Snag",
+  "passive_text": "Your hits barb enemy champions for 3s. A barbed champion who dashes, blinks or Bolts is pinned where they land for 0.6s and revealed for 2s (once per champion every 10s).",
   "charges": 0,
   "components": [
    {
@@ -1692,46 +2071,17 @@
   "art": true
  },
  {
-  "id": "emberheart_crucible",
-  "name": "Grudgefire Crucible",
-  "tier": 3,
-  "category": "Magic",
-  "cost": 2450,
-  "description": "A furnace small enough to carry, stoked with every blow you took. It gives each one back, hotter.",
-  "active": "Vent the Crucible",
-  "active_cooldown": 25.0,
-  "active_text": "Aim: vent all your Grudge in a 5m cone as magic damage equal to the Grudge + 40% AP, and heal for 35% of what it deals to champions. Needs Grudge.",
-  "passive": "Grudge",
-  "passive_text": "20% of the damage you take from enemy champions is stored as Grudge (up to 350). It cools by a tenth a second once you have been out of champion fights for 5s.",
-  "charges": 0,
-  "components": [
-   {
-    "id": "cinderglass_torch",
-    "name": "Cinderglass Torch"
-   },
-   {
-    "id": "giants_ring",
-    "name": "Giant's Ring"
-   }
-  ],
-  "stats": {
-   "Health": 400.0,
-   "Ability power": 110.0
-  },
-  "art": true
- },
- {
   "id": "oathstone_bastion",
-  "name": "Oathstone Bastion",
+  "name": "Sworn Charter",
   "tier": 3,
   "category": "Defense",
   "cost": 2450,
-  "description": "Sworn on, then worn. Magic reads the oath, checks it twice, and goes around.",
+  "description": "Sealed in wax and sworn on. It reads every curse twice before it lets one in.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Read Twice",
-  "passive_text": "The first stun, slow, fear or taunt to land on you every 15s lasts half as long.",
+  "passive_text": "The first stun, slow, fear or taunt on you every 15s lasts half as long.",
   "charges": 0,
   "components": [
    {
@@ -1744,24 +2094,457 @@
    }
   ],
   "stats": {
-   "Health": 450.0,
-   "Magic resist": 65.0,
+   "Health": 425.0,
+   "Magic resist": 60.0,
    "Ability haste": 20.0
   },
   "art": true
  },
  {
-  "id": "adamant_vanguard",
-  "name": "Adamant Vanguard",
+  "id": "archivists_grimoire",
+  "name": "Archivist's Grimoire",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2500,
+  "description": "Every page is an index to a page you have not reached.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Errata",
+  "passive_text": "When an ability hits no enemy champion, refund 20% of its cooldown.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "runewardens_tome",
+    "name": "Runewarden's Tome"
+   },
+   {
+    "id": "chroniclers_cuff",
+    "name": "Chronicler's Cuff"
+   }
+  ],
+  "stats": {
+   "Mana": 550.0,
+   "Ability power": 90.0,
+   "Ability haste": 30.0
+  },
+  "art": true
+ },
+ {
+  "id": "brinecutter",
+  "name": "Brinecutter",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "Pickled in the sea for a year. It stings worse than it cuts.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Brine",
+  "passive_text": "Enemy champions you damage heal 40% less for 3s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "salt_knife",
+    "name": "Salt Knife"
+   },
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   }
+  ],
+  "stats": {
+   "Attack damage": 60.0,
+   "Attack speed": 0.3,
+   "Move speed": 0.1
+  },
+  "art": true
+ },
+ {
+  "id": "bone_chime",
+  "name": "Cat's-Eye Ring",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2500,
+  "description": "A cat sees what is coming. So does whoever wears this.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Startle",
+  "passive_text": "When an enemy champion dashes or blinks to within 4m of you, gain a shield of 60 + 25% AP for 2s and 1 move speed that fades over 1.5s. Once every 15s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "frostmarrow_sigil",
+    "name": "Frostmarrow Sigil"
+   },
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   }
+  ],
+  "stats": {
+   "Health": 225.0,
+   "Ability power": 90.0,
+   "Armour": 30.0
+  },
+  "art": true
+ },
+ {
+  "id": "drovers_hook",
+  "name": "Drover's Hook",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "For bringing back the ones that wander.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Hook",
+  "passive_text": "Your basics on an enemy champion who is moving away from you drag them 0.5m toward you. Once every 2s per champion.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Skull-Cup"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Attack damage": 55.0,
+   "Attack speed": 0.25
+  },
+  "art": true
+ },
+ {
+  "id": "felling_wedge",
+  "name": "Felling Wedge",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "The bigger the tree, the better it works.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Felling",
+  "passive_text": "Your basics deal bonus physical damage equal to 4% of the target's bonus health.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "hollow_point_quiver",
+    "name": "Hollow Point Quiver"
+   },
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Skull-Cup"
+   }
+  ],
+  "stats": {
+   "Health": 225.0,
+   "Attack damage": 55.0,
+   "Attack speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "ferrymans_lamp",
+  "name": "Ferryman's Oar",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2500,
+  "description": "Worn smooth by one pair of hands. Nobody goes over the side while it rows.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Safe Crossing",
+  "passive_text": "When an allied champion within 8m dashes or uses Bolt, they gain a shield of 50 + 20% AP for 2s when they land. Once per ally every 10s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "solace_reliquary",
+    "name": "Solace Reliquary"
+   },
+   {
+    "id": "wayfarers_banner",
+    "name": "Wayfarer's Banner"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Ability power": 35.0,
+   "Magic resist": 25.0,
+   "Move speed": 0.2,
+   "Health regen": 2.5,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "ashpit_brazier",
+  "name": "Fire-Raiser's Brazier",
   "tier": 3,
   "category": "Defense",
   "cost": 2500,
-  "description": "The front rank in one object. The ones behind it are the reason it holds.",
+  "description": "Carried coals from a fire that burned a village.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Choking Smoke",
+  "passive_text": "Enemy champions within 3.5m of you heal 30% less, or 50% less while you are below 50% health.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "grovewarden_girdle",
+    "name": "Ivy Girdle"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   },
+   {
+    "id": "null_cloak",
+    "name": "Null Cloak"
+   }
+  ],
+  "stats": {
+   "Health": 425.0,
+   "Armour": 25.0,
+   "Magic resist": 25.0,
+   "Health regen": 4.0
+  },
+  "art": true
+ },
+ {
+  "id": "graverobbers_jemmy",
+  "name": "Graverobber's Jemmy",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "For lids that were nailed down for a reason.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Prise",
+  "passive_text": "Your damage to shields is 30% higher.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "rendfang_pick",
+    "name": "Rendfang Pick"
+   },
+   {
+    "id": "billhook",
+    "name": "Billhook"
+   }
+  ],
+  "stats": {
+   "Attack damage": 70.0,
+   "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "harefoot_knife",
+  "name": "Hare's-Foot Knife",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "Lucky for the one holding it. Not for the hare.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Bolt-Hole",
+  "passive_text": "A champion takedown gives you 1 move speed that fades over 3s, and you pass through units for 3s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "billhook",
+    "name": "Billhook"
+   },
+   {
+    "id": "thistledown",
+    "name": "Thistledown"
+   }
+  ],
+  "stats": {
+   "Attack damage": 60.0,
+   "Attack speed": 0.15,
+   "Move speed": 0.3,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "hounds_collar",
+  "name": "Hound's Collar",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2500,
+  "description": "Spiked on the outside, for the wolves.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Guard Dog",
+  "passive_text": "When an enemy champion damages an allied champion within 6m of you, gain 0.8 move speed toward that enemy for 2s. Once every 8s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ironsong_standard",
+    "name": "Singing Horseshoe"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 525.0,
+   "Armour": 35.0,
+   "Magic resist": 35.0,
+   "Move speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "owlhush_blade",
+  "name": "Owlhush Darts",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "Fletched with owl feathers. They make no sound on the way in.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Hush",
+  "passive_text": "When you hit an enemy champion who could not see you, their sight shrinks to 3m for 2s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "mothknife",
+    "name": "Mothknife"
+   },
+   {
+    "id": "serrated_fang",
+    "name": "Serrated Fang"
+   }
+  ],
+  "stats": {
+   "Attack damage": 75.0,
+   "Move speed": 0.3,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
+  "id": "pyre_urn",
+  "name": "Pyre Urn",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2500,
+  "description": "What is left after the pyre, carried home.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Ashfall",
+  "passive_text": "Enemy champions you damage with abilities heal 40% less for 3s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ash_censer",
+    "name": "Ash Censer"
+   },
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   }
+  ],
+  "stats": {
+   "Health": 150.0,
+   "Ability power": 95.0,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
+  "id": "scrying_bowl",
+  "name": "Scrying Bowl",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2500,
+  "description": "Fill it with black water and do not look away.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Scry",
+  "passive_text": "Your abilities deal 15% more damage to champions your team cannot see, and reveal them for 2s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "runewardens_tome",
+    "name": "Runewarden's Tome"
+   },
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   }
+  ],
+  "stats": {
+   "Mana": 250.0,
+   "Ability power": 95.0,
+   "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "tempest_repeater",
+  "name": "Tempest Repeater",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2500,
+  "description": "The string never fully stops moving.",
+  "active": "Loose on the Run",
+  "active_cooldown": 45.0,
+  "active_text": "For 3.5s you basic attack while moving, at 75% speed and 0.5m less reach.",
+  "passive": "",
+  "passive_text": "",
+  "charges": 0,
+  "components": [
+   {
+    "id": "windshear_bow",
+    "name": "Windshear Bow"
+   },
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   }
+  ],
+  "stats": {
+   "Attack damage": 45.0,
+   "Attack speed": 0.45,
+   "Move speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "adamant_vanguard",
+  "name": "Wattle Hurdle",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2500,
+  "description": "Woven hazel, set against the wind. Whatever stands behind it stays dry.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Front Rank",
-  "passive_text": "Allied champions within 3m behind you, on your far side from the nearest enemy champion, take 10% less damage.",
+  "passive_text": "Allied champions within 3m behind you (on your far side from the nearest enemy champion) take 10% less damage.",
   "charges": 0,
   "components": [
    {
@@ -1780,77 +2563,144 @@
   "art": true
  },
  {
-  "id": "archivists_grimoire",
-  "name": "Archivist's Grimoire",
+  "id": "weather_vane",
+  "name": "Weather Vane",
   "tier": 3,
-  "category": "Magic",
+  "category": "Support",
   "cost": 2500,
-  "description": "Every page is an index to a page you have not reached. Nothing in it is ever more than a moment away.",
+  "description": "The iron cock turns toward trouble.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "Footnote",
-  "passive_text": "An ability that hits an enemy champion from 7m or further footnotes them for 4s: they are revealed to your team, and your next ability on them deals 12% more damage. Once every 6s per champion.",
+  "passive": "Ill Wind",
+  "passive_text": "Your heals and shields on an ally are 10% stronger for each enemy champion within 6m of them, up to 30%.",
   "charges": 0,
   "components": [
    {
-    "id": "runewardens_tome",
-    "name": "Runewarden's Tome"
+    "id": "solace_reliquary",
+    "name": "Solace Reliquary"
    },
    {
-    "id": "chroniclers_cuff",
-    "name": "Chronicler's Cuff"
+    "id": "whisperglass",
+    "name": "Whisperglass"
    }
   ],
   "stats": {
-   "Mana": 600.0,
-   "Ability power": 95.0,
-   "Ability haste": 30.0
+   "Health": 150.0,
+   "Mana": 100.0,
+   "Ability power": 55.0,
+   "Magic resist": 20.0,
+   "Ability haste": 20.0
   },
   "art": true
  },
  {
-  "id": "tempest_repeater",
-  "name": "Tempest Repeater",
+  "id": "wisp_lamp",
+  "name": "Wisp Net",
   "tier": 3,
-  "category": "Attack",
+  "category": "Support",
   "cost": 2500,
-  "description": "The string never fully stops moving. By the time the first shot lands there are three more behind it.",
-  "active": "Loose on the Run",
-  "active_cooldown": 45.0,
-  "active_text": "For 3.5s you basic attack while moving: your swings fire without stopping your feet, at whoever you last attacked or the nearest enemy champion in reach. You walk at 75% speed while drawing, and reach 0.5m less.",
-  "passive": "",
-  "passive_text": "",
+  "description": "Swept over the bog at night. It lets the lights out one at a time, to find the hurt.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Will-o'-Wisp",
+  "passive_text": "Every 8s, your next ability hit on an enemy champion sends a wisp to the most wounded allied champion within 8m, healing them 30 + 15% AP.",
   "charges": 0,
   "components": [
    {
-    "id": "windshear_bow",
-    "name": "Windshear Bow"
+    "id": "lifebinders_censer",
+    "name": "Lifebinder's Needle"
    },
    {
-    "id": "duelist_gloves",
-    "name": "Duelist Gloves"
+    "id": "whisperglass",
+    "name": "Whisperglass"
    }
   ],
   "stats": {
-   "Attack damage": 45.0,
-   "Attack speed": 0.45,
-   "Move speed": 0.2
+   "Mana": 150.0,
+   "Ability power": 65.0,
+   "Health regen": 2.0,
+   "Mana regen": 2.0,
+   "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "wardens_bane",
+  "name": "Bailiff's Mace",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2550,
+  "description": "Built by someone who got tired of shields.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Through the Argument",
+  "passive_text": "When your damage breaks an enemy champion's shield, it bites for 60 + 60% bonus AD physical damage and cuts their healing and shields 40% for 4s. Once per champion every 8s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ironbrand_cutlass",
+    "name": "Dockhand's Knuckles"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   }
+  ],
+  "stats": {
+   "Health": 350.0,
+   "Attack damage": 60.0,
+   "Armour": 35.0
+  },
+  "art": true
+ },
+ {
+  "id": "millstone_collar",
+  "name": "Millstone Collar",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2550,
+  "description": "Worn round the neck. Heavy enough to drown in.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Grindstone",
+  "passive_text": "An enemy champion who hits you with 4 basics within 3s is blinded for 1s: their basics miss. Once every 8s per champion.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "aegis_of_the_line",
+    "name": "Aegis of the Line"
+   },
+   {
+    "id": "iron_shard",
+    "name": "Iron Shard"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 475.0,
+   "Armour": 75.0
   },
   "art": true
  },
  {
   "id": "rimeglass_aegis",
-  "name": "Rimeglass Aegis",
+  "name": "Rime Pane",
   "tier": 3,
   "category": "Magic",
   "cost": 2550,
-  "description": "Frozen mid-shatter and held there. The cracks are load-bearing.",
+  "description": "Cracked from corner to corner by the frost, and still holding.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Load-Bearing Cracks",
-  "passive_text": "Once every 8s, a hit that would take more than 12% of your max health takes only 12% now; the rest is held in the cracks and paid over the next 3s. Shields still soak it and heals do not cancel it.",
+  "passive_text": "Once every 8s, a hit that would take more than 12% of your max health takes only 12% now; the rest is paid over the next 3s.",
   "charges": 0,
   "components": [
    {
@@ -1870,32 +2720,63 @@
   "art": true
  },
  {
-  "id": "wardens_bane",
-  "name": "Warden's Bane",
+  "id": "yewlong_bow",
+  "name": "Yewlong Bow",
   "tier": 3,
   "category": "Attack",
   "cost": 2550,
-  "description": "Built by someone who got tired of shields. It goes through the argument rather than around it.",
+  "description": "Cut from a churchyard yew. It has always liked distance.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
-  "passive": "Through the Argument",
-  "passive_text": "When your damage breaks an enemy champion's shield, the Bane bites: 60 + 60% bonus AD physical damage, and their healing and shields are cut 40% for 4s. Once every 8s per champion.",
+  "passive": "Long Shot",
+  "passive_text": "Your basics deal up to 15% more damage the farther the target is: nothing at 3m, the full 15% at 6m.",
   "charges": 0,
   "components": [
    {
-    "id": "ironbrand_cutlass",
-    "name": "Ironbrand Cutlass"
+    "id": "windshear_bow",
+    "name": "Windshear Bow"
    },
    {
-    "id": "iron_shard",
-    "name": "Iron Shard"
+    "id": "hollow_point_quiver",
+    "name": "Hollow Point Quiver"
    }
   ],
   "stats": {
-   "Health": 350.0,
    "Attack damage": 60.0,
-   "Armour": 35.0
+   "Attack speed": 0.4,
+   "Move speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "blightroot_staff",
+  "name": "Blightcap",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "A toadstool off the root that killed the oak above it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Rot",
+  "passive_text": "Your ability hits deal bonus magic damage equal to 3% of the target's bonus health.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tidewardens_pearl",
+    "name": "Tidewarden's Pearl"
+   },
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   }
+  ],
+  "stats": {
+   "Health": 275.0,
+   "Mana": 150.0,
+   "Ability power": 105.0,
+   "Ability haste": 5.0
   },
   "art": true
  },
@@ -1905,10 +2786,10 @@
   "tier": 3,
   "category": "Attack",
   "cost": 2600,
-  "description": "It has never needed sharpening and never will. Whatever it takes out of a fight, it gives back to the arm holding it.",
+  "description": "It has never needed sharpening and never will.",
   "active": "Blood Levy",
   "active_cooldown": 50.0,
-  "active_text": "For 4s every heal you would receive is banked instead. Then the Levy pays out: you heal 150% of the bank, and enemies within 3.5m take physical damage equal to 40% of it (up to 80 + 100% bonus AD). Die first and it is lost.",
+  "active_text": "For 4s, heals on you are banked. Then you heal 150% of the bank, and enemies within 3.5m take physical damage equal to 40% of it (up to 80 + 100% bonus AD).",
   "passive": "",
   "passive_text": "",
   "charges": 0,
@@ -1919,26 +2800,56 @@
    },
    {
     "id": "warlords_edge",
-    "name": "Warlord's Edge"
+    "name": "Warlord's Skull-Cup"
    }
   ],
   "stats": {
-   "Health": 400.0,
-   "Attack damage": 75.0,
-   "Lifesteal": 0.1
+   "Health": 375.0,
+   "Attack damage": 70.0,
+   "Lifesteal": 0.09
+  },
+  "art": true
+ },
+ {
+  "id": "peat_heart",
+  "name": "Bogfire Peat",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "A sod cut from the bog. It has been burning since before the wood.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Smoulder",
+  "passive_text": "Your ability hits deal bonus magic damage equal to 1.5% of your max health.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tidewardens_pearl",
+    "name": "Tidewarden's Pearl"
+   },
+   {
+    "id": "grovewarden_girdle",
+    "name": "Ivy Girdle"
+   }
+  ],
+  "stats": {
+   "Health": 650.0,
+   "Ability power": 60.0,
+   "Health regen": 3.0
   },
   "art": true
  },
  {
   "id": "voidcallers_diadem",
-  "name": "Voidcaller's Diadem",
+  "name": "Crossroads Dice",
   "tier": 3,
   "category": "Magic",
   "cost": 2600,
-  "description": "Worn by those who ask the dark for favours and are also answered. It answers faster than the sky does.",
+  "description": "Rolled at the crossroads at midnight. The dark keeps the score.",
   "active": "Favour Owed",
   "active_cooldown": 60.0,
-  "active_text": "For 4s your ability wind-ups are halved and each ability that hits an enemy champion refunds 30% of its cooldown. Then the favour is owed: healing and shields on you are cut 50% for 5s.",
+  "active_text": "For 4s your ability wind-ups are halved and each ability that hits an enemy champion refunds 30% of its cooldown. Then heals and shields on you are cut 50% for 5s.",
   "passive": "",
   "passive_text": "",
   "charges": 0,
@@ -1948,12 +2859,12 @@
     "name": "Eclipse Prism"
    },
    {
-    "id": "ember_lens",
-    "name": "Ember Lens"
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
    }
   ],
   "stats": {
-   "Ability power": 130.0,
+   "Ability power": 120.0,
    "Magic resist": 30.0,
    "Ability haste": 15.0
   },
@@ -1964,30 +2875,926 @@
   "name": "Everbloom Chalice",
   "tier": 3,
   "category": "Support",
-  "cost": 2700,
-  "description": "Something is always flowering in it, out of season and out of soil. Whoever holds it stops being the one who runs out.",
+  "cost": 2600,
+  "description": "Something is always flowering in it, out of season and out of soil.",
   "active": "",
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Shares the Cup",
-  "passive_text": "Heals and shields you give allied champions also restore 6% of the amount as their mana, or the same share of their own resource.",
+  "passive_text": "Heals and shields you give allied champions also restore 6% of the amount as their mana (or resource).",
   "charges": 0,
   "components": [
    {
     "id": "lifebinders_censer",
-    "name": "Lifebinder's Censer"
+    "name": "Lifebinder's Needle"
    },
    {
-    "id": "vigil_lantern",
-    "name": "Vigil Lantern"
+    "id": "solace_reliquary",
+    "name": "Solace Reliquary"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Ability power": 60.0,
+   "Health regen": 3.0,
+   "Mana regen": 3.0,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
+  "id": "gamekeepers_gin",
+  "name": "Gamekeeper's Gin",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2600,
+  "description": "Iron jaws, oiled hinge, no warning.",
+  "active": "Set the Gin",
+  "active_cooldown": 30.0,
+  "active_text": "Throw a trap within 6m. It arms after 1s and lasts 60s (2 at most). The first enemy champion to step on it is chained within 2m of it for 2s and revealed. A dash or blink breaks the chain.",
+  "passive": "Keeper's Due",
+  "passive_text": "Each basic you land on a chained champion holds the chain 0.5s longer, up to 4s in all.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "vampires_draught",
+    "name": "Vampire's Draught"
+   }
+  ],
+  "stats": {
+   "Attack damage": 60.0,
+   "Attack speed": 0.25,
+   "Lifesteal": 0.08
+  },
+  "art": true
+ },
+ {
+  "id": "gaolers_keyring",
+  "name": "Gaoler's Keyring",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "Every key on it opens one door and locks another.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Lock",
+  "passive_text": "Your stuns, pins, roots, taunts and knock-ups on champions last 15% longer.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "whisperglass",
+    "name": "Whisperglass"
+   },
+   {
+    "id": "tidewardens_pearl",
+    "name": "Tidewarden's Pearl"
+   }
+  ],
+  "stats": {
+   "Health": 300.0,
+   "Mana": 150.0,
+   "Ability power": 70.0,
+   "Ability haste": 25.0
+  },
+  "art": true
+ },
+ {
+  "id": "garrotte_wire",
+  "name": "Garrotte Wire",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2600,
+  "description": "Piano wire, from a house that no longer plays.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Garrotte",
+  "passive_text": "Your first hit on an enemy champion from behind silences them for 0.75s. Once every 10s per champion.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "mothknife",
+    "name": "Mothknife"
+   },
+   {
+    "id": "wardstone_mantle",
+    "name": "Wardstone Mantle"
+   }
+  ],
+  "stats": {
+   "Health": 175.0,
+   "Attack damage": 65.0,
+   "Magic resist": 30.0
+  },
+  "art": true
+ },
+ {
+  "id": "gatehouse_plate",
+  "name": "Gatehouse Knocker",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2600,
+  "description": "Off the gatehouse door after the siege. Everyone who knocked got an answer.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Earned Bulk",
+  "passive_text": "Each time you stun, pin, root, taunt or knock up an enemy champion, gain a shield of 6% of your max health for 3s. Once per champion every 3s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "aegis_of_the_line",
+    "name": "Aegis of the Line"
+   },
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   }
+  ],
+  "stats": {
+   "Health": 700.0,
+   "Armour": 55.0
+  },
+  "art": true
+ },
+ {
+  "id": "grannys_shawl",
+  "name": "Grandmother's Shawl",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2600,
+  "description": "Knitted by someone who outlived everyone she knitted for.",
+  "active": "Wrap Up",
+  "active_cooldown": 60.0,
+  "active_text": "Wrap an allied champion within 7m, or yourself: they take 30% less damage from champions for 2.5s.",
+  "passive": "Warm",
+  "passive_text": "A wrapped champion regenerates 2% of their max health a second.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "solace_reliquary",
+    "name": "Solace Reliquary"
+   },
+   {
+    "id": "wardstone_mantle",
+    "name": "Wardstone Mantle"
+   }
+  ],
+  "stats": {
+   "Health": 300.0,
+   "Ability power": 40.0,
+   "Magic resist": 30.0,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
+  "id": "grounding_iron",
+  "name": "Grounding Iron",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2600,
+  "description": "Cold iron, hammered into the ground at the crossroads.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Earth the Spell",
+  "passive_text": "The first enemy ability to hit an allied champion within 5m of you every 10s sends 30% of its damage to you instead.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "spellbreaker_shroud",
+    "name": "Spellbreaker Shroud"
+   },
+   {
+    "id": "hagstone",
+    "name": "Hagstone"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   }
+  ],
+  "stats": {
+   "Health": 450.0,
+   "Magic resist": 60.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "kiln_mitt",
+  "name": "Kiln-Mitt",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "Fired three times, for the hand that reaches into the kiln.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Kiln-Heat",
+  "passive_text": "Each basic on an enemy champion adds 1 heat (up to 5, for 4s). Your abilities deal 4% more damage per heat.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "frostmarrow_sigil",
+    "name": "Frostmarrow Sigil"
+   },
+   {
+    "id": "tidewardens_pearl",
+    "name": "Tidewarden's Pearl"
    }
   ],
   "stats": {
    "Health": 350.0,
    "Ability power": 70.0,
-   "Health regen": 7.0,
-   "Mana regen": 6.0,
+   "Armour": 20.0,
+   "Attack speed": 0.15
+  },
+  "art": true
+ },
+ {
+  "id": "wake_bell",
+  "name": "Lych-Bell",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2600,
+  "description": "Rung over the dead so they know to stay down.",
+  "active": "Ring the Lych-Bell",
+  "active_cooldown": 60.0,
+  "active_text": "Enemy champions within 3.5m are taunted for 0.75s. The bell tolls again from the same spot 1.5s later, taunting those still within 3.5m for 0.5s.",
+  "passive": "Hollow Toll",
+  "passive_text": "Each champion the bell taunts takes 5s off its cooldown.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ironsong_standard",
+    "name": "Singing Horseshoe"
+   },
+   {
+    "id": "bulwark_slab",
+    "name": "Bulwark Slab"
+   }
+  ],
+  "stats": {
+   "Health": 500.0,
+   "Armour": 25.0,
+   "Magic resist": 25.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "spinners_bracer",
+  "name": "Orb-Weaver Brooch",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2600,
+  "description": "A black spider of jet, pinned at the throat. It spins while you fight.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Spin Silk",
+  "passive_text": "Each basic or ability you land on an enemy champion spins 1 silk, up to 10. The next champion hit on you is cut by 8 per silk, spending them all.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "rendfang_pick",
+    "name": "Rendfang Pick"
+   },
+   {
+    "id": "giants_ring",
+    "name": "Giant's Ring"
+   },
+   {
+    "id": "long_blade",
+    "name": "Long Blade"
+   }
+  ],
+  "stats": {
+   "Health": 225.0,
+   "Attack damage": 60.0,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
+  "id": "patience_spindle",
+  "name": "Patience Spindle",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2600,
+  "description": "The thread gets stronger the longer you spin.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Spun Slow",
+  "passive_text": "Shields you give grow by 6% of their size each second they hold, up to 30%.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "lifebinders_censer",
+    "name": "Lifebinder's Needle"
+   },
+   {
+    "id": "runewardens_tome",
+    "name": "Runewarden's Tome"
+   }
+  ],
+  "stats": {
+   "Mana": 300.0,
+   "Ability power": 80.0,
+   "Mana regen": 2.5,
+   "Ability haste": 25.0
+  },
+  "art": true
+ },
+ {
+  "id": "tidewell_pearl",
+  "name": "Wishing-Well Bucket",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2600,
+  "description": "Lowered into a well that has never run dry.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Deep Well",
+  "passive_text": "When you drop below 25% mana, restore 30% of your max mana over 3s. Once every 40s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tidewardens_pearl",
+    "name": "Tidewarden's Pearl"
+   },
+   {
+    "id": "runewardens_tome",
+    "name": "Runewarden's Tome"
+   }
+  ],
+  "stats": {
+   "Health": 275.0,
+   "Mana": 550.0,
+   "Ability power": 85.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "potlid_buckler",
+  "name": "Alewife's Skillet",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2650,
+  "description": "Off the tavern stove. It has stopped worse than spoons.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Cast Iron",
+  "passive_text": "When enemy champions deal you 30% of your max health within 3s, heal 35% of that over 4s and take 25% less damage for 2s. Once every 45s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Skull-Cup"
+   },
+   {
+    "id": "grovewarden_girdle",
+    "name": "Ivy Girdle"
+   }
+  ],
+  "stats": {
+   "Health": 450.0,
+   "Attack damage": 40.0,
+   "Armour": 20.0,
+   "Health regen": 3.0
+  },
+  "art": true
+ },
+ {
+  "id": "spitewood_shield",
+  "name": "Spite Bottle",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2650,
+  "description": "Bent pins, a lock of hair and a cork. Whoever curses you, it finds.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Marked Hand",
+  "passive_text": "When crowd control lands on you, the champion who cast it is revealed for 4s and takes 10% more damage from your team.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "wardstone_mantle",
+    "name": "Wardstone Mantle"
+   },
+   {
+    "id": "aegis_of_the_line",
+    "name": "Aegis of the Line"
+   }
+  ],
+  "stats": {
+   "Health": 425.0,
+   "Armour": 30.0,
+   "Magic resist": 30.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "wolfpelt_mantle",
+  "name": "Wolf-Pelt Mantle",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2650,
+  "description": "Still warm, and still angry.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Blood Up",
+  "passive_text": "Below 50% health, your basics heal you for 3% of your missing health.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "grovewarden_girdle",
+    "name": "Ivy Girdle"
+   },
+   {
+    "id": "vampires_draught",
+    "name": "Vampire's Draught"
+   }
+  ],
+  "stats": {
+   "Health": 450.0,
+   "Attack damage": 40.0,
+   "Health regen": 4.5,
+   "Lifesteal": 0.07
+  },
+  "art": true
+ },
+ {
+  "id": "corpse_candle",
+  "name": "Corpse-Candle",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2700,
+  "description": "Seen over the road the night before a death.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Corpse-Light",
+  "passive_text": "When you would die, you fight on as a ghost for 3s, then die. Get a champion takedown in that time and you live, at 20% health. Once every 150s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "mothknife",
+    "name": "Mothknife"
+   },
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Skull-Cup"
+   }
+  ],
+  "stats": {
+   "Health": 275.0,
+   "Attack damage": 60.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "eelskin_wrap",
+  "name": "Eelskin Wrap",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2700,
+  "description": "Still slick. Hands slide off it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Slippery",
+  "passive_text": "When crowd control lands on you, gain 1 move speed that fades over 1.5s and pass through units for 1.5s. Once every 12s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "spellbreaker_shroud",
+    "name": "Spellbreaker Shroud"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Attack damage": 40.0,
+   "Magic resist": 35.0,
+   "Attack speed": 0.15
+  },
+  "art": true
+ },
+ {
+  "id": "tatterhood_cloak",
+  "name": "Fox's Brush",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2700,
+  "description": "Harder to catch than the fox it came off.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Moving Target",
+  "passive_text": "While moving, you take 12% less damage from champions.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   },
+   {
+    "id": "wardstone_mantle",
+    "name": "Wardstone Mantle"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Attack damage": 45.0,
+   "Magic resist": 30.0,
+   "Attack speed": 0.25
+  },
+  "art": true
+ },
+ {
+  "id": "hedgeknights_buckler",
+  "name": "Hedge-Knight's Buckler",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2700,
+  "description": "A poor knight's shield, and a good one.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Parry",
+  "passive_text": "Every 8s, the next champion basic that hits you deals 60% less, and your next basic on that champion within 2s deals 40 + 40% bonus AD bonus physical damage.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ironbrand_cutlass",
+    "name": "Dockhand's Knuckles"
+   },
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Attack damage": 45.0,
+   "Armour": 30.0,
+   "Attack speed": 0.15
+  },
+  "art": true
+ },
+ {
+  "id": "turnip_lantern",
+  "name": "Keening Comb",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2700,
+  "description": "Found by the river. Pick it up, and she comes looking for it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Wail",
+  "passive_text": "When a champion's hit takes you below 30% health, enemies within 3m are frightened for 1s. Once every 60s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "grovewarden_girdle",
+    "name": "Ivy Girdle"
+   },
+   {
+    "id": "wardstone_mantle",
+    "name": "Wardstone Mantle"
+   }
+  ],
+  "stats": {
+   "Health": 625.0,
+   "Magic resist": 35.0,
+   "Health regen": 5.5,
+   "Ability haste": 5.0
+  },
+  "art": true
+ },
+ {
+  "id": "leechtooth_flail",
+  "name": "Leechtooth Flail",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2700,
+  "description": "The teeth came from the river. So did the leeches.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Bloodletting",
+  "passive_text": "Your abilities that hit an enemy champion heal you for 3% of your missing health, up to 3 champions a cast.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "vampires_draught",
+    "name": "Vampire's Draught"
+   },
+   {
+    "id": "rendfang_pick",
+    "name": "Rendfang Pick"
+   }
+  ],
+  "stats": {
+   "Attack damage": 70.0,
+   "Ability haste": 20.0,
+   "Lifesteal": 0.07
+  },
+  "art": true
+ },
+ {
+  "id": "gloam_glass",
+  "name": "Nightjar Wing",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2700,
+  "description": "Nightjars hunt at dusk. They bring it with them.",
+  "active": "Gloaming",
+  "active_cooldown": 60.0,
+  "active_text": "Aim within 8m: for 3s, enemy champions in a 3.5m circle there see only 2m around them.",
+  "passive": "Dusk-Struck",
+  "passive_text": "Your abilities deal 10% more damage to champions whose sight is cut.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "eclipse_prism",
+    "name": "Eclipse Prism"
+   },
+   {
+    "id": "whisperglass",
+    "name": "Whisperglass"
+   }
+  ],
+  "stats": {
+   "Ability power": 100.0,
+   "Magic resist": 20.0,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
+  "id": "bellwether_bell",
+  "name": "Shepherd's Whistle",
+  "tier": 3,
+  "category": "Support",
+  "cost": 2700,
+  "description": "The flock comes to the whistle, not to the dog.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Whistled In",
+  "passive_text": "Allied champions within 9m who are moving toward you gain 0.5 move speed.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "wayfarers_banner",
+    "name": "Wayfarer's Banner"
+   },
+   {
+    "id": "aegis_of_the_line",
+    "name": "Aegis of the Line"
+   }
+  ],
+  "stats": {
+   "Health": 600.0,
+   "Armour": 35.0,
+   "Move speed": 0.2,
+   "Health regen": 2.5,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
+  "id": "witchs_ladder",
+  "name": "Witch's Ladder",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2700,
+  "description": "A cord with feathers knotted in. Each knot holds one bad thing.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Knots",
+  "passive_text": "You carry 3 knots. When an enemy champion's hit would take more than 8% of your max health, a knot unties and halves it; a knot reties every 20s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "eclipse_prism",
+    "name": "Eclipse Prism"
+   },
+   {
+    "id": "wardstone_mantle",
+    "name": "Wardstone Mantle"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Ability power": 75.0,
+   "Magic resist": 40.0,
+   "Ability haste": 5.0
+  },
+  "art": true
+ },
+ {
+  "id": "bargemans_arbalest",
+  "name": "Bargeman's Arbalest",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2800,
+  "description": "Built for keeping boarders off the barge.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Fend Off",
+  "passive_text": "When an enemy champion dashes or blinks to within 3m of you, your next basic on them within 2s knocks them 2m back and slows them 30% for 1s. Once every 10s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "hollow_point_quiver",
+    "name": "Hollow Point Quiver"
+   },
+   {
+    "id": "ironbrand_cutlass",
+    "name": "Dockhand's Knuckles"
+   }
+  ],
+  "stats": {
+   "Health": 150.0,
+   "Attack damage": 55.0,
+   "Armour": 20.0,
+   "Attack speed": 0.25
+  },
+  "art": true
+ },
+ {
+  "id": "drowned_bell",
+  "name": "Drowned Bell",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2800,
+  "description": "It still rings under the millpond on still nights.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Toll for Many",
+  "passive_text": "An ability that hits 2 enemy champions deals 10% more damage to each; one that hits 3 or more deals 20% more.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   },
+   {
+    "id": "runewardens_tome",
+    "name": "Runewarden's Tome"
+   }
+  ],
+  "stats": {
+   "Mana": 350.0,
+   "Ability power": 120.0,
    "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "empty_road_bell",
+  "name": "Highwayman's Mask",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2800,
+  "description": "Worn by the one who waits on the empty road. He sees you first.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Empty Road",
+  "passive_text": "While no allied champion is within 15m of you, an enemy champion who comes within 12m is revealed for 3s. Once per champion every 20s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Skull-Cup"
+   },
+   {
+    "id": "spellbreaker_shroud",
+    "name": "Spellbreaker Shroud"
+   }
+  ],
+  "stats": {
+   "Health": 425.0,
+   "Attack damage": 50.0,
+   "Magic resist": 30.0,
+   "Move speed": 0.2
+  },
+  "art": true
+ },
+ {
+  "id": "gravebell_standard",
+  "name": "Mourning Standard",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2800,
+  "description": "Carried at the front of the siege, and at the back of the funeral.",
+  "active": "Plant the Standard",
+  "active_cooldown": 90.0,
+  "active_text": "Plant it at your feet for 8s. Allied champions within 6m of it deal 15% more damage to towers and monsters, and take 15% less from them.",
+  "passive": "Muster",
+  "passive_text": "Allied minions within 6m of you deal 25% more damage to towers.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "ironsong_standard",
+    "name": "Singing Horseshoe"
+   },
+   {
+    "id": "wayfarers_banner",
+    "name": "Wayfarer's Banner"
+   }
+  ],
+  "stats": {
+   "Health": 450.0,
+   "Armour": 30.0,
+   "Magic resist": 30.0,
+   "Ability haste": 15.0
+  },
+  "art": true
+ },
+ {
+  "id": "last_sheaf_sickle",
+  "name": "Sickle of the Last Sheaf",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2800,
+  "description": "The last sheaf is cut together, and kept till spring.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Last Sheaf",
+  "passive_text": "Your abilities deal 10% more damage to champions below 50% health.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "rendfang_pick",
+    "name": "Rendfang Pick"
+   },
+   {
+    "id": "skirmishers_talon",
+    "name": "Skirmisher's Talon"
+   }
+  ],
+  "stats": {
+   "Attack damage": 70.0,
+   "Attack speed": 0.2,
+   "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "witchs_hourglass",
+  "name": "Witch's Hourglass",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2800,
+  "description": "Turn it over and the afternoon starts again. Then it sends the bill.",
+  "active": "Turn the Glass",
+  "active_cooldown": 75.0,
+  "active_text": "For 6s, your next 3 Q, W or E casts come back after 1s. When the 6s end, each ability cast this way goes on its full cooldown plus 2s.",
+  "passive": "Running Sand",
+  "passive_text": "Each ability you cast takes 2s off Turn the Glass.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "whisperglass",
+    "name": "Whisperglass"
+   },
+   {
+    "id": "runewardens_tome",
+    "name": "Runewarden's Tome"
+   }
+  ],
+  "stats": {
+   "Mana": 350.0,
+   "Ability power": 90.0,
+   "Ability haste": 30.0
   },
   "art": true
  },
@@ -1997,12 +3804,12 @@
   "tier": 3,
   "category": "Magic",
   "cost": 2900,
-  "description": "Wych-elm wound with tally cords, a whole coven's count in one rod. What it counts once it counts again.",
+  "description": "Wych-elm wound with a whole coven's tally cords.",
   "active": "Count Them Off",
   "active_cooldown": 45.0,
-  "active_text": "Aim within 8m: after 0.6s the notches burst in a 2.5m ring for 50 + 35% AP + 4 per tally magic damage (half again to monsters). Enemy champions caught are counted for 3s: your abilities deal them 10% more. The cooldown is 1s shorter per tally, down to 30s.",
+  "active_text": "Target a point within 8m. After 0.6s, a 2.5m ring deals 50 + 35% AP + 4 per tally magic damage (50% more to monsters). Champions hit take 10% more damage from your abilities for 3s. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Second Count",
-  "passive_text": "Jungle legendary (Fell only), keeps Witch-Marks (now 25%) and Count Them Off. The ring lands again 1s later for 60% damage; champions hit by both are stunned for 0.75s.",
+  "passive_text": "Jungle legendary (Fell only). Your abilities deal 25% more damage to monsters. Count Them Off lands again 1s later for 60% damage; champions hit by both are stunned for 0.75s.",
   "charges": 0,
   "components": [
    {
@@ -2023,6 +3830,97 @@
   "art": true
  },
  {
+  "id": "mummers_mask",
+  "name": "Mummer's Mask",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2900,
+  "description": "Painted for the midwinter play. Nobody can say who wore it.",
+  "active": "Mummer's Turn",
+  "active_cooldown": 75.0,
+  "active_text": "A mummer in your shape walks on the way you are moving for 4s. Enemies can't tell it from you until a champion hits it.",
+  "passive": "Stage Fright",
+  "passive_text": "An enemy champion who hits your mummer is revealed for 3s and slowed 30% for 1s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "mothknife",
+    "name": "Mothknife"
+   },
+   {
+    "id": "rendfang_pick",
+    "name": "Rendfang Pick"
+   }
+  ],
+  "stats": {
+   "Attack damage": 75.0,
+   "Move speed": 0.1,
+   "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "oathbreakers_gage",
+  "name": "Oathbreaker's Gage",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2900,
+  "description": "Thrown at the feet. Picking it up is the answer.",
+  "active": "Throw Down the Gage",
+  "active_cooldown": 60.0,
+  "active_text": "Mark an enemy champion within 6m for 8s: you deal them 12% more damage and gain 0.4 move speed. If they get 10m away, the mark ends and they are slowed 40% for 1.5s and revealed for 3s.",
+  "passive": "Satisfaction",
+  "passive_text": "If your quarry dies while marked, heal 20% of your max health and the cooldown drops to 15s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Skull-Cup"
+   },
+   {
+    "id": "ironbrand_cutlass",
+    "name": "Dockhand's Knuckles"
+   }
+  ],
+  "stats": {
+   "Health": 400.0,
+   "Attack damage": 55.0,
+   "Armour": 25.0
+  },
+  "art": true
+ },
+ {
+  "id": "ox_yoke",
+  "name": "Ox-Yoke",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 2900,
+  "description": "Made for two oxen. One tank fills it.",
+  "active": "",
+  "active_cooldown": 0.0,
+  "active_text": "",
+  "passive": "Yoked",
+  "passive_text": "Your shoves, drags and pulls move enemies 30% farther.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "aegis_of_the_line",
+    "name": "Aegis of the Line"
+   },
+   {
+    "id": "grovewarden_girdle",
+    "name": "Ivy Girdle"
+   }
+  ],
+  "stats": {
+   "Health": 600.0,
+   "Armour": 45.0,
+   "Health regen": 4.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
   "id": "gloaming_hatchet",
   "name": "Gloaming Hatchet",
   "tier": 3,
@@ -2031,9 +3929,9 @@
   "description": "The Sootbrand when its keeper stopped needing the light. The dusk follows it about, and the wards along its road go blind.",
   "active": "Snuff the Lantern",
   "active_cooldown": 45.0,
-  "active_text": "For 4s wards, towers and minions lose sight of you; only enemy champions within 7m can see you. Dealing damage puts it out, and so does taking it. The cooldown is 1s shorter per tally, down to 30s.",
+  "active_text": "For 4s, wards, towers and minions cannot see you; enemy champions within 7m still can. Dealing or taking damage ends it. Cooldown 1s shorter per tally (30s minimum).",
   "passive": "Blackout",
-  "passive_text": "Jungle legendary (Fell only), keeps Snuff the Lantern. While snuffed, enemy wards and lanterns within 9m see nothing. Your first hit on a champion while snuffed deals 40 + 60% bonus AD physical damage and slows 35% for 1.5s.",
+  "passive_text": "Jungle legendary (Fell only). While Snuff the Lantern lasts, enemy wards and lanterns within 9m see nothing, and your first hit on a champion deals 40 + 60% bonus AD physical damage and slows them 35% for 1.5s.",
   "charges": 0,
   "components": [
    {
@@ -2061,9 +3959,9 @@
   "description": "A maul of thighbone and jaw from the hound ossuary. Every pack in the wood knows whose it is.",
   "active": "Rouse the Den",
   "active_cooldown": 60.0,
-  "active_text": "Within 6m of a living camp (not a pit boss): every monster in it turns on the nearest enemy champion within 9m of the camp for 4s, leaving its leash to hunt only them, then walks home. With no enemy champion near, the camp is calmed instead and will not swing at you for 3s. The cooldown is 1s shorter per tally, down to 40s.",
+  "active_text": "Near a camp (6m): its monsters attack the nearest enemy champion within 9m for 6s. If none is near, the camp does not attack you for 3s. Cooldown 1s shorter per tally (40s minimum).",
   "passive": "Run with the Pack",
-  "passive_text": "Jungle legendary (Fell only), keeps Rouse the Den. Roused monsters hunt for 6s and move 25% faster. Champions they hit take 12% more damage from you for 3s. Monsters deal you 25% less damage.",
+  "passive_text": "Jungle legendary (Fell only). Roused monsters hunt for 6s and move 25% faster, and champions they hit take 12% more damage from you for 3s. Monsters deal you 25% less damage.",
   "charges": 0,
   "components": [
    {
@@ -2072,7 +3970,7 @@
    },
    {
     "id": "warlords_edge",
-    "name": "Warlord's Edge"
+    "name": "Warlord's Skull-Cup"
    }
   ],
   "stats": {
@@ -2102,7 +4000,7 @@
    },
    {
     "id": "ironsong_standard",
-    "name": "Ironsong Standard"
+    "name": "Singing Horseshoe"
    }
   ],
   "stats": {
