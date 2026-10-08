@@ -1284,6 +1284,37 @@
   "art": true
  },
  {
+  "id": "wychbrand",
+  "name": "Wychbrand",
+  "tier": 2,
+  "category": "Magic",
+  "cost": 1350,
+  "description": "A tally-stick cut from wych-elm and scored with witch-marks. The notches smoulder, and every one of them can be thrown.",
+  "active": "Count Them Off",
+  "active_cooldown": 45.0,
+  "active_text": "Aim within 8m: after 0.6s the notches burst in a 2.5m ring for 50 + 35% AP + 4 per tally magic damage (half again to monsters). Enemy champions caught are counted for 3s: your abilities deal them 10% more. The cooldown is 1s shorter per tally, down to 30s.",
+  "passive": "Witch-Marks",
+  "passive_text": "Jungle brand for spell-damage junglers (Fell only). Your abilities deal 15% more damage to monsters. At 15 tallies the brand takes: Count Them Off lands in a 3m ring and the count lasts 4s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "tally_stick",
+    "name": "Tally-Stick"
+   },
+   {
+    "id": "ember_lens",
+    "name": "Ember Lens"
+   }
+  ],
+  "stats": {
+   "Health": 120.0,
+   "Ability power": 40.0,
+   "Health regen": 3.0,
+   "Ability haste": 10.0
+  },
+  "art": true
+ },
+ {
   "id": "hollow_point_quiver",
   "name": "Hollow Point Quiver",
   "tier": 2,
@@ -1420,7 +1451,7 @@
   "active_cooldown": 0.0,
   "active_text": "",
   "passive": "Lantern Wake",
-  "passive_text": "Jungle brand for tanks (Fell only). Each camp you clear hangs a lantern at its mouth for 90s (up to 4; the oldest goes out). A lantern sees 6m and dies to one hit; when an enemy champion walks into its light it rings, warning your team and revealing them for 2s. At 15 tallies the brand takes: up to 6 lanterns, and a ringing lantern slows the intruder 25% for 1.5s.",
+  "passive_text": "Jungle brand for tanks (Fell only). The camp you are fighting is lamplit: each of its monsters within 6m of you burns for 10 + 1.5% of your max health magic damage a second. Each camp you clear hangs a lantern at its mouth for 90s (up to 4; the oldest goes out). A lantern sees 6m and dies to one hit; when an enemy champion walks into its light it rings, warning your team and revealing them for 2s. At 15 tallies the brand takes: up to 6 lanterns, and a ringing lantern slows the intruder 25% for 1.5s.",
   "charges": 0,
   "components": [
    {
@@ -1957,6 +1988,127 @@
    "Health regen": 7.0,
    "Mana regen": 6.0,
    "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "coven_rod",
+  "name": "Coven Rod",
+  "tier": 3,
+  "category": "Magic",
+  "cost": 2900,
+  "description": "Wych-elm wound with tally cords, a whole coven's count in one rod. What it counts once it counts again.",
+  "active": "Count Them Off",
+  "active_cooldown": 45.0,
+  "active_text": "Aim within 8m: after 0.6s the notches burst in a 2.5m ring for 50 + 35% AP + 4 per tally magic damage (half again to monsters). Enemy champions caught are counted for 3s: your abilities deal them 10% more. The cooldown is 1s shorter per tally, down to 30s.",
+  "passive": "Second Count",
+  "passive_text": "Jungle legendary for spell-damage junglers (Fell only), built from the Wychbrand, keeping Witch-Marks (now 25% on monsters) and Count Them Off. One second after the ring lands it lands again on the same ground for 60% of the damage, and an enemy champion caught by both is pinned for 0.75s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "wychbrand",
+    "name": "Wychbrand"
+   },
+   {
+    "id": "cinderglass_torch",
+    "name": "Cinderglass Torch"
+   }
+  ],
+  "stats": {
+   "Health": 250.0,
+   "Ability power": 100.0,
+   "Health regen": 3.0,
+   "Ability haste": 20.0
+  },
+  "art": true
+ },
+ {
+  "id": "gloaming_hatchet",
+  "name": "Gloaming Hatchet",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2950,
+  "description": "The Sootbrand when its keeper stopped needing the light. The dusk follows it about, and the wards along its road go blind.",
+  "active": "Snuff the Lantern",
+  "active_cooldown": 45.0,
+  "active_text": "For 4s wards, towers and minions lose sight of you; only enemy champions within 7m can see you. Dealing damage puts it out, and so does taking it. The cooldown is 1s shorter per tally, down to 30s.",
+  "passive": "Blackout",
+  "passive_text": "Jungle legendary for assassins (Fell only), built from the Sootbrand, keeping Snuff the Lantern (and its taking at 15 tallies). While you are snuffed, every enemy ward and lantern within 9m of you sees nothing. Out of the Dark: the blow that relights your lantern on an enemy champion deals 40 + 60% bonus AD physical damage more and slows them 35% for 1.5s.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "sootbrand",
+    "name": "Sootbrand"
+   },
+   {
+    "id": "rendfang_pick",
+    "name": "Rendfang Pick"
+   }
+  ],
+  "stats": {
+   "Health": 200.0,
+   "Attack damage": 60.0,
+   "Ability haste": 18.0
+  },
+  "art": true
+ },
+ {
+  "id": "packbone_maul",
+  "name": "Packbone Maul",
+  "tier": 3,
+  "category": "Attack",
+  "cost": 2950,
+  "description": "A maul of thighbone and jaw from the hound ossuary. Every pack in the wood knows whose it is.",
+  "active": "Rouse the Den",
+  "active_cooldown": 60.0,
+  "active_text": "Within 6m of a living camp (not a pit boss): every monster in it turns on the nearest enemy champion within 9m of the camp for 4s, leaving its leash to hunt only them, then walks home. With no enemy champion near, the camp is calmed instead and will not swing at you for 3s. The cooldown is 1s shorter per tally, down to 40s.",
+  "passive": "Run with the Pack",
+  "passive_text": "Jungle legendary for fighters (Fell only), built from the Marrowbrand, keeping Rouse the Den. Roused monsters hunt for 6s (7s once the brand has taken) and run 25% faster, and an enemy champion they strike is harried for 3s: your basics and abilities deal them 12% more. Den-Keeper: monsters deal you 25% less damage.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "marrowbrand",
+    "name": "Marrowbrand"
+   },
+   {
+    "id": "warlords_edge",
+    "name": "Warlord's Edge"
+   }
+  ],
+  "stats": {
+   "Health": 550.0,
+   "Attack damage": 55.0,
+   "Health regen": 8.0
+  },
+  "art": true
+ },
+ {
+  "id": "wakelight_crook",
+  "name": "Wakelight Crook",
+  "tier": 3,
+  "category": "Defense",
+  "cost": 3000,
+  "description": "A shepherd's crook with the wake-lantern hung from its hook. Whatever it is held over belongs to the flock.",
+  "active": "Hold the Prize",
+  "active_cooldown": 75.0,
+  "active_text": "Hang the crook over the epic or large monster nearest your aim within 7m for 8s: your team deals it 20% more damage, and enemy champions deal it 50% less, Fell included.",
+  "passive": "Lantern Wake",
+  "passive_text": "Jungle legendary for tanks (Fell only), built from the Wakebrand, keeping its lamplit camps and lanterns; the lanterns now burn for 150s and see 8m.",
+  "charges": 0,
+  "components": [
+   {
+    "id": "wakebrand",
+    "name": "Wakebrand"
+   },
+   {
+    "id": "ironsong_standard",
+    "name": "Ironsong Standard"
+   }
+  ],
+  "stats": {
+   "Health": 600.0,
+   "Armour": 40.0,
+   "Magic resist": 40.0
   },
   "art": true
  }
