@@ -118,7 +118,7 @@ if tbd:
       <div class="section-head">
         <p class="eyebrow">{len(tbd)} characters</p>
         <h2>TBD</h2>
-        <p class="lede">Faces screened for the roster that aren't being built yet. Some may come back; some never will.</p>
+        <p class="lede">Characters considered for the roster that aren't being built yet.</p>
       </div>
       <ul class="roster" aria-label="TBD">
 {chr(10).join(tile(cid) for cid in tbd)}
@@ -183,7 +183,7 @@ page = f'''<!DOCTYPE html>
 <footer class="footer">
   <div class="wrap footer-inner">
     <p><strong>AlphaMOBA</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development.</p>
-    <p class="fine">The regions are the world's; the pitches are not final, and some will never be built.</p>
+    <p class="fine">Regions and character concepts aren't final.</p>
   </div>
 </footer>
 <script src="../assets/js/site.js" defer></script>

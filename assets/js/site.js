@@ -44,7 +44,7 @@
           '<div class="face" aria-hidden="true">' + face + '<span class="cls">' + esc(c.class) + '</span></div>' +
           '<div class="who"><strong>' + esc(c.name) + '</strong><span>' + esc(c.title) + '</span>' +
           (c.pending ? '<em class="pending">Kit in design</em>' : '') + '</div></a></li>';
-      }).join("") || '<li class="roster-empty">No champion answers to that.</li>';
+      }).join("") || '<li class="roster-empty">No champions match.</li>';
       var count = document.querySelector("[data-roster-count]");
       if (count) count.textContent = shown.length === all.length ? all.length + " champions" : shown.length + " of " + all.length;
     }
@@ -111,7 +111,7 @@
           (stats ? '<ul class="item-stats">' + stats + "</ul>" : "") +
           passive + active +
           '<p class="item-desc">' + esc(i.description) + "</p>" + build + "</li>";
-      }).join("") || '<li class="roster-empty">Nothing on the shelf matches.</li>';
+      }).join("") || '<li class="roster-empty">No items match.</li>';
       var count = document.querySelector("[data-item-count]");
       if (count) count.textContent = shown.length === allItems.length ? allItems.length + " items" : shown.length + " of " + allItems.length;
     }
@@ -372,7 +372,7 @@
           '<td class="num">' + r.games + "</td>" +
           '<td class="num wide-only">' + (r.kda != null ? (+r.kda).toFixed(2) : "–") + "</td>" +
           '<td class="num">' + trend + "</td></tr>";
-      }).join("") || '<tr><td colspan="8" class="fine">No champion answers to that.</td></tr>';
+      }).join("") || '<tr><td colspan="8" class="fine">No champions match.</td></tr>';
       document.querySelector("[data-tier-note]").textContent = role === "all"
         ? rows.length + " champions across every role. The band behind each win rate is where the true rate most likely sits; the line is 50%."
         : rows.length + " champions played " + ROLE_NAMES[role].toLowerCase() + ". “Since last” is places moved since the previous update.";
@@ -419,7 +419,7 @@
           '<td class="num">' + pct(wr) + "</td>" +
           '<td class="num wide-only">' + streak + "</td>" +
           "<td>" + (a.main ? '<a class="champ-cell" href="' + ROOT + "champions/" + esc(a.main) + '.html" title="' + esc(champName(a.main)) + '">' + face(a.main, 32) + '<span class="wide-only">' + esc(champName(a.main)) + "</span></a>" : "–") + "</td></tr>";
-      }).join("") || '<tr><td colspan="8" class="fine">Nobody on the ladder by that name.</td></tr>';
+      }).join("") || '<tr><td colspan="8" class="fine">No players match.</td></tr>';
       document.querySelector("[data-ladder-count]").textContent = "Showing " + shown.length + " of " + rows.length +
         (ladderRole === "all" ? " accounts" : " " + ROLE_NAMES[ladderRole].toLowerCase() + " mains") + ".";
       var more = document.querySelector("[data-ladder-more]");

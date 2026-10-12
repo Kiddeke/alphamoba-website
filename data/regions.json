@@ -3,82 +3,82 @@
   {
    "id": "lodge",
    "name": "The Wardens' Lodge",
-   "blurb": "Rangers, gate-wardens and hearth folk of the great oaks. They keep the roads and the hunt."
+   "blurb": "Rangers and wardens who live in the great oaks and patrol the forest roads."
   },
   {
    "id": "coven",
    "name": "The Coven",
-   "blurb": "The witches' hollow: candle, cauldron and thorn, and everything stitched or brewed in it."
+   "blurb": "The witches' home: candles, cauldrons, thorns, and the things they stitch and brew."
   },
   {
    "id": "hushwood",
    "name": "The Hushwood",
-   "blurb": "The old deep wood and what grew up in it — fae, dryads, wyrmblood and worse."
+   "blurb": "The oldest part of the forest, home to fae, dryads and the wyrmblood."
   },
   {
    "id": "mistway",
    "name": "The Mistway",
-   "blurb": "River, bog and grey coast: the ferrymen, tollkeepers and drowned things of the water."
+   "blurb": "Rivers, bogs and the grey coast: ferrymen, tollkeepers and things that drowned."
   },
   {
    "id": "city",
    "name": "The Hanging City",
-   "blurb": "The timber city on its stilts: guilds, garrison, trades and the stage."
+   "blurb": "A timber city built on stilts, with its guilds, garrison, tradespeople and theatre."
   },
   {
    "id": "ossuary",
    "name": "The Ossuary",
-   "blurb": "The bone lands under the old skull: the dead, the debts and the ones who collect them."
+   "blurb": "The bone lands under the giant skull, home to the dead and the debt collectors."
   },
   {
    "id": "frostfell",
    "name": "The Frostfell",
-   "blurb": "The winter north: ice, raiders, the long walk and the wyrm."
+   "blurb": "The frozen north: ice, raiders and the wyrm."
   },
   {
    "id": "ironmarch",
    "name": "The Ironmarch",
-   "blurb": "Forge and powder: smiths, bombards and the coal that feeds them."
+   "blurb": "Forges and gunpowder: smiths, cannons and coal."
   },
   {
    "id": "farshores",
    "name": "The Far Shores",
-   "blurb": "A country over the sea, past every road the wood keeps. Its people come one at a time and say little of it: a spear, a masked watcher, a tongue nobody here can read."
+   "blurb": "A country across the sea. Only a few of its people have come to the forest so far: a spearman, a masked watcher and a writer of a script nobody here can read."
   },
   {
    "id": "lantern",
    "name": "The Lantern Isles",
-   "blurb": "Shrine bells and paper lanterns, masterless swords and the curses that follow them, washed in from an older story."
+   "blurb": "Shrine bells, paper lanterns, wandering swordsmen and the curses that follow them."
   },
   {
    "id": "rooftops",
    "name": "The Rooftops",
-   "blurb": "Uniforms, rivals and rooftops at dusk: ordinary kids from a story set after the last bell, handed powers they never asked for."
+   "blurb": "Schoolkids in uniform who were given powers they didn't ask for."
   },
   {
    "id": "neon",
    "name": "The Neon Sprawl",
-   "blurb": "Chrome and rain-slick neon. Pilots, androids and a cybered oni, and the tinker who keeps them all running."
+   "blurb": "A neon city of mech pilots, androids and a cybernetic oni, plus the tinkerer who repairs them."
   },
   {
    "id": "starlit",
    "name": "The Starlit Court",
-   "blurb": "Wands, mascots and a demon lord on a throne of skulls. They brought the sparkle with them."
+   "blurb": "Magical girls, mascots and a demon lord."
   },
   {
    "id": "fallensky",
    "name": "The Fallen Sky",
-   "blurb": "Fallen out of the night sky: star-crowned, feathered, or made of glass and starlight. Of no kingdom, and welcome in none."
+   "blurb": "Beings that fell from the night sky, made of feathers, glass or starlight. They belong to no kingdom."
   },
   {
    "id": "risendeep",
    "name": "The Risen Deep",
-   "blurb": "Risen from below, out of the black water and out of the fire under the stone."
+   "blurb": "Creatures from deep underground, out of black water and underground fire."
   },
   {
    "id": "rootdark",
    "name": "The Rootdark",
-   "blurb": "Grown in the dark and never meant to be seen: a fungus that talks, a hive and its queen, a walking hill, a marsh with a skull for a head, a moth keeping vigil."
+   "blurb": "Things that grew in the dark: a talking fungus, a hive and its queen, a walking hill, a skull-headed marsh and a moth."
   }
  ],
  "champions": {
