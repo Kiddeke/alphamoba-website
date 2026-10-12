@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stats &amp; rankings · AlphaMOBA</title>
+<meta name="description" content="AlphaMOBA by the numbers: every champion's tier, win rate and pick rate by role, the items that win, and the ranked ladder from Seedling to the top ten.">
+<meta property="og:title" content="Stats &amp; rankings · AlphaMOBA">
+<meta property="og:image" content="https://alphamoba.com/assets/img/portraits/mochi.png">
+<link rel="canonical" href="https://alphamoba.com/stats/">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="wordmark" href="../index.html">AlphaMOBA</a>
+  <nav class="nav" aria-label="Main">
+    <a href="../champions/">Champions</a>
+    <a href="../items/">Items</a>
+    <a href="../maps/">Maps</a>
+    <a href="../stats/" aria-current="page">Stats</a>
+    <a href="../in-development/">In development</a>
+    <a href="../#montage">Watch</a>
+    <a class="nav-play" href="../#play">Play</a>
+    <a href="../#status">Status</a>
+  </nav>
+</header>
+
+<main id="main" data-stats>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">By the numbers</p>
+        <h1>Stats &amp; rankings</h1>
+        <p class="lede">Every night the match farm plays the game against itself: full 5v5 matches between bot accounts, each with its own champion pool, role and skill. These are their numbers, and their ladder. Players' own games join them once ranked opens.</p>
+        <p class="regions"><a href="#tierlist">Tier list</a> · <a href="#items">Items</a> · <a href="#ladder">Ranked ladder</a></p>
+      </div>
+      <dl class="stat-tiles" data-stat-tiles>
+        <div class="stat-tile"><dt>Matches</dt><dd>…</dd></div>
+        <div class="stat-tile"><dt>Average game</dt><dd>…</dd></div>
+        <div class="stat-tile"><dt>Blue side wins</dt><dd>…</dd></div>
+        <div class="stat-tile"><dt>Updated</dt><dd>…</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="tierlist">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Champions</p>
+        <h2>Tier list</h2>
+        <p class="lede">Tiers come from win rate pulled toward even by how few games a champion has (S+ wins most, D least), so a hot streak over a handful of games doesn't make a champion S+. Pick a role to rank champions only in it. Click a column to sort.</p>
+      </div>
+      <div class="toolbar" role="group" aria-label="Filter by role">
+        <button class="filter" data-role-filter="all" aria-pressed="true">All roles</button>
+        <button class="filter" data-role-filter="top" aria-pressed="false">Top</button>
+        <button class="filter" data-role-filter="jungle" aria-pressed="false">Jungle</button>
+        <button class="filter" data-role-filter="mid" aria-pressed="false">Mid</button>
+        <button class="filter" data-role-filter="bot" aria-pressed="false">Bot</button>
+        <button class="filter" data-role-filter="support" aria-pressed="false">Support</button>
+        <input type="search" data-tier-search placeholder="Find a champion" aria-label="Find a champion">
+      </div>
+      <div class="table-scroll">
+        <table class="stats-table" data-tier-table>
+          <thead><tr>
+            <th scope="col"><button data-sort="rank">#</button></th>
+            <th scope="col">Champion</th>
+            <th scope="col"><button data-sort="tier">Tier</button></th>
+            <th scope="col" class="num"><button data-sort="win_rate">Win rate</button></th>
+            <th scope="col" class="num"><button data-sort="pick_rate">Pick rate</button></th>
+            <th scope="col" class="num"><button data-sort="games">Games</button></th>
+            <th scope="col" class="num wide-only"><button data-sort="kda">KDA</button></th>
+            <th scope="col" class="num"><button data-sort="win_delta">Since last</button></th>
+          </tr></thead>
+          <tbody><tr><td colspan="8" class="fine">Loading the numbers…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="fine" data-tier-note></p>
+    </div>
+  </section>
+
+  <section class="section" id="items">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The shop</p>
+        <h2>Items that win</h2>
+        <p class="lede">Win rate of the games an item was finished in, ranked the way the tiers are, so a few lucky games don't top the list. An item bought by winners is not always what won the game, so read it beside its pick rate.</p>
+      </div>
+      <div class="table-scroll">
+        <table class="stats-table" data-item-table>
+          <thead><tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col" class="num">Win rate</th>
+            <th scope="col" class="num">Pick rate</th>
+            <th scope="col" class="num">Games</th>
+            <th scope="col" class="num">Since last</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p><button class="btn ghost small" data-item-more hidden>Show every item</button></p>
+    </div>
+  </section>
+
+  <section class="section" id="ladder">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-season>Ranked</p>
+        <h2>The ladder</h2>
+        <p class="lede">Seven tiers that grow like a tree, three divisions each and a hundred Rings to a division. Over them all, the apex: the ten best accounts in the game, numbered.</p>
+      </div>
+      <figure class="tier-chart">
+        <figcaption class="fine" data-tier-chart-caption>Accounts in each tier</figcaption>
+        <ol class="tier-bars" data-tier-bars aria-label="Accounts in each tier, lowest first"></ol>
+      </figure>
+      <div class="toolbar" role="group" aria-label="Filter the ladder by role">
+        <button class="filter" data-ladder-role="all" aria-pressed="true">Every role</button>
+        <button class="filter" data-ladder-role="top" aria-pressed="false">Top</button>
+        <button class="filter" data-ladder-role="jungle" aria-pressed="false">Jungle</button>
+        <button class="filter" data-ladder-role="mid" aria-pressed="false">Mid</button>
+        <button class="filter" data-ladder-role="bot" aria-pressed="false">Bot</button>
+        <button class="filter" data-ladder-role="support" aria-pressed="false">Support</button>
+        <input type="search" data-ladder-search placeholder="Find a player" aria-label="Find a player">
+      </div>
+      <div class="table-scroll">
+        <table class="stats-table" data-ladder-table>
+          <thead><tr>
+            <th scope="col">#</th>
+            <th scope="col">Player</th>
+            <th scope="col">Rank</th>
+            <th scope="col" class="num">Rating</th>
+            <th scope="col" class="num">Won–lost</th>
+            <th scope="col" class="num">Win rate</th>
+            <th scope="col" class="num wide-only">Streak</th>
+            <th scope="col">Main</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="fine" data-ladder-count></p>
+      <p><button class="btn ghost small" data-ladder-more hidden>Show the whole ladder</button></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p><strong>AlphaMOBA</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development.</p>
+    <p class="fine">Numbers come straight from the game's match farm and ranked ladder, and change every night. Balance changes reset what they can.</p>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

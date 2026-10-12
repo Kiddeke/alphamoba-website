@@ -158,6 +158,7 @@ page = f'''<!DOCTYPE html>
     <a href="../champions/">Champions</a>
     <a href="../items/">Items</a>
     <a href="../maps/">Maps</a>
+    <a href="../stats/">Stats</a>
     <a href="../in-development/" aria-current="page">In development</a>
     <a href="../#montage">Watch</a>
     <a class="nav-play" href="../#play">Play</a>

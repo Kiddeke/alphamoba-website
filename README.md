@@ -12,9 +12,11 @@ stylesheet, one script, no build step, served by GitHub Pages at
 - `champions/` — the roster (`index.html`, filtered in the browser) and one
   static page per champion (`azra.html` … `yip.html`), generated.
 - `items/` — the shop, filtered in the browser by tier and category.
+- `stats/` — the tier list by role, the items that win, and the ranked
+  ladder, drawn in the browser from `data/stats.json`.
 - `maps/` — the Hushwood drawn as an SVG from the game's own map graph, plus
   the Wide Wood and the Toll Road.
-- `data/` — `champions.json`, `items.json`, `map.json`, generated.
+- `data/` — `champions.json`, `items.json`, `map.json`, `stats.json`, generated.
 - `assets/` — `css/site.css`, `js/site.js`, and the images the site owns.
 - `tools/` — `build_data.py` and `champion.template.html`, the generator.
 
@@ -29,7 +31,10 @@ checkout:
 python3 tools/build_data.py ../alphamoba-unity
 ```
 
-That rewrites `data/*.json` and every `champions/<id>.html`. Only the Python
+That rewrites `data/*.json` and every `champions/<id>.html`. The stats page
+reads the game's match farm (`GameData/stats/stats.json`) and ranked ladder
+(`GameData/ranked/`), which change every night; to pick those up alone, run
+`python3 tools/build_stats.py ../alphamoba-unity`. Only the Python
 standard library is needed. Each champion's accent colour is lifted from its
 own texture atlas the same way the game's portrait wash is (the heaviest hue
 among the saturated, mid-value texels), so a champion that changes colour in

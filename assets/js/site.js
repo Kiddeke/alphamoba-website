@@ -310,4 +310,188 @@
       ww.appendChild(el("text", { x: pad + 3, y: S - pad - 3, fill: "#8fa385", "font-size": 3.4, "text-anchor": "start", "font-family": "Source Sans 3, sans-serif" }, "N ↑ is up"));
     });
   }
+
+  // ------------------------------------------------------------ stats & rankings
+  var statsPage = document.querySelector("[data-stats]");
+  if (statsPage) {
+    var TIER_ORDER = { "S+": 0, "S": 1, "A": 2, "B": 3, "C": 4, "D": 5 };
+    var ROLE_NAMES = { top: "Top", jungle: "Jungle", mid: "Mid", bot: "Bot", support: "Support" };
+    var champs = {}, itemNames = {}, itemArt = {}, stats = null;
+    var role = "all", sortKey = "rank", sortDir = 1;
+    var ladderRole = "all", ladderAll = false, itemsAll = false;
+
+    function pct(n) { return (+n).toFixed(1) + "%"; }
+    function nice(id) { return id.replace(/_/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); }); }
+    function champName(id) { return champs[id] ? champs[id].name : nice(id); }
+    function face(id, size) {
+      var c = champs[id];
+      var inner = c && c.portrait
+        ? '<img src="' + ROOT + 'assets/img/portraits/' + esc(id) + '.png" alt="" width="' + size + '" height="' + size + '" loading="lazy">'
+        : esc(champName(id).charAt(0));
+      return '<span class="mini-face" style="--accent:' + esc(c ? c.colour : "#8fa385") + '">' + inner + "</span>";
+    }
+    function delta(d, unit) {
+      if (d == null || Math.abs(d) < (unit === "" ? 1 : 0.05)) return '<span class="trend same">–</span>';
+      var up = d > 0;
+      return '<span class="trend ' + (up ? "up" : "down") + '">' + (up ? "▲ " : "▼ ") + Math.abs(d).toFixed(unit === "" ? 0 : 1) + unit + "</span>";
+    }
+    function bar(rate, lo, hi) {
+      // The bar runs 30%–70%, where every win rate here lives; the faint band is the 95% range.
+      function x(v) { return Math.max(0, Math.min(100, (v - 30) / 40 * 100)); }
+      return '<span class="wr"><span class="wr-num">' + pct(rate) + '</span><span class="wr-track" aria-hidden="true">' +
+        (lo != null ? '<span class="wr-band" style="left:' + x(lo) + "%;width:" + (x(hi) - x(lo)) + '%"></span>' : "") +
+        '<span class="wr-even"></span><span class="wr-dot ' + (rate >= 50 ? "hi" : "lo") + '" style="left:' + x(rate) + '%"></span></span></span>';
+    }
+
+    function tierRows() {
+      if (role === "all") return stats.champions.map(function (c) { return c; });
+      return stats.roles[role].map(function (r) {
+        var c = stats.champions.filter(function (o) { return o.id === r.id; })[0] || {};
+        return Object.assign({}, r, { kda: c.kda, class: c.class, roles: c.roles });
+      });
+    }
+    function renderTiers() {
+      var q = (document.querySelector("[data-tier-search]").value || "").trim().toLowerCase();
+      var rows = tierRows().filter(function (r) { return !q || champName(r.id).toLowerCase().indexOf(q) !== -1; });
+      rows.sort(function (a, b) {
+        var av = sortKey === "tier" ? TIER_ORDER[a.tier] : a[sortKey], bv = sortKey === "tier" ? TIER_ORDER[b.tier] : b[sortKey];
+        if (av == null) av = -Infinity; if (bv == null) bv = -Infinity;
+        var natural = (sortKey === "rank" || sortKey === "tier") ? 1 : -1;
+        return (av < bv ? -1 : av > bv ? 1 : a.rank - b.rank) * natural * sortDir;
+      });
+      document.querySelector("[data-tier-table] tbody").innerHTML = rows.map(function (r) {
+        var sub = role === "all" ? esc(r.class || "") + (r.roles && r.roles.length && !(r.roles.length === 1 && ROLE_NAMES[r.roles[0]] === r.class) ? " · " + r.roles.map(function (x) { return ROLE_NAMES[x] || x; }).join(", ") : "")
+                                 : esc(r.class || "") + (r.class === ROLE_NAMES[role] ? "" : " · " + ROLE_NAMES[role]);
+        var trend = role === "all" ? delta(r.win_delta, "%") : (r.rank_change ? delta(r.rank_change, "") : delta(r.win_delta, "%"));
+        return "<tr><td class=\"rank-num\">" + r.rank + "</td>" +
+          '<td><a class="champ-cell" href="' + ROOT + "champions/" + esc(r.id) + '.html">' + face(r.id, 40) +
+          "<span><strong>" + esc(champName(r.id)) + "</strong><small>" + sub + "</small></span></a></td>" +
+          '<td><span class="tier-badge t-' + esc((r.tier || "").replace("+", "plus")) + '">' + esc(r.tier || "–") + "</span></td>" +
+          '<td class="num">' + bar(r.win_rate, r.lo, r.hi) + "</td>" +
+          '<td class="num">' + pct(r.pick_rate) + "</td>" +
+          '<td class="num">' + r.games + "</td>" +
+          '<td class="num wide-only">' + (r.kda != null ? (+r.kda).toFixed(2) : "–") + "</td>" +
+          '<td class="num">' + trend + "</td></tr>";
+      }).join("") || '<tr><td colspan="8" class="fine">No champion answers to that.</td></tr>';
+      document.querySelector("[data-tier-note]").textContent = role === "all"
+        ? rows.length + " champions across every role. The band behind each win rate is where the true rate most likely sits; the line is 50%."
+        : rows.length + " champions played " + ROLE_NAMES[role].toLowerCase() + ". “Since last” is places moved since the previous update.";
+      document.querySelectorAll("[data-sort]").forEach(function (b) {
+        var th = b.closest("th");
+        th.setAttribute("aria-sort", b.getAttribute("data-sort") === sortKey ? (sortDir === 1 ? "ascending" : "descending") : "none");
+      });
+    }
+
+    function renderItemsTable() {
+      var rows = itemsAll ? stats.items : stats.items.slice(0, 15);
+      document.querySelector("[data-item-table] tbody").innerHTML = rows.map(function (i, n) {
+        var art = itemArt[i.id]
+          ? '<img class="mini-item" src="' + ROOT + 'assets/img/items/' + esc(i.id) + '.png" alt="" width="36" height="36" loading="lazy">'
+          : '<span class="mini-item blank" aria-hidden="true">' + esc((itemNames[i.id] || nice(i.id)).charAt(0)) + "</span>";
+        return '<tr><td class="rank-num">' + (n + 1) + '</td><td><span class="champ-cell">' + art + "<strong>" + esc(itemNames[i.id] || nice(i.id)) + "</strong></span></td>" +
+          '<td class="num">' + bar(i.win_rate, i.lo, i.hi) + '</td><td class="num">' + pct(i.pick_rate) + '</td><td class="num">' + i.games +
+          '</td><td class="num">' + delta(i.win_delta, "%") + "</td></tr>";
+      }).join("");
+      var more = document.querySelector("[data-item-more]");
+      more.hidden = stats.items.length <= 15;
+      more.textContent = itemsAll ? "Show the top fifteen" : "Show all " + stats.items.length + " items";
+    }
+
+    function renderLadder() {
+      var R = stats.ranked, tiers = {};
+      R.tiers.forEach(function (t) { tiers[t.id] = t; });
+      var q = (document.querySelector("[data-ladder-search]").value || "").trim().toLowerCase();
+      var rows = R.accounts.filter(function (a) {
+        return (ladderRole === "all" || a.role === ladderRole) && (!q || a.name.toLowerCase().indexOf(q) !== -1);
+      });
+      var shown = ladderAll || q ? rows : rows.slice(0, 25);
+      document.querySelector("[data-ladder-table] tbody").innerHTML = shown.map(function (a) {
+        var t = tiers[a.tier] || { name: "Unranked", colour: "#73806b" };
+        var label = t.apex ? t.name + " #" + a.apex : t.name + (a.division ? " " + a.division : "");
+        var rings = a.tier === "unranked" ? "" : "<small>" + a.rings + " Rings</small>";
+        var wr = a.games ? a.wins / a.games * 100 : 0;
+        var streak = a.streak > 1 ? '<span class="trend up">' + a.streak + " won</span>" : a.streak < -1 ? '<span class="trend down">' + (-a.streak) + " lost</span>" : '<span class="trend same">–</span>';
+        return '<tr' + (t.apex ? ' class="apex-row"' : "") + '><td class="rank-num">' + a.rank + (a.climbed ? " " + delta(a.climbed, "") : "") + "</td>" +
+          "<td><strong>" + esc(a.name) + "</strong><small class=\"block\">" + esc(ROLE_NAMES[a.role] || a.role) + "</small></td>" +
+          '<td><span class="rank-badge" style="--tier:' + esc(t.colour) + '"><span class="rank-gem" aria-hidden="true"></span>' + esc(label) + "</span>" + rings + "</td>" +
+          '<td class="num">' + a.rating + "</td>" +
+          '<td class="num">' + a.wins + "–" + a.losses + "</td>" +
+          '<td class="num">' + pct(wr) + "</td>" +
+          '<td class="num wide-only">' + streak + "</td>" +
+          "<td>" + (a.main ? '<a class="champ-cell" href="' + ROOT + "champions/" + esc(a.main) + '.html" title="' + esc(champName(a.main)) + '">' + face(a.main, 32) + '<span class="wide-only">' + esc(champName(a.main)) + "</span></a>" : "–") + "</td></tr>";
+      }).join("") || '<tr><td colspan="8" class="fine">Nobody on the ladder by that name.</td></tr>';
+      document.querySelector("[data-ladder-count]").textContent = "Showing " + shown.length + " of " + rows.length +
+        (ladderRole === "all" ? " accounts" : " " + ROLE_NAMES[ladderRole].toLowerCase() + " mains") + ".";
+      var more = document.querySelector("[data-ladder-more]");
+      more.hidden = !!q || rows.length <= 25;
+      more.textContent = ladderAll ? "Show the top 25" : "Show the whole ladder";
+    }
+
+    function renderTierBars() {
+      var R = stats.ranked, counts = R.counts, max = 0;
+      R.tiers.forEach(function (t) { max = Math.max(max, counts[t.id] || 0); });
+      var total = R.accounts.length;
+      document.querySelector("[data-tier-bars]").innerHTML = R.tiers.map(function (t) {
+        var n = counts[t.id] || 0, share = total ? n / total * 100 : 0;
+        var tip = t.name + ": " + n + " accounts (" + share.toFixed(1) + "%), from rating " + t.floor + (t.apex ? ", the best " + t.size : "") + ". " + t.flavour;
+        return '<li class="tier-bar" style="--tier:' + esc(t.colour) + '" title="' + esc(tip) + '" tabindex="0" aria-label="' + esc(tip) + '">' +
+          '<span class="tier-name">' + esc(t.name) + '</span><span class="tier-track"><span class="tier-fill" style="width:' + (max ? n / max * 100 : 0) + '%"></span></span>' +
+          '<span class="tier-count">' + n + " <small>" + share.toFixed(0) + "%</small></span></li>";
+      }).join("");
+      var s = document.querySelector("[data-season]");
+      if (R.season && R.season.name) s.textContent = "Ranked · " + R.season.name;
+      document.querySelector("[data-tier-chart-caption]").textContent = "Accounts in each tier, lowest first. " + total + " accounts, " +
+        R.matches + " ranked matches over " + R.nights + (R.nights === 1 ? " night" : " nights") + ".";
+    }
+
+    function renderTiles() {
+      var d = new Date(stats.generated);
+      var vals = [stats.matches.toLocaleString("en-GB"), Math.floor(stats.minutes) + ":" + String(Math.round(stats.minutes % 1 * 60)).padStart(2, "0"),
+                  pct(stats.blue_win_rate), d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })];
+      document.querySelectorAll("[data-stat-tiles] dd").forEach(function (dd, n) { dd.textContent = vals[n]; });
+    }
+
+    Promise.all([
+      fetch(ROOT + "data/stats.json").then(function (r) { return r.json(); }),
+      fetch(ROOT + "data/champions.json").then(function (r) { return r.json(); }).catch(function () { return []; }),
+      fetch(ROOT + "data/items.json").then(function (r) { return r.json(); }).catch(function () { return []; })
+    ]).then(function (res) {
+      stats = res[0];
+      res[1].forEach(function (c) { champs[c.id] = c; });
+      res[2].forEach(function (i) { itemNames[i.id] = i.name; itemArt[i.id] = i.art; });
+      renderTiles(); renderTiers(); renderItemsTable(); renderTierBars(); renderLadder();
+      // The tables arrive after the browser has jumped to #ladder or #items, so jump again.
+      var target = location.hash && document.getElementById(location.hash.slice(1));
+      if (target) target.scrollIntoView();
+    }).catch(function () {
+      document.querySelector("[data-tier-table] tbody").innerHTML = '<tr><td colspan="8" class="fine">The numbers could not be loaded.</td></tr>';
+    });
+
+    document.querySelectorAll("[data-role-filter]").forEach(function (b, _, all) {
+      b.addEventListener("click", function () {
+        role = b.getAttribute("data-role-filter");
+        all.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        sortKey = "rank"; sortDir = 1;
+        if (stats) renderTiers();
+      });
+    });
+    document.querySelectorAll("[data-sort]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var k = b.getAttribute("data-sort");
+        if (k === sortKey) sortDir = -sortDir; else { sortKey = k; sortDir = 1; }
+        if (stats) renderTiers();
+      });
+    });
+    document.querySelector("[data-tier-search]").addEventListener("input", function () { if (stats) renderTiers(); });
+    document.querySelectorAll("[data-ladder-role]").forEach(function (b, _, all) {
+      b.addEventListener("click", function () {
+        ladderRole = b.getAttribute("data-ladder-role");
+        all.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        if (stats) renderLadder();
+      });
+    });
+    document.querySelector("[data-ladder-search]").addEventListener("input", function () { if (stats) renderLadder(); });
+    document.querySelector("[data-ladder-more]").addEventListener("click", function () { ladderAll = !ladderAll; renderLadder(); });
+    document.querySelector("[data-item-more]").addEventListener("click", function () { itemsAll = !itemsAll; renderItemsTable(); });
+  }
 })();

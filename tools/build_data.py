@@ -8,6 +8,7 @@ atlases, and writes:
     data/items.json       every shop item
     data/map.json         the Hushwood's node graph, for the drawn map
     data/witchwood.json   the Witchwood in full (walls, lanes, river, brush, camps), for its plan
+    data/stats.json       the match farm's win rates and the ranked ladder (build_stats.py)
     champions/<id>.html   one static page per champion (from the template)
     assets/img/items/     one 128px medallion per item: the game's own art on the
                           plate the in-game shop paints behind it (medallion.py)
@@ -39,6 +40,7 @@ HERE = Path(__file__).resolve().parent
 SITE = HERE.parent
 sys.path.insert(0, str(HERE))
 from medallion import Picture, compose, encode_png  # noqa: E402
+import build_stats  # noqa: E402
 UNITY = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else SITE.parent / "alphamoba-unity"
 GAMEDATA = UNITY / "GameData"
 ATLASES = UNITY / "Assets" / "Resources" / "Champions"
@@ -438,7 +440,7 @@ def champion_page(c, roster, template):
             .replace("{{og_image}}", (f'https://alphamoba.com/assets/img/splash/{c["id"]}.jpg'
                                       if (SITE / "assets" / "img" / "splash" / f"{c['id']}.jpg").exists()
                                       else f'https://alphamoba.com/assets/img/portraits/{c["id"]}.png'
-                                      if c["portrait"] else "https://alphamoba.com/assets/img/portraits/oryssa.png"))
+                                      if c["portrait"] else "https://alphamoba.com/assets/img/portraits/mochi.png"))
             .replace("{{kit}}", "".join(kit_html))
             .replace("{{stats}}", stats_html)
             .replace("{{related}}", related)
@@ -508,6 +510,8 @@ def main():
     (SITE / "data" / "items.json").write_text(json.dumps(items, indent=1), encoding="utf-8")
     (SITE / "data" / "map.json").write_text(json.dumps(hushwood(), indent=1), encoding="utf-8")
     (SITE / "data" / "witchwood.json").write_text(json.dumps(witchwood(), separators=(",", ":")), encoding="utf-8")
+    if (GAMEDATA / "stats" / "stats.json").exists():
+        build_stats.export(UNITY)
 
     template = (SITE / "tools" / "champion.template.html").read_text(encoding="utf-8")
     out = SITE / "champions"
