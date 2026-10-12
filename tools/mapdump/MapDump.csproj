@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Runs the game's own wall, brush and river builders over each map file
+       and prints the result as JSON, so the maps page draws exactly the walls
+       the pathing blocks. build_data.py runs it when dotnet is on the PATH;
+       its output is committed under data/maps/, so the site needs nothing. -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <UnityRoot Condition="'$(UnityRoot)' == ''">$(MSBuildThisFileDirectory)../../../alphamoba-unity</UnityRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(UnityRoot)/Tooling/SimLib/Wychwood.Sim.Lib.csproj" />
+    <Compile Include="$(UnityRoot)/Assets/Scripts/Data.Loading/MapLoader.cs" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

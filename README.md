@@ -14,8 +14,9 @@ stylesheet, one script, no build step, served by GitHub Pages at
 - `items/` — the shop, filtered in the browser by tier and category.
 - `stats/` — the tier list by role, the items that win, and the ranked
   ladder, drawn in the browser from `data/stats.json`.
-- `maps/` — the Hushwood drawn as an SVG from the game's own map graph, plus
-  the Wide Wood and the Toll Road.
+- `maps/` — the interactive map explorer (`assets/js/maps.js`): every board
+  and the Witchwood's six jungle layouts, drawn from `data/maps/`, with pan
+  and zoom, layers, a match clock and each camp's and tower's numbers.
 - `data/` — `champions.json`, `items.json`, `map.json`, `stats.json`, generated.
 - `assets/` — `css/site.css`, `js/site.js`, and the images the site owns.
 - `tools/` — `build_data.py` and `champion.template.html`, the generator.
@@ -31,7 +32,11 @@ checkout:
 python3 tools/build_data.py ../alphamoba-unity
 ```
 
-That rewrites `data/*.json` and every `champions/<id>.html`. The stats page
+That rewrites `data/*.json`, `data/maps/` and every `champions/<id>.html`.
+The maps' walls, brush and river come from the game's own builders, run by
+`tools/mapdump` (a small C# program over the game's Sim assembly); it needs
+`dotnet` 8 on the PATH, and without it the committed geometry is kept.
+`python3 tools/build_maps.py ../alphamoba-unity` rebuilds the maps alone. The stats page
 reads the game's match farm (`GameData/stats/stats.json`) and ranked ladder
 (`GameData/ranked/`), which change every night; to pick those up alone, run
 `python3 tools/build_stats.py ../alphamoba-unity`. Only the Python

@@ -284,7 +284,7 @@
           var key = n.id.replace(/^camp_(blue|red)_(top|bot)_/, ""); title = CAMPS[key] || title;
           if (n.mouth != null) {
             var h = n.mouth * Math.PI / 180;
-            ww.appendChild(el("line", { x1: X(n.x), y1: Y(n.y), x2: X(n.x + Math.sin(h) * 4.2), y2: Y(n.y + Math.cos(h) * 4.2), stroke: "#e08a2e", "stroke-width": 1.1, "stroke-linecap": "round" }));
+            ww.appendChild(el("line", { x1: X(n.x), y1: Y(n.y), x2: X(n.x + Math.sin(h) * 4.2), y2: Y(n.y - Math.cos(h) * 4.2), stroke: "#e08a2e", "stroke-width": 1.1, "stroke-linecap": "round" }));
           }
         }
         if (!r) return;

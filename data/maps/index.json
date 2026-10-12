@@ -1,0 +1,645 @@
+{
+ "boards": [
+  {
+   "id": "hushwood",
+   "mode": "3v3"
+  },
+  {
+   "id": "witchwood",
+   "mode": "5v5"
+  },
+  {
+   "id": "widewood",
+   "mode": "5v5 \u00b7 archived"
+  }
+ ],
+ "layouts": [
+  {
+   "id": "crossroads",
+   "name": "Buff Crossroads",
+   "blurb": "Every way in meets at the buff's doorstep.",
+   "board": "witchwood_crossroads"
+  },
+  {
+   "id": "ring",
+   "name": "Ring Round the Buff",
+   "blurb": "A loop round the buff to circle, flank and slip away on.",
+   "board": "witchwood_ring"
+  },
+  {
+   "id": "twin",
+   "name": "Twin Trails",
+   "blurb": "A fast trail by the lane, a slow one past the buff.",
+   "board": "witchwood_twin"
+  },
+  {
+   "id": "gauntlet",
+   "name": "The Gauntlet",
+   "blurb": "Four ways in and one long trail past every camp.",
+   "board": "witchwood_gauntlet"
+  },
+  {
+   "id": "switchback",
+   "name": "Switchbacks",
+   "blurb": "The trail swings lane side to river side, a camp on each landing.",
+   "board": "witchwood_switchback"
+  },
+  {
+   "id": "grove",
+   "name": "Pillar Grove",
+   "blurb": "Open woodland broken by pillars to juke round and flash over.",
+   "board": "witchwood_grove"
+  }
+ ],
+ "camps": {
+  "grove_camp": {
+   "name": "Thornpelt Grove",
+   "large": {
+    "name": "Thornpelt Alpha",
+    "health": 900.0,
+    "damage": 30,
+    "attack_speed": 0.77,
+    "range": 1.8,
+    "armor": 0.0,
+    "magic_resist": 0.0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Thornpelt Wolf",
+    "health": 350.0,
+    "damage": 16,
+    "attack_speed": 0.83,
+    "range": 1.6,
+    "armor": 0.0,
+    "magic_resist": 0.0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 130.0,
+   "xp": 250.0,
+   "respawn": 60.0,
+   "first_spawn": 0.0,
+   "leash": 10.0,
+   "growth_per_minute": 0.0
+  },
+  "horror_camp": {
+   "name": "The Hollow's Grasp",
+   "large": {
+    "name": "Hollowgaunt",
+    "health": 1000.0,
+    "damage": 32,
+    "attack_speed": 0.71,
+    "range": 1.9,
+    "armor": 0.0,
+    "magic_resist": 0.0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Grasping Shade",
+    "health": 300.0,
+    "damage": 13,
+    "attack_speed": 0.83,
+    "range": 1.6,
+    "armor": 0.0,
+    "magic_resist": 0.0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 145.0,
+   "xp": 270.0,
+   "respawn": 75.0,
+   "first_spawn": 0.0,
+   "leash": 10.0,
+   "growth_per_minute": 0.0
+  },
+  "sentinel_camp": {
+   "name": "Stone Sentinel",
+   "large": {
+    "name": "Stone Sentinel",
+    "health": 1600.0,
+    "damage": 44,
+    "attack_speed": 0.62,
+    "range": 2.0,
+    "armor": 0.0,
+    "magic_resist": 0.0,
+    "ranged": false
+   },
+   "small": null,
+   "small_count": 0,
+   "gold": 150.0,
+   "xp": 300.0,
+   "respawn": 90.0,
+   "first_spawn": 0.0,
+   "leash": 10.0,
+   "growth_per_minute": 0.0
+  },
+  "kraken_camp": {
+   "name": "The Kraken's Wake",
+   "large": {
+    "name": "The Kraken",
+    "health": 18000.0,
+    "damage": 260.0,
+    "attack_speed": 0.56,
+    "range": 3.0,
+    "armor": 60.0,
+    "magic_resist": 60.0,
+    "ranged": false
+   },
+   "small": null,
+   "small_count": 0,
+   "gold": 500.0,
+   "xp": 800.0,
+   "respawn": 300.0,
+   "first_spawn": 420.0,
+   "leash": 16.0,
+   "growth_per_minute": 0.0,
+   "epic": true,
+   "buff": "kraken_buff",
+   "team_gold": 250
+  },
+  "wisp_camp": {
+   "name": "The Wisp Landing",
+   "large": {
+    "name": "Lantern Mother",
+    "health": 1060,
+    "damage": 33,
+    "attack_speed": 0.77,
+    "range": 1.8,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Lantern Wisp",
+    "health": 305,
+    "damage": 14,
+    "attack_speed": 0.91,
+    "range": 1.6,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 135,
+   "xp": 255,
+   "respawn": 68,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "lantern_sentinel_camp": {
+   "name": "The Lantern Shrine",
+   "large": {
+    "name": "Paper Guardian",
+    "health": 1600,
+    "damage": 44,
+    "attack_speed": 0.62,
+    "range": 2,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": null,
+   "small_count": 0,
+   "gold": 150,
+   "xp": 300,
+   "respawn": 90,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "strider_camp": {
+   "name": "The Strider Stilts",
+   "large": {
+    "name": "Stilt Strider",
+    "health": 1250,
+    "damage": 47,
+    "attack_speed": 0.71,
+    "range": 1.9,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": null,
+   "small_count": 0,
+   "gold": 112,
+   "xp": 210,
+   "respawn": 72,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "moth_camp": {
+   "name": "The Silk Loft",
+   "large": {
+    "name": "Silk Matron",
+    "health": 1030,
+    "damage": 30,
+    "attack_speed": 0.77,
+    "range": 1.8,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Silk Moth",
+    "health": 320,
+    "damage": 13,
+    "attack_speed": 0.91,
+    "range": 1.6,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 142,
+   "xp": 265,
+   "respawn": 75,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "cricket_camp": {
+   "name": "The Bell Eaves",
+   "large": {
+    "name": "Bell Cricket Lord",
+    "health": 900,
+    "damage": 28,
+    "attack_speed": 0.71,
+    "range": 1.7,
+    "armor": 12,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Bell Cricket",
+    "health": 300,
+    "damage": 12,
+    "attack_speed": 1.0,
+    "range": 1.5,
+    "armor": 6,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 129,
+   "xp": 240,
+   "respawn": 70,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "wraith_camp": {
+   "name": "The Ash Hollow",
+   "large": {
+    "name": "Ash Wraith Elder",
+    "health": 1070,
+    "damage": 34,
+    "attack_speed": 0.71,
+    "range": 1.9,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Ash Wraith",
+    "health": 300,
+    "damage": 14,
+    "attack_speed": 0.83,
+    "range": 1.6,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 142,
+   "xp": 265,
+   "respawn": 75,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "bone_sentinel_camp": {
+   "name": "The Marrow Shrine",
+   "large": {
+    "name": "Skull Golem",
+    "health": 1600,
+    "damage": 44,
+    "attack_speed": 0.62,
+    "range": 2,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": null,
+   "small_count": 0,
+   "gold": 150,
+   "xp": 300,
+   "respawn": 90,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "crawler_camp": {
+   "name": "The Rib Cage",
+   "large": {
+    "name": "Rib Crawler Brood-Mother",
+    "health": 900,
+    "damage": 28,
+    "attack_speed": 0.71,
+    "range": 1.7,
+    "armor": 12,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Rib Crawler",
+    "health": 300,
+    "damage": 12,
+    "attack_speed": 1.0,
+    "range": 1.5,
+    "armor": 6,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 129,
+   "xp": 240,
+   "respawn": 70,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "hound_camp": {
+   "name": "The Hound Ossuary",
+   "large": {
+    "name": "Marrow Alpha",
+    "health": 970,
+    "damage": 30,
+    "attack_speed": 0.77,
+    "range": 1.8,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Marrow Hound",
+    "health": 350,
+    "damage": 16,
+    "attack_speed": 0.83,
+    "range": 1.6,
+    "armor": 0,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 135,
+   "xp": 255,
+   "respawn": 68,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "beetle_camp": {
+   "name": "The Beetle Crown",
+   "large": {
+    "name": "Skull Beetle King",
+    "health": 750,
+    "damage": 21,
+    "attack_speed": 0.71,
+    "range": 1.7,
+    "armor": 12,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small": {
+    "name": "Skull Beetle",
+    "health": 250,
+    "damage": 9,
+    "attack_speed": 1.0,
+    "range": 1.5,
+    "armor": 6,
+    "magic_resist": 0,
+    "ranged": false
+   },
+   "small_count": 2,
+   "gold": 112,
+   "xp": 210,
+   "respawn": 72,
+   "first_spawn": 0,
+   "leash": 10,
+   "growth_per_minute": 0
+  },
+  "lantern_warden_camp": {
+   "name": "The Bridge Warden's Reach",
+   "large": {
+    "name": "The Bridge Warden",
+    "health": 3400,
+    "damage": 95,
+    "attack_speed": 0.71,
+    "range": 2.5,
+    "armor": 25,
+    "magic_resist": 25,
+    "ranged": false
+   },
+   "small": null,
+   "small_count": 0,
+   "gold": 200,
+   "xp": 400,
+   "respawn": 240,
+   "first_spawn": 120,
+   "leash": 14,
+   "growth_per_minute": 0.08,
+   "epic": true,
+   "buff": "boss_buff",
+   "team_gold": 75
+  },
+  "bone_kraken_camp": {
+   "name": "The Marrow Kraken's Reach",
+   "large": {
+    "name": "The Marrow Kraken",
+    "health": 18000,
+    "damage": 260,
+    "attack_speed": 0.56,
+    "range": 3,
+    "armor": 60,
+    "magic_resist": 60,
+    "ranged": false
+   },
+   "small": null,
+   "small_count": 0,
+   "gold": 500,
+   "xp": 800,
+   "respawn": 300,
+   "first_spawn": 420,
+   "leash": 16,
+   "growth_per_minute": 0,
+   "epic": true,
+   "buff": "kraken_buff",
+   "team_gold": 250
+  }
+ },
+ "buffs": {
+  "altar_fury": {
+   "buff_name": "Altar of Fury",
+   "damage_mult": 1.12,
+   "duration": 75.0,
+   "speed_mult": 1.02
+  },
+  "altar_swiftness": {
+   "buff_name": "Altar of Swiftness",
+   "damage_mult": 1.03,
+   "duration": 75.0,
+   "speed_mult": 1.1
+  },
+  "boss_buff": {
+   "buff_name": "The Warden's Mantle",
+   "damage_mult": 1.12,
+   "duration": 90.0,
+   "speed_mult": 1.1
+  },
+  "kraken_buff": {
+   "buff_name": "Wrath of the Deep",
+   "damage_mult": 1.3,
+   "duration": 150.0,
+   "speed_mult": 1.25
+  }
+ },
+ "golem_buffs": {
+  "emberheart": {
+   "name": "Emberheart",
+   "lines": [
+    "+15% damage",
+    "8% of damage dealt healed back"
+   ]
+  },
+  "duskweave": {
+   "name": "Duskweave",
+   "lines": [
+    "15% shorter cooldowns",
+    "+8% move speed"
+   ]
+  }
+ },
+ "watchfire": {
+  "minion_damage": 150.0,
+  "attack_range": 7.0,
+  "attack_cooldown": 1.5,
+  "champion_damage": 160.0,
+  "champion_damage_per_minute": 10.0,
+  "champion_damage_cap_minute": 30.0,
+  "stoke_per_shell": 0.35,
+  "stoke_steps": 3,
+  "stoke_forget": 3.0,
+  "shuttered_cut": 0.6,
+  "tiers": {
+   "front": {
+    "health": 2000.0,
+    "armor": 22.0,
+    "iron_bound": 0.8,
+    "iron_bound_hold": 420.0,
+    "iron_bound_gone": 840.0
+   },
+   "outer": {
+    "health": 2500.0,
+    "armor": 32.0,
+    "iron_bound": 0.5,
+    "iron_bound_hold": 420.0,
+    "iron_bound_gone": 840.0
+   },
+   "inner": {
+    "health": 3200.0,
+    "armor": 65.0,
+    "iron_bound": 0.45,
+    "iron_bound_hold": 1200.0,
+    "iron_bound_gone": 1680.0
+   },
+   "nexus": {
+    "health": 3200.0,
+    "armor": 65.0,
+    "iron_bound": 0.0,
+    "iron_bound_hold": 420.0,
+    "iron_bound_gone": 840.0
+   }
+  },
+  "inhibitor": {
+   "health": 3500.0,
+   "armor": 40.0,
+   "attacks_only": true,
+   "shuttered_cut": 0.6,
+   "shutter_range": 7.0,
+   "regen": 15.0,
+   "regen_delay": 8.0,
+   "respawn": 180.0
+  }
+ },
+ "minions": {
+  "minion": {
+   "name": "Porter",
+   "health": 300.0,
+   "damage": 12.0,
+   "attack_speed": 1.0,
+   "range": 1.6,
+   "armor": 0.0,
+   "magic_resist": 0.0,
+   "ranged": false
+  },
+  "caster_minion": {
+   "name": "Slinger",
+   "health": 180.0,
+   "damage": 18.0,
+   "attack_speed": 0.77,
+   "range": 5.5,
+   "armor": 0.0,
+   "magic_resist": 0.0,
+   "ranged": true
+  },
+  "siege_minion": {
+   "name": "Hauler",
+   "health": 700.0,
+   "damage": 40.0,
+   "attack_speed": 0.62,
+   "range": 5.0,
+   "armor": 0.0,
+   "magic_resist": 0.0,
+   "ranged": true
+  },
+  "super_minion": {
+   "name": "Foreman",
+   "health": 1500.0,
+   "damage": 60.0,
+   "attack_speed": 0.91,
+   "range": 1.9,
+   "armor": 0.0,
+   "magic_resist": 0.0,
+   "ranged": false
+  }
+ },
+ "jungle_growth": {
+  "growth_start": 600.0,
+  "growth_end": 2100.0,
+  "kinds": {
+   "small": {
+    "health_per_minute": 0.04,
+    "armor_per_minute": 1.5,
+    "magic_resist_per_minute": 1.5,
+    "damage_per_minute": 0.04,
+    "bounty_per_minute": 0.01
+   },
+   "large": {
+    "health_per_minute": 0.035,
+    "armor_per_minute": 1.5,
+    "magic_resist_per_minute": 1.5,
+    "damage_per_minute": 0.04,
+    "bounty_per_minute": 0.01
+   },
+   "epic": {
+    "health_per_minute": 0.01,
+    "armor_per_minute": 1.0,
+    "magic_resist_per_minute": 1.0,
+    "damage_per_minute": 0.015,
+    "bounty_per_minute": 0.0
+   }
+  }
+ }
+}

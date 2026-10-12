@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maps · AlphaMOBA</title>
-<meta name="description" content="AlphaMOBA's maps, drawn from the game's map data: the Witchwood, the Hushwood, the archived Wide Wood and the Toll Road.">
+<meta name="description" content="Interactive maps of AlphaMOBA's boards, drawn from the game's map files: zoom in, switch jungle layouts, scrub the match clock and click any tower, camp or objective for its numbers.">
 <link rel="canonical" href="https://alphamoba.com/maps/">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,25 +29,75 @@
 </header>
 
 <main id="main">
+  <section class="section mx-section" id="explorer">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Interactive</p>
+        <h1>Maps</h1>
+        <p class="lede">Every board here is drawn from the game's own map files, down to each wall piece the pathing uses. Drag to move around, scroll or pinch to zoom, and click a tower, camp or objective for its numbers. Move the clock to see what's up at any minute.</p>
+      </div>
+      <div class="mx" data-map-explorer>
+        <div class="mx-tabs" role="tablist" aria-label="Choose a map">
+          <button role="tab" data-mx-board="hushwood" aria-selected="true"><strong>The Hushwood</strong><span>3v3</span></button>
+          <button role="tab" data-mx-board="witchwood" aria-selected="false"><strong>The Witchwood</strong><span>5v5</span></button>
+          <button role="tab" data-mx-board="widewood" aria-selected="false"><strong>The Wide Wood</strong><span>5v5 · archived</span></button>
+        </div>
+        <div class="mx-layouts" data-mx-layouts hidden>
+          <p class="fine"><strong>Jungle layout</strong> · <span data-mx-layout-note></span></p>
+          <div class="toolbar" role="group" aria-label="Jungle layout" data-mx-layout-list></div>
+        </div>
+        <div class="mx-body">
+          <div class="mx-stage">
+            <svg data-mx-svg role="img" aria-label="Interactive plan of the selected map"></svg>
+            <div class="mx-zoom" role="group" aria-label="Zoom">
+              <button data-mx-zoom-in aria-label="Zoom in">+</button>
+              <button data-mx-zoom-out aria-label="Zoom out">−</button>
+              <button data-mx-reset aria-label="Show the whole map">⤢</button>
+            </div>
+            <div class="mx-tip" data-mx-tip hidden></div>
+          </div>
+          <aside class="mx-panel" data-mx-panel aria-live="polite"><p class="fine">Loading the map…</p></aside>
+        </div>
+        <div class="mx-clockbar">
+          <button class="btn small mx-play" data-mx-play aria-pressed="false">▶ Play</button>
+          <div class="mx-clock">
+            <label for="mx-clock"><span class="fine">Match clock</span> <strong data-mx-time>0:00</strong></label>
+            <input id="mx-clock" type="range" min="0" max="2100" step="15" value="0" data-mx-clock>
+            <div class="mx-events">
+              <button data-mx-event="120" style="left:5.71%">2:00<span>Bridge Warden</span></button>
+              <button data-mx-event="420" style="left:20%">7:00<span>Kraken</span></button>
+              <button data-mx-event="600" style="left:28.57%">10:00<span>Jungle grows</span></button>
+              <button data-mx-event="840" style="left:40%">14:00<span>Outer plating gone</span></button>
+              <button data-mx-event="1680" style="left:80%">28:00<span>Inner plating gone</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="mx-layers" role="group" aria-label="Show on the map">
+          <span class="fine">Show</span>
+          <button class="mx-chip" data-mx-layer="structures"><i style="background:#73a6ff"></i>Structures</button>
+          <button class="mx-chip" data-mx-layer="jungle"><i style="background:#e08a2e"></i>Jungle camps</button>
+          <button class="mx-chip" data-mx-layer="objectives"><i style="background:#b57ff0"></i>Objectives</button>
+          <button class="mx-chip" data-mx-layer="walls"><i style="background:#4a6d3b"></i>Walls</button>
+          <button class="mx-chip" data-mx-layer="brush"><i style="background:#3f8a36"></i>Brush</button>
+          <button class="mx-chip" data-mx-layer="lanes"><i style="background:#8d7a52"></i>Lanes</button>
+          <button class="mx-chip" data-mx-layer="river"><i style="background:#4fa3bd"></i>River</button>
+          <button class="mx-chip" data-mx-layer="ranges"><i class="ring" style="border-color:#73a6ff"></i>Tower range</button>
+          <button class="mx-chip" data-mx-layer="leash"><i class="ring" style="border-color:#e0b07a"></i>Camp leash</button>
+          <button class="mx-chip" data-mx-layer="labels"><i style="background:#d8c79a"></i>Labels</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="hushwood">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">3v3 · the haunted forest</p>
-        <h1>The Hushwood</h1>
+        <h2>The Hushwood</h2>
         <p class="lede">A hundred-by-hundred board with the bases in opposite corners. Two L-shaped lanes run around the other two corners and one river crosses the middle. Red's half is blue's half rotated 180 degrees, so every objective is the same distance from both fountains.</p>
+        <p><a href="#map-hushwood" data-mx-open="hushwood">Open it in the explorer ↑</a></p>
       </div>
-      <div class="map-figure">
-        <svg class="map-svg" data-hushwood role="img" aria-label="Plan of the Hushwood: blue base bottom-left, red base top-right, two lanes around the outside, a river down the other diagonal and the Kraken's Wake near the centre."></svg>
-        <div>
-          <ul class="map-key">
-            <li><i style="background:#73a6ff"></i> <span class="blue">Blue</span> fountain, nexus, inhibitors and towers</li>
-            <li><i style="background:#f27366"></i> <span class="red">Red</span> fountain, nexus, inhibitors and towers</li>
-            <li><i style="background:#6bc7b8"></i> The Kraken's Wake, in the open central arena</li>
-            <li><i style="background:#f2c761"></i> Altars, one on each bank</li>
-            <li><i style="background:#8fa385"></i> Jungle camps: a grove, a horror and a sentinel a side</li>
-            <li><i style="background:#1f4c5c"></i> The river</li>
-          </ul>
-          <dl class="map-list">
+      <dl class="map-list">
             <dt>The lanes</dt>
             <dd>Three towers a side per lane, seated so the two front towers frame the ford. The stretch between them is the contested one. Each lane's inner wall opens three times: a safe gank door near each base, and the ford window in the middle.</dd>
             <dt>The heart</dt>
@@ -55,10 +105,8 @@
             <dt>The altars</dt>
             <dd>The Altar of Fury and the Altar of Swiftness sit on opposite banks. Each team can reach one without crossing the river.</dd>
             <dt>The jungle</dt>
-            <dd>Thornpelt wolves by the top-side door, grasping shades by the bot-side door, and a stone sentinel guarding each side's mouth into the heart. The west sentinel carries Duskweave, the east Emberheart.</dd>
+            <dd>Thornpelt wolves by the top-side door, grasping shades by the bot-side door, and a stone sentinel guarding each side's mouth into the heart. The west sentinel gives Emberheart, the east one Duskweave.</dd>
           </dl>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -68,7 +116,7 @@
         <p class="eyebrow">5v5 · the big map</p>
         <h2>The Witchwood</h2>
         <p class="lede">The Wardens' Lodge against the Coven. Three lanes and a full jungle, bases in the corners, one river across the middle with a pit at each end of it.</p>
-        <p><a href="witchwood.html">The full plan: every wall, camp, pit and structure, and how the two districts are built →</a></p>
+        <p><a href="#map-witchwood" data-mx-open="witchwood">Open it in the explorer ↑</a> · <a href="witchwood.html">How the two districts are built →</a></p>
       </div>
       <div class="pillars">
         <div class="pillar">
@@ -93,6 +141,7 @@
         <p class="eyebrow">5v5 · archived flavour</p>
         <h2>The Wide Wood</h2>
         <p class="lede">The big map as it stood when the Witchwood was copied from it: the same three lanes, jungle and river, kept as another flavour of the board.</p>
+        <p><a href="#map-widewood" data-mx-open="widewood">Open it in the explorer ↑</a></p>
       </div>
       <div class="pillars">
         <div class="pillar">
@@ -121,9 +170,10 @@
 <footer class="footer">
   <div class="wrap footer-inner">
     <p><strong>AlphaMOBA</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development.</p>
-    <p class="fine">The Hushwood plan is drawn from the game's map file and can change between builds.</p>
+    <p class="fine">The maps are drawn from the game's map files, walls and all, and the numbers come from its data. Both can change between builds.</p>
   </div>
 </footer>
 <script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/maps.js" defer></script>
 </body>
 </html>
