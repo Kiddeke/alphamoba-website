@@ -1,7 +1,7 @@
 # alphamoba.com
 
-The public site for **Wychwood**, the lane-and-jungle forest MOBA by Thornwake
-Games (working name: *alphamoba*). It is a static site: plain HTML, one
+The public site for **AlphaMOBA**, the lane-and-jungle forest MOBA by
+Thornwake Games. It is a static site: plain HTML, one
 stylesheet, one script, no build step, served by GitHub Pages at
 [alphamoba.com](https://alphamoba.com).
 

@@ -1,4 +1,4 @@
-// Wychwood — shared page scripts. No build step, no framework.
+// AlphaMOBA — shared page scripts. No build step, no framework.
 (function () {
   "use strict";
 

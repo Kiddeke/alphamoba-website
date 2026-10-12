@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds in-development/index.html — every character in Wychwood, the
+"""Builds in-development/index.html — every character in AlphaMOBA, the
 roster and the pitches together, grouped by the region or kingdom each
 belongs to (data/regions.json) — and stages the pitch portraits at a web
 size under assets/img/pitch/.
@@ -140,8 +140,8 @@ page = f'''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>In development · Wychwood</title>
-<meta name="description" content="Every character of Wychwood by region and kingdom: the roster that is in the game, and the faces being screened for it.">
+<title>In development · AlphaMOBA</title>
+<meta name="description" content="Every character of AlphaMOBA by region and kingdom: the roster that is in the game, and the faces being screened for it.">
 <link rel="canonical" href="https://alphamoba.com/in-development/">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,7 +153,7 @@ page = f'''<!DOCTYPE html>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
-  <a class="wordmark" href="../index.html">Wychwood</a>
+  <a class="wordmark" href="../index.html">AlphaMOBA</a>
   <nav class="nav" aria-label="Main">
     <a href="../champions/">Champions</a>
     <a href="../items/">Items</a>
@@ -171,7 +171,7 @@ page = f'''<!DOCTYPE html>
       <div class="section-head">
         <p class="eyebrow">Regions and kingdoms</p>
         <h1>In development</h1>
-        <p class="lede">Every character in Wychwood, by where they come from. A tile with a class on it is in the game and opens the champion's page; a tile marked in development is being built into a champion now. Faces not yet chosen wait under TBD at the end.</p>
+        <p class="lede">Every character in AlphaMOBA, by where they come from. A tile with a class on it is in the game and opens the champion's page; a tile marked in development is being built into a champion now. Faces not yet chosen wait under TBD at the end.</p>
         <p class="regions">{toc}</p>
       </div>
     </div>
@@ -181,7 +181,7 @@ page = f'''<!DOCTYPE html>
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p><strong>Wychwood</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development. <em>alphamoba</em> is its working name.</p>
+    <p><strong>AlphaMOBA</strong> is a lane-and-jungle forest MOBA by Thornwake Games, in development.</p>
     <p class="fine">The regions are the world's; the pitches are not final, and some will never be built.</p>
   </div>
 </footer>
